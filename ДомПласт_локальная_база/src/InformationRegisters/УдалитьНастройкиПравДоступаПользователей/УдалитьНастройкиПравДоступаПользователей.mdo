@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3ff458c-6ae3-4d9c-93d4-fe7a2233bf6a">
+  <producedTypes>
+    <selectionType typeId="660dd469-2a72-4609-ac03-e0f209fa9133" valueTypeId="cffbb912-7613-4ca1-abdf-336f7d3fc7b1"/>
+    <listType typeId="099f072b-2b08-4cf2-a08c-5ac514b1b9a4" valueTypeId="88eb3664-abd0-462a-beaa-4b78ee56842f"/>
+    <managerType typeId="d199c313-8e3c-420f-a955-fcc6f914650b" valueTypeId="b44f1c4d-0f4d-47bb-9771-ba9648596822"/>
+    <recordSetType typeId="352ca90e-d26e-41c1-b820-95a914564305" valueTypeId="c072e20f-235f-478b-863f-7757411b8036"/>
+    <recordKeyType typeId="5740fe2a-8208-4d01-9b15-48a22817da16" valueTypeId="aab9f8ca-002d-4b6e-a96c-7aa789aaea78"/>
+    <recordType typeId="e449a365-757a-4f3a-9c91-87bb25ca3a4f" valueTypeId="c3dab511-040e-4e37-9446-9ac701abcef0"/>
+    <recordManagerType typeId="528239bc-fbde-41f8-a0f0-1c974b58468c" valueTypeId="178dfdcd-d0a6-4c8a-b51e-2c38f6339184"/>
+  </producedTypes>
+  <name>УдалитьНастройкиПравДоступаПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Настройки прав доступа пользователей</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="e69fb7d3-1732-409e-8d14-56fffae00130">
+    <name>Чтение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чтение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe20627c-593f-4ea8-ae89-d515a9e05dfd">
+    <name>Запись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="da396204-0320-46e4-9f71-aa2ffc318a35">
+    <name>ВидНаследованияПравДоступаИерархическихСправочников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид наследования прав доступа иерархических справочников</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыНаследованияПравДоступаИерархическихСправочников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="e9cff1f1-4205-46af-bb8a-fae3f844ac7f">
+    <name>ОбъектДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект доступа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.ГруппыДоступаФизическихЛиц</types>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.УдалитьВнешниеОбработки</types>
+      <types>CatalogRef.Кассы</types>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9d472dfc-6057-4074-910a-8fc13c21d63d">
+    <name>ВидОбъектаДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид объекта доступа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УдалитьВидыОбъектовДоступа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="1ce09b57-455b-457b-9791-c2a842bd43d0">
+    <name>ОбластьДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область данных</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОбластиДанныхОбъектовДоступа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="d26f5976-646d-4256-aa91-ed60d81c3c32">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа пользователей</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="fc3aabc5-83a1-49bb-ab59-1f5ead7fad32">
+    <name>ВладелецПравДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец прав доступа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.ГруппыДоступаФизическихЛиц</types>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.УдалитьВнешниеОбработки</types>
+      <types>CatalogRef.Кассы</types>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="4cb41e3c-b5aa-4037-a34b-43555a64d9f1">
+    <name>НаследованаОтВсеПользователи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наследована от все пользователи</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58824d50-eef8-4248-bc76-ea5a54bc03be">
+  <producedTypes>
+    <selectionType typeId="d0e17980-c2ce-47f9-b067-36843418e26a" valueTypeId="0509ce37-d1a8-4bb3-a4d6-ebfd6c744273"/>
+    <listType typeId="aa00df80-d455-4516-a3d7-099d8760f0de" valueTypeId="78b035a2-5e72-420d-a7b2-d3fd133ce422"/>
+    <managerType typeId="7cf0daaf-2408-4dfc-ad26-a37c5ff1e343" valueTypeId="fa480e63-fe14-4ab8-8a26-e010faa6f494"/>
+    <recordSetType typeId="999b5ef2-105e-4add-8158-eadf06d187d0" valueTypeId="9d94d7b1-af6b-4c22-b61d-b766d07c71f9"/>
+    <recordKeyType typeId="40de066a-5207-4219-9531-5951537b4663" valueTypeId="7bfd9f29-ae99-4dcb-ac27-5cf4daaf910c"/>
+    <recordType typeId="92cdab51-5eee-46d4-a2b5-469e777d9f90" valueTypeId="08cbc317-3d4a-43a0-ba71-26af8e169901"/>
+    <recordManagerType typeId="b2d37d7b-ccbd-4da9-ad7b-0c84fc2e76e5" valueTypeId="af69e08c-6674-4480-aa00-e98d1259b215"/>
+  </producedTypes>
+  <name>ИПННалоговыеВычетыФизлиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Налоговые вычеты физических лиц по ИПН (до 2018 года)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ИПННалоговыеВычетыФизлиц.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ИПННалоговыеВычетыФизлиц.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Налоговый вычет физического лица по ИПН</value>
+  </recordPresentation>
+  <resources uuid="8bef44af-32af-4094-9779-9b9ce8b1ef92">
+    <name>ПредоставлятьЛичныйВычет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предоставлять личный вычет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="21652551-c664-4947-b38b-919f80ad59dd">
+    <name>КоличествоИждивенцев</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество иждивенцев</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f95dbaf1-d937-43ef-9be1-bd16171a131a">
+    <name>Физлицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ. лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7e11befb-c5c6-468e-8068-432b76c38490">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2106ab67-7891-4eef-9dde-f99ca7b9bc8d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

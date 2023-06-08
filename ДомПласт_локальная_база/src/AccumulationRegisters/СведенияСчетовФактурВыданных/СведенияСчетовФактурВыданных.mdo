@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19fd555f-b1fb-4d38-ab9f-ce817dec12b0">
+  <producedTypes>
+    <selectionType typeId="4c49882b-b667-4af0-8b1e-c8e4f848d012" valueTypeId="5a1e270b-d124-4236-870d-41b536ad5ae0"/>
+    <listType typeId="ea3bac0e-aa1f-4051-ab37-253be973dfd0" valueTypeId="14c3ab8f-2a92-465b-8436-f9acf3291a04"/>
+    <managerType typeId="fe72e9c2-cb3f-43b6-947f-9fccb3a6c63b" valueTypeId="1cf7910f-5091-431a-9ef7-bfde54728bd7"/>
+    <recordSetType typeId="f789fe9f-f6f0-47be-a584-8cf2384cb74e" valueTypeId="8c583feb-c0a7-43a5-b2a5-819a2cf48539"/>
+    <recordKeyType typeId="fdceb961-7f4a-41f8-a978-a73c1a7753b2" valueTypeId="759017c4-04d6-4e7e-a925-57c0892bbc1e"/>
+    <recordType typeId="21ed4b3c-f6e7-4874-b536-40ccc8f30e6d" valueTypeId="45d8f899-4397-4c38-a4e6-d1f1b88fc288"/>
+  </producedTypes>
+  <name>СведенияСчетовФактурВыданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о счетах-фактурах выданных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="91b39a57-0ff5-4f0c-8411-4766d4f84493">
+    <name>СуммаВВалютеДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма в валюте договора</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="12341a34-d3cc-474b-b81c-a2951acdde30">
+    <name>СуммаРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма в валюте регламентированного учета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="e10d3a9f-e854-4d1d-b597-18405fd63a3e">
+    <name>ОборотПоРеализацииВВалютеДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборот по реализации в валюте договора</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f6666864-4900-4c94-80f8-c2d91026bba0">
+    <name>СуммаНДСВВалютеДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДС в валюте договора</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="0e7b33f4-0800-421f-8074-a6e9c97281ca">
+    <name>ОборотПоРеализацииРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборот по реализации в валюте регламентированного учета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="4934296f-7aad-47fc-8931-a884179fad2f">
+    <name>СуммаНДСРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДС в валюте регламентированного учета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="35949e77-b1f2-44d2-87b4-0c29e567d78b">
+    <name>СуммаАкцизаВВалютеДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма акциза в валюте договора</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="9f1e61f0-be45-4272-b928-0aa4b86101b1">
+    <name>СуммаАкцизаРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма акциза в валюте регламентированного учета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="8ec243d5-af9d-4dbc-bfdd-46681690a59b">
+    <name>СтранаНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страна назначения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторСтранМира</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d4285bf7-756d-47ad-b659-97fccb67f8a1">
+    <name>УчастникСовместнойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник совместной деятельности</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="c5c0f96c-3ead-4260-9271-307b93bb51b8">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <comment>Организация - плательщик НДС</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2c5b9ed7-7678-4b0a-80e7-a8703c9c0ae5">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0869ceef-16c9-4f4a-aef2-5d950e387754">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <comment>Структурное подразделение организации</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="65a8a726-17e5-4fe9-9f03-29a7a3e26264">
+    <name>СчетФактура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет-фактура</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.СчетФактураВыданный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="bfa87d84-4a42-4563-b115-00f9253ffdde">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтавкиНДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="82bf140f-5606-4881-8831-55ff7e473785">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d4d08624-7e68-4b17-bdb6-5eb8ea6b7884">
+    <name>ТМЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТМЗ</value>
+    </synonym>
+    <comment>Наименование реализованных товаров (работ, услуг)</comment>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d6118179-7fab-4dd8-ba78-e29b4f0c642f">
+    <name>Покупатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9ece3b36-d1c8-4358-8536-1d0d0e422ff7">
+    <name>СтавкаАкциза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка акциза</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтавкиАкциза</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51f1ce96-6102-469a-a968-021e8ceffdd8">
+  <producedTypes>
+    <selectionType typeId="f7725ec7-0c7a-47d9-913b-f746fd752db9" valueTypeId="4ae3cbc0-19b3-4113-bd34-cce903538018"/>
+    <listType typeId="6166b34c-ef5a-40b4-92d3-2184ed88225c" valueTypeId="ecf35af3-4990-4723-91e5-7567dd7ef09e"/>
+    <managerType typeId="d880bf9e-9157-437a-8e72-dcaa96e3c4d5" valueTypeId="582cb210-ef65-4c24-8374-bcc3d1915e4b"/>
+    <recordSetType typeId="956cce2d-b0cb-4bdb-a36b-e985e9ceb5c0" valueTypeId="549a54bb-d2da-40be-8eb9-9e9ba17a1fba"/>
+    <recordKeyType typeId="33db3faf-0e02-4e2c-b54c-e00464f64e64" valueTypeId="f2e0e2da-06d8-45c2-94f2-278dbdcad780"/>
+    <recordType typeId="d3bafe85-125c-4e80-8abb-536e033ace3f" valueTypeId="06ec6c83-bd61-4d54-91c3-f82330f0fa9d"/>
+    <recordManagerType typeId="f1472a29-b099-453a-a435-e6ef57232511" valueTypeId="d9f41a58-1d0e-48e4-9725-3332ca4b0275"/>
+  </producedTypes>
+  <name>УдалитьОбъектыДоступаДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) объекты доступа документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="66e1ab71-5cb9-4450-a48a-dc56ae94d5e2">
+    <name>ДокументСсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ ссылка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ИсполнительныйЛист</types>
+      <types>DocumentRef.СОВозвратОтчислений</types>
+      <types>DocumentRef.РегистрацияПрочихДоходовВЦеляхНалогообложения</types>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+      <types>DocumentRef.ОПВПеречислениеВФонды</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ИнвентаризацияТоваровНаСкладе</types>
+      <types>DocumentRef.ТребованиеНакладная</types>
+      <types>DocumentRef.ОтражениеЗарплатыВРеглУчете</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>DocumentRef.РасчетУдержанийРаботниковОрганизаций</types>
+      <types>DocumentRef.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций</types>
+      <types>DocumentRef.ИнвентаризацияДенежныхСредств</types>
+      <types>DocumentRef.СчетНаОплатуПокупателю</types>
+      <types>DocumentRef.ВозвратЗарплатыРаботниковОрганизаций</types>
+      <types>DocumentRef.УвольнениеИзОрганизаций</types>
+      <types>DocumentRef.ОтчетПроизводстваЗаСмену</types>
+      <types>DocumentRef.ОприходованиеТоваров</types>
+      <types>DocumentRef.КомплектацияНоменклатуры</types>
+      <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      <types>DocumentRef.РасчетПениОПВиСО</types>
+      <types>DocumentRef.НачислениеЗарплатыРаботникамОрганизаций</types>
+      <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+      <types>DocumentRef.РасчетСНиСО</types>
+      <types>DocumentRef.АвизоПрочее</types>
+      <types>DocumentRef.РасчетНалоговПриПоступленииАктивовУслуг</types>
+      <types>DocumentRef.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций</types>
+      <types>DocumentRef.РегистрацияРазовыхУдержанийРаботниковОрганизаций</types>
+      <types>DocumentRef.ОПВВозвратВзносов</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ПриемНаРаботуВОрганизацию</types>
+      <types>DocumentRef.УдержаниеИПНиОПВНУ</types>
+      <types>DocumentRef.ПеремещениеТоваров</types>
+      <types>DocumentRef.СписаниеОС</types>
+      <types>DocumentRef.ВводНачальныхОстатковПоЗарплате</types>
+      <types>DocumentRef.СОПеречислениеВФонды</types>
+      <types>DocumentRef.СписаниеТоваров</types>
+      <types>DocumentRef.КадровоеПеремещениеОрганизаций</types>
+      <types>DocumentRef.ПоступлениеИзПереработки</types>
+      <types>DocumentRef.ЗарплатаКВыплатеОрганизаций</types>
+      <types>DocumentRef.РегистрацияНДСЗаНерезидента</types>
+      <types>DocumentRef.ПередачаТоваров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="44b9a232-20a0-4470-9ea3-e7dbcb11d7d3">
+    <name>ВидОбъектаДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид объекта доступа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УдалитьВидыОбъектовДоступа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b8d15e10-ae6f-4c67-853e-7d6e7e58b2ab">
+    <name>ОбъектДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект доступа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.Кассы</types>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

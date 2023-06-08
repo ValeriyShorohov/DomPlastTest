@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="543b27d6-0a60-4d4e-a610-0a8bc1898946">
+  <producedTypes>
+    <selectionType typeId="718d48a3-3dc4-491b-9f67-176522893ff7" valueTypeId="9cd24c2d-7692-430d-bb42-a8f8ccb2a540"/>
+    <listType typeId="4040e92b-8cd1-4565-b460-560b683553cc" valueTypeId="e5276617-8de0-4be5-bee1-4cc1110a0aed"/>
+    <managerType typeId="53283e28-6e1f-45fc-8b5c-0b03c678e787" valueTypeId="4886809d-6534-47ed-a63c-1fc0f3976c55"/>
+    <recordSetType typeId="4025b259-2577-4a42-9638-585b7961c891" valueTypeId="63058ad8-2cba-4b34-a999-f8a95f8a17ec"/>
+    <recordKeyType typeId="bdc987b7-c901-4a72-bc93-47d517ba791e" valueTypeId="59158ee7-474a-46be-97e0-c1b8da6efbff"/>
+    <recordType typeId="b7e172de-dd8e-409d-8f8f-8fa49ee65ab6" valueTypeId="51dee0df-0a03-4521-8b93-583f2ed443ab"/>
+    <recordManagerType typeId="72e2d9a4-1787-47de-8938-5a93b16e0cd2" valueTypeId="7779d272-fd9e-4707-a0d7-53ccf65a3dcc"/>
+  </producedTypes>
+  <name>СведенияОПенсионномОбеспеченииФизЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о пенсионном обеспечении физ. лиц</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СведенияОПенсионномОбеспеченииФизЛиц.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияОПенсионномОбеспеченииФизЛиц.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сведения о пенсионном обеспечении физического лица</value>
+  </recordPresentation>
+  <resources uuid="2db3a2cb-dffd-44a3-9a3a-ed96c80a4502">
+    <name>ПенсионныйФонд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пенсионный фонд</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b4f884b5-17e4-4a38-83b0-720680e4bb4c">
+    <name>Пенсионер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пенсионер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ec9a7d35-cde1-4b05-8370-e8654fb5e5eb">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ. лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b7c1ee47-fb9a-4a5e-ad71-8635a5a7ad2a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="17c50f10-4beb-4ee0-b2f5-4b37c4230f96">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f92fe92f-3fdc-43e8-9943-92ce66e9ba3c">
+    <name>РедактированиеИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование истории</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

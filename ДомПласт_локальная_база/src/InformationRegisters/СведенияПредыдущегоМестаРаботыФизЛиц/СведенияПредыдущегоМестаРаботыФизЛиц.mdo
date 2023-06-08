@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6bae88e-9c7b-461b-93a9-e80de9d03a70">
+  <producedTypes>
+    <selectionType typeId="bf8decf5-0ca6-4bcd-8c63-208cc9ae3717" valueTypeId="5fc74a94-98c4-41ec-8fc7-b39fda577c13"/>
+    <listType typeId="6c6aab41-0b81-4180-9d3e-094705f03099" valueTypeId="3d5689cf-eb3e-4b74-bf96-bb7485c2fae6"/>
+    <managerType typeId="c3295bcd-a31e-4e57-a152-c7279302febe" valueTypeId="e14e7554-f2c3-4a1a-9675-8b0362542b61"/>
+    <recordSetType typeId="1d485861-8059-447e-ba09-4665b650df55" valueTypeId="4ca0efc1-8035-4f42-b964-31ca7d8289a5"/>
+    <recordKeyType typeId="0332429c-3224-424e-be6f-2e76c127de1e" valueTypeId="10ba16a5-b134-4a8b-ae12-98662284b832"/>
+    <recordType typeId="b0423522-a07d-4c2c-ae11-fe0004a89a5c" valueTypeId="b5556a26-96ee-4ff7-a973-fb562fde3962"/>
+    <recordManagerType typeId="36c28858-e414-4628-ad29-d2e80adc006c" valueTypeId="b58b3939-db4b-4302-b57e-ebac1c2f3b42"/>
+  </producedTypes>
+  <name>СведенияПредыдущегоМестаРаботыФизЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о доходах от другого работодателя физ. лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.СведенияПредыдущегоМестаРаботыФизЛиц.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияПредыдущегоМестаРаботыФизЛиц.Form.ФормаСписка</defaultListForm>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сведения о доходах от другого работодателя физ. лица</value>
+  </recordPresentation>
+  <resources uuid="90abb7f1-9fa7-463f-83d9-01465b4d39aa">
+    <name>Доход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="55dc3bbf-1386-4a8f-9381-0de5d277c1c8">
+    <name>ДоходНеОблагаемыйИПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доход не облагаемый ИПН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="520718c3-122e-43e8-9c93-799e88326413">
+    <name>ДоходОблагаемыйСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доход облагаемый СН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d6272528-3355-4c3b-b188-8462452e0093">
+    <name>ПримененнаяЛьгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примененная льгота</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9f8d765c-a962-4591-9793-bace96a47d1a">
+    <name>ПримененныйВычет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примененный вычет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c97e3ec6-0b23-4af9-9986-5c1a87a35b20">
+    <name>ОПВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОПВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3347f14d-a97e-4d15-99ad-480a05558817">
+    <name>ИПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИПН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a67e17b4-2aed-4704-85cb-a648adf0d0ce">
+    <name>СН</name>
+    <synonym>
+      <key>ru</key>
+      <value>СН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b21badde-0860-4682-9b59-4cb11d17987c">
+    <name>СО</name>
+    <synonym>
+      <key>ru</key>
+      <value>СО</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="efec636d-5167-42e3-aee6-cb3ff2eda5e1">
+    <name>ВОСМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взносы ОСМС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4f0876f3-819b-4d2d-a2a6-dd6633ab66d8">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ. лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f297e835-46ef-4ad8-8231-65c362c4df38">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="73cbdc8b-0e5b-4e1e-948a-7416e6669bc8">
+    <name>МесяцНалоговогоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц налогового периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d843a234-59b6-416a-8b07-ba9253b963cf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b1bc8283-045d-49db-9e5e-3c8154421432">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

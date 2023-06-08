@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb2c4ac1-c34e-469b-9c96-605695733b5e">
+  <name>КонтрольНеразделенныхОбъектовПриЗаписиБК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных объектов при записи БК</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.АдресныеСокращения</types>
+    <types>CatalogObject.ВидыУчетаНУ</types>
+    <types>ConstantValueManager.СНТВнешнийМодульОбменаДанными</types>
+    <types>ConstantValueManager.ЭСФИспользоватьВнешнийМодульОбменаДанными</types>
+    <types>CatalogObject.ГруппыНалоговогоУчетаФА</types>
+    <types>ConstantValueManager.УдалитьНомерВерсииКонфигурации</types>
+    <types>ConstantValueManager.СНТИспользоватьВнешнийМодульОбменаДанными</types>
+    <types>CatalogObject.РегламентированныеОтчеты</types>
+    <types>ConstantValueManager.ЭСФВнешнийМодульОбменаДанными</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</handler>
+</mdclass:EventSubscription>

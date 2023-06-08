@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4cdf1e0-3ba4-44ed-a69b-e548eedca4dd">
+  <producedTypes>
+    <selectionType typeId="f768bf84-73fd-47b9-bc4d-b0541dea9b81" valueTypeId="853c2fa9-cac0-4657-bc5f-4612bf6b78ea"/>
+    <listType typeId="d0999d52-dfd2-453b-bece-7ad06459bb3e" valueTypeId="040b7cf3-d199-4c4f-8fa9-4e4247b355f2"/>
+    <managerType typeId="81e46278-e2e0-4ba6-b2fb-91da7c3315e3" valueTypeId="e96edc98-3bc1-482f-9ccf-33c0b351bd5f"/>
+    <recordSetType typeId="dcff7c0a-8c43-44bc-96d5-60bed4f69d31" valueTypeId="a5131d02-7bfc-499d-9363-92c0a31ed1b5"/>
+    <recordKeyType typeId="3c2d58dd-5b28-4bbe-baaf-5922ef739896" valueTypeId="5cc19449-e402-4ed4-afff-ef912d08464b"/>
+    <recordType typeId="4c3908a0-cab5-435a-90e9-f27a5d5866c4" valueTypeId="47cec5eb-ea9f-4b9d-935f-a5f9342db738"/>
+    <recordManagerType typeId="103b85d9-b833-4b43-ba32-ef8c76c97c7c" valueTypeId="4b72bae4-89d1-4970-9ae5-663bd122b092"/>
+  </producedTypes>
+  <name>УдалитьКоллизииПриОбмене</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить коллизии при обмене</value>
+  </synonym>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Коллизия при обмене</value>
+  </recordPresentation>
+  <resources uuid="544aa9bb-71e5-4ae3-a82c-f2bb9e8c9ff9">
+    <name>ЗначениеВИнформационнойБазеДоКоллизии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение до коллизии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f31b5a72-99f1-4534-8f3e-e7f712942edb">
+    <name>ЗначениеДляЗаменыПриОбмене</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение для замены при обмене</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d1150e94-153a-4e5e-a239-8ecd522ec755">
+    <name>ПриоритетОбъектовОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет объектов обмена</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПриоритетОбъектовОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="fda9e0ea-8092-4a71-b56d-18bdc15755fc">
+    <name>РезультатРассмотренияКоллизии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат рассмотрения коллизии</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РезультатРассмотренияКоллизии</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="14eb361b-c554-4965-b7c7-762f81466ce5">
+    <name>КоллизияРассмотрена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коллизия рассмотрена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4b0fba69-5bcd-4612-86b6-b926b6fc7593">
+    <name>СсылкаНаОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на объект</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>AnyRef</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c002f721-720e-4031-9e52-951f1b9d000c">
+    <name>УзелОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел обмена</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d5b1bc72-b412-4b67-99a1-15e1b99d4648">
+    <name>ДатаКоллизии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата коллизии</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

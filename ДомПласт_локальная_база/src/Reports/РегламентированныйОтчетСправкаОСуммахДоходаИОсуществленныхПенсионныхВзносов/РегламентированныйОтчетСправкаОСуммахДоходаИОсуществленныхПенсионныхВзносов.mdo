@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="339df89b-8dd7-44e4-9268-41c1dcc24c68">
+  <producedTypes>
+    <objectType typeId="09df6e46-bb1a-47e9-965a-cbd739450d93" valueTypeId="df03ddc7-7958-4c51-9bf3-00751c79afa2"/>
+    <managerType typeId="dca3b51c-2919-422b-bfef-e04b68ebd82b" valueTypeId="da602598-7035-4aa7-a2bb-f5dea542d9e3"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетСправкаОСуммахДоходаИОсуществленныхПенсионныхВзносов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справка о суммах дохода и осуществленных пенсионных взносов (до 2022 года)</value>
+  </synonym>
+  <comment>БК3.0_v2016_003</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетСправкаОСуммахДоходаИОсуществленныхПенсионныхВзносов.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="bde7f265-6e18-4d0c-913c-9f3bf6b5e8ec">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9a51419d-865c-4b47-883b-e2d7455d548a">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="23686082-7104-418b-a7d4-d29a4ed319f5">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1e30599f-873b-4bd0-9c42-8b6e68d7b00a">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cdab3716-5638-4e54-98da-4ebc96bdb0cb">
+    <name>ВзносыПоПериодуИсчисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взносы по периоду исчисления</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="569973ba-43fc-437f-8c62-2387a494ce01">
+    <name>ПоказыватьЗаголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать заголовок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ee13a8c9-8a7c-478a-b83d-1038757a9323">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о суммах дохода и осуществленных обязат.пенс.взносов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="19296be5-d9f2-455f-b175-2472c731b1b4">
+    <name>ФормаОтчета2014Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о суммах дохода и осуществленных пенсионных взносов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f9e85b02-8646-41db-a695-ac7f1f6de8a6">
+    <name>ФормаОтчета2015Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о суммах дохода и осуществленных пенсионных взносов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9a066035-4f06-408b-a5f5-9393bb59ad9a">
+    <name>ФормаОтчета2016Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о суммах дохода и осуществленных пенсионных взносов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fb82bb32-11ce-4ed9-ba69-c9ba62f9f44b">
+    <name>ФормаОтчета2018Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о суммах дохода и осуществленных пенсионных взносов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0267652d-eb10-41d2-8135-1b6103d8e8bf">
+    <name>ФормаОтчета2021Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о суммах дохода и осуществленных пенсионных взносов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="18a9ef52-f44e-4564-aefd-aa0806633b94">
+    <name>МакетФормаОтчета2010Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2010 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="bc1cb398-0df4-4fad-b2ac-73cd98cad0c3">
+    <name>МакетФормаОтчета2014Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2014 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="c8874eb0-f4c2-4d6c-b072-6124617a6c76">
+    <name>МакетФормаОтчета2015Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2015 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="55fad76f-79e3-4b16-a832-d4261b1abb6c">
+    <name>МакетФормаОтчета2016Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2016 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="778d8376-fb16-4397-b866-b7a229bd3b4e">
+    <name>МакетФормаОтчета2018Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2018 кв3</value>
+    </synonym>
+  </templates>
+  <templates uuid="3fa0adf9-858c-4574-a542-4e637a31d030">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="8b379ed9-6d2f-469d-ac79-c1fc61f3a2a4">
+    <name>ПередачаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача данных</value>
+    </synonym>
+  </templates>
+  <templates uuid="a35a9374-cd3c-4a27-84c9-80612e862c6b">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b347b1b-d73b-44d7-ab9c-81fc72b38da7">
+    <name>МакетФормаОтчета2021Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2021 кв1</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a744fe91-1f35-4aa3-acc5-607068512f18">
+  <producedTypes>
+    <selectionType typeId="bb7757b0-2b31-4c2e-9b88-23565a77da39" valueTypeId="f1e98382-597b-47ae-b0cd-7939a854ee8c"/>
+    <listType typeId="5aa318af-2607-4cd7-b283-0f5d284047b7" valueTypeId="33da67fd-925a-4658-baa2-578779ac2f54"/>
+    <managerType typeId="8c4fcbbd-7305-4cf3-94a2-a37b9ec04225" valueTypeId="11c27417-e9ca-472f-8c28-5c3401497cc4"/>
+    <recordSetType typeId="eba9013f-384f-49a1-9391-eaab650a6cee" valueTypeId="2f6821b9-de32-4d5f-ab93-484ae8b7d564"/>
+    <recordKeyType typeId="bbcbc955-e33e-4d36-8868-fa71b83a371d" valueTypeId="79be7cb0-34c6-4f80-8596-c1b46ce1d79b"/>
+    <recordType typeId="1ce3e826-7373-420e-8d2e-e1e9de22131a" valueTypeId="e5be7fd4-b2cc-4ce6-9176-e91ed0a05ed6"/>
+    <recordManagerType typeId="862b0cfc-8e76-4c47-8bf7-2dd288b6e393" valueTypeId="859984e3-df6c-4106-a635-472c675ceccd"/>
+  </producedTypes>
+  <name>СостоянияОСОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния ОС организаций</value>
+  </synonym>
+  <comment>Регистр, который показывает изменение состояний основных по бух. учету ОС. Данные вносятся только документами. По этому регистру ведется анализ даты принятия к учету, ввода в эксплуатацию, выбытия.</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.СостоянияОСОрганизаций.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="299b15a7-83a4-468c-9876-02bf059f70b9">
+    <name>ДатаСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата состояния</value>
+    </synonym>
+    <comment>Дата установки состояния</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="90d17a49-cfd8-44e5-a63b-89ee061ba2ae">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСостоянийОС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3e30644b-ce0f-4ac9-8918-24f3b7bd002d">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e5d47f41-02b2-4cdd-8a5d-346a7f511a89">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="06d835c0-42e9-4429-accf-9f628753dc08">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bfad7918-ad61-46bd-9d1c-35d205ef25eb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

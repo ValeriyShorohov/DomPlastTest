@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4eef5f73-54f8-499d-a0cf-ab275397de76">
+  <producedTypes>
+    <objectType typeId="4d0eed9f-e19d-4529-8011-cc8873a86c06" valueTypeId="484468ec-a41c-408d-874b-18c182370669"/>
+    <managerType typeId="94c84eb8-38b8-4cb2-97fd-fc4354f006b4" valueTypeId="3c61dc1c-d7fb-4229-a746-3132dfe0176a"/>
+  </producedTypes>
+  <name>УдалитьКонсольОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Консоль отчетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УдалитьКонсольОтчетов.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="a0c16386-c64c-4eff-a651-745b4485f249">
+    <name>ПостроительОтчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Построитель отчетов</value>
+    </synonym>
+    <type>
+      <types>ReportBuilder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="27eb495e-010d-4acb-ad2a-c86da9293d3e">
+    <name>ВыбТипДиаграммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выб тип диаграммы</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f32d74ff-5e46-4f90-a48d-96b6d1a33faa">
+    <name>ДеревоЗапросов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дерево запросов</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2d521f44-52d9-48ef-b590-68e176da6433">
+    <name>ВыбТипСводДиаграммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выб тип свод диаграммы</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="4464d69d-7ba6-48fb-ae4f-6e8eb86482b5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="93261e71-8947-494e-a6bc-76c0fe685da3">
+    <name>МакетЗаголовка</name>
+    <synonym>
+      <key>ru</key>
+      <value>МакетЗаголовка</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

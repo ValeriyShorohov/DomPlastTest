@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f62bf3db-522b-4536-a6ad-aa21f239950a">
+  <producedTypes>
+    <objectType typeId="d1738f44-bf67-4654-8613-896dbf28e0b3" valueTypeId="76d398e1-c5b2-496f-aea9-cc6db560eee3"/>
+    <managerType typeId="7fcf8023-e90a-4b21-8a20-e5b9da487886" valueTypeId="0d1a2ec0-1223-4189-af01-ce69142f5e7b"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетБалансМСФО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентированный отчет Баланс (МСФО)</value>
+  </synonym>
+  <comment>Регламентированный отчет баланс МСФО</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетБалансМСФО.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="3082a6ae-f931-44b0-9d73-82590b5b641a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ea786b15-1e6f-4fa4-ad4a-5d1e79d51911">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6e9739d6-6514-4601-b9f0-bee51278e8aa">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d3c5b437-a8b6-45ee-8194-ebebb32a428e">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="df2937f0-43a9-4605-a96f-c0229c68a97e">
+    <name>ПредставлениеСпискаСтруктурныхЕдиниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка структурных единиц</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c5b5f7b2-d029-4aa2-a591-e51a14888730">
+    <name>ПоказыватьЗаголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать заголовок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9f5ec419-8bbd-4aaa-9817-5ad37164aa4b">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерский баланс</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2959f96a-f4db-49cd-afb5-08d82193e556">
+    <name>ФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баланс (НСФО)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b6db085e-0e0b-4373-8058-c51b2852232d">
+    <name>ФормаОтчета2016Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баланс (МСФО)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7cc52aba-9238-4270-b88a-b5be6c5aafb6">
+    <name>ФормаОтчета2017Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баланс (МСФО)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9fc452ad-30a7-467c-90e0-c41df5506529">
+    <name>ФормаОтчета2018Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баланс (МСФО)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="35a2b47c-17b9-4d13-9e52-4c25f9ae12d0">
+    <name>ФормаОтчета2021Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баланс (МСФО)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a46e4a77-d9d6-40b5-91d5-ef2bf51ea899">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+  <templates uuid="a4f89ed0-0f51-4895-bbde-921340bc84b6">
+    <name>ПередачаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача данных</value>
+    </synonym>
+  </templates>
+  <templates uuid="40ad1ba8-c758-4db6-97fc-5b95c7610001">
+    <name>ОтражениеВУчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение в учете</value>
+    </synonym>
+  </templates>
+  <templates uuid="165e0e87-4199-4d9c-be40-f42f5cdbd712">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>kk</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="1822470d-63e4-472b-8fcb-f7aef9f5d1c0">
+    <name>МакетФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2013 кв1</value>
+    </synonym>
+    <synonym>
+      <key>kk</key>
+      <value>Макет форма отчета2013 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="02b5547c-bf3c-48db-82db-2a0a9a62a2ee">
+    <name>МакетФормаОтчета2016Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2016 кв1</value>
+    </synonym>
+    <synonym>
+      <key>kk</key>
+      <value>Макет форма отчета2016 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="2292fcb2-409e-44ae-8ecb-8edff60ca008">
+    <name>МакетФормаОтчета2017Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2017 кв1</value>
+    </synonym>
+    <synonym>
+      <key>kk</key>
+      <value>Макет форма отчета2017 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="a7dddf52-f5de-49e4-a29d-895ee7cc45ec">
+    <name>МакетФормаОтчета2018Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2018 кв1</value>
+    </synonym>
+    <synonym>
+      <key>kk</key>
+      <value>Макет форма отчета2018 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="ff14829a-daf3-4df5-a15f-62beac25ab7e">
+    <name>МакетФормаОтчета2021Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2021 кв1</value>
+    </synonym>
+    <synonym>
+      <key>kk</key>
+      <value>Макет форма отчета2021 кв1</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Report.СправкаРасчетКалькуляцияСебестоимости.Command.СправкаРасчетКалькуляцияСебестоимости</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.СправкаРасчетРаспределенияКосвенныхРасходов.Command.СправкаРасчетРаспределенияКосвенныхРасходов</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.СправкаРасчетСебестоимостиПродукцииИУслуг.Command.СправкаРасчетСебестоимостиПродукцииИУслуг</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>ActionsPanelReports</group>
+      <commands>CommonCommand.ДополнительныеОтчетыПроизводство</commands>
+      <commands>Report.СправкаРасчетКалькуляцияСебестоимости.StandardCommand.Open</commands>
+      <commands>Report.СправкаРасчетРаспределенияКосвенныхРасходов.StandardCommand.Open</commands>
+      <commands>Report.СправкаРасчетСебестоимостиПродукцииИУслуг.StandardCommand.Open</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.Производство.Subsystem.ЖурналДокументовПоПроизводству</subsystems>
+    <subsystems>Subsystem.Производство.Subsystem.ВыпускПродукции</subsystems>
+    <subsystems>Subsystem.Производство.Subsystem.ПередачаВПереработку</subsystems>
+    <subsystems>Subsystem.Производство.Subsystem.Переработка</subsystems>
+    <subsystems>Subsystem.Производство.Subsystem.СправочникиИНастройки</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

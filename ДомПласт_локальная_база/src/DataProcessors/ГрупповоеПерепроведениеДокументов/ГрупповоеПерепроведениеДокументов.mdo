@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6643852-2b29-4280-8c85-43901fdbd7d9">
+  <producedTypes>
+    <objectType typeId="08edbdf2-69e8-4988-bf59-9c7c1dcce7ca" valueTypeId="4bd94da1-fb24-4aa2-b6bc-657512e300f5"/>
+    <managerType typeId="02b7722c-fd0e-4ca5-a779-f8e1f8c41908" valueTypeId="a7c5bf6d-1ac2-482d-9e39-9e381ff752ed"/>
+  </producedTypes>
+  <name>ГрупповоеПерепроведениеДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Групповое перепроведение документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ГрупповоеПерепроведениеДокументов.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="486f25df-c05f-41a8-829e-9e03cec65e1f">
+    <name>ОстанавливатьсяПоОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Останавливаться по ошибке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a290213d-42b0-4531-af63-b374ea8d387c">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1ebd9e0e-ba90-47fe-9a37-b2e470a621a5">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="e6570bf5-252d-471c-84f3-7bc8120c0778">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

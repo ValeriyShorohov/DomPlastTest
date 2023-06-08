@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2cf06e7-f85c-43d1-8904-73464bf7649e">
+  <producedTypes>
+    <objectType typeId="2b3edfc7-8e2b-4378-b45c-2422f5b48ab2" valueTypeId="634c9203-e204-4290-933d-baf583222685"/>
+    <refType typeId="9a4dfa74-9b0a-4ba5-bca9-0857c261225c" valueTypeId="f7e770cd-e696-42ca-8957-6009a28e0664"/>
+    <selectionType typeId="3e1e8bae-864d-4c06-a779-1f2c81ebdd6a" valueTypeId="351780c3-3e68-4e9d-bc6b-4cbf831b50a1"/>
+    <listType typeId="b2be891f-147f-445a-a094-2edc6aab737a" valueTypeId="3bc15dd1-5754-40e9-978d-f20e82a6b708"/>
+    <managerType typeId="cc1bb72e-e616-4b02-abfa-81cb11af5794" valueTypeId="73ad6a91-f60d-42bf-b5fc-090c1c844985"/>
+  </producedTypes>
+  <name>ДокументыУдостоверяющиеЛичность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы удостоверяющие личность</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДокументыУдостоверяющиеЛичность.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Документ удостоверяющий личность</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ДокументыУдостоверяющиеЛичность.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ДокументыУдостоверяющиеЛичность.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ДокументыУдостоверяющиеЛичность.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="b986ce35-cc6d-4af0-8967-d594ee61d191">
+    <name>КодВидаДокументаВНалоговойОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код вида документа в налоговой отчетности</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="642485b0-b4f9-4386-a840-36cdb190ac75">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8c24f604-3f98-4680-9cd0-1d9afaa76dab">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="26a20c5b-487a-47f9-b258-f365ca054f4a">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="523b131b-ca7f-4d38-9e86-ae6c30bde99a">
+    <name>ФормаПодбораИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора из классификатора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8585ef53-9acc-4744-8f2e-e27c21980f86">
+    <name>КлассификаторВидовДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор видов документов</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

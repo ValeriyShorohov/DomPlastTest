@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ddc27b1-24fe-4e3a-af37-3551549c16e0">
+  <producedTypes>
+    <selectionType typeId="298e5055-9c1e-4bd8-937e-11fe2108b57e" valueTypeId="c5a2030b-a067-4a20-972e-1120b02b3490"/>
+    <listType typeId="c7cdca44-c987-4873-a7be-5afdfcbd7b8a" valueTypeId="f6ef469a-3454-4acf-b4fc-0ecdb02d8382"/>
+    <managerType typeId="039f2f7b-1f0d-4e6f-a431-ac685e18d2f8" valueTypeId="549f1fe8-672b-42a6-8b25-18ad86b58a7c"/>
+    <recordSetType typeId="f832fc9e-9a30-4ec1-9931-4f80b7e137bc" valueTypeId="972c7738-6835-45bd-9e0f-1760c113013f"/>
+    <recordKeyType typeId="0699050e-e151-4a7e-a3cb-49c893dc9878" valueTypeId="11687c4c-5676-43ff-a7f7-38a9040c0fad"/>
+    <recordType typeId="17b7f70d-ae8b-4529-9c9c-f7b4765a1f92" valueTypeId="1c82c545-b888-4cf5-a5ab-a63c7ed7634d"/>
+    <recordManagerType typeId="98713dfa-3e04-4b11-b90a-b589d3eecefc" valueTypeId="19aaee9a-8e6b-4879-bfee-63c69e2ff7ad"/>
+  </producedTypes>
+  <name>ОбъектыИмущественногоНалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты имущественного налога</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.ОбъектыИмущественногоНалога.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="821231e5-b3ae-4842-aaca-0847657763b5">
+    <name>НачислятьНалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислять налог</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e16a6fd5-c612-4eea-9110-6adc0a7c3bc9">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="a6004e0d-ff73-47b2-a2ff-a31aae54a5bc">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="0c80c831-b278-41fe-ba49-06fe1d8c5332">
+    <name>ОбъектНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект налогообложения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+      <types>CatalogRef.БиологическиеАктивы</types>
+      <types>CatalogRef.ОбъектыСтроительства</types>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4f817d5d-7476-4f63-9ffb-0539ef278cfd">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <forms uuid="6fe477d9-128e-4a50-ac1c-fce74f7f8b82">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

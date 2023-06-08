@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3d98593-fd50-4b79-bed6-98137887ee9d">
+  <producedTypes>
+    <selectionType typeId="a0234959-930f-40d7-a1e6-d043793fd9d1" valueTypeId="61969827-9f2e-445f-96c3-2fe65b62e493"/>
+    <listType typeId="8dfc1ddf-6416-4a2a-b7ce-04ffc2a181f0" valueTypeId="ae2f9f49-5eee-483e-82d5-aacdc82f00ee"/>
+    <managerType typeId="3ee413c4-3435-4d47-be93-6cbff8a97a6c" valueTypeId="533522ce-9476-4596-ab0d-7ec867b64077"/>
+    <recordSetType typeId="ba59be64-c6a5-4844-86aa-7999c3fe45d5" valueTypeId="d3307215-f442-4089-b6b6-06ebfa74aaab"/>
+    <recordKeyType typeId="c42a7524-48bc-4251-8d0d-510781cdc541" valueTypeId="fef01ca0-0e73-4fad-820a-ca5b46de70c7"/>
+    <recordType typeId="91a49a3b-a753-48dd-b42d-51db6faf089a" valueTypeId="aeacf7dc-1c61-4e25-952c-25dafb40f7f9"/>
+    <recordManagerType typeId="16996ccf-7f43-4f86-bcd4-16b38555d7f0" valueTypeId="956351de-85e1-455d-96f2-413b5f3a52a4"/>
+  </producedTypes>
+  <name>ФИОФизЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фамилия, имя, отчество физ. лиц</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ФИОФизЛиц.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ФИОФизЛиц.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Фамилия, имя, отчество физ. лица</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Фамилия, имя, отчество физ. лица</value>
+  </extendedRecordPresentation>
+  <resources uuid="5a2f1f14-0672-440d-9a33-1385e9a6154a">
+    <name>Фамилия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фамилия</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7b757439-8e20-4367-a130-cbf2a478118e">
+    <name>Имя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a9626696-57bd-4182-9c54-125045a9bc60">
+    <name>Отчество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчество</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9911e306-4d95-4c55-af2a-bd9663df8689">
+    <name>НеСклонятьФамилию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не склонять фамилию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="aad68f57-e1b5-44a5-b719-30dbd22d9174">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ. лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7d59f2a9-2cf6-4074-b757-b5697066076a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75d4e7a3-c6e1-4cb5-a991-60bdaa6ea240">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ed62b687-2fc6-4ece-a5ea-86303941f11c">
+    <name>РедактированиеИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование истории</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

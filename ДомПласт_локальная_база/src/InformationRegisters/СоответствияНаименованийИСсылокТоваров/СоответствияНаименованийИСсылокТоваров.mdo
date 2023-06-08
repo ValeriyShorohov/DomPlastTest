@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bf65862-e92f-4e3f-9d08-e9fb7531c055">
+  <producedTypes>
+    <selectionType typeId="1de2e8fc-ad2b-4ce4-8e0d-4f3d20f0a97d" valueTypeId="dd48ad1d-a5ea-4e5a-8347-18d204fef170"/>
+    <listType typeId="d20fc68e-b970-4336-bafa-8b05f78f0ed0" valueTypeId="1fa03dfc-1e67-44a7-9f45-dbb2bafa4d5b"/>
+    <managerType typeId="51aef751-213a-4990-9d89-f022a768e632" valueTypeId="d78e847b-a7bb-48d9-8817-1fbe60ed13c8"/>
+    <recordSetType typeId="7a132710-f4e5-4c05-ad90-656c1054186d" valueTypeId="30d0daf7-1c9c-4249-b691-23b00acd310f"/>
+    <recordKeyType typeId="4ef7e33c-262f-4865-abf6-cc68eb2f1755" valueTypeId="f8660642-8bdb-49f5-92f5-df0a48bd8057"/>
+    <recordType typeId="1ae030f6-2ece-4418-b1b3-f2a848dcaba9" valueTypeId="25fbc626-765f-4797-b7ba-25bbd17849ae"/>
+    <recordManagerType typeId="1c8a961b-73ea-46b5-9913-c20968fa013b" valueTypeId="e0ef8e9a-4bef-42cb-8b80-b6e043d81b46"/>
+  </producedTypes>
+  <name>СоответствияНаименованийИСсылокТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствия наименований и ссылок товаров</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СоответствияНаименованийИСсылокТоваров.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СоответствияНаименованийИСсылокТоваров.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="1eb6756f-1716-4eed-954d-4287d1d30370">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар (ссылка)</value>
+    </synonym>
+    <type>
+      <types>DefinedType.НоменклатураЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="89baf28b-cfb7-4ae9-94bc-a5382b88ba65">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонтрагентЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="030f1934-4950-4663-af94-0e4b782f4420">
+    <name>ТоварНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар (наименование)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>400</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="40273f03-b475-4b31-aaee-5cb1b77bc1f3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="07a5a282-75b6-4faa-929d-7b0ab96ea0c7">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

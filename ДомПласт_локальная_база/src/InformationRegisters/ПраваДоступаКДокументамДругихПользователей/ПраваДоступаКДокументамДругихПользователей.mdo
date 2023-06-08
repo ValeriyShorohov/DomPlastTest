@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39c2bca4-bd17-42f0-bc85-f2f6aa2876ce">
+  <producedTypes>
+    <selectionType typeId="452b12dd-2aa9-4219-8d33-fee13d1af319" valueTypeId="24fc4b68-1ec8-41da-998b-3e9a0155c79d"/>
+    <listType typeId="83044e75-f94a-4d92-921a-2a8292a56ff1" valueTypeId="a0c28db9-9b43-4fba-995e-f67d8298df4f"/>
+    <managerType typeId="fa8e6ba9-5517-4c4c-b946-27dc2d404ac2" valueTypeId="332262b5-5287-4313-9017-856566edc13e"/>
+    <recordSetType typeId="3007db77-2b6e-46dd-8232-c4c806d421b3" valueTypeId="6536bff2-a459-4cf4-99a3-ec7333a98d4b"/>
+    <recordKeyType typeId="3034af96-26b4-441e-ab66-be7d8284ba66" valueTypeId="5d0d0816-7900-4e4a-ad30-206b387e8bd4"/>
+    <recordType typeId="3eb43333-5546-4894-968a-f52f0005ca0b" valueTypeId="6c1b9c9a-8129-46f4-bcf5-27470efff88b"/>
+    <recordManagerType typeId="7acfeb24-19cb-4474-ad36-17bd377ea537" valueTypeId="3c7c862f-4690-43d1-bb57-5b3c58213d02"/>
+  </producedTypes>
+  <name>ПраваДоступаКДокументамДругихПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Права доступа к документам других пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ПраваДоступаКДокументамДругихПользователей.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПраваДоступаКДокументамДругихПользователей.Form.ФормаСписка</defaultListForm>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Право доступа к документам других пользователей</value>
+  </recordPresentation>
+  <dimensions uuid="eb29a35d-8cf5-4ad9-b8cd-a31f62c5ab1d">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="02c0c053-d717-4641-aad5-7e0aefcb408c">
+    <name>ОбъектДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект доступа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ГруппыПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="235398f3-112a-44a6-b2e5-9cac2b06b780">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8a8eb7e2-fe3d-486c-9a6a-f26fe8b0764f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

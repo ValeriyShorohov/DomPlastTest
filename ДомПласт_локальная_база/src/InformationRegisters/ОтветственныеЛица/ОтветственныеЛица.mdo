@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="435d3a8f-9df5-4c13-9166-15068a7107f9">
+  <producedTypes>
+    <selectionType typeId="da665796-df43-44f6-84d9-649368256147" valueTypeId="0d3cab46-a0ef-435a-97ca-f5dd38e8dfcb"/>
+    <listType typeId="e7117d89-8f95-4fd2-ab7a-bb5cbbfb4b86" valueTypeId="72f39c6b-bffd-41d7-9c3f-23d62d4205cd"/>
+    <managerType typeId="397ef79b-f754-4bd3-81c0-8367cfd9ec43" valueTypeId="72738cd3-4f1c-4f0a-9e44-b3075f222308"/>
+    <recordSetType typeId="a4e59807-bc2c-4b2a-a041-5b71568012a0" valueTypeId="35bf45c8-ee1e-42b5-ae80-44b894f88015"/>
+    <recordKeyType typeId="c0c6519e-a521-41d2-b0dd-67efb46b93fb" valueTypeId="3abfaf02-532e-4629-be76-a7ffe4dbf127"/>
+    <recordType typeId="9816a102-2708-4676-ab20-888ccc04139e" valueTypeId="0b452cf5-0a5b-4115-83b0-76328cb4c924"/>
+    <recordManagerType typeId="681709b6-35b3-46e4-97a8-b9c57e03cfbc" valueTypeId="65df610b-dd6b-408d-b5ba-55ad644f8506"/>
+  </producedTypes>
+  <name>ОтветственныеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответственные лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ОтветственныеЛица.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОтветственныеЛица.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Ответственное лицо</value>
+  </recordPresentation>
+  <resources uuid="c1caf6fd-edfb-48c0-95bd-22446eaa2650">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="86cbb737-6c55-49db-b655-3b272135dced">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="474c625b-4d1c-4d62-8635-1c7635c804e1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dbc2d81b-a388-4c5e-922b-57ce60962ed0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

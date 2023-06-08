@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46c28999-6505-4eef-ab4f-51af2e091bff">
+  <producedTypes>
+    <selectionType typeId="9fe11bfb-5c64-44de-8c3e-29ddcce1bb01" valueTypeId="1eb81144-ea4d-494a-aeff-bbe0a4976f01"/>
+    <listType typeId="be5dd289-7496-4d58-b484-3cc74b314eaf" valueTypeId="80ee10b9-12a0-4a32-b62f-0811ff37902c"/>
+    <managerType typeId="905008ac-2622-4d26-958c-76f6ebe9f43c" valueTypeId="a31fb398-eceb-489c-ac2a-a013db82b469"/>
+    <recordSetType typeId="ad07eae8-4433-458e-9d7c-d823cb2deb9a" valueTypeId="d5619ef6-1af1-4f60-8613-32cf216a8176"/>
+    <recordKeyType typeId="b6175ec2-49d4-4307-a969-90ce3be7b7be" valueTypeId="11ec0867-e460-4fec-961f-b4530458f5d1"/>
+    <recordType typeId="56b53745-aa28-4059-b1a7-138c21df4a4e" valueTypeId="dbf40d3a-cd77-4e08-b8ce-c833f2d4f3cd"/>
+    <recordManagerType typeId="960255f9-ae91-418c-84a9-a0f6c1861bfb" valueTypeId="39e992f4-c185-45e8-9bab-fe1fb6c79062"/>
+  </producedTypes>
+  <name>ПараметрыАмортизацииОСБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры амортизации ОС (бухгалтерский учет)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.ПараметрыАмортизацииОСБухгалтерскийУчет.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="4d2fa3d4-b86b-4808-ac0d-5fb4f800a042">
+    <name>СрокПолезногоИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок полезного использования, мес.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ec7bdd8d-93b6-4c23-b4a9-b7d590f945dd">
+    <name>ОбъемПродукцииРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предполагаемый объем продукции (работ) в натуральных ед.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d246b0fa-5b5f-42cb-aee8-dcfdb6b47ba0">
+    <name>СрокИспользованияДляВычисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок использования для вычисления амортизации, мес.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5eb2ee56-2ceb-4022-a280-c0a37050bdf4">
+    <name>СтоимостьДляВычисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость для вычисления амортизации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e415b66d-4174-4f62-b524-22ea3fe70a36">
+    <name>ОбъемПродукцииРаботДляВычисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем продукции (работ) для исчисления амортизации в натуральных ед.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="70cd4f9c-51c6-4025-9c44-1c63b8c115aa">
+    <name>КоэффициентАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент годовой амортизации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6da2ed11-34ec-445e-98dc-2b6ca0b47673">
+    <name>КоэффициентУскорения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент ускорения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5cde7ac4-3792-4ee6-8b72-b86ced3cc0ba">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0e88080c-6736-4217-b871-505387e30542">
+    <name>ЛиквидационнаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ликвидационная стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4125e5b8-be56-4b3b-862e-246f40527c5a">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ad7cc730-471c-4649-9b0f-0cce0e5fd06d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ecdecf9b-b5e1-42cd-bee9-22560cfdcbdb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac74fd06-0f35-47db-b59d-5ef998846c8f">
+  <producedTypes>
+    <objectType typeId="cfe9a527-ac56-4c7b-9f6e-c72e1c37ff24" valueTypeId="d21381a1-e4f3-4075-9226-7e530e4cfbe5"/>
+    <managerType typeId="9629fc9c-71d1-4175-bdef-bca83b665728" valueTypeId="4d69f678-0445-41a3-bd30-9d609e1ff041"/>
+  </producedTypes>
+  <name>ФормированиеТребованийНакладных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование требований-накладных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ФормированиеТребованийНакладных.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="ae581a88-64bb-414c-9c36-d9270f374ecf">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c8a333fa-b553-4fbf-938f-057ad1fac202">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>DataProcessor.ФормированиеТребованийНакладных.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ЯвляетсяСтруктурнымПодразделением</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+  </attributes>
+  <attributes uuid="bd70b53b-f1fd-4c2a-8e04-dc48a02eacdf">
+    <name>ОтчетПроизводстваЗаСмену</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет производства за смену</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОтчетПроизводстваЗаСмену</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>DataProcessor.ФормированиеТребованийНакладных.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.СтруктурноеПодразделение</name>
+      <field>DataProcessor.ФормированиеТребованийНакладных.Attribute.СтруктурноеПодразделение</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="6ce3a5fa-9321-4111-a62f-d3aa3e340499">
+    <name>ДатаФормирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата формирования</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="32014017-b9fb-4d0d-8724-1e5501e8673c">
+    <producedTypes>
+      <objectType typeId="dc6c7270-a66b-4202-bc71-fceb219dab90" valueTypeId="5a922d49-9e31-4c96-8fed-5d8b5c71d7b8"/>
+      <rowType typeId="5afe009b-d16e-409d-b1e2-8836c37b153e" valueTypeId="28aa3481-7fb5-45e7-b570-9ef43a47535c"/>
+    </producedTypes>
+    <name>ТребованияНакладные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требования-накладные</value>
+    </synonym>
+    <attributes uuid="e55cadf5-355f-42ce-b147-dd1dd3d1c467">
+      <name>Отметка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отметка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="41e4df2e-b9c9-4726-83fc-6b5e748bca73">
+      <name>Продукция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Продукция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="798d8512-f1be-4cef-888c-64b5b0d76768">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="528656f0-6ba7-446c-a307-78a997ed69a6">
+      <name>Спецификация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Спецификация</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СпецификацииНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ФормированиеТребованийНакладных.TabularSection.ТребованияНакладные.Attribute.Продукция</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6fae3900-06b1-4854-8d6f-b4f638d29d55">
+      <name>ТребованиеНакладная</name>
+      <synonym>
+        <key>ru</key>
+        <value>Требование-накладная</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ТребованиеНакладная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9bc82172-2ac9-463d-b636-535b9b095880">
+      <name>СтатьяЗатрат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья затрат</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтатьиЗатрат</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="09a3beb1-d9ec-4329-9a46-aa5388d3e3c2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b7c1d71-717d-4c34-b5f3-0a487414abf3">
+  <producedTypes>
+    <selectionType typeId="358191ea-27f5-4528-a919-2384933a3cd0" valueTypeId="5958e4bf-838f-401b-834e-ee9109db26fe"/>
+    <listType typeId="d4233253-ac07-41c2-8b88-bbd530a84aac" valueTypeId="f3d6b016-79fb-4aaa-b95f-c51ea52eef98"/>
+    <managerType typeId="19fe4ab7-c4d2-4885-9644-d07f4e81c6e0" valueTypeId="c1ca2cc0-890c-44dd-83b2-f3738a59a02e"/>
+    <recordSetType typeId="42fdaa47-89ee-42f6-912f-e140de941f6e" valueTypeId="3eaad637-68f0-4722-a400-d5e21e8e399d"/>
+    <recordKeyType typeId="35380861-3a4f-4837-a15c-3302e64e06a6" valueTypeId="0aaf22d2-abf6-46f0-8a46-66559067c0ec"/>
+    <recordType typeId="ab0ce792-ea2a-4c8d-80bd-ca4a6b33e528" valueTypeId="e6dbdc97-d14e-4e39-8aad-3cf208e4bddd"/>
+  </producedTypes>
+  <name>ВыработкаНМА</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выработка НМА</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <resources uuid="2c390c20-1815-45e5-a7a2-2c330b541d1b">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9a2ba96d-7a9d-4e91-bdbf-9acb57b8a121">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

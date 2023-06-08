@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="beddd32b-58e8-4383-8c3d-a8bc4243f5aa">
+  <producedTypes>
+    <selectionType typeId="f4b1f9bc-f85a-4fb5-9674-224d6fb015ce" valueTypeId="7330a940-3e91-48b5-b495-4c420b8fd254"/>
+    <listType typeId="96191a3a-4616-477a-8810-5852a4550f8b" valueTypeId="48a6f099-774f-4d7b-b0c2-226d7435c162"/>
+    <managerType typeId="08a3a799-7a69-474c-91fd-88dd164d26ce" valueTypeId="158143b9-1604-4e79-99af-12e21f719e24"/>
+    <recordSetType typeId="09cdde83-6ed7-4b46-a9ee-9d11a1fa8f80" valueTypeId="839c7cf0-74f6-4060-a1f0-025c4b6d7dd7"/>
+    <recordKeyType typeId="f45f0710-8455-40e6-a9a7-bfe49cef284f" valueTypeId="3b87cb83-769b-4672-a975-892f14ab1adb"/>
+    <recordType typeId="f7f91b0d-4808-4db2-b6ac-b9ae44c40ef7" valueTypeId="24474e71-3be1-4c2b-81a6-37a027202ca2"/>
+    <recordManagerType typeId="fab27794-d303-4526-917a-2ce55366f030" valueTypeId="41e58c08-ffa9-441b-9c5e-2fd1bdcdad4e"/>
+  </producedTypes>
+  <name>НачислениеАмортизацииОСБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление амортизации ОС (бухгалтерский учет)</value>
+  </synonym>
+  <comment>Регистр, который показывает когда начислять амортизацию по бух. учету</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.НачислениеАмортизацииОСБухгалтерскийУчет.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="b7f15d18-0a43-47c8-9758-b44a06fff803">
+    <name>НачислятьАмортизацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислять амортизацию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c3e6e29f-fcd0-4975-bf74-818d4a06f72a">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="aa4c98ea-c212-4c81-bb90-f988a285a727">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="789ff611-b568-4f3b-bd95-2cfc4f476411">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="117a225d-0ec9-4c81-9ec1-163bbdcfa8f1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

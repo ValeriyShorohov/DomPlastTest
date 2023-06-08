@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb5cbfdb-a5ff-44f7-9c3f-cc6d99892f21">
+  <producedTypes>
+    <selectionType typeId="07482060-a13c-4540-baa8-67611921891d" valueTypeId="a39a7fbf-119d-4844-b936-d00e38c56a97"/>
+    <listType typeId="ed139570-c640-4fdc-a4db-d797e52d0638" valueTypeId="9c88cc84-969f-4bcf-bc2b-17e0b542cf55"/>
+    <managerType typeId="fed56ccb-cda9-4ea5-93c6-d977106a3f82" valueTypeId="5c7f9728-e00a-43ab-8499-d36057f0cc73"/>
+    <recordSetType typeId="8b492a28-74d0-4ad7-bf2d-20ed18617535" valueTypeId="e0393c9e-11a5-4219-9bbe-ef0c9307de3d"/>
+    <recordKeyType typeId="7655a041-8739-4f4a-820f-513d09073bc3" valueTypeId="83109541-2e23-454d-b303-05731db6317c"/>
+    <recordType typeId="c1ae4fe5-fa92-4ede-ae1f-4f2364293cb3" valueTypeId="c5136a04-cdc3-446a-94dd-bd93aeafeb88"/>
+    <recordManagerType typeId="65131235-589c-4708-b8c8-b9b23da7fa43" valueTypeId="a4690463-6dce-49dd-84e6-1fc814782cb1"/>
+  </producedTypes>
+  <name>СчетаУчетаНМА</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета учета НМА</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.СчетаУчетаНМА.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Счета учета нематериальных активов</value>
+  </extendedListPresentation>
+  <resources uuid="530e3b56-c4ad-4662-84c2-ed80eb1e6111">
+    <name>СчетУчетаБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета (БУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d6ca9598-8d6e-4d29-84fe-2396130cdcf5">
+    <name>СчетНачисленияАмортизацииБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет начисления амортизации (БУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a1722a35-7122-435e-9fe4-41f4300b5c08">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5f1d3c90-cd07-41e4-8978-a123f649f63b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7a734bf3-1f04-41ff-a6f8-cf276661ce7f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

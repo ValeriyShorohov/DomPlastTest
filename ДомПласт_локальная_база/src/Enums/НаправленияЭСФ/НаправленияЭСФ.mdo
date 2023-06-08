@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d5cd858-88fe-4590-8ae6-173512440e99">
+  <producedTypes>
+    <refType typeId="a6cc3e76-7755-4560-a180-aad45470ab28" valueTypeId="7d42635b-283f-4197-b426-f1fc3c3e6281"/>
+    <listType typeId="de9b6dbf-aea1-4850-9def-41baebdeb9b5" valueTypeId="117985ce-ca6c-4354-bf18-e8c60d8f5c98"/>
+    <managerType typeId="965fea4e-3351-4c60-9c56-665071d9a198" valueTypeId="cf38f91e-fb6c-4562-89ed-fcbc7c45e1be"/>
+  </producedTypes>
+  <name>НаправленияЭСФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направления ЭСФ</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c37152c1-191d-46a8-959e-f4f31f040a9b">
+    <name>Входящий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входящий</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;INBOUND&quot;.</comment>
+  </enumValues>
+  <enumValues uuid="fa30666e-3254-4728-9c92-873f999fd59e">
+    <name>Исходящий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходящий</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;OUTBOUND&quot;.</comment>
+  </enumValues>
+</mdclass:Enum>

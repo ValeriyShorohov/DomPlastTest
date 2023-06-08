@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ea34ac8-0276-4811-87af-ab0d080d7120">
+  <producedTypes>
+    <objectType typeId="6830df59-e370-4324-96e3-bfae3956d693" valueTypeId="c38d949e-fdd0-4fb6-b6d6-ecf285de0698"/>
+    <managerType typeId="2076b3b6-0d4d-40fb-b41c-1c3e7dd1fc9e" valueTypeId="21b467d8-803d-4dc5-8764-adb38ce63f26"/>
+  </producedTypes>
+  <name>КарточкаСубконтоНалоговый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Карточка субконто (налоговый)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КарточкаСубконтоНалоговый.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.КарточкаСубконтоНалоговый.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="a5677627-34b4-4220-908c-b947c0307525">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="edd1b2b2-9974-4a36-96a9-17773dd16772">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="64d55da1-767f-42ca-ada5-3873c68152bd">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="249f265d-8c7c-42c8-aa2b-29f1444247c6">
+    <name>ПредставлениеСпискаОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка организаций</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3095a77b-4276-4690-9042-4555eab82fce">
+    <name>ПредставлениеСпискаПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка подразделений</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a2ed9f3f-8862-4c14-85b4-7b358c15916f">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="be61dc1f-9efd-431a-b7d7-4c691b1992f0">
+    <name>ПоказательБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общие данные</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="68e6e609-6c1d-4f3c-b76b-c634f1773722">
+    <name>ПоказательКоличество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество общие</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5c7abef4-be6d-4821-92fe-e290b4a0a6c6">
+    <name>ПоказательНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>НУ (данные налогового учета)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="499634cd-366c-443e-b750-9eb90b74028e">
+    <name>ПоказательКоличествоНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество НУ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a7a53cbe-2323-4692-8ed1-75336211b2c5">
+    <name>ПоказательПР</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПР (данные по учету постоянных разниц)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4bb25f25-c028-4f1f-9003-498e83622507">
+    <name>ПоказательКоличествоПР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ПР</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="833f2f21-d253-4e14-a7ef-279b07e91355">
+    <name>ПоказательВР</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВР (данные по учету временных разниц)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="218dd8ac-967a-45d8-9038-b108b3a48560">
+    <name>СписокВидовСубконто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды субконто</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="301a39b6-b207-4bfa-a03a-c451e51cc434">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="51040b25-ec03-4892-a3bb-2e897eac2960">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="161b3629-2dca-443c-86eb-206a22558222">
+    <name>КарточкаСубконтоНалоговый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка субконто (налоговый)</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

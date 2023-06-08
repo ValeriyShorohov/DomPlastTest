@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b12dfb5b-8f15-4b64-92e9-b87787bdafac">
+  <producedTypes>
+    <selectionType typeId="847b2a31-325f-45bf-a637-3c4ac4f3dc43" valueTypeId="1df3059d-b4a1-4a3d-b240-d74a132754f4"/>
+    <listType typeId="b306f25d-69ed-4f5a-bb9c-ec02b1d644ac" valueTypeId="bb627edb-9953-4e6d-b173-a838a582072c"/>
+    <managerType typeId="03dc0ed1-7ce6-4976-9e8b-91285ce2bac3" valueTypeId="2c864ee7-afbd-4902-b8fe-20d0bfc41ef2"/>
+    <recordSetType typeId="6bd36d63-a48a-4f83-a4c5-a05c2dc754c0" valueTypeId="51086178-e534-4578-ab8c-bbec3e110170"/>
+    <recordKeyType typeId="291c2759-3e9e-47cf-b7d8-dc3e72fa2067" valueTypeId="a1f32714-941d-4d45-8fd6-dd053fff6c5b"/>
+    <recordType typeId="4951287d-e7b9-457d-9cac-82d5abde7ca4" valueTypeId="451ef665-e24c-40d8-83f3-cb8ef92de9dc"/>
+    <recordManagerType typeId="254f74e2-389c-4d7b-922f-48c790c24e38" valueTypeId="680cd700-3156-4f21-8774-41ee6bd9cc1c"/>
+  </producedTypes>
+  <name>УчетнаяПолитикаПоПерсоналуОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетная политика по персоналу организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.УчетнаяПолитикаПоПерсоналуОрганизаций.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УчетнаяПолитикаПоПерсоналуОрганизаций.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Учетная политика (по персоналу)</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Учетная политика (по персоналу)</value>
+  </listPresentation>
+  <resources uuid="ff4febd0-5ecd-43a9-9e07-07367ec16884">
+    <name>ВестиУчетПоГоловнойОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вести учет по персоналу по головной организации</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d16198b9-e553-4885-b3c7-d08144406869">
+    <name>УчитыватьКадровыеПерестановкиПриРасчетеСреднегоЗаработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать кадровые перестановки при расчете среднего заработка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e514f680-05e7-4893-82b0-b07bc60783ad">
+    <name>ВариантУчетаКадровыхПерестановок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант учета кадровых перестановок</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыУчетаКадровыхПерестановок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="05cb0e19-a989-4553-b464-a9f290707414">
+    <name>РасчетКоэффициентаНарастающимИтогом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет коэффициента нарастающим итогом</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="953306e3-8224-4e8d-ad71-bd7febf97dd2">
+    <name>РассчитыватьКоэффициентИндексацииВПределахКадровыхПерестановок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитывать коэффициент индексации в пределах кадровых перестановок</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9beb7a46-8a43-4d4b-9b61-2b65c2c84c55">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d7b6913b-5ca1-48f7-82e4-17619fbe8f98">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c42c75f2-e013-4c26-ad60-0090a9815b9d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

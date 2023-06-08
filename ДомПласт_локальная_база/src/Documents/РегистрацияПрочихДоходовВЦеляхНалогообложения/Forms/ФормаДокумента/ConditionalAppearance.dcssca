@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахСпособОтраженияВБухучете</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ВидОперации</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыОперацийРегистрацияПрочихДоходов.ДоходыВНатуральнойФорме</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахУчитыватьОППВ</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияОППВ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ВидОперации</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыОперацийРегистрацияПрочихДоходов.ДоходыВНатуральнойФорме</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ОрганизацияЯвляетсяВкладчикомОППВ</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахУчитыватьСН</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияСН</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахУчитыватьСО</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияСО</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахУчитыватьОППВ</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияОППВ</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахУчитыватьООСМС</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияООСМС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ВидОперации</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.ВидыОперацийРегистрацияПрочихДоходов.ДоходыКонтрагентов</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахДоговорКонтрагента</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.ОтображатьДоговор</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахУчитыватьСН</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияСН</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахУчитыватьСО</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияСО</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахУчитыватьОППВ</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияОППВ</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахУчитыватьООСМС</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияООСМС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.ОтображатьДоговор</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахУчитыватьВОСМС</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияВОСМС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЕстьСтавкиОСМСЮрЛица</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЕстьСтавкаВОСМСФизЛица</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЕстьВОСМС</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахУчитыватьВОСМС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.ОтображатьДоговор</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.ПериодРегистрации</left>
+							<comparisonType>Less</comparisonType>
+							<right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>2020-01-01T00:00:00</v8:date>
+							</right>
+						</item>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЕстьСтавкаВОСМСФизЛица</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.УчитыватьВОСМС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</item>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.ОтображатьДоговор</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">true</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.ПериодРегистрации</left>
+							<comparisonType>Less</comparisonType>
+							<right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>2020-01-01T00:00:00</v8:date>
+							</right>
+						</item>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЕстьСтавкиОСМСЮрЛица</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.УчитыватьВОСМС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахУчитыватьООСМС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.УчитыватьООСМС</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЕстьСтавкаООСМСФизЛица</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахУчитыватьООСМС</field>
+			</item>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияООСМС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЕстьСтавкаООСМСФизЛица</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЕстьООСМС</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияВОСМС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.УчитыватьВОСМС</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахСпособНалогообложенияООСМС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СведенияОДоходах.УчитыватьООСМС</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СведенияОДоходахСуммаВычета</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ПериодРегистрации</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>2018-01-01T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

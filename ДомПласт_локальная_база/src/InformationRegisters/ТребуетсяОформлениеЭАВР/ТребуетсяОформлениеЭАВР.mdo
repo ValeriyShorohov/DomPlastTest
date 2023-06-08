@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d61d706-6363-4942-96f5-452a91e60fb4">
+  <producedTypes>
+    <selectionType typeId="a5d3b224-6a1b-4c38-8d46-afe37edb96bf" valueTypeId="5e5d4b78-e113-44fd-8812-1fedbf73a5db"/>
+    <listType typeId="695a85fa-638d-4500-bc7d-03c06e683b7d" valueTypeId="c7254030-a030-4eba-a0a7-a4e4b33951cb"/>
+    <managerType typeId="3ffae6e7-75df-4a8c-9454-00705721654d" valueTypeId="843af579-6324-4da0-a85c-41efbda6094c"/>
+    <recordSetType typeId="e9973341-335c-46db-b441-6405fa011527" valueTypeId="80a1e334-b2fb-4ac7-a4ac-5132e5b31055"/>
+    <recordKeyType typeId="c34b1f9d-a31d-4a6d-86f9-cd80928a6895" valueTypeId="e678426b-4e2e-4791-aac9-70e88e99507d"/>
+    <recordType typeId="0c90de02-8ef1-4596-9444-db30220b9528" valueTypeId="d6f14a20-0fac-469d-b4a0-1bd5a5c801cb"/>
+    <recordManagerType typeId="6dc47ba2-f8e1-4384-aae8-7fc6ea68151d" valueTypeId="fa8e7aa9-d551-4717-ab40-2b923e9580b1"/>
+  </producedTypes>
+  <name>ТребуетсяОформлениеЭАВР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Требуется оформление электронного акта выполненных работ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="e5240b37-5b3a-474f-9051-56773d908b25">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПервичныеДокументыАВР</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6c407c7e-9c8e-4c33-a898-09f34c3adcb4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОрганизацияЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2481dd5b-f982-4cd9-86bc-fd58717b1673">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонтрагентЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

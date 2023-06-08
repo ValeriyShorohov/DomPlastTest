@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d8bd442-2e17-459c-9b6f-338b2f58f75e">
+  <producedTypes>
+    <objectType typeId="ab774f63-deee-444f-9717-91f8088bf24a" valueTypeId="27a77132-f36b-4a30-87d5-ea56b632d3cd"/>
+    <refType typeId="75bb0357-d96d-4c0a-ad0c-d50152b72164" valueTypeId="cc923b2e-148a-4bf5-b1d9-c62bca94af58"/>
+    <selectionType typeId="39bf7bfd-007e-4226-9ef5-49601ecca654" valueTypeId="9ca7f2a2-de78-4470-b86e-b7a7fe17bba6"/>
+    <listType typeId="860de826-c377-45b7-8a3c-7a9f37c9e3e1" valueTypeId="0a5d5159-02cd-47c6-8eae-314ccadb968a"/>
+    <managerType typeId="6537590b-7b99-4ac2-a0d0-68d68e88bdd6" valueTypeId="d0a9b727-b902-4cf8-b820-5c89e0dfb56e"/>
+  </producedTypes>
+  <name>ВидыОперацийОблагаемыхАкцизом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций облагаемых акцизом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыОперацийОблагаемыхАкцизом.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыОперацийОблагаемыхАкцизом.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Операция по движению подакцизных ТМЗ</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Операции по движению подакцизных ТМЗ</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="3e38dea1-4923-415b-bb5a-fa807c313b08">
+      <name>ВзносВУставныйКапитал</name>
+      <description>Взнос в уставный капитал</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="ec450366-fc8d-41ab-b934-82cfbef35331">
+      <name>ИспользованиеДляСобственныхНужд</name>
+      <description>Использование для собственных нужд</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="2eb4e91b-00e4-4cf3-9d9b-f09adf826a34">
+      <name>ИспользованиеПриНатуральнойОплате</name>
+      <description>Использование при натуральной оплате</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="4ce04ee7-7fe8-4980-8604-73abd8d1c10f">
+      <name>ОтгрузкаСтруктурнымПодразделениям</name>
+      <description>Отгрузка структурным подразделениям</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="6fa0a0fa-e689-4c76-b770-189aa3341292">
+      <name>Перемещение</name>
+      <description>Перемещение, осуществляемое производителем с указанного адреса производства</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="efdb430d-01f3-4a25-8d59-94796f7e7c18">
+      <name>ПорчаУтрата</name>
+      <description>Порча, утрата</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="c0eb1f8b-745f-4156-b285-25b84453cdff">
+      <name>Реализация</name>
+      <description>Реализация</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="46b62518-ff18-4efc-a343-0a2effb983ff">
+      <name>РеализацияКонкурснойМассы</name>
+      <description>Реализация конкурсной массы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+  </predefined>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыОперацийОблагаемыхАкцизом.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыОперацийОблагаемыхАкцизом.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыОперацийОблагаемыхАкцизом.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="a3b27adb-1fd7-4f39-ba1a-2b1d4b6362b6">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4b1e46de-080b-45d8-9ec6-839db295fe02">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4a75873c-96fa-4677-b986-c4cad13bccdc">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

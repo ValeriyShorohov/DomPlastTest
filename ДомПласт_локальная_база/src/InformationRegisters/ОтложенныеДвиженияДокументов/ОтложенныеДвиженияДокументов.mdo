@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26e12d60-32b4-42d2-b47a-2d14581d45e0">
+  <producedTypes>
+    <selectionType typeId="6d3b8b04-0730-4a1b-bd2b-85c20fe651ab" valueTypeId="33c6399c-9aaa-4113-9211-a07329067212"/>
+    <listType typeId="890338b9-c739-479c-8e24-9b166710d291" valueTypeId="6ae1671a-713e-4caf-b4c7-bee944dcf46a"/>
+    <managerType typeId="2255c3b4-6af8-4818-8c07-bb43b955a961" valueTypeId="6213eb3f-0e78-406d-a530-12de69e811fd"/>
+    <recordSetType typeId="f5e71343-abb4-4d69-8fe0-94d8ed5a188f" valueTypeId="65d5f552-ba2e-44a6-951e-6141b37969c1"/>
+    <recordKeyType typeId="b62a34cc-15c6-4bd6-97bb-8967649b4403" valueTypeId="18af3e2f-8494-41a5-8aca-d5d967db2d5d"/>
+    <recordType typeId="b0772ad7-a376-4600-abc9-28af9598638c" valueTypeId="2771cbfc-5dbb-48ce-aad7-356672f7233a"/>
+    <recordManagerType typeId="75388cd2-361d-4411-a61b-1c47c679c70c" valueTypeId="fec5b6c6-0685-4e93-92a7-05d095d7f339"/>
+  </producedTypes>
+  <name>ОтложенныеДвиженияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отложенные движения документов</value>
+  </synonym>
+  <resources uuid="d3875999-8267-41d5-9ad2-4ba4e65c55fa">
+    <name>ДатаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="08aa1bbb-2ffc-4dcb-975d-af152afd5f11">
+    <name>КоличествоНеудачныхПроведений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество неудачных проведений</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="53dea022-95fb-44db-b428-681ebe5d7b88">
+    <name>СообщениеОбОшибкеПроведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение об ошибке проведения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="da7ab2b0-4882-4086-a909-3fd1e9f80701">
+    <name>УзелОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел обмена</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3ffc896b-2050-4111-b3b2-85fa1d4fa7a7">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

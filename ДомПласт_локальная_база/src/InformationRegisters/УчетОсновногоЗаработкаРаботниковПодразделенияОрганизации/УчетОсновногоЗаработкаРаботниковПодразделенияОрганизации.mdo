@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60bb3a8d-d887-4238-8f95-43bfdfff45cd">
+  <producedTypes>
+    <selectionType typeId="5380d548-c279-4368-9e2b-70ce6119c924" valueTypeId="725f1434-304d-42c7-89ab-a637e4d3e7cb"/>
+    <listType typeId="d06d3061-137e-4858-b09b-111e12312efc" valueTypeId="82841b6f-7d41-4c1d-b5b5-a50c0f756fed"/>
+    <managerType typeId="9843ca3b-353f-4664-ba5d-f3e4ca4a4c61" valueTypeId="9c3eec68-c7c9-4f0f-95b1-b8c6817af497"/>
+    <recordSetType typeId="627e95d6-66f1-4e7f-9a2d-3b907a075d35" valueTypeId="7d7317c5-4e8d-416b-9f74-0b6138bb6af9"/>
+    <recordKeyType typeId="278ef834-3e7d-4298-bddf-a8c255e4e5c9" valueTypeId="82c55944-c99d-41b6-9bfd-e3b72fc74003"/>
+    <recordType typeId="a3bab98f-35f0-42aa-ad9e-c7d0b2c8b36d" valueTypeId="997f6d38-b510-40a0-acf9-ddf08cb0ffd2"/>
+    <recordManagerType typeId="00d131d3-f3f3-4f46-a1c3-6c2863bcb52e" valueTypeId="ef2f4e0a-caf9-43e6-b8e5-01d011b1d70e"/>
+  </producedTypes>
+  <name>УчетОсновногоЗаработкаРаботниковПодразделенияОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет основного заработка сотрудников подразделений организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.УчетОсновногоЗаработкаРаботниковПодразделенияОрганизации.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УчетОсновногоЗаработкаРаботниковПодразделенияОрганизации.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Учет основного заработка сотрудников подразделения организации</value>
+  </recordPresentation>
+  <resources uuid="b2312e8d-4073-4d62-b34b-59f65951bbba">
+    <name>СпособОтраженияВБухучете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения в бух. учете</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="01ef5a48-f3b9-40c6-a50b-52a7b3a28f48">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="900e4d43-7710-433b-9389-db83be0ae91f">
+    <name>ПодразделениеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.УчетОсновногоЗаработкаРаботниковПодразделенияОрганизации.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="55ed1967-b443-4076-bf1c-eca17f27b0f6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8de1fcb6-73b1-4703-bd77-92adda6ed559">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="48dba968-cf3a-4675-9131-0237ba11e76a">
+    <name>РедактированиеИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование истории</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a2d0a2c-9032-45f5-942e-e4cac991c888">
+  <name>ПриПроведенииСтатусОформленияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>При проведении статус оформления документов</value>
+  </synonym>
+  <source>
+    <types>DefinedType.ПервичныеДокументыОбъект</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.ВССервер.ПриПроведенииСтатусОформленияДокументовОбработчик</handler>
+</mdclass:EventSubscription>

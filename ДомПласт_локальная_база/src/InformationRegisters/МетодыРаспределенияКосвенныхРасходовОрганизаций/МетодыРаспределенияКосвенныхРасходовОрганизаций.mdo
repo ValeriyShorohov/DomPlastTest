@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aad11520-0fcf-4212-9994-d9dca929879a">
+  <producedTypes>
+    <selectionType typeId="2cbd4be3-5420-49f1-bf63-89573b23fe37" valueTypeId="d1b93e06-52db-465a-9043-0a668b19db09"/>
+    <listType typeId="18b47a81-61f4-4eeb-bd46-e1733954d819" valueTypeId="baf828a6-5a12-4de9-aa3c-c9b479d0ec15"/>
+    <managerType typeId="30bda6ae-877b-4c69-8d39-fb1377301900" valueTypeId="dfaca209-872f-4293-b150-1f52b54b2e8b"/>
+    <recordSetType typeId="6400f9b6-5b13-410a-b9c3-b1d496f00943" valueTypeId="5e7b8712-035c-4a3f-96e7-50958ec91b89"/>
+    <recordKeyType typeId="ebb9ad66-6144-4eea-a754-8e0ca6c208f5" valueTypeId="fcdfd19a-4aa8-4c2b-a405-010f38f3a42f"/>
+    <recordType typeId="5ab98748-95b8-4906-b1e8-58445c289c4a" valueTypeId="e240758d-eae7-4501-bc97-eec3a385cf17"/>
+    <recordManagerType typeId="f87aa712-0d7f-4254-b820-4264beed351b" valueTypeId="03f8bb2c-c94b-49db-bf71-27bd320a1b95"/>
+  </producedTypes>
+  <name>МетодыРаспределенияКосвенныхРасходовОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Методы распределения косвенных расходов организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>BothWays</editType>
+  <defaultRecordForm>InformationRegister.МетодыРаспределенияКосвенныхРасходовОрганизаций.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.МетодыРаспределенияКосвенныхРасходовОрганизаций.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Метод распределения косвенных расходов организаций</value>
+  </recordPresentation>
+  <resources uuid="4d396af1-f448-46f1-9e39-073e689135f4">
+    <name>МетодРаспределенияЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод распределения затрат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МетодыРаспределенияКосвенныхРасходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9e6b5a73-ce5c-44d6-a548-cc7d34a37596">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8d5cb0f7-8c3f-4278-8e51-5d8ba2c5f017">
+    <name>СчетЗатратБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат (БУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>ChartOfAccounts.Типовой.НакладныеРасходы</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfAccounts.Типовой.НакладныеРасходы</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="72080ec5-f094-441c-8c9e-01b219a49b9d">
+    <name>СтатьяЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья затрат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиЗатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f7d6d834-1916-42ae-ab47-9cb1fb0a2240">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.МетодыРаспределенияКосвенныхРасходовОрганизаций.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>ВыбиратьПодразделенияОрганизации</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="647bee95-32cf-4821-85cc-40339b6b038b">
+    <name>СчетЗатратНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат (НУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Налоговый</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>ChartOfAccounts.Налоговый.НакладныеРасходы</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfAccounts.Налоговый.НакладныеРасходы</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e8572a3a-61d9-4ea3-b7ba-be71a6994fef">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.МетодыРаспределенияКосвенныхРасходовОрганизаций.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ЯвляетсяСтруктурнымПодразделением</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8a96e3b8-f4c7-42a9-b212-106c4166c6b2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="56edd3a5-e3b4-4b83-b81b-a2c79e83e254">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

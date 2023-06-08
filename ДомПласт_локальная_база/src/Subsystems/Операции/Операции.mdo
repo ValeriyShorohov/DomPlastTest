@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdba7935-fbd1-4ce4-bf24-d1d89319f937">
+  <name>Операции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операции</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаОперации</picture>
+  </picture>
+  <content>CommonCommand.ДополнительныеОбработкиОперации</content>
+  <content>CommonCommand.ДополнительныеОтчетыОперации</content>
+  <content>InformationRegister.ДатыЗапретаИзменения</content>
+  <subsystems>Операции</subsystems>
+  <subsystems>ЖурналыПроводок</subsystems>
+  <subsystems>РегламентныеОперации</subsystems>
+  <subsystems>ЗакрытиеДтКтЗадолженности</subsystems>
+</mdclass:Subsystem>

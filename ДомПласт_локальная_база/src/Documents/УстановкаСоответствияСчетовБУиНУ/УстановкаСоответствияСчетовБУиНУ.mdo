@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44fc0d9e-695d-42d2-a912-055b8dbecf3a">
+  <producedTypes>
+    <objectType typeId="bbdecb93-e9ee-4dd9-89ef-cdc0c8e6e77d" valueTypeId="e06395e5-b5ba-494e-9a0a-11424eaaeca5"/>
+    <refType typeId="9d2acc9b-ef88-4761-908a-b4fda261f0ee" valueTypeId="fee46afe-62db-468c-b122-70699c305eb1"/>
+    <selectionType typeId="5c6009e7-1879-428b-8eb8-62cc46579b2b" valueTypeId="9c851781-58e9-4b5c-8076-a15c011aa435"/>
+    <listType typeId="2d7ade37-c274-43d4-b0fb-763f51acce9b" valueTypeId="0d418cee-6f05-4bbb-9c33-e76323627e22"/>
+    <managerType typeId="6af3bb81-b2db-4bd1-923e-90ae53a26ad5" valueTypeId="761186dd-9146-4c7b-a978-b6a3c2b9d6ad"/>
+  </producedTypes>
+  <name>УстановкаСоответствияСчетовБУиНУ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка соответствия счетов БУ и НУ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаСоответствияСчетовБУиНУ.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_УстановкаСоответствияСчетовБУиНУ</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаСоответствияСчетовБУиНУ.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УстановкаСоответствияСчетовБУиНУ.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.УстановкаСоответствияСчетовБУиНУ.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <registerRecords>InformationRegister.СоответствиеСчетовБУиНУ</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="37b84d73-ab11-4905-bc04-b00886cd7319">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1aac15fe-7b74-4c92-92fa-5e28b9a2278a">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dd0c8575-dff4-4618-84e5-a3ef3bb9ffa5">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="afb379ba-ca0b-4a81-9bf1-d84022148384">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0ca063cd-a8ff-43c7-83d7-43791c1e8894">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a341aa1d-67c8-46de-ae99-2d122f66f0c9">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.УстановкаСоответствияСчетовБУиНУ.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ЯвляетсяСтруктурнымПодразделением</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="851fd71c-9621-4e23-852d-377037cff2dc">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ac900dc6-4878-48d2-a017-57ae1178255f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="816718f6-0dcd-499f-8c9a-f762ef9d347f">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="7162ad97-95ea-4875-82dc-e1632632b463">
+    <producedTypes>
+      <objectType typeId="fd288d33-7cf8-43fa-9228-0a1c02ffd43a" valueTypeId="8c920197-bd05-408f-a2d3-2f356119775f"/>
+      <rowType typeId="795b9b10-2e22-4989-aec4-02ae8c661e9d" valueTypeId="cccadca4-7c63-47f2-a845-cb39a993307f"/>
+    </producedTypes>
+    <name>СоответствиеСчетовБУиНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствие счетов БУ и НУ</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="7da3ad18-8c75-4856-b839-79c72af177a3">
+      <name>СчетБУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет (БУ)</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Типовой</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="df125c0c-4707-4ac2-a317-c6bb9177d812">
+      <name>СчетКоррБУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет корр. (БУ)</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Типовой</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a01d8f5b-5950-4c0a-9375-09a14c583111">
+      <name>СубконтоБУ1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто (БУ) 1</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоТиповые</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>1</linkItem>
+        <field>Document.УстановкаСоответствияСчетовБУиНУ.TabularSection.СоответствиеСчетовБУиНУ.Attribute.СчетБУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d55ea499-9006-4999-bbc9-ef6494845d24">
+      <name>СубконтоБУ2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто (БУ) 2</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоТиповые</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>2</linkItem>
+        <field>Document.УстановкаСоответствияСчетовБУиНУ.TabularSection.СоответствиеСчетовБУиНУ.Attribute.СчетБУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3fe3dda4-f0e5-40f0-97f8-02d6a286e069">
+      <name>СубконтоБУ3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто (БУ) 3</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоТиповые</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>3</linkItem>
+        <field>Document.УстановкаСоответствияСчетовБУиНУ.TabularSection.СоответствиеСчетовБУиНУ.Attribute.СчетБУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d68028f7-505b-4bd0-969c-39f6018da0c2">
+      <name>ВидЗатратНУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид затрат НУ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтатьиЗатрат</types>
+        <types>CatalogRef.Доходы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5b5e765a-7116-42c5-baaf-7997eb9e9dda">
+      <name>СчетНУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет (НУ)</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Налоговый</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="da14d16d-89fd-46e9-b247-7966990ee143">
+      <name>СубконтоНУ1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто (НУ) 1</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоТиповые</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>1</linkItem>
+        <field>Document.УстановкаСоответствияСчетовБУиНУ.TabularSection.СоответствиеСчетовБУиНУ.Attribute.СчетНУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c813c50f-28a3-4ef2-8ed5-d3f856d748fa">
+      <name>СубконтоНУ2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто (НУ) 2</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоТиповые</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>2</linkItem>
+        <field>Document.УстановкаСоответствияСчетовБУиНУ.TabularSection.СоответствиеСчетовБУиНУ.Attribute.СчетНУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7991f243-831b-4301-828d-2cd96fe8b45a">
+      <name>СубконтоНУ3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто (НУ) 3</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыСубконтоТиповые</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>3</linkItem>
+        <field>Document.УстановкаСоответствияСчетовБУиНУ.TabularSection.СоответствиеСчетовБУиНУ.Attribute.СчетНУ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6c9114c2-74d8-4c8f-85b9-260c0e6e356b">
+      <name>Учитывается</name>
+      <synonym>
+        <key>ru</key>
+        <value>Учитывается</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="04378517-c22d-4c9e-a77a-39d955fd9453">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="ba229d39-e39c-4ec0-98ae-493b83f0334c">
+    <name>СоответствияСчетовБУиНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствия счетов БУ и НУ</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

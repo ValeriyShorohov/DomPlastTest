@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="baec8756-53c3-447f-bf2e-fc25c3b3c8b0">
+  <name>ОбменУправлениеТорговлей22Бухгалтерия30ЗарегистрироватьИзменениеДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен управление торговлей22 бухгалтерия30 зарегистрировать изменение документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПеремещениеТоваров</types>
+    <types>DocumentObject.ТребованиеНакладная</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>DocumentObject.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов</types>
+    <types>DocumentObject.ЭСФ</types>
+    <types>DocumentObject.ОплатаОтПокупателяПлатежнойКартой</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.СписаниеТоваров</types>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.ПоступлениеДопРасходов</types>
+    <types>DocumentObject.ВозвратТоваровПоставщику</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.КорректировкаДолга</types>
+    <types>DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.ДокументРасчетовСКонтрагентом</types>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+    <types>DocumentObject.ОприходованиеТоваров</types>
+    <types>DocumentObject.СчетНаОплатуПокупателю</types>
+    <types>DocumentObject.ГТДИмпорт</types>
+    <types>DocumentObject.СчетФактураВыданный</types>
+    <types>DocumentObject.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentObject.Доверенность</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>DocumentObject.СчетФактураПолученный</types>
+    <types>DocumentObject.ИнвентаризацияТоваровНаСкладе</types>
+    <types>DocumentObject.КомплектацияНоменклатуры</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.ОбменУправлениеТорговлей22Бухгалтерия30ЗарегистрироватьИзменениеДокументаПередЗаписью</handler>
+</mdclass:EventSubscription>

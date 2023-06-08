@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c169011b-d811-452d-a2bc-2b822a4bb26e">
+  <producedTypes>
+    <selectionType typeId="77d44608-8a59-46b9-8fbe-d7e068eb6d0c" valueTypeId="6d350c0b-8fa8-45d9-aadf-e3bb01f7564c"/>
+    <listType typeId="fab09c89-c921-45db-b1f1-08796ccaccb1" valueTypeId="71259f06-aae5-4431-88a2-ebe6058f8c63"/>
+    <managerType typeId="a5264e82-de4c-4a5f-b80a-e625e9fcc009" valueTypeId="5d0623a3-b8cd-46a2-846e-10e38cb2e288"/>
+    <recordSetType typeId="c50fd9f6-64e4-402b-952f-4fdad0076152" valueTypeId="e0762b75-7957-48de-b7cb-2339c2c04e67"/>
+    <recordKeyType typeId="dac3a743-dc83-4202-8d32-f606c7b54eb9" valueTypeId="e15e26f0-1d4e-4f00-aff9-d316337df6b2"/>
+    <recordType typeId="11f0460d-553a-4d02-8e5f-69b6aaaeaecf" valueTypeId="ed183d64-41bc-4de4-9494-1597e7c69b57"/>
+    <recordManagerType typeId="4854009a-acc5-4985-bf0d-8aebb12fbb4f" valueTypeId="d3379f6b-71a3-4d07-9baf-328329e7991c"/>
+  </producedTypes>
+  <name>ПодтверждениеРеализацииВЕАЭС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подтверждение реализации в страны ЕАЭС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПодтверждениеРеализацииВЕАЭС.Form.ФормаРабочееМесто</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="485d1908-22d8-4d3d-b53b-53e277dbacb2">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияРеализацийВЕАЭС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7d2398dd-0562-47c4-af3b-feab9238838e">
+    <name>ДатаПодтверждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подтверждения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d8fd4c5d-1b63-4938-a536-91334bc8f45f">
+    <name>НомерПодтверждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер подтверждения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер отметки налогового органа в Заявлении о ввозе товаров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="b6bd5fe9-478c-4732-a9ee-cfd7c0c8c785">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="074a52a4-5fec-4ebe-bfb7-aaa0c93f44e9">
+    <name>ДокументРеализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ реализации</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.СчетФактураВыданный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="950ada93-e49f-4e5b-a0d1-6f95e7573873">
+    <name>ФормаРучногоВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ручного ввода </value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bc943aea-3d6c-4ad8-ada6-bf78c9b6e228">
+    <name>ФормаРабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма рабочее место</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4092ff9a-3a31-498d-a9fb-a209c1d539f6">
+  <producedTypes>
+    <objectType typeId="dd7bb2cb-26ca-4eb5-9563-2d48b42c87ca" valueTypeId="68c7db31-7d10-45e7-8004-4b78f19956ce"/>
+    <refType typeId="442e8ae5-477f-4c4f-aeb7-42fd2983b3af" valueTypeId="4c590657-258a-478a-b07f-6a3ee00a5ed7"/>
+    <selectionType typeId="bd5eed63-c5d1-415d-81a9-966e1a47f1d1" valueTypeId="dddf9e4d-dd9d-481b-9e1d-483238db0e3a"/>
+    <listType typeId="fc63d6e5-b6b0-41c9-837e-4d03a3281b64" valueTypeId="bcd97839-7caa-416b-a265-5927351284cc"/>
+    <managerType typeId="6b9668aa-8c09-497c-90a6-2dc5e4fd5401" valueTypeId="63f6b39d-79f4-4938-9a37-e503cdc3e499"/>
+  </producedTypes>
+  <name>ВидыПервичныхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды первичных документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыПервичныхДокументов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыПервичныхДокументов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид первичных документов</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="590bb791-6c97-4761-aa73-27fd776bc748">
+      <name>ГрузоваяТаможеннаяДекларация</name>
+      <description>Грузовая таможенная декларация</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="24252e69-a4a6-4390-b028-cb40d1b32d89">
+      <name>НакладнаяЧек</name>
+      <description>Накладная/Товарный чек</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="adf82929-6c34-43fb-a0f5-54e3089aea52">
+      <name>ПлатежноеПоручение</name>
+      <description>Платежное поручение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+  </predefined>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыПервичныхДокументов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыПервичныхДокументов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыПервичныхДокументов.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="eb42b192-b9f5-444f-b1cf-0d0081855199">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b1cdb564-675c-49cf-8067-06909a51d020">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0a8aac74-c8cc-4968-9278-f9c83ca1e893">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

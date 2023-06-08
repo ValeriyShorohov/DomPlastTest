@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78ab16e8-6ae3-4d56-97f6-98575ab7c9be">
+  <producedTypes>
+    <selectionType typeId="317c3d9b-8383-46b5-b668-df29abdf99a6" valueTypeId="01fb2772-6df7-43fa-8db8-098cbff88688"/>
+    <listType typeId="ec3766b6-0105-45b5-afa9-689ca83c5aa5" valueTypeId="0a120772-8a60-45a6-8787-127213248762"/>
+    <managerType typeId="34f2a6e2-4865-44e5-b634-98899ca1537f" valueTypeId="2d7ca7e6-a273-4e29-b9b3-8a3759b5ca55"/>
+    <recordSetType typeId="51b621d1-4907-4695-8691-37684b00ff15" valueTypeId="52c1137f-6689-4f2e-a98b-022ed8a5989f"/>
+    <recordKeyType typeId="70ec478f-ff0a-42cf-b79a-65cfa59ca36d" valueTypeId="25c3880b-31b3-4d93-9e29-8cdd9e1c5270"/>
+    <recordType typeId="e09a4659-f4cc-4003-8d5a-547933610c71" valueTypeId="65a0f147-2fca-452e-9929-98512c8f276d"/>
+  </producedTypes>
+  <name>НДСВзаиморасчетыСБюджетом</name>
+  <synonym>
+    <key>ru</key>
+    <value>НДС, взаиморасчеты с бюджетом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.НДСВзаиморасчетыСБюджетом.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="95540350-bb62-414f-8037-8aeec4e10de1">
+    <name>СуммаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="ac0cd16d-323b-4b36-820f-997da3382c08">
+    <name>СпособПогашения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ погашения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыВзаиморасчетовСБюджетом</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e3be7645-c31d-4ebf-8cc9-c527c08f9888">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5e79d114-45d7-415a-bf4e-75478b2bb6f7">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <comment>Структурное подразделение организации</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="0f9e107f-a3fb-4323-96a1-c37b87384e50">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="dd0470dd-7637-421e-a0c7-f74756830c82">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

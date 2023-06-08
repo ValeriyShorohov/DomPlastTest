@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="089ee64b-5f3a-4a44-b9a7-3321a13d7428">
+  <producedTypes>
+    <selectionType typeId="d408bd5f-c84a-4a51-9a14-f8afbf2db114" valueTypeId="ab468f27-0195-4fc3-8440-ddb9ce18c171"/>
+    <listType typeId="f2fb101a-8cae-441d-94dd-e34b8a1b14a6" valueTypeId="7cebb95f-43cd-496c-b9ac-9c19b194a61a"/>
+    <managerType typeId="50df362f-b864-4acc-a03b-16e70adaa68f" valueTypeId="9bff88a3-089f-437a-afc6-b1c0765aa59d"/>
+    <recordSetType typeId="54d6a442-23f1-4505-aa05-ea4270e1957e" valueTypeId="6208eef1-9566-4153-94ab-014d9acc04bd"/>
+    <recordKeyType typeId="a8916136-2245-40e6-a2c1-327540838f2c" valueTypeId="2f26576c-5cda-433d-beb0-697dcf897bc1"/>
+    <recordType typeId="6d69c4a7-61f8-432e-8ea7-d9f9ce4c9688" valueTypeId="74312d5a-5b10-4896-8ef9-eca0ec1ad4f4"/>
+    <recordManagerType typeId="0677181f-cfeb-49c0-9281-5a85b6de115b" valueTypeId="4e0fe9ec-cdc7-4b95-8173-cc716a449a7c"/>
+  </producedTypes>
+  <name>СрокиПеречисленияНалоговСборовОтчислений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сроки перечисления налогов, сборов, отчислений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.СрокиПеречисленияНалоговСборовОтчислений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СрокиПеречисленияНалоговСборовОтчислений.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Срок перечисления налога, сбора, отчисления</value>
+  </recordPresentation>
+  <resources uuid="fa4c6356-bd33-470c-9bf5-6c8335560255">
+    <name>ПорядокОпределенияСрокаПеречисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок определения срока перечисления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядокОпределенияСрокаПеречисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d41c4337-4da6-4b61-ad8c-3c8195f92b75">
+    <name>СрокПеречисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок перечисления</value>
+    </synonym>
+    <comment>Срок перечисления (включительно)</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e95070c9-2a05-4458-870e-c2f431fd987a">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d5f591e0-762b-4bb0-829f-50e8cbf87849">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="aa987f6c-b6d0-421b-a3c5-74ab80079412">
+    <name>ВидНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид налога</value>
+    </synonym>
+    <comment>Вид налога/сбора/отчисления</comment>
+    <type>
+      <types>CatalogRef.НалогиСборыОтчисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e59a00e3-d1a6-4f75-a03f-422724ca304b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b722708f-65aa-4d72-8460-13f2e4a8dd15">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dc66f63f-2ccf-4f65-9214-8c92b2b8ba7c">
+    <name>ФормаЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнение сроков перечисления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

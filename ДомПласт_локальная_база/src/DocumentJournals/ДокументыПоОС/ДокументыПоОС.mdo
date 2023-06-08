@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9127fa46-ffd1-4754-8546-20d18a94ffaf">
+  <producedTypes>
+    <selectionType typeId="e163fba5-0f57-43df-a0ce-a2364a472893" valueTypeId="8c9bb129-7b56-473e-96ca-559241ae7922"/>
+    <listType typeId="bfbc6f27-d791-4532-8470-4fe7307086d8" valueTypeId="e3f4c452-59f7-4065-8276-8604b161e0f7"/>
+    <managerType typeId="d53c99f3-0713-4947-9f9b-53b2ffe5df37" valueTypeId="9570bfd3-e6f9-4848-9eee-103b14b96fd9"/>
+  </producedTypes>
+  <name>ДокументыПоОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по ОС</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоОС.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПринятиеКУчетуОС</registeredDocuments>
+  <registeredDocuments>Document.МодернизацияОС</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеОС</registeredDocuments>
+  <registeredDocuments>Document.СписаниеОС</registeredDocuments>
+  <registeredDocuments>Document.ПередачаОС</registeredDocuments>
+  <registeredDocuments>Document.КомплектацияОС</registeredDocuments>
+  <registeredDocuments>Document.РеструктуризацияОС</registeredDocuments>
+  <columns uuid="3f799ef1-ce45-4848-b4a3-e8382725125a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.СписаниеОС.Attribute.Организация</references>
+    <references>Document.ПередачаОС.Attribute.Организация</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.Организация</references>
+    <references>Document.ПеремещениеОС.Attribute.Организация</references>
+    <references>Document.МодернизацияОС.Attribute.Организация</references>
+    <references>Document.КомплектацияОС.Attribute.Организация</references>
+    <references>Document.РеструктуризацияОС.Attribute.Организация</references>
+  </columns>
+  <columns uuid="ac3f1b56-7b50-4461-9d69-c63f2b8ad080">
+    <name>ОбъектСтроительства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект строительства</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуОС.Attribute.ОбъектСтроительства</references>
+  </columns>
+  <columns uuid="0adc9ee5-de39-4f9a-adb4-dfe6c9f8a8aa">
+    <name>СобытиеОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие ОС</value>
+    </synonym>
+    <references>Document.СписаниеОС.Attribute.СобытиеОС</references>
+    <references>Document.ПередачаОС.Attribute.СобытиеОС</references>
+    <references>Document.ПеремещениеОС.Attribute.СобытиеОС</references>
+    <references>Document.МодернизацияОС.Attribute.СобытиеОС</references>
+    <references>Document.КомплектацияОС.Attribute.СобытиеОС</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.СобытиеОС</references>
+    <references>Document.РеструктуризацияОС.Attribute.СобытиеОС</references>
+  </columns>
+  <columns uuid="8b0fee33-fd80-4d05-9fb3-b74e9bab2f5b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.СписаниеОС.Attribute.Комментарий</references>
+    <references>Document.ПередачаОС.Attribute.Комментарий</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.Комментарий</references>
+    <references>Document.ПеремещениеОС.Attribute.Комментарий</references>
+    <references>Document.МодернизацияОС.Attribute.Комментарий</references>
+    <references>Document.КомплектацияОС.Attribute.Комментарий</references>
+    <references>Document.РеструктуризацияОС.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="2a686768-487b-4294-83ee-8d46d0912bdd">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.СписаниеОС.Attribute.Ответственный</references>
+    <references>Document.ПередачаОС.Attribute.Ответственный</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.Ответственный</references>
+    <references>Document.ПеремещениеОС.Attribute.Ответственный</references>
+    <references>Document.МодернизацияОС.Attribute.Ответственный</references>
+    <references>Document.КомплектацияОС.Attribute.Ответственный</references>
+    <references>Document.РеструктуризацияОС.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="a77a9b55-cd1d-4065-beee-b7704155a396">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <references>Document.СписаниеОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПередачаОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.МодернизацияОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.КомплектацияОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПеремещениеОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.РеструктуризацияОС.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="7865f438-5ca9-4517-aed0-ad2b71542952">
+    <name>УчитыватьКПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать КПН</value>
+    </synonym>
+    <references>Document.СписаниеОС.Attribute.УчитыватьКПН</references>
+    <references>Document.РеструктуризацияОС.Attribute.УчитыватьКПН</references>
+    <references>Document.МодернизацияОС.Attribute.УчитыватьКПН</references>
+    <references>Document.ПередачаОС.Attribute.УчитыватьКПН</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.УчитыватьКПН</references>
+  </columns>
+  <columns uuid="69d5623b-7157-46fb-a4b5-a7cad76f47ce">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ПеремещениеОС.Attribute.Автор</references>
+    <references>Document.ПередачаОС.Attribute.Автор</references>
+    <references>Document.МодернизацияОС.Attribute.Автор</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.Автор</references>
+    <references>Document.СписаниеОС.Attribute.Автор</references>
+    <references>Document.КомплектацияОС.Attribute.Автор</references>
+    <references>Document.РеструктуризацияОС.Attribute.Автор</references>
+  </columns>
+  <columns uuid="ba55b3d8-c177-4c8f-b1f1-1abaac93a61e">
+    <name>ВидУчетаНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид учета НУ</value>
+    </synonym>
+    <references>Document.СписаниеОС.Attribute.ВидУчетаНУ</references>
+    <references>Document.РеструктуризацияОС.Attribute.ВидУчетаНУ</references>
+    <references>Document.МодернизацияОС.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПередачаОС.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.ВидУчетаНУ</references>
+  </columns>
+  <columns uuid="bc0e7705-05f2-4b6b-be6f-ab2a11966505">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <references>Document.СписаниеОС.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.РеструктуризацияОС.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.МодернизацияОС.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.КомплектацияОС.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ПередачаОС.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ПеремещениеОС.Attribute.СтруктурноеПодразделениеОтправитель</references>
+    <references>Document.ПринятиеКУчетуОС.Attribute.СтруктурноеПодразделение</references>
+  </columns>
+  <forms uuid="233023a3-0c04-412c-a9ec-c254e91ba37e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

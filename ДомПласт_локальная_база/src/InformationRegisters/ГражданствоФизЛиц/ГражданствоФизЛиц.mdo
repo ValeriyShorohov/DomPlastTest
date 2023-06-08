@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27229436-3e8c-4519-9d4f-3cf500deaf04">
+  <producedTypes>
+    <selectionType typeId="53b0c62e-9598-4bb2-952b-a98801597241" valueTypeId="e1c41c4e-8ccc-4c8c-b774-cf53eacd9113"/>
+    <listType typeId="005140a2-893d-4aff-aa40-1736df97503d" valueTypeId="1a767260-bf7d-4795-8ad5-f096249c5771"/>
+    <managerType typeId="8a9ad5d9-9cda-4647-808c-821c7320d35c" valueTypeId="33ba39eb-b943-4bd3-9c7f-450684c1f31f"/>
+    <recordSetType typeId="6e6beb54-a6d4-4e85-aab5-307700c3ebdd" valueTypeId="1a7c2f57-1125-4edb-8dfc-4b486c9291aa"/>
+    <recordKeyType typeId="7d9b5e80-2056-484e-8a3d-77f1d08fa079" valueTypeId="1f7b443e-af01-4649-8f4d-be4370f27d2c"/>
+    <recordType typeId="6d75eb28-14ec-4249-8826-150d5b2eb580" valueTypeId="5fa33bdb-ae88-457e-8be3-2755d3c38058"/>
+    <recordManagerType typeId="90dae756-54bc-4e68-8cbe-a1b032aac24d" valueTypeId="0039aa48-8f1d-4cee-a38e-dca915cc74ea"/>
+  </producedTypes>
+  <name>ГражданствоФизЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гражданство физических лиц</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ГражданствоФизЛиц.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ГражданствоФизЛиц.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Гражданство физического лица</value>
+  </recordPresentation>
+  <resources uuid="081bb56b-6c6f-40b8-ba27-24086cd5094a">
+    <name>Страна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страна</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторСтранМира</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>СкрытьКазахстан</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="80907097-165c-46be-a103-45e903199231">
+    <name>НеИмеетПравоНаПенсию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не имеет право на пенсионное обеспечение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="43fa7647-5233-48fb-a04b-d2d93d3a7ab0">
+    <name>НеПодлежитСоциальномуСтрахованию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не подлежит социальному страхованию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f3d44bed-3ab1-4846-aca7-7ac7b4ed0610">
+    <name>НеЯвляетсяНалоговымРезидентомРК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не является налоговым резидентом РК</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6ef9d197-d3cd-4fe4-a622-ee6b0f646267">
+    <name>ИностранныйСпециалист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иностранный специалист</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c37908fb-a2f7-4107-999c-b35a6296a476">
+    <name>НомерНалоговойРегистрацииВСтранеРезидентства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер налоговой регистрации в стране резидентства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>18</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e28613a0-5ead-4485-a481-d9f569065e6e">
+    <name>НеПодлежитСоциальномуМедицинскомуСтрахованию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не подлежит социальному медицинскому страхованию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="846cd34b-dec7-40a9-a6ff-58404631535a">
+    <name>ФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ. лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1094599d-5213-4967-bcd2-e18b76d9f8e5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="30b23859-eaa3-47e6-a838-722909d28b5c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="142b3002-4b14-4cdd-9c7c-e51f91d08473">
+    <name>РедактированиеИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование истории</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d1cd30dc-fbf3-45e4-98c5-2ba5094161b8">
+    <name>РедактированиеЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гражданство физического лица</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

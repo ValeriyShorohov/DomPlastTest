@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0cbefa33-67f1-4f9a-a91a-5ade5fe614ec">
+  <producedTypes>
+    <objectType typeId="a1092a62-45d1-4f13-b177-7257335e60c1" valueTypeId="a5dea5ec-f115-434d-b03f-b8eea80a47a4"/>
+    <managerType typeId="8a665165-8e8b-4d63-ad40-db243d58b952" valueTypeId="fe0edc4f-6221-4749-85ad-5e1176140c1b"/>
+  </producedTypes>
+  <name>ВводНачальныхОстатков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник ввода начальных остатков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВводНачальныхОстатков.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="239763d8-99d1-4748-9578-8f6a0fa2b017">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="53c23152-2940-4ad8-bed3-34aa27cf44ef">
+    <name>ДатаВводаОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ввода остатков</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f5770933-77c1-4643-a69c-3979feaa8f3e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="868a66ac-7072-40f4-871f-46518f732ea9">
+    <name>ФормаУстановкиДатыНачалаВеденияУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма установки даты начала ведения учета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9d4895da-4193-4500-8389-8999a0dbf2fb">
+    <name>Справка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка</value>
+    </synonym>
+  </templates>
+  <commands uuid="d5fca26d-fb22-4cd5-8b0f-79b5656d8a3d">
+    <name>ВводНачальныхОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник ввода начальных остатков</value>
+    </synonym>
+    <group>CommandGroup.НачальныеОстатки</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

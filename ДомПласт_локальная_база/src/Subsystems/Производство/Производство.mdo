@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a95ffab-e421-42a3-9588-64dd81c22f60">
+  <name>Производство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производство</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаПроизводство</picture>
+  </picture>
+  <content>CommonCommand.ДополнительныеОбработкиПроизводство</content>
+  <content>CommonCommand.ДополнительныеОтчетыПроизводство</content>
+  <content>Report.СправкаРасчетСебестоимостиПродукцииИУслуг</content>
+  <content>Report.СправкаРасчетКалькуляцияСебестоимости</content>
+  <content>Report.СправкаРасчетРаспределенияКосвенныхРасходов</content>
+  <subsystems>ВыпускПродукции</subsystems>
+  <subsystems>Переработка</subsystems>
+  <subsystems>ПередачаВПереработку</subsystems>
+  <subsystems>СправочникиИНастройки</subsystems>
+  <subsystems>ЖурналДокументовПоПроизводству</subsystems>
+</mdclass:Subsystem>

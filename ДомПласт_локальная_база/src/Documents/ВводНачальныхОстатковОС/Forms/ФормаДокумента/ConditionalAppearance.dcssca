@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ОССчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>ОССчетНачисленияАмортизацииБУ</field>
+			</item>
+			<item>
+				<field>ОССчетУчетаЗатратПоМодернизацииБУ</field>
+			</item>
+			<item>
+				<field>ОССчетУчетаНДСПоПриобретению</field>
+			</item>
+			<item>
+				<field>ОССчетУчетаНДСПоРеализации</field>
+			</item>
+			<item>
+				<field>ОССчетДоходовОтРеализацииБУ</field>
+			</item>
+			<item>
+				<field>ОССчетСебестоимостиПриРеализацииБУ</field>
+			</item>
+			<item>
+				<field>ОССчетПоложительныхОтклоненийПриПередачеСтруктурнымПодразделениямБУ</field>
+			</item>
+			<item>
+				<field>ОССчетОтрицательныхОтклоненийПриПередачеСтруктурнымПодразделениямБУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ПоказыватьВДокументахСчетаУчета</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ОСПризнакФиксированногоАктива</field>
+			</item>
+			<item>
+				<field>ОСТекущаяСтоимостьНУ</field>
+			</item>
+			<item>
+				<field>ОСТекущаяСтоимостьПР</field>
+			</item>
+			<item>
+				<field>ОСПорядокПогашенияСтоимостиНУ</field>
+			</item>
+			<item>
+				<field>ОСГруппаНУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.УчитыватьКПН</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ОСДатаПринятияКУчетуРегл</field>
+			</item>
+			<item>
+				<field>ОССостояниеПринятияКУчетуРегл</field>
+			</item>
+			<item>
+				<field>ОСНазваниеДокументаПринятияКУчетуРегл</field>
+			</item>
+			<item>
+				<field>ОСНомерДокументаПринятияКУчетуРегл</field>
+			</item>
+			<item>
+				<field>ОССпособПоступленияРегл</field>
+			</item>
+			<item>
+				<field>ОССрокПолезногоИспользованияБУ</field>
+			</item>
+			<item>
+				<field>ОСНачислятьАмортизациюБУ</field>
+			</item>
+			<item>
+				<field>ОССпособНачисленияАмортизацииБУ</field>
+			</item>
+			<item>
+				<field>ОССпособОтраженияРасходовПоАмортизацииБУ</field>
+			</item>
+			<item>
+				<field>ОССтоимостьДляВычисленияАмортизацииБУ</field>
+			</item>
+			<item>
+				<field>ОСЛиквидационнаяСтоимостьБУ</field>
+			</item>
+			<item>
+				<field>ОССрокИспользованияДляВычисленияАмортизацииБУ</field>
+			</item>
+			<item>
+				<field>ОСКоэффициентАмортизацииБУ</field>
+			</item>
+			<item>
+				<field>ОСКоэффициентУскоренияБУ</field>
+			</item>
+			<item>
+				<field>ОСКоэффициентУскоренияБУ</field>
+			</item>
+			<item>
+				<field>ОСПараметрВыработкиБУ</field>
+			</item>
+			<item>
+				<field>ОСОбъемПродукцииРаботБУ</field>
+			</item>
+			<item>
+				<field>ОСОбъемПродукцииРаботДляВычисленияАмортизацииБУ</field>
+			</item>
+			<item>
+				<field>ОСВыработкаКоличествоБУ</field>
+			</item>
+			<item>
+				<field>ОСГрафикАмортизацииБУ</field>
+			</item>
+			<item>
+				<field>ОСОбъектИмущественногоНалога</field>
+			</item>
+			<item>
+				<field>ОСОбъектТранспортногоНалога</field>
+			</item>
+			<item>
+				<field>ОСОбъектЗемельногоНалога</field>
+			</item>
+			<item>
+				<field>ОССчетУчетаЗатратПоМодернизацииБУ</field>
+			</item>
+			<item>
+				<field>ОССчетУчетаНДСПоПриобретению</field>
+			</item>
+			<item>
+				<field>ОССчетУчетаНДСПоРеализации</field>
+			</item>
+			<item>
+				<field>ОССчетДоходовОтРеализацииБУ</field>
+			</item>
+			<item>
+				<field>ОССчетСебестоимостиПриРеализацииБУ</field>
+			</item>
+			<item>
+				<field>ОССчетСебестоимостиПриРеализацииБУ</field>
+			</item>
+			<item>
+				<field>ОССчетОтрицательныхОтклоненийПриПередачеСтруктурнымПодразделениямБУ</field>
+			</item>
+			<item>
+				<field>ОССчетПоложительныхОтклоненийПриПередачеСтруктурнымПодразделениямБУ</field>
+			</item>
+			<item>
+				<field>ОСРодительскоеОС</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ОтражатьВБухгалтерскомУчете</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ОСГруппаНУ</field>
+			</item>
+			<item>
+				<field>ОСТекущаяСтоимостьНУ</field>
+			</item>
+			<item>
+				<field>ОСПорядокПогашенияСтоимостиНУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ОС.ПризнакФиксированногоАктива</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b38b6e63-e4ca-49df-aa7a-662c1425576a">
+  <producedTypes>
+    <selectionType typeId="f5a02049-800b-4c60-98a4-17a63658ced1" valueTypeId="bed9cb37-1f0c-415e-a3d8-67fa567eda41"/>
+    <listType typeId="af28f161-5d20-4d9a-9963-a098edfff305" valueTypeId="eb820edd-36d6-4a8a-b7a4-f031ba06d831"/>
+    <managerType typeId="f151d9d9-0fd6-4e56-91fd-98f7c4df6f1b" valueTypeId="3f961080-3666-4155-875f-e2252bf0fab5"/>
+    <recordSetType typeId="c4764399-a2e5-438e-81b4-673e0d34d891" valueTypeId="068c1207-8b99-47f6-b7c1-79d74a7a450d"/>
+    <recordKeyType typeId="888a6b66-fd45-4c68-a835-2fe679fe5777" valueTypeId="cedd8f40-351e-4792-b11d-b593101383ff"/>
+    <recordType typeId="e1608ea4-a3f7-4e2d-8f6c-ccc42f80266a" valueTypeId="125c580e-a190-4aba-9740-ab0b3e05b92e"/>
+    <recordManagerType typeId="64353d21-edff-44b1-95e3-eefca5d88301" valueTypeId="76ce4a52-652b-41a2-9af8-662405ba8327"/>
+  </producedTypes>
+  <name>chd_ИнформацияЗаявкиПокупателяКонтрагент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информация заявки покупателя контрагент</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="2a8be850-9a87-477d-ab6a-b8b4c4a12ae4">
+    <name>УдаленКонтрагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удален (Контрагенты)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="c9cc1dc6-63bc-474a-ad92-65bc504f4319">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="360f7c3b-a9e4-4a1e-8cde-05490bb85f6c">
+    <name>BUYER_GLN</name>
+    <synonym>
+      <key>ru</key>
+      <value>BUYER GLN</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

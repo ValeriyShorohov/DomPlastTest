@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e6b332f-601c-4327-ba1f-a0e2f392268f">
+  <name>БанкИКасса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Банк и касса</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаБанкИКасса</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаБанкИКасса</content>
+  <content>CommonCommand.ДополнительныеОбработкиБанкИКасса</content>
+  <content>CommonCommand.ДополнительныеОтчетыБанкИКасса</content>
+  <content>Report.РасходДенежныхСредств</content>
+  <content>Report.ОстаткиДенежныхСредств</content>
+  <content>Report.КассоваяКнига</content>
+  <content>Report.ПоступлениеДенежныхСредств</content>
+  <content>CommonCommand.УправлениеФискальнымУстройством</content>
+  <content>Report.ЖурналРегистрацииПриходныхИРасходныхКассовыхДокументов</content>
+  <subsystems>Банк</subsystems>
+  <subsystems>Касса</subsystems>
+  <subsystems>СправочникиИНастройки</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7d19e13-05e9-416e-ab89-81627d8e631d">
+  <name>ВыполнитьДействияПередУдалениемПрисоединенногоФайлаБЭД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнить действия перед удалением присоединенного файла БЭД</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ПакетОбменСБанкамиПрисоединенныеФайлы</types>
+    <types>CatalogObject.СообщениеОбменСБанкамиПрисоединенныеФайлы</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.РаботаСФайлами.ВыполнитьДействияПередУдалениемПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="156a12be-a701-401a-9df5-da578b6f3251">
+  <producedTypes>
+    <objectType typeId="cd4ffd6d-0fae-4e17-a30f-a42afcc5b1c0" valueTypeId="7539dcfa-6bd1-4f8c-8b62-82e75bf7fa78"/>
+    <managerType typeId="c77e1a2e-4a44-475d-a6be-17b0a5b0024f" valueTypeId="d9ce7091-862e-4fac-89fb-130fc4e55781"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетСправкаОПеречисленииПенсионныхВзносов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справка о перечислении пенсионных взносов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетСправкаОПеречисленииПенсионныхВзносов.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="82aaa840-5965-49cb-8551-a82a9a40acd3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="76778a0d-52a6-4dff-af9e-5b7385ac0321">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c3cb8469-f037-4a15-89be-cadc7b42a66e">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="56993b2d-c0aa-42f1-9b52-e0548f5b90ae">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="8509e345-7036-4b5a-a322-ece9afab3f54">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о перечислении пенсионных взносов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f62ec6b7-8520-48ce-9cf9-591c90878e75">
+    <name>ФормаОтчета2006Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о перечислении пенсионных взносов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ff49d24e-7a6b-4722-8cee-9a4be9b4c295">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="8571f05d-e86c-4265-8a3c-ace35b38a980">
+    <name>МакетФормаОтчета2006Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2006 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="aeabadab-3cae-4dfc-936d-aeffffb4c3e1">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+  <templates uuid="d292c668-5f60-419e-891b-c220d65b3cd7">
+    <name>ПередачаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача данных</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

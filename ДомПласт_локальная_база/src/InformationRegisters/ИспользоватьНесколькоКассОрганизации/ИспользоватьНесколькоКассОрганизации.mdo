@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e111375b-66e2-4eca-b470-06f855d286e1">
+  <producedTypes>
+    <selectionType typeId="8faab7f3-13ca-4359-bfa5-f32a136bc9e3" valueTypeId="c0fe569e-7d48-4a26-ac51-451ea6672e97"/>
+    <listType typeId="01d3f5fc-83c9-4c0a-a52b-6cf7259ca507" valueTypeId="bee1b915-0ac9-4cd4-828d-17138427095b"/>
+    <managerType typeId="89e847f4-0e01-417d-be94-de715b37de43" valueTypeId="b97b3128-0159-478a-8401-671219c91139"/>
+    <recordSetType typeId="f8a224da-6604-4e22-87d8-f796979ffcb2" valueTypeId="0556a290-c7e9-4a39-b1c8-84dbe39fb800"/>
+    <recordKeyType typeId="7c281b42-5c8f-4799-a491-4728f2a7a988" valueTypeId="fd9baa02-93dc-4d16-ae9b-56f672688cc2"/>
+    <recordType typeId="021c9405-a618-47ad-8fac-0b9b43130e33" valueTypeId="79b9d078-f243-4ffb-80d5-7f287c3a327f"/>
+    <recordManagerType typeId="d3078b52-8f16-4ddf-b228-9dd2d3441cce" valueTypeId="8862e752-9db9-4fa5-a401-fbf11d697add"/>
+  </producedTypes>
+  <name>ИспользоватьНесколькоКассОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать несколько касс организации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d926361a-8a1a-4178-a669-0b3d42c89b30">
+    <name>Используется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c0dc5864-2947-4ae5-94d1-cebb47b55fef">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

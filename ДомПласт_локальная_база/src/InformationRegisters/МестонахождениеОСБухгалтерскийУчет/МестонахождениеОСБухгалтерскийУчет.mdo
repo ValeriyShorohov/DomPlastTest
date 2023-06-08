@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51095f92-1610-40ec-bcb5-f43bb61e1a7a">
+  <producedTypes>
+    <selectionType typeId="9effbc09-e231-412c-940b-fdc289cc3f5c" valueTypeId="d5a23727-2f68-4794-a771-3b05cbbd2b5e"/>
+    <listType typeId="f8d477d6-6d80-4f38-a864-aa7e726eb87a" valueTypeId="484c1667-c9e9-4754-b19d-68bd34957e7e"/>
+    <managerType typeId="990d83bc-92cf-49b1-a534-f9a353ac0af5" valueTypeId="db560dd0-55a5-4b19-8bba-d63cd1779f37"/>
+    <recordSetType typeId="342d8795-0d0c-4424-8782-db6182d9dd2c" valueTypeId="50088b3a-5fbe-4895-b3f7-29a449a2e132"/>
+    <recordKeyType typeId="bbf0977c-d80d-4446-95a5-626cfff6723d" valueTypeId="5942ef2f-e86a-4b5a-8c1e-c690b8205f31"/>
+    <recordType typeId="f038dcc7-8c74-41ec-b1d8-46bb2570b974" valueTypeId="c558eafc-f3a7-4620-821f-fc18569d5d05"/>
+    <recordManagerType typeId="9dd31ec8-4e79-407c-a7ef-8eb498929177" valueTypeId="7e6ff5a7-5832-4a00-961a-d5a77ed547ad"/>
+  </producedTypes>
+  <name>МестонахождениеОСБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Местонахождение ОС (бухгалтерский учет)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.МестонахождениеОСБухгалтерскийУчет.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="afee6432-f8f1-428f-a3c8-e0d55a85a7c5">
+    <name>МОЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>МОЛ</value>
+    </synonym>
+    <comment>Выбирается из списка регистра сведений &quot;Работники организаций&quot;</comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b238cc50-fd5d-42e8-b7df-922865040db8">
+    <name>Местонахождение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Местонахождение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c264bdf2-19d8-4ef1-8f40-d6a72bff49f1">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fd154a66-38c6-4e7e-a8e8-be632c094158">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="617afd2c-244d-423c-b768-f8f265fd7ae4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3d898294-8e1e-4caa-9b67-620a1a59aded">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

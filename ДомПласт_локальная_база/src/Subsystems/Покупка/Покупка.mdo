@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a45fa9b1-d323-4544-8b8d-fabd4d13ccd0">
+  <name>Покупка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Покупка</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаПокупкиИПродажи</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаПокупкиИПродажи</content>
+  <content>CommonCommand.ДополнительныеОбработкиПокупка</content>
+  <content>CommonCommand.ДополнительныеОтчетыПокупка</content>
+  <content>Report.ЖурналУчетаСчетовФактур</content>
+  <content>Report.ОтчетПоДаннымКонтрагента</content>
+  <content>Report.ОтчетПоНаличиюСНТВыданныхПолученных</content>
+  <subsystems>Покупка</subsystems>
+  <subsystems>РасчетыСКонтрагентами</subsystems>
+  <subsystems>СправочникиИНастройки</subsystems>
+</mdclass:Subsystem>

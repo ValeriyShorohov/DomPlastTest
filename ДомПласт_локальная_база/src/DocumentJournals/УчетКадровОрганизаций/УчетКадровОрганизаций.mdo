@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7533d4d4-bbdf-4dd2-bdeb-40fb6591bac4">
+  <producedTypes>
+    <selectionType typeId="31744cbe-e334-4d63-857a-6ae3fc45f558" valueTypeId="4e80f43d-3040-499e-9344-10a77ab9c99d"/>
+    <listType typeId="268275a7-9a47-4855-842f-46c31f44efd1" valueTypeId="a673eb18-e89e-486c-9867-e6032d582ab5"/>
+    <managerType typeId="4befd14a-8e30-4c79-8722-f7cf996dca5d" valueTypeId="6c752fd6-9fd9-4685-948e-788405953c4c"/>
+  </producedTypes>
+  <name>УчетКадровОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет кадров организаций</value>
+  </synonym>
+  <defaultForm>DocumentJournal.УчетКадровОрганизаций.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПриемНаРаботуВОрганизацию</registeredDocuments>
+  <registeredDocuments>Document.КадровоеПеремещениеОрганизаций</registeredDocuments>
+  <registeredDocuments>Document.УвольнениеИзОрганизаций</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <listPresentation>
+    <key>ru</key>
+    <value>Журнал кадровых документов</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Учет кадров организаций</value>
+  </extendedListPresentation>
+  <columns uuid="9cc8d883-6e22-4532-bdb6-4c2fa88e7c3b">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.КадровоеПеремещениеОрганизаций.Attribute.Автор</references>
+    <references>Document.ПриемНаРаботуВОрганизацию.Attribute.Автор</references>
+    <references>Document.УвольнениеИзОрганизаций.Attribute.Автор</references>
+  </columns>
+  <columns uuid="5553414e-e1ce-429d-aefc-b897877c28fb">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.КадровоеПеремещениеОрганизаций.Attribute.Комментарий</references>
+    <references>Document.ПриемНаРаботуВОрганизацию.Attribute.Комментарий</references>
+    <references>Document.УвольнениеИзОрганизаций.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="bc28ccec-42eb-4b13-baa1-0dc196294330">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ПриемНаРаботуВОрганизацию.Attribute.Организация</references>
+    <references>Document.КадровоеПеремещениеОрганизаций.Attribute.Организация</references>
+    <references>Document.УвольнениеИзОрганизаций.Attribute.Организация</references>
+  </columns>
+  <columns uuid="e4bff710-f3f4-46c9-b045-85b848f8688f">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.КадровоеПеремещениеОрганизаций.Attribute.Ответственный</references>
+    <references>Document.ПриемНаРаботуВОрганизацию.Attribute.Ответственный</references>
+    <references>Document.УвольнениеИзОрганизаций.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="5761e02a-bf34-42e3-ab43-e95df5e69682">
+    <name>Работники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники</value>
+    </synonym>
+    <references>Document.КадровоеПеремещениеОрганизаций.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ПриемНаРаботуВОрганизацию.Attribute.КраткийСоставДокумента</references>
+    <references>Document.УвольнениеИзОрганизаций.Attribute.КраткийСоставДокумента</references>
+  </columns>
+  <columns uuid="5bf6c910-9747-4ebe-871a-15280d6e74cc">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <references>Document.КадровоеПеремещениеОрганизаций.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПриемНаРаботуВОрганизацию.Attribute.РучнаяКорректировка</references>
+    <references>Document.УвольнениеИзОрганизаций.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="fba89fe2-4bff-40a2-b785-289f41013698">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <references>Document.УвольнениеИзОрганизаций.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.КадровоеПеремещениеОрганизаций.Attribute.СтруктурноеПодразделениеКуда</references>
+    <references>Document.ПриемНаРаботуВОрганизацию.Attribute.СтруктурноеПодразделение</references>
+  </columns>
+  <forms uuid="53be7176-7213-4f63-81a2-1e57b8783184">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

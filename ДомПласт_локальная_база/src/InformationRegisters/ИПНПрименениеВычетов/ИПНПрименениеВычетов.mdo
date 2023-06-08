@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79d56de6-c1ce-47af-a694-3ccee690eee4">
+  <producedTypes>
+    <selectionType typeId="9bcda9c8-4c3b-4285-837b-b1ee10825f83" valueTypeId="389c4559-6950-4d6d-a19e-cc24f9713871"/>
+    <listType typeId="2732baf5-37c1-41ee-82ac-8c31d5fc29f9" valueTypeId="9a6303b5-9934-4554-9c1d-c68567c000b8"/>
+    <managerType typeId="8959744a-76d7-4a7b-8821-f19500c6ce1a" valueTypeId="e54bcefd-60bf-4908-b0e8-afcfe286e28f"/>
+    <recordSetType typeId="f6cfd8c2-f935-4522-bd7a-e0bc81aea95d" valueTypeId="1c00820b-1d80-433a-87d5-f4a3ad349a2c"/>
+    <recordKeyType typeId="793a4d6c-5f19-48b2-b2ff-076cdd9c53ec" valueTypeId="2f01f281-32fa-4e72-bfa6-521dd6a7fcbf"/>
+    <recordType typeId="8e2e9801-f8fa-4e1c-b42e-d7667d226483" valueTypeId="3bd089e0-d2c8-400d-9169-4355f27e18f4"/>
+    <recordManagerType typeId="81f613e6-c466-4da4-bab5-3eb8b5024d83" valueTypeId="c588e189-ca4d-402c-9e5d-a9e13f0d514e"/>
+  </producedTypes>
+  <name>ИПНПрименениеВычетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Применение вычетов по ИПН (до 2018 года)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ИПНПрименениеВычетов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ИПНПрименениеВычетов.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Применение вычетов по ИПН в организациях (до 2018 года)</value>
+  </extendedListPresentation>
+  <resources uuid="bce8d0b8-c0c6-43f1-b13c-bc7e8dfa75f4">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="7a251b0c-47b6-4cd2-a9c3-02364adbe2ac">
+    <name>Физлицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физ. лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="20abeadc-1d30-406c-809e-50b7d9859746">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="99ffdec2-3ff2-478b-8b2f-a354d6e54a46">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

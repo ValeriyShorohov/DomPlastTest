@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57165c79-e2fa-44ca-8401-2d4ba5cbb603">
+  <producedTypes>
+    <selectionType typeId="736876fe-3bbc-457e-9ebe-7d0ac891316d" valueTypeId="b56855db-3596-4d95-9963-af2aad7762d4"/>
+    <listType typeId="d00b1995-5f40-4da0-897c-81f3cb38b7c5" valueTypeId="3304cbf7-1539-42ac-b34d-75b358f55489"/>
+    <managerType typeId="5106d5bd-94d9-4847-94f4-3cf657e5cfde" valueTypeId="723ab02d-ce28-4c0a-9b53-5c6a8ca0bda6"/>
+    <recordSetType typeId="8eba0a35-e55c-4161-9720-67edfd313258" valueTypeId="f99e4ba4-fc72-46e0-8a27-6d14ac63c14b"/>
+    <recordKeyType typeId="751e0624-bb5e-4ba7-b17b-4797b118b7e0" valueTypeId="8a7c29b2-0ba6-4d02-898f-e385ee259581"/>
+    <recordType typeId="4d597a94-6c16-4cc4-a1c2-79089da0df24" valueTypeId="6c01d573-534b-42da-8357-6705d9ca95d5"/>
+    <recordManagerType typeId="71993da0-d447-49b8-a16d-4885b9b78d05" valueTypeId="23045ced-4796-4b22-87a5-cb02f54f3809"/>
+  </producedTypes>
+  <name>СоответствиеНаименованийИСсылокЕдиницИзмеренийИТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие наименований и ссылок единиц измерений и товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5837c8e0-71aa-4405-be94-bb4ce7f9f2ae">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>DefinedType.НоменклатураЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="684ff2e4-0d4a-478a-9fda-6438fbf255b6">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ЕдиницаИзмеренияЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="235e4d62-363d-4f89-973b-d9b9886866cc">
+    <name>КоэффициентПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент пересчета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="69b36287-d38e-4bf6-8ab1-f83400e92bef">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонтрагентЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="736d700e-d858-4fc1-93c6-09d03e847811">
+    <name>КлючАналитикиСоответствия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ аналитики соответствия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаСоответствий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f619aa5b-9409-4fe2-b5d7-6fbcba956de9">
+  <producedTypes>
+    <selectionType typeId="999a4aba-7920-465e-b153-e56a5f827376" valueTypeId="4ce39d58-757e-46ac-8b60-803f804012a2"/>
+    <listType typeId="3a9b45a5-5607-4ae6-a567-6412f2147e5a" valueTypeId="54a744d2-dd0f-4ec2-b6a0-cca7a295a5c3"/>
+    <managerType typeId="9ce450d2-91d7-4be7-b608-f47500c17517" valueTypeId="ea447796-e4a5-4a49-83bb-ae911b7541d0"/>
+    <recordSetType typeId="a3c4fe78-5cf2-4af0-ae81-97e05f91a85e" valueTypeId="346e5302-3500-4415-a3b2-c2c4d1a53f21"/>
+    <recordKeyType typeId="73866b99-57fd-4969-a35f-bfa59c844d31" valueTypeId="1b9927aa-e3ab-41e8-9b76-ae9f04d79820"/>
+    <recordType typeId="e585cfd9-f7ea-4121-ac14-7c3fa2a30cea" valueTypeId="8465f14f-8364-467d-a7c4-540d19e8605d"/>
+    <recordManagerType typeId="19860c9d-e570-4cd3-9f5f-89e48f0e1e8e" valueTypeId="061f78f0-2bdb-475d-8cd1-4bf114ec9258"/>
+  </producedTypes>
+  <name>ОсновныеВиртуальныеСкладыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные виртуальные склады контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1f85e105-fa1f-4d38-a4e3-976fca9b9e3d">
+    <name>ВиртуальныйСкладКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виртуальный склад контрагента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВиртуальныеСкладыКонтрагента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="aa64582d-9c95-4c90-be8d-fac9753a4992">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонтрагентЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

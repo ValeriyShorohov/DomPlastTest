@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff90d36c-ae1b-4565-92e9-0a0fc4ba541c">
+  <producedTypes>
+    <selectionType typeId="621e39bc-79cf-4101-a8d4-b24c0d45d87b" valueTypeId="9e0a662b-0648-4a1e-b578-c02c2b9225bb"/>
+    <listType typeId="fe561637-a11a-4d04-af8d-72d770b439d6" valueTypeId="6dc7370e-dc43-40ea-b95c-32bc005999fd"/>
+    <managerType typeId="81b2ac61-ed1a-4888-8bac-59eb27b07321" valueTypeId="9198ab54-9a8f-4e05-80eb-3818c3a7eb11"/>
+    <recordSetType typeId="bed9ad26-1009-4bc3-927f-e24cb064e683" valueTypeId="3134fac6-8b87-4ce8-b50b-a1f95a20a191"/>
+    <recordKeyType typeId="7180a500-49bc-405c-9f6d-d7141f02488d" valueTypeId="26dc52b9-e8af-4860-bc88-ace24cdd9ff5"/>
+    <recordType typeId="e90feba9-7400-4738-973e-31ed72411a17" valueTypeId="58f28a88-2527-4746-b257-7ca980dc7e9a"/>
+    <recordManagerType typeId="c1151942-9c62-4ba6-b09a-9fd14c0bca86" valueTypeId="f4117fa3-05a5-4078-b450-ba2c20f9bd6f"/>
+  </producedTypes>
+  <name>КодыОрганизацийВБанковскойСистеме</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды организаций в банковской системе</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.КодыОрганизацийВБанковскойСистеме.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КодыОрганизацийВБанковскойСистеме.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Код организации в банковской системе</value>
+  </extendedRecordPresentation>
+  <resources uuid="7ac85a17-a4c9-4d0f-9bb7-1240b9fe3c18">
+    <name>КодОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код организации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7e9cfaa5-01b4-4208-bf17-2bde9fe1495d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="307dee41-3253-408f-b34c-9ba196d68c3e">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Банки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="45ed8c55-5564-4485-ab36-38b3f62209ed">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="64296a11-29ce-43f1-aa4d-be568fe304d8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

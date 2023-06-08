@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f7bc102-037f-462c-9a54-802851902dee">
+  <producedTypes>
+    <objectType typeId="73907aa8-fc10-4009-86d6-c8ba7aeaef62" valueTypeId="3519a522-d0dc-4f3e-a6b5-961ceade6794"/>
+    <managerType typeId="fc9268a9-afbc-4860-9c3d-04a74f016b25" valueTypeId="a9678d8f-333d-41ca-9bda-9acf8b699f08"/>
+  </producedTypes>
+  <name>ГлавнаяКнигаТиповой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Главная книга (бух.)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ГлавнаяКнигаТиповой.Form.ФормаОтчета</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="35e98561-e339-42a8-8899-3ddff7d883a4">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="25a3ff80-0319-4d1c-b432-3986f9729de1">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3874209d-09bf-42a1-bead-b494b8bf2267">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f9ae00d1-e56c-4f90-8d5a-53346c13b42e">
+    <name>ПредставлениеСпискаОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка организаций</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="2e8282f5-0590-42d3-84e6-e41bd2060b5f">
+    <name>ВсеПериоды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все периоды</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c23e7932-d4c0-40d9-8fef-cafad25ab0b3">
+    <name>РазбитьПоЛистам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разбивать по листам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="35cb0fba-fafd-4159-b948-fe05ff345ede">
+    <name>ПоСубсчетамКорСчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>По субсчетам кор. счетов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8690d47f-bfbf-4e53-b934-0c49679bf3d8">
+    <name>ПоГруппамСчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>По группам счетов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bcd9fb63-98b1-4574-8dca-32fdc195c564">
+    <name>ПоСубсчетам</name>
+    <synonym>
+      <key>ru</key>
+      <value>По субсчетам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9c273c46-c51c-4590-8067-00b2f8fa8c2a">
+    <name>ПоГруппамКорСчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>По группам кор. счетов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="d662fd77-1296-4cee-9fc0-615d8ee59c48">
+    <producedTypes>
+      <objectType typeId="e33626a5-062f-4400-b1d6-21f320d72a2b" valueTypeId="8050b3ac-7c97-4099-bfba-277cb9dd8951"/>
+      <rowType typeId="062e9971-9f5f-47ac-b592-e80f60261480" valueTypeId="9014898a-9496-4a53-8b17-cb01ca1a409f"/>
+    </producedTypes>
+    <name>СписокДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список документов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1d1e1d4e-95c5-49b4-8b5e-72f684b005a1">
+      <name>Документ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РегистрацияПрочихОперацийПоРеализованнымТоварамВЦеляхНДС</types>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+        <types>DocumentRef.ВозвратТоваровПоставщику</types>
+        <types>DocumentRef.ПоступлениеДопРасходов</types>
+        <types>DocumentRef.АктОбОказанииПроизводственныхУслуг</types>
+        <types>DocumentRef.ПоступлениеНМА</types>
+        <types>DocumentRef.ВозвратТоваровОтПокупателя</types>
+        <types>DocumentRef.Сторнирование</types>
+        <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+        <types>DocumentRef.АвансовыйОтчет</types>
+        <types>DocumentRef.ПередачаНМА</types>
+        <types>DocumentRef.РеализацияУслугПоПереработке</types>
+        <types>DocumentRef.РегистрацияПрочихОперацийПоПриобретеннымТоварамВЦеляхНДС</types>
+        <types>DocumentRef.ПередачаОС</types>
+        <types>DocumentRef.ПоступлениеИзПереработки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7d79ef4d-8dfe-49e8-b7e5-027edc10608b">
+    <producedTypes>
+      <objectType typeId="006c7846-4325-43ee-9783-84d65270a0d6" valueTypeId="18b9c02c-1bf2-4a43-9333-c13250b8eaed"/>
+      <rowType typeId="d8848c03-ec7e-41f6-9191-e5e279e2cbd0" valueTypeId="3b0553ae-682e-4348-8f05-f8eb4d004b8b"/>
+    </producedTypes>
+    <name>РазвернутоеСальдо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Развернутое сальдо</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="506a9ef6-7b0c-4dc8-9c8b-b7bfe9c164c4">
+      <name>Использование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использование</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4d4237d9-d241-4b2d-8a1d-574849b6fb0e">
+      <name>Счет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Типовой</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="754868d8-97a4-479d-b332-cbf03436f55f">
+      <name>ПоСубсчетам</name>
+      <synonym>
+        <key>ru</key>
+        <value>По субсчетам</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="00747c11-1c85-4e7d-a57a-89f7ca96ad0a">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>По субконто</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="184457a9-a917-460c-b7e7-6b8e8b44df7a">
+      <name>ПоСубконто</name>
+      <synonym>
+        <key>ru</key>
+        <value>По субконто</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>8</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f938eac7-1535-4bb6-afb1-2d0800d7d7cb">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="18f3d482-29ef-4127-9ca4-c274d6d3dab5">
+    <name>ОтчетПоНаличиюСчетовФактур</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по наличию счетов-фактур</value>
+    </synonym>
+  </templates>
+  <templates uuid="2e886b86-293a-4bfb-9c0e-77d4bce96562">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="56b6aeb5-0a9c-4f22-ae75-57bdf8693573">
+    <name>РазвернутоеСальдо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Развернутое сальдо</value>
+    </synonym>
+  </templates>
+  <commands uuid="35f47f18-29b5-467e-8185-8566f26ce510">
+    <name>ГлавнаяКнигаТиповой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главная книга (бух.)</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

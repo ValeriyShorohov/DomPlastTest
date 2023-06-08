@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c1b12ae-1139-4d57-9ef2-7a48cd221562">
+  <producedTypes>
+    <selectionType typeId="f660ee14-26be-44a4-8fba-2e9d4af7a2f5" valueTypeId="1327613b-7373-4cc5-8918-392f6dc2aeae"/>
+    <listType typeId="670fb958-547c-4219-a3f6-33366333e2e0" valueTypeId="d9f22727-c57e-453d-a65a-ba9505032cf9"/>
+    <managerType typeId="7893c5e9-45ee-4e59-8e00-99804c8869ee" valueTypeId="6c4e1fc0-9d79-4d58-819f-9b7243f5b955"/>
+    <recordSetType typeId="1c4612a3-d1dc-4a3c-a9a6-ce620f04c56c" valueTypeId="e18f239b-102f-42f7-8a3f-d6556901ed8a"/>
+    <recordKeyType typeId="76e1c832-fd6c-4464-a9bc-3cd9a05557df" valueTypeId="701c7adb-8b54-4f0f-a47a-05baf74782af"/>
+    <recordType typeId="5bf98f7d-97e3-4e5f-a576-a7aabfe8d980" valueTypeId="43b27a70-bde6-48d1-bd5a-d211b2bffbca"/>
+    <recordManagerType typeId="8c06301d-c4f7-49ce-bfb3-3e4e11995678" valueTypeId="80fbc177-7d28-4e81-8e47-15fc243988ae"/>
+  </producedTypes>
+  <name>СчетаФактурыПрекратившиеДействие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета-фактуры, прекратившие действие</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="a3b08f81-19c8-4f83-94b5-b956751d9396">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a29d060e-00fb-48d3-ae33-ab0c24920490">
+    <name>СчетФактура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет фактура</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СчетФактураЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

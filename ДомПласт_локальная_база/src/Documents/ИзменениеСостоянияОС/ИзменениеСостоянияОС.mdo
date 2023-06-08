@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25cc9a67-68a2-4c6f-a473-39b1331ead98">
+  <producedTypes>
+    <objectType typeId="36baca75-f9f8-43d4-b16f-96574fa58241" valueTypeId="5eb93327-2f69-473d-98ec-fe6446476efb"/>
+    <refType typeId="e8a7818d-615f-4102-b7d1-80ec28b6f87b" valueTypeId="6ed0f2a3-2ac8-4c61-a244-847cc26c1d61"/>
+    <selectionType typeId="846cd0ee-f870-4bc3-8943-3099d642ab33" valueTypeId="61431595-b605-4a2f-98ed-d2b40475d032"/>
+    <listType typeId="440ebb1b-2a57-4d8b-af41-2d43b889a14a" valueTypeId="4f14d294-ddef-4177-90f0-f4db37256e4d"/>
+    <managerType typeId="a50745df-c74a-46e2-9648-32098208878b" valueTypeId="016da204-7dfc-4237-829e-3886b17bec53"/>
+  </producedTypes>
+  <name>ИзменениеСостоянияОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение состояния ОС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИзменениеСостоянияОС.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_ИзменениеСостоянияОС</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <basedOn>Catalog.ОсновныеСредства</basedOn>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Изменение состояний ОС</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИзменениеСостоянияОС.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ИзменениеСостоянияОС.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ИзменениеСостоянияОС.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <registerRecords>InformationRegister.ОбъектыИмущественногоНалога</registerRecords>
+  <registerRecords>InformationRegister.ОбъектыТранспортногоНалога</registerRecords>
+  <registerRecords>InformationRegister.СобытияОСОрганизаций</registerRecords>
+  <registerRecords>InformationRegister.ОбъектыЗемельногоНалога</registerRecords>
+  <registerRecords>InformationRegister.СостоянияОСОрганизаций</registerRecords>
+  <registerRecords>InformationRegister.НачислениеАмортизацииОСБухгалтерскийУчет</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8cab9db3-7a56-44c3-9459-815d3d29b2fb">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d35b419b-0f5b-492b-b927-504b3a591c1d">
+    <name>ИзменениеЗемельногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изм. земельного налога</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c8600db1-6836-4936-ae77-073805cb9c61">
+    <name>ИзменениеИмущественногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изм. имущественного налога</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f84b0f80-f8a7-41c6-bf41-794a94e73005">
+    <name>ИзменениеНачисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изм. начисления амортизации</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9238b58f-9463-461f-a9b0-4cc8178efbc8">
+    <name>ИзменениеТранспортногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изм. транспортного налога</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b42b8f9c-47aa-4f58-b1b1-d8c424adc897">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5d7cb87c-e04f-4b35-a29a-2f695fe6b6b6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="98bc0512-2a39-4524-9b1f-9e9644e0673a">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7383f58e-0b50-4fa9-b1b5-aef549343347">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ec668a12-ebe6-4e69-a08a-248ddf888e87">
+    <name>СобытиеОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СобытияОС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидСобытияОС</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.Поступление</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.НачислениеАмортизации</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.ВнутреннееПеремещение</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.ТекущийРемонт</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.СреднийРемонт</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.КапитальныйРемонт</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.Переоценка</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.Реконструкция</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.Достройка</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.Дооборудование</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.ЧастичнаяЛиквидация</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.Модернизация</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСобытийОС.EnumValue.Прочее</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e2c6b99c-cca1-4512-ad10-c6f422d958b9">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ИзменениеСостоянияОС.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ЯвляетсяСтруктурнымПодразделением</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="5386a751-5af8-47c8-a5ca-3f9a51b0ef72">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="19f632ca-56c1-4c20-8a4b-dcfbc09dd7b2">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6e4c94dc-df75-4ce1-a973-8db515c1380e">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5be5fa6e-3bdf-4903-8a22-7ddd9fe4b9b2">
+    <name>ФормаНастройкиДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="ed2ded53-6213-4a59-9a81-62ba4ea0d58b">
+    <producedTypes>
+      <objectType typeId="b80b66ae-60d7-42d8-9e1f-08f5f869c256" valueTypeId="578e8077-db2f-4de9-9f63-8b03553ce13c"/>
+      <rowType typeId="413edf7b-2efa-46b3-a70e-e01bc75f461f" valueTypeId="45c2d3d3-e0ea-4c8c-84cf-78cb6737dbd5"/>
+    </producedTypes>
+    <name>ОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОС</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="5b28a3a5-c910-4e3b-8277-862d4fbeb535">
+      <name>ОсновноеСредство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Основное средство</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ОсновныеСредства</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="36fd711f-2acc-4efe-a144-b45b22fb8715">
+      <name>ОбъектИмущественногоНалога</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект имущественного налога</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d378d254-3b8a-4bc6-9594-fa941c875fe1">
+      <name>ОбъектТранспортногоНалога</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект транспортного налога</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aa7865af-1bfc-439d-85dd-7b051602f234">
+      <name>ОбъектЗемельногоНалога</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект земельного налога</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="54a98ac1-eef6-42be-a4ab-737464d0561c">
+      <name>НачислятьАмортизацию</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начислять амортизацию</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

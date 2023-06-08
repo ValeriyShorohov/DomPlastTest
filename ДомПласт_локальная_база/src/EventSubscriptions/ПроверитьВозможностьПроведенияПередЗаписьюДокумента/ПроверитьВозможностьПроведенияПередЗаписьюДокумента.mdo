@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25842a3f-986d-48ef-aa38-a9da194ea205">
+  <name>ПроверитьВозможностьПроведенияПередЗаписьюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить возможность проведения перед записью документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПеремещениеТоваров</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>DocumentObject.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов</types>
+    <types>DocumentObject.РегистрацияПрочихОперацийПоРеализованнымТоварамВЦеляхНДС</types>
+    <types>DocumentObject.ОплатаОтПокупателяПлатежнойКартой</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.СписаниеТоваров</types>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.Сторнирование</types>
+    <types>DocumentObject.ПоступлениеДопРасходов</types>
+    <types>DocumentObject.ВводНачальныхОстатков</types>
+    <types>DocumentObject.РегистрацияПрочихОперацийПоПриобретеннымТоварамВЦеляхНДС</types>
+    <types>DocumentObject.ВозвратТоваровПоставщику</types>
+    <types>DocumentObject.ВводНачальныхОстатковПоЗарплате</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.КорректировкаДолга</types>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+    <types>DocumentObject.ОприходованиеТоваров</types>
+    <types>DocumentObject.ГТДИмпорт</types>
+    <types>DocumentObject.ЗакрытиеДтКтЗадолженности</types>
+    <types>DocumentObject.СчетФактураВыданный</types>
+    <types>DocumentObject.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentObject.АктСверкиВзаиморасчетов</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>DocumentObject.СчетФактураПолученный</types>
+    <types>DocumentObject.ОперацияБух</types>
+    <types>DocumentObject.КомплектацияНоменклатуры</types>
+    <types>DocumentObject.РегистрацияНДСЗаНерезидента</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбщегоНазначенияБК.ПередЗаписьюДокументаПроверкаВозможностиПроведения</handler>
+</mdclass:EventSubscription>

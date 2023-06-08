@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6989b114-97f2-464d-a436-b1c5f207f6ff">
+  <name>КонтрольНеразделенныхНаборовЗаписейПриЗаписиБК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных наборов записей при записи БК</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.СтавкаРефинансированияНБ</types>
+    <types>InformationRegisterRecordSet.СведенияОСтавкахИПНиСН</types>
+    <types>InformationRegisterRecordSet.РегламентированныеРасчетныеПоказатели</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхНаборовЗаписейПриЗаписи</handler>
+</mdclass:EventSubscription>

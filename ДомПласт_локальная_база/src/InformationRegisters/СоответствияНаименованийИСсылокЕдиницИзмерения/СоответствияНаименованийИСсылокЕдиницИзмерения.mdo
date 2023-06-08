@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b75691db-c7ab-47d0-9bbc-6346153f43a5">
+  <producedTypes>
+    <selectionType typeId="42688fbd-0247-4068-8eb3-c228fa3a4e87" valueTypeId="e3a19ffa-2c99-4183-a726-95cb63ac7a97"/>
+    <listType typeId="1c059914-3a3c-4466-8262-5b779072794a" valueTypeId="ce22aef9-2998-4358-bcfc-d2be23f4306d"/>
+    <managerType typeId="1cd21915-e13c-42f7-97b1-8e56fdca6dff" valueTypeId="28ba67a5-be66-4191-9ea7-3f9489bd5f73"/>
+    <recordSetType typeId="0a84f397-f81b-44a6-8004-6fd1dc472680" valueTypeId="ab592ffa-5638-4753-aabc-9f85c74023a4"/>
+    <recordKeyType typeId="f0892795-83d8-4c1c-934b-26be454dca7e" valueTypeId="e5faaaa5-cd16-4fd7-b752-86000527cf9b"/>
+    <recordType typeId="d1b599aa-d354-475f-ae1d-1ec9e03ff46e" valueTypeId="967d0c99-1546-42d5-9512-03bb2add5958"/>
+    <recordManagerType typeId="fe8553f5-55d8-4711-8ada-f32e6a5f636f" valueTypeId="fa2edecf-7df0-4eeb-b2d5-b3a330e808ce"/>
+  </producedTypes>
+  <name>СоответствияНаименованийИСсылокЕдиницИзмерения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствия наименований и ссылок единиц измерения</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СоответствияНаименованийИСсылокЕдиницИзмерения.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СоответствияНаименованийИСсылокЕдиницИзмерения.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="17f2152e-486a-4d98-8501-6cf323fcbd78">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения (ссылка)</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ЕдиницаИзмеренияЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5102a5ba-e820-4bdb-9e24-0b856985c9c4">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>DefinedType.КонтрагентЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dbce1f85-acbf-46cb-a754-e5d13ce71910">
+    <name>ЕдиницаИзмеренияНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения (наименование)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b3fd3222-4be7-46c8-b65d-973b569f8248">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ed2aff3c-9d3f-46cf-874d-1672c95b93af">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

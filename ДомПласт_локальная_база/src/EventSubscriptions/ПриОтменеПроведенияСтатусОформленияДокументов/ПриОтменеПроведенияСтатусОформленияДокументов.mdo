@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2ed5fa0-6d17-48e9-844b-8d66ba2e9bc6">
+  <name>ПриОтменеПроведенияСтатусОформленияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>При отмене проведения статус оформления документов</value>
+  </synonym>
+  <source>
+    <types>DefinedType.ПервичныеДокументыОбъект</types>
+  </source>
+  <event>UndoPosting</event>
+  <handler>CommonModule.ВССервер.ПриОтменеПроведенияСтатусОформленияДокументовОбработчик</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Report.ЖурналУчетаСчетовФактур.Command.ЖурналУчетаСчетовФактур</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ОтчетОРеализацииТоваровУслуг.Command.ОтчетОРеализацииТоваровУслуг</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ОтчетПоДаннымКонтрагента.Command.ОтчетПоДаннымКонтрагента</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>ActionsPanelReports</group>
+      <commands>CommonCommand.ПанельОтчетовПродажа</commands>
+      <commands>Report.ОтчетОРеализацииТоваровУслуг.StandardCommand.Open</commands>
+      <commands>Report.ЖурналУчетаСчетовФактур.StandardCommand.Open</commands>
+      <commands>Report.ОтчетПоДаннымКонтрагента.Command.ОтчетПоДаннымКонтрагента</commands>
+      <commands>CommonCommand.ДополнительныеОтчетыПродажа</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.Продажа.Subsystem.Продажа</subsystems>
+    <subsystems>Subsystem.Продажа.Subsystem.РасчетыСКонтрагентами</subsystems>
+    <subsystems>Subsystem.Продажа.Subsystem.СправочникиИНастройки</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

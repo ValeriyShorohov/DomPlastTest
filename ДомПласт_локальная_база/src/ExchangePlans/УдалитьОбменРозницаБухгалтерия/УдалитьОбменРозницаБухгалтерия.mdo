@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a485d526-86e7-4f11-8533-b30f56b95083" thisNode="886f5560-06a5-4e10-b7a0-169e17054291">
+  <producedTypes>
+    <objectType typeId="f7762d2b-d664-4b05-98dc-8a0e131217ab" valueTypeId="00d36c84-b6e7-4a6a-94ba-427c636622e4"/>
+    <refType typeId="1863e7f9-e573-490f-86cb-4972fc3a8131" valueTypeId="1356e2b8-cb7e-4044-ab2a-160ca33e3956"/>
+    <selectionType typeId="303f5939-59c0-4ad3-a93c-faf672356364" valueTypeId="c628f904-025d-44ed-8d9a-e4f94a01665a"/>
+    <listType typeId="c8162f6a-db1e-4620-a8a7-570b7cb8b5ba" valueTypeId="e49fcce5-5bda-49b7-9ff1-9dc48e9cc674"/>
+    <managerType typeId="a9215152-aed9-408a-99c3-699d50856c7e" valueTypeId="f1812544-ed92-4c0b-8021-7ab883b9a9cb"/>
+  </producedTypes>
+  <name>УдалитьОбменРозницаБухгалтерия</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Обмен Розница и Бухгалтерия</value>
+  </synonym>
+  <inputByString>ExchangePlan.УдалитьОбменРозницаБухгалтерия.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.УдалитьОбменРозницаБухгалтерия.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ThisNode</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ReceivedNo</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>SentNo</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="2c3f31d6-0fe9-4c84-80cc-15672634df6d">
+    <name>ИспользоватьИнформациюОМестеСозданияОбъектовПриВыгрузкеИЗагрузкеДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать информацию о месте создания объектов при выгрузке и загрузке данных</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a171eae0-9d2f-4582-aabe-65d798412d1a">
+    <name>ПрефиксДляЗагружаемыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Префикс для загружаемых документов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="565cc203-e72b-4a0d-959d-68f572129215">
+    <name>ДатаНачалаВыгрузкиДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала выгрузки документов</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ExchangePlan>

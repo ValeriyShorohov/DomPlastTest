@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3e2b9aa-ab88-451c-8dfd-93665d092816">
+  <producedTypes>
+    <selectionType typeId="798776d1-579a-4584-83c1-454d410faed5" valueTypeId="53b92760-8c79-4108-a9d3-deeecd0d7e59"/>
+    <listType typeId="c429f66c-19fd-4f81-8ea7-3d3592b1ae6b" valueTypeId="12caaa2f-017e-49ce-a0af-585b3d5c1255"/>
+    <managerType typeId="be13c2f2-84c6-4805-844d-afadffa66f0f" valueTypeId="e81134c8-aea7-4da3-be77-7cb5116f1f82"/>
+  </producedTypes>
+  <name>РасчетныеДокументыБанк</name>
+  <synonym>
+    <key>ru</key>
+    <value>Банковские расчетные документы</value>
+  </synonym>
+  <defaultForm>DocumentJournal.РасчетныеДокументыБанк.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПлатежноеПоручениеВходящее</registeredDocuments>
+  <registeredDocuments>Document.ПлатежноеПоручениеИсходящее</registeredDocuments>
+  <registeredDocuments>Document.ПлатежныйОрдерПоступлениеДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.ПлатежныйОрдерСписаниеДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.ОплатаОтПокупателяПлатежнойКартой</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <columns uuid="1edadcae-a36a-488a-9d95-67c8533dc8bd">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.Автор</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Автор</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Автор</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Автор</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.Автор</references>
+  </columns>
+  <columns uuid="9872137c-2da0-4c7d-b837-b63cac315ca5">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.ВалютаДокумента</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.ВалютаДокумента</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.ВалютаДокумента</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.ВалютаДокумента</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="1bcdab84-1a01-45ac-8056-eaaebaa2e4c3">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.ВидОперации</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.ВидОперации</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.ВидОперации</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.ВидОперации</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="8596f081-0ae9-47ce-bddb-869868348da9">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Комментарий</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.Комментарий</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Комментарий</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Комментарий</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="39443364-1e48-4339-92bd-ba9db62a8406">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Контрагент</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.Контрагент</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Контрагент</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Контрагент</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="48e09957-a5f5-42f1-9f2d-b7f0218b52ef">
+    <name>Оплачено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Оплачено</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.Оплачено</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Оплачено</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Оплачено</references>
+  </columns>
+  <columns uuid="8f8c64b5-4687-4274-ba90-b910663f11e2">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Организация</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.Организация</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Организация</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Организация</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.Организация</references>
+  </columns>
+  <columns uuid="3d5b72bb-b164-4a0a-b796-68831d2ca414">
+    <name>УчитыватьКПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать КПН</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.УчитыватьКПН</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.УчитыватьКПН</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.УчитыватьКПН</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.УчитыватьКПН</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.УчитыватьКПН</references>
+  </columns>
+  <columns uuid="7ee351eb-a88c-4d80-97f6-02c71728fe6a">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.РучнаяКорректировка</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="cd8e33f0-c1f8-4db5-b322-5b90ebae8580">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.СуммаДокумента</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.СуммаДокумента</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.СуммаДокумента</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.СуммаДокумента</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="541860e5-a172-4f25-a5a3-c46668e00709">
+    <name>СчетОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет организации</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.СчетОрганизации</references>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.СчетОрганизации</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.СчетОрганизации</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.СчетОрганизации</references>
+  </columns>
+  <columns uuid="aaa38bce-3e61-4fec-97d6-80305c84cb8d">
+    <name>СуммаКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма комиссии</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.СуммаКомиссии</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.СуммаКомиссии</references>
+  </columns>
+  <columns uuid="35bb2881-5bae-46aa-956f-c4929f8e18da">
+    <name>ВидУчетаНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид учета НУ</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.ВидУчетаНУ</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.ВидУчетаНУ</references>
+  </columns>
+  <columns uuid="102ead5e-5822-4f0c-b3c0-676033cf1bc0">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <references>Document.ПлатежноеПоручениеВходящее.Attribute.СтруктурноеПодразделениеПолучатель</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.СтруктурноеПодразделениеОтправитель</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.СтруктурноеПодразделениеПолучатель</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.СтруктурноеПодразделениеОтправитель</references>
+    <references>Document.ОплатаОтПокупателяПлатежнойКартой.Attribute.СтруктурноеПодразделение</references>
+  </columns>
+  <forms uuid="435046e1-2596-4105-84a6-504853ae8830">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

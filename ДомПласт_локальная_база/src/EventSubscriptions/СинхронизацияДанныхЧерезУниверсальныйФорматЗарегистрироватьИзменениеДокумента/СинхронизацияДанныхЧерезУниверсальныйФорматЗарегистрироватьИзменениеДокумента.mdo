@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="649191eb-ceda-4a87-88f8-2812c02342b3">
+  <name>СинхронизацияДанныхЧерезУниверсальныйФорматЗарегистрироватьИзменениеДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация данных через универсальный формат зарегистрировать изменение документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПеремещениеТоваров</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>DocumentObject.ОтражениеЗарплатыВБухучете</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.СписаниеТоваров</types>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.ВозвратТоваровПоставщику</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+    <types>DocumentObject.УстановкаЦенНоменклатуры</types>
+    <types>DocumentObject.ОприходованиеТоваров</types>
+    <types>DocumentObject.ГТДИмпорт</types>
+    <types>DocumentObject.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.СинхронизацияДанныхЧерезУниверсальныйФорматПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

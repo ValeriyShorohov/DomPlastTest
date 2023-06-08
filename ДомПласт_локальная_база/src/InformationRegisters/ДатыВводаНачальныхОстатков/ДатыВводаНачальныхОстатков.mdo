@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57e102a2-0169-4228-a9da-1c78e80e9977">
+  <producedTypes>
+    <selectionType typeId="e360411b-94bc-4858-81b5-361123e656eb" valueTypeId="68e70f7f-ec2e-4514-8034-286333134331"/>
+    <listType typeId="712a08ba-dfd3-4cf8-96af-bf875c851a99" valueTypeId="749e5771-e143-4fdf-bc2a-6a3834b0bd9f"/>
+    <managerType typeId="967800cc-a5db-4175-b8c0-ee6e034723ea" valueTypeId="0a4a7a74-00a5-4651-b1ba-7ff501592d17"/>
+    <recordSetType typeId="08232df8-eed6-4174-9dc0-ee2af54d9afa" valueTypeId="92906966-1d7b-40f9-8ef8-6ba5258313d7"/>
+    <recordKeyType typeId="2e77292e-af5a-42c7-a504-f089f9e3ea78" valueTypeId="14a39c8d-e495-4ac0-ad32-407c06f2474e"/>
+    <recordType typeId="0f23c271-096e-4519-9607-c022371418db" valueTypeId="0c85e406-7950-4b56-8bdd-ef2cbf197a7d"/>
+    <recordManagerType typeId="63570157-c0ed-4353-9dde-562165372db0" valueTypeId="370ba77b-8108-492c-abe8-99e56c3b92ae"/>
+  </producedTypes>
+  <name>ДатыВводаНачальныхОстатков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата ввода начальных остатков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ДатыВводаНачальныхОстатков.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ДатыВводаНачальныхОстатков.Form.ФормаСписка</defaultListForm>
+  <resources uuid="9391be62-29e1-4e75-85ea-a9069f44d0cc">
+    <name>ДатаВводаНачальныхОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ввода начальных остатков</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b7e60dbe-2cef-47a8-8c2c-b7f7c3c897b3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="29f0795f-79f6-4535-a57d-05bca1f71947">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="61fe011b-37f6-4f86-bdf2-63bc6646ce8f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

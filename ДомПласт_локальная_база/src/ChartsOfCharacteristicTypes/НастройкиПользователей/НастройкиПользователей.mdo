@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8290c388-b775-4496-b240-f5f65e3be7c0">
+  <producedTypes>
+    <objectType typeId="006b88df-850a-49f5-a369-f01d5eb262f6" valueTypeId="dfffd76d-56ef-4540-aa86-4a02fe472dda"/>
+    <refType typeId="24723b96-9f33-444a-8637-77e9f9f7871a" valueTypeId="a5e6200b-a8cf-4b2a-9c10-0da6b4e4f985"/>
+    <selectionType typeId="ee46d630-7ab7-40c1-90d3-ac86a9d2fe9f" valueTypeId="17f7ff36-f9fc-4999-9b79-711fde9a74b3"/>
+    <listType typeId="889dedbb-7860-4dd1-8845-6148fca45d30" valueTypeId="6de04000-4461-44d1-b060-a3dc3ff29e6f"/>
+    <managerType typeId="87d86750-6f09-41a2-bb5e-686c38e6dfca" valueTypeId="700ab35e-8160-4791-90ec-f5819f4b363e"/>
+    <containerType typeId="1f0e49dc-f768-4042-bd9e-e4ddae9d85b7" valueTypeId="0f557755-7ecf-4afa-9d2b-f83328215aa8"/>
+  </producedTypes>
+  <name>НастройкиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.НастройкиПользователей.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.НастройкиПользователей.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ValueType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfCharacteristicTypes.НастройкиПользователей.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Настройка пользователей</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Настройка пользователей</value>
+  </extendedObjectPresentation>
+  <type>
+    <types>EnumRef.СтатусыКонтрагентов</types>
+    <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogRef.СтавкиНДС</types>
+    <types>EnumRef.ВидыОборотовПоРеализации</types>
+    <types>CatalogRef.ВидыРеализации</types>
+    <types>CatalogRef.ПодразделенияОрганизаций</types>
+    <types>CatalogRef.Контрагенты</types>
+    <types>CatalogRef.ДоговорыЭквайринга</types>
+    <types>CatalogRef.ГруппыДоступаФизическихЛиц</types>
+    <types>CatalogRef.Валюты</types>
+    <types>CatalogRef.ФизическиеЛица</types>
+    <types>CatalogRef.Организации</types>
+    <types>Boolean</types>
+    <types>CatalogRef.ВидыПоступления</types>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.ВидыОперацийОблагаемыхАкцизом</types>
+    <types>String</types>
+    <types>CatalogRef.Кассы</types>
+    <types>Date</types>
+    <types>Number</types>
+    <types>CatalogRef.СтавкиАкциза</types>
+    <types>CatalogRef.ШаблоныШтрихкодов</types>
+    <types>EnumRef.ВидыПодакцизныхТМЗ</types>
+    <types>CatalogRef.ТипыЦенНоменклатуры</types>
+    <types>CatalogRef.Склады</types>
+    <numberQualifiers>
+      <precision>2</precision>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>300</length>
+    </stringQualifiers>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <hierarchical>true</hierarchical>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="8f07f0b5-719d-4410-815a-310ae3af83a2">
+      <name>ДругиеНастройки</name>
+      <description>Другие настройки</description>
+      <isFolder>true</isFolder>
+      <code>000000054</code>
+      <type/>
+      <content id="a4a4e257-a2b8-484e-8891-c09c04ec3f6d">
+        <name>УдалитьАвтоматическиЗагружатьКурсыВалютПриНачалеРаботыСистемы</name>
+        <description>(Не использовать) Автоматически загружать курсы валют при начале работы системы</description>
+        <code>000000072</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="e5986668-94b7-4d14-8270-f7b140b8f4cd">
+        <name>УдалитьИспользоватьПомощникаПриемаНаРаботу</name>
+        <description>(Не использовать) Использовать помощника приема на работу</description>
+        <code>000000077</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="d76e70bf-593c-47fd-a904-a3cd36db0e06">
+        <name>ПечатьСуммыПрописьюВдокументах</name>
+        <description>Вывод сумм прописью при печати в документах</description>
+        <code>000000076</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="c18d4be4-a47a-4113-8e82-d684d1cbf86d">
+        <name>ВыводитьСообщенияДляСчетовФактур</name>
+        <description>Выводить сообщения для счетов-фактур</description>
+        <code>000000073</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="e3ea807d-b700-44cf-94e1-0e765cb1afb8">
+        <name>КонтрольДубликатовВСправочникеКонтрагенты</name>
+        <description>Контроль дубликатов в справочнике «Контрагенты»</description>
+        <code>000000074</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="0c2265be-907b-469e-84c1-27737497b709">
+        <name>КонтрольКорреспонденцииСчетов</name>
+        <description>Контроль корреспонденции счетов</description>
+        <code>000000020</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="88ee7da5-3fc6-42ee-8082-e5e47ef91b7c">
+        <name>ОсновнойШаблонШтрихкодаОС</name>
+        <description>Основной шаблон штрихкода основного средства</description>
+        <code>000000082</code>
+        <type>
+          <types>CatalogRef.ШаблоныШтрихкодов</types>
+        </type>
+      </content>
+      <content id="0e934dd4-8d40-4e4e-8327-832a572dd5ee">
+        <name>ПечатьДокументовБезПредварительногоПросмотра</name>
+        <description>Печать документов без предварительного просмотра</description>
+        <code>000000032</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="e0aec341-7580-4a07-ab02-c7f853c7843c">
+        <name>ПоказыватьБыстроеОсвоениеПриНачалеРаботыСистемы</name>
+        <description>Показывать «Быстрое освоение» при начале работы системы</description>
+        <code>000000063</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="2728a720-a00c-41e8-a515-3150440f714f">
+        <name>ПоказыватьВДокументахСчетаУчета</name>
+        <description>Показывать в документах счета учета</description>
+        <code>000000049</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+    <items id="3e3547a2-5a7b-4fd3-a58d-9367cb23eeb9">
+      <name>ОбменЭлектроннымиДокументами</name>
+      <description>Обмен электронными документами</description>
+      <isFolder>true</isFolder>
+      <code>000000080</code>
+      <type/>
+      <content id="9273c62f-6686-460a-a774-c5b139b43b46">
+        <name>СинхронизацияСИСЭСФПриЗапуске</name>
+        <description>Открывать форму &quot;Синхронизация с ИС ЭСФ&quot; при запуске программы</description>
+        <code>000000081</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+    <items id="4b2bf187-42c9-4d6d-8f86-d63fc30575fb">
+      <name>ОсновныеЗначенияДляПодстановки</name>
+      <description>Основные значения для подстановки в документы и справочники</description>
+      <isFolder>true</isFolder>
+      <code>000000042</code>
+      <type/>
+      <content id="0b4d295b-e669-4a9d-b2b5-b3e3d129c168">
+        <name>ОсновнаяВалютаВзаиморасчетов</name>
+        <description>Основная валюта взаиморасчетов</description>
+        <code>000000010</code>
+        <type>
+          <types>CatalogRef.Валюты</types>
+        </type>
+      </content>
+      <content id="f115322a-77c5-4611-b57b-788caf2c3c34">
+        <name>ОсновнаяГруппаДоступаФизическогоЛица</name>
+        <description>Основная группа доступа физического лица</description>
+        <code>000000071</code>
+        <type>
+          <types>CatalogRef.ГруппыДоступаФизическихЛиц</types>
+        </type>
+      </content>
+      <content id="067752ed-918b-4aa5-bd28-e9738e316256">
+        <name>ОсновнаяЕдиницаПоКлассификатору</name>
+        <description>Основная единица по классификатору</description>
+        <code>000000013</code>
+        <type>
+          <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+        </type>
+      </content>
+      <content id="ff877f6a-f391-4727-acd3-49a289dd2b81">
+        <name>ОсновнаяОрганизация</name>
+        <description>Основная организация</description>
+        <code>000000022</code>
+        <type>
+          <types>CatalogRef.Организации</types>
+        </type>
+      </content>
+      <content id="60820305-99aa-43a1-bf4a-cb410111e9e4">
+        <name>ОсновнаяСтавкаАкциза</name>
+        <description>Основная ставка акциза</description>
+        <code>000000058</code>
+        <type>
+          <types>CatalogRef.СтавкиАкциза</types>
+        </type>
+      </content>
+      <content id="92c2de25-ef3b-4625-97ca-668bc264c55f">
+        <name>ОсновнаяСтавкаНДС</name>
+        <description>Основная ставка НДС</description>
+        <code>000000011</code>
+        <type>
+          <types>CatalogRef.СтавкиНДС</types>
+        </type>
+      </content>
+      <content id="c9ae05c0-e18d-41d7-aed6-cf889ca657de">
+        <name>ОсновноеПодразделениеОрганизации</name>
+        <description>Основное подразделение организации</description>
+        <code>000000050</code>
+        <type>
+          <types>CatalogRef.ПодразделенияОрганизаций</types>
+        </type>
+      </content>
+      <content id="5da2fd14-4eba-4164-ab54-f4036b7c674c">
+        <name>ОсновноеСтруктурноеПодразделениеОрганизации</name>
+        <description>Основное структурное подразделение организации</description>
+        <code>000000075</code>
+        <type>
+          <types>CatalogRef.ПодразделенияОрганизаций</types>
+          <types>CatalogRef.Организации</types>
+        </type>
+      </content>
+      <content id="d6c5a430-731a-434e-a984-31e1ef4a6d19">
+        <name>ОсновнойВидОборота</name>
+        <description>Основной вид оборота</description>
+        <code>000000052</code>
+        <type>
+          <types>EnumRef.ВидыОборотовПоРеализации</types>
+        </type>
+      </content>
+      <content id="2caf223b-4862-46eb-ac35-022208552930">
+        <name>ОсновнойВидОперацииОблагаемойАкцизом</name>
+        <description>Основной вид операции облагаемой акцизом</description>
+        <code>000000057</code>
+        <type>
+          <types>CatalogRef.ВидыОперацийОблагаемыхАкцизом</types>
+        </type>
+      </content>
+      <content id="627b7315-7c05-4a6e-97f6-daf31971f100">
+        <name>ОсновнойВидОперацииРеализации</name>
+        <description>Основной вид операции реализации</description>
+        <code>000000053</code>
+        <type>
+          <types>CatalogRef.ВидыРеализации</types>
+        </type>
+      </content>
+      <content id="d72426fd-8e1e-41ee-a847-f5fa3b1a5e63">
+        <name>ОсновнойВидПодакцизногоТМЗ</name>
+        <description>Основной вид подакцизного ТМЗ</description>
+        <code>000000059</code>
+        <type>
+          <types>EnumRef.ВидыПодакцизныхТМЗ</types>
+        </type>
+      </content>
+      <content id="ba3c0d76-97fe-4290-aaa3-e1fd1b428fde">
+        <name>ОсновнойВидПоступления</name>
+        <description>Основной вид поступления для НДС</description>
+        <code>000000051</code>
+        <type>
+          <types>CatalogRef.ВидыПоступления</types>
+        </type>
+      </content>
+      <content id="e4429c84-6bdc-4d9c-ba25-e910811442ac">
+        <name>ОсновнойВидПоступленияИмпорт</name>
+        <description>Основной вид поступления для НДС по импорту</description>
+        <code>000000060</code>
+        <type>
+          <types>CatalogRef.ВидыПоступления</types>
+        </type>
+      </content>
+      <content id="9de3c781-0f63-4449-9d53-af6e2262e9f1">
+        <name>ОсновнойДоговорЭквайринга</name>
+        <description>Основной договор эквайринга</description>
+        <code>000000079</code>
+        <type>
+          <types>CatalogRef.ДоговорыЭквайринга</types>
+        </type>
+      </content>
+      <content id="e93229d3-b7e1-4068-aeff-669dcd47097d">
+        <name>ОсновнойОтветственный</name>
+        <description>Основной ответственный</description>
+        <code>000000005</code>
+        <type>
+          <types>CatalogRef.Пользователи</types>
+        </type>
+      </content>
+      <content id="fe86954d-ffe3-45a8-96b6-e9e436d4c750">
+        <name>ОсновнойПокупатель</name>
+        <description>Основной покупатель</description>
+        <code>000000047</code>
+        <type>
+          <types>CatalogRef.Контрагенты</types>
+        </type>
+      </content>
+      <content id="f3fb5f09-4037-4055-8a4f-19e94489aba3">
+        <name>ОсновнойПоставщик</name>
+        <description>Основной поставщик</description>
+        <code>000000048</code>
+        <type>
+          <types>CatalogRef.Контрагенты</types>
+        </type>
+      </content>
+      <content id="da80d518-a727-4e34-9b0b-fc10e81bca59">
+        <name>ОсновнойСклад</name>
+        <description>Основной склад</description>
+        <code>000000001</code>
+        <type>
+          <types>CatalogRef.Склады</types>
+        </type>
+      </content>
+      <content id="b5c283ff-f88b-4d2a-82ce-e0f2435e020e">
+        <name>ОсновнойТипЦенПродажи</name>
+        <description>Основной тип цен продажи</description>
+        <code>000000009</code>
+        <type>
+          <types>CatalogRef.ТипыЦенНоменклатуры</types>
+        </type>
+      </content>
+      <content id="37206bd3-1889-43cd-9f3b-1d020314c640">
+        <name>ОтражатьДокументыВНалоговомУчете</name>
+        <description>Отражать документы в налоговом учете</description>
+        <code>000000069</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+    <items id="b5f4976c-e62d-4d7f-af5d-430f15415260">
+      <name>УчетПоВсемОрганизациям</name>
+      <description>Учет по всем организациям</description>
+      <code>000000043</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+  </predefined>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.НастройкиПользователей.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>ChartOfCharacteristicTypes.НастройкиПользователей.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>ChartOfCharacteristicTypes.НастройкиПользователей.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>ChartOfCharacteristicTypes.НастройкиПользователей.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultFolderChoiceForm>ChartOfCharacteristicTypes.НастройкиПользователей.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
+  <attributes uuid="35919397-4c92-4754-946a-62afd2cc1a87">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>109</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор настройки пользователя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="bfe0661e-101a-448f-be91-3262497bf487">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fc97157f-127f-4791-87f3-8efa8d961039">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="67f84fb1-a3df-4091-a33f-114c6d98da26">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="98efda4d-0791-4a49-9444-c7f98960a2e7">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="21c1441c-9943-4b8d-a557-14e79735c977">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

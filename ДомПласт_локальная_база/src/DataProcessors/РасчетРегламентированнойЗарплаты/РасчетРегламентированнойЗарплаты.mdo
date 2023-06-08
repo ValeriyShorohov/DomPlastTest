@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92806dfb-b9c7-49b1-9134-ca5aa31dba2c">
+  <producedTypes>
+    <objectType typeId="a94f313d-6bf8-4f0c-b865-33ddb035dfba" valueTypeId="64181960-d17b-4673-acb4-305719c9b1be"/>
+    <managerType typeId="7ea9d6bf-b68c-442c-9ee8-cc4dfeaeb24f" valueTypeId="04916109-9ef9-4527-ab31-7f2b64dec665"/>
+  </producedTypes>
+  <name>РасчетРегламентированнойЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет регламентированной зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РасчетРегламентированнойЗарплаты.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="2b9c3fd7-2dd8-4f27-899c-06475dff919c">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период регистрации</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="36129e5e-b0e6-48ab-a9d6-70541b41c678">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="80444276-6a96-4978-9840-f311f8e28cdb">
+    <name>РассчитыватьНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление зарплаты сотрудникам организаций</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c3be9e78-7153-4553-ac76-251e04821a0d">
+    <name>РассчитыватьУдержания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет удержаний сотрудников организации</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eac5fa64-a196-4ac7-9f4f-2b04edb3c0b9">
+    <name>РассчитыватьСНиСО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет налогов, взносов и отчислений сотрудников организации</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c9f59bd4-fe6f-4f83-9f8d-d5bc204c5abf">
+    <name>РассчитыватьУдержанияИПНиОПВНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удержание ИПН, ОПВ и ВОСМС по налоговому учету</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="24907e27-7b33-46b0-9359-26e62b1398da">
+    <name>ФормироватьОтражениеВРеглУчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение зарплаты в регл. учете</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="68c9e104-ce07-48e3-b3bb-ff7fba29ac20">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="90f9b2f5-249c-436f-a962-7cf7a72c995b">
+    <name>РегистрацияПрочихДоходовВЦеляхНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация прочих доходов в целях налогообложения (Доход ИП)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="5e3b95a5-6a03-4d9d-878a-ba3cb9fc5cbe">
+    <producedTypes>
+      <objectType typeId="0a11d400-ddd4-4d67-b62b-a9dbf00e24e5" valueTypeId="789197f4-7f58-4436-949e-677dac61d790"/>
+      <rowType typeId="15294005-2316-4d58-a222-46ba756c4ee4" valueTypeId="1b4b1cda-ebab-4056-9500-79d94868e433"/>
+    </producedTypes>
+    <name>РасчетныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчетные документы</value>
+    </synonym>
+    <attributes uuid="0a087a4a-c976-4246-ac98-1bfe52612e27">
+      <name>Документ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f9987e4d-cbfd-40d1-9d03-f21dd38aa5ee">
+      <name>ПодразделениеОрганизации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПодразделенияОрганизаций</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="836c6e1b-8f8b-4471-997c-d5316bf5c6ab">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="ba5954ad-d01e-4a51-984e-948af52ba21c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

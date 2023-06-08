@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56fd0235-ac2f-4d92-a77f-0828a2000b62">
+  <producedTypes>
+    <selectionType typeId="097e78d2-7eb4-4ab7-855e-1a55b746e186" valueTypeId="6257f785-018d-4a8c-9157-852f9387aba2"/>
+    <listType typeId="1c26f6dc-9047-4fba-9dbf-206ebcc54346" valueTypeId="11a21822-e87b-4407-ae2c-71c856155840"/>
+    <managerType typeId="5fa06ea8-6f7a-4ec4-9994-7ac0a07894b6" valueTypeId="6643292b-4be8-4aed-b7cc-5cc6044d6ef3"/>
+    <recordSetType typeId="beb12110-5498-44c1-a2e4-90cccee98313" valueTypeId="ca667440-641a-4dd4-8b33-74ac2b47017b"/>
+    <recordKeyType typeId="455dd286-59b8-4cdf-8abd-9744adcbfb2b" valueTypeId="4344f98d-2df6-4d57-90fb-798f3130d6b7"/>
+    <recordType typeId="750b10dd-37cb-45d1-a861-216d7187dd68" valueTypeId="0624efe8-c562-491b-8b57-1505fdcda027"/>
+    <recordManagerType typeId="8a1c1332-2e62-4322-b3c0-31b3ee126fdb" valueTypeId="0b9557aa-dc74-4a6e-9c42-9b476b055302"/>
+  </producedTypes>
+  <name>КоэффициентыСтавкиРефинансированияНБДляРасчетаПени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициенты ставки рефинансирования НБ для расчета пени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="c7fd09ab-96a6-465d-b97d-46e93eae06c9">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="79a425cf-db38-4c71-81f5-1432e3793308">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6d8114e5-9dfc-4801-8953-f74cf498322e">
+    <name>ВидНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид налога</value>
+    </synonym>
+    <comment>Вид налога/сбора/отчисления</comment>
+    <type>
+      <types>CatalogRef.НалогиСборыОтчисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

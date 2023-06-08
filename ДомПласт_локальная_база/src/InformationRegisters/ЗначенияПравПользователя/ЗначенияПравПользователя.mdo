@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56698671-14a1-414e-99d3-26345539f0ee">
+  <producedTypes>
+    <selectionType typeId="883b45bb-dfdb-4aad-be4b-15be2af6901f" valueTypeId="992e6f5b-948c-4e02-99b6-77bf22f06d5d"/>
+    <listType typeId="d1ab4bd9-33f4-4c88-8c12-7796c9a61a94" valueTypeId="dfdb651f-4451-4b3e-a85b-d29523e7b0cc"/>
+    <managerType typeId="95767dba-af78-4bad-9957-08273eb2a414" valueTypeId="dc77555f-489e-4c5f-a74b-4cacbbdec452"/>
+    <recordSetType typeId="22ba2a18-c0be-4f9b-9ce4-aa00084027f9" valueTypeId="dfe38abf-b752-4505-9a80-d6a2a316c24a"/>
+    <recordKeyType typeId="0e8843e5-ed84-4e4b-a4ce-3fa635f081c1" valueTypeId="a33a92a9-57e0-4b92-a93d-734056f09ce0"/>
+    <recordType typeId="71756b37-06bb-48a7-a11d-06023a3f1f77" valueTypeId="cf1e4fc5-8979-4af2-9a6f-a6cef1aa8d1c"/>
+    <recordManagerType typeId="afdb8c3b-5fa4-46d5-96ee-1e8caeea73dd" valueTypeId="c7e864ff-6efa-4267-bf2f-52f6eee74814"/>
+  </producedTypes>
+  <name>ЗначенияПравПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения прав пользователя</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЗначенияПравПользователя.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ЗначенияПравПользователя.Form.ФормаСписка</defaultListForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Значение прав пользователя</value>
+  </recordPresentation>
+  <resources uuid="061713f5-93c7-4876-b7af-f05069d27ee2">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ПраваПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ba9d19ae-e59a-4b93-a4ac-eec07a4a9cf3">
+    <name>УдалитьНаборПрав</name>
+    <synonym>
+      <key>ru</key>
+      <value>(Не использовать) набор прав</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УдалитьНаборПравПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cfa96469-5162-4639-b7ac-341897290d35">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ГруппыПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2214d892-fdc9-4e68-a981-4ec25477010c">
+    <name>Право</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ПраваПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c56ffed9-3253-48d3-807e-bb3f12704f7a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3057684e-5d56-4b65-b1c3-1ce0516ac753">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dfddb80d-0cf2-4194-853c-2f0a555a0c0a">
+    <name>ФормаРедактирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка дополнительных прав</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

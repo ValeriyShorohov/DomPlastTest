@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fdbbbc6c-b3d2-43e1-8e93-1c026d7f781d">
+  <producedTypes>
+    <selectionType typeId="ca1a6a04-7c83-4672-b724-62c8bc41e8c9" valueTypeId="49a99376-6244-4d08-8458-669f6bfae128"/>
+    <listType typeId="ed16d0a6-2d0a-4b1d-b437-7d427a225f33" valueTypeId="de5a9a4b-8c3f-4d37-aa68-f36e316d3dec"/>
+    <managerType typeId="bf466502-c317-4088-899e-38c07eb6ed26" valueTypeId="c72c5c20-0bea-470e-85e1-21e06d160f18"/>
+  </producedTypes>
+  <name>ДокументыПоРасчетуЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по расчету зарплаты</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоРасчетуЗарплаты.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций</registeredDocuments>
+  <registeredDocuments>Document.НачислениеЗарплатыРаботникамОрганизаций</registeredDocuments>
+  <registeredDocuments>Document.РасчетУдержанийРаботниковОрганизаций</registeredDocuments>
+  <registeredDocuments>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения</registeredDocuments>
+  <registeredDocuments>Document.ВводНачальныхОстатковПоЗарплате</registeredDocuments>
+  <registeredDocuments>Document.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций</registeredDocuments>
+  <registeredDocuments>Document.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций</registeredDocuments>
+  <registeredDocuments>Document.ИсполнительныйЛист</registeredDocuments>
+  <registeredDocuments>Document.ОтражениеЗарплатыВРеглУчете</registeredDocuments>
+  <registeredDocuments>Document.РасчетСНиСО</registeredDocuments>
+  <registeredDocuments>Document.УдержаниеИПНиОПВНУ</registeredDocuments>
+  <registeredDocuments>Document.РасчетПениОПВиСО</registeredDocuments>
+  <listPresentation>
+    <key>ru</key>
+    <value>Журнал документов по зарплате</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Зарплата организации</value>
+  </extendedListPresentation>
+  <columns uuid="fd7cf51d-80dd-4b1b-8a06-8f53c6b44113">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.РасчетПениОПВиСО.Attribute.Автор</references>
+    <references>Document.РасчетСНиСО.Attribute.Автор</references>
+    <references>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения.Attribute.Автор</references>
+    <references>Document.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций.Attribute.Автор</references>
+    <references>Document.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций.Attribute.Автор</references>
+    <references>Document.ВводНачальныхОстатковПоЗарплате.Attribute.Автор</references>
+    <references>Document.ОтражениеЗарплатыВРеглУчете.Attribute.Автор</references>
+    <references>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций.Attribute.Автор</references>
+    <references>Document.ИсполнительныйЛист.Attribute.Автор</references>
+    <references>Document.НачислениеЗарплатыРаботникамОрганизаций.Attribute.Автор</references>
+    <references>Document.УдержаниеИПНиОПВНУ.Attribute.Автор</references>
+    <references>Document.РасчетУдержанийРаботниковОрганизаций.Attribute.Автор</references>
+  </columns>
+  <columns uuid="46d06a48-c1c7-4c52-866f-47bb64cfad5a">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.РасчетУдержанийРаботниковОрганизаций.Attribute.Комментарий</references>
+    <references>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения.Attribute.Комментарий</references>
+    <references>Document.ИсполнительныйЛист.Attribute.Комментарий</references>
+    <references>Document.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций.Attribute.Комментарий</references>
+    <references>Document.ОтражениеЗарплатыВРеглУчете.Attribute.Комментарий</references>
+    <references>Document.УдержаниеИПНиОПВНУ.Attribute.Комментарий</references>
+    <references>Document.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций.Attribute.Комментарий</references>
+    <references>Document.ВводНачальныхОстатковПоЗарплате.Attribute.Комментарий</references>
+    <references>Document.РасчетСНиСО.Attribute.Комментарий</references>
+    <references>Document.НачислениеЗарплатыРаботникамОрганизаций.Attribute.Комментарий</references>
+    <references>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций.Attribute.Комментарий</references>
+    <references>Document.РасчетПениОПВиСО.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="085c3777-c67b-4288-888e-0bfacc1a718f">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <references>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций.Attribute.ПериодРегистрации</references>
+    <references>Document.НачислениеЗарплатыРаботникамОрганизаций.Attribute.ПериодРегистрации</references>
+    <references>Document.РасчетУдержанийРаботниковОрганизаций.Attribute.ПериодРегистрации</references>
+    <references>Document.ОтражениеЗарплатыВРеглУчете.Attribute.ПериодРегистрации</references>
+    <references>Document.УдержаниеИПНиОПВНУ.Attribute.ПериодРегистрации</references>
+    <references>Document.РасчетСНиСО.Attribute.ПериодРегистрации</references>
+    <references>Document.РасчетПениОПВиСО.Attribute.ПериодРегистрации</references>
+    <references>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения.Attribute.ПериодРегистрации</references>
+  </columns>
+  <columns uuid="8b61db36-2d55-4241-9dfd-a264d9789d65">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций.Attribute.Организация</references>
+    <references>Document.НачислениеЗарплатыРаботникамОрганизаций.Attribute.Организация</references>
+    <references>Document.РасчетУдержанийРаботниковОрганизаций.Attribute.Организация</references>
+    <references>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения.Attribute.Организация</references>
+    <references>Document.ИсполнительныйЛист.Attribute.Организация</references>
+    <references>Document.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций.Attribute.Организация</references>
+    <references>Document.ОтражениеЗарплатыВРеглУчете.Attribute.Организация</references>
+    <references>Document.УдержаниеИПНиОПВНУ.Attribute.Организация</references>
+    <references>Document.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций.Attribute.Организация</references>
+    <references>Document.ВводНачальныхОстатковПоЗарплате.Attribute.Организация</references>
+    <references>Document.РасчетСНиСО.Attribute.Организация</references>
+    <references>Document.РасчетПениОПВиСО.Attribute.Организация</references>
+  </columns>
+  <columns uuid="d31cd0a9-cc54-4d7b-8206-776b7d231255">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций.Attribute.Ответственный</references>
+    <references>Document.РасчетУдержанийРаботниковОрганизаций.Attribute.Ответственный</references>
+    <references>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения.Attribute.Ответственный</references>
+    <references>Document.НачислениеЗарплатыРаботникамОрганизаций.Attribute.Ответственный</references>
+    <references>Document.ИсполнительныйЛист.Attribute.Ответственный</references>
+    <references>Document.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций.Attribute.Ответственный</references>
+    <references>Document.ОтражениеЗарплатыВРеглУчете.Attribute.Ответственный</references>
+    <references>Document.УдержаниеИПНиОПВНУ.Attribute.Ответственный</references>
+    <references>Document.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций.Attribute.Ответственный</references>
+    <references>Document.ВводНачальныхОстатковПоЗарплате.Attribute.Ответственный</references>
+    <references>Document.РасчетСНиСО.Attribute.Ответственный</references>
+    <references>Document.РасчетПениОПВиСО.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="5d98c9a0-b623-4a5d-85fc-be3625e4deca">
+    <name>Работники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работники</value>
+    </synonym>
+    <references>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций.Attribute.КраткийСоставДокумента</references>
+    <references>Document.НачислениеЗарплатыРаботникамОрганизаций.Attribute.КраткийСоставДокумента</references>
+    <references>Document.РасчетУдержанийРаботниковОрганизаций.Attribute.КраткийСоставДокумента</references>
+    <references>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ИсполнительныйЛист.Attribute.Физлицо</references>
+    <references>Document.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ОтражениеЗарплатыВРеглУчете.Attribute.КраткийСоставДокумента</references>
+    <references>Document.УдержаниеИПНиОПВНУ.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ВводНачальныхОстатковПоЗарплате.Attribute.КраткийСоставДокумента</references>
+    <references>Document.РасчетСНиСО.Attribute.КраткийСоставДокумента</references>
+    <references>Document.РасчетПениОПВиСО.Attribute.КраткийСоставДокумента</references>
+  </columns>
+  <columns uuid="51b7e05d-fd2e-4882-8719-188d3ffc9a16">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <references>Document.РасчетПениОПВиСО.Attribute.РучнаяКорректировка</references>
+    <references>Document.РасчетСНиСО.Attribute.РучнаяКорректировка</references>
+    <references>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения.Attribute.РучнаяКорректировка</references>
+    <references>Document.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций.Attribute.РучнаяКорректировка</references>
+    <references>Document.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций.Attribute.РучнаяКорректировка</references>
+    <references>Document.ВводНачальныхОстатковПоЗарплате.Attribute.РучнаяКорректировка</references>
+    <references>Document.ОтражениеЗарплатыВРеглУчете.Attribute.РучнаяКорректировка</references>
+    <references>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций.Attribute.РучнаяКорректировка</references>
+    <references>Document.ИсполнительныйЛист.Attribute.РучнаяКорректировка</references>
+    <references>Document.НачислениеЗарплатыРаботникамОрганизаций.Attribute.РучнаяКорректировка</references>
+    <references>Document.УдержаниеИПНиОПВНУ.Attribute.РучнаяКорректировка</references>
+    <references>Document.РасчетУдержанийРаботниковОрганизаций.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="17b3473d-f9fa-4610-96de-963b6d244854">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <references>Document.РасчетПениОПВиСО.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.РасчетСНиСО.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.РегистрацияПрочихДоходовВЦеляхНалогообложения.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ВводСведенийОПлановыхУдержанияхРаботниковОрганизаций.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ВводСведенийОРеглУчетеПлановыхНачисленийРаботниковОрганизаций.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ВводНачальныхОстатковПоЗарплате.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ОтражениеЗарплатыВРеглУчете.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.НачислениеЗарплатыРаботникамОрганизаций.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ИсполнительныйЛист.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.РегистрацияРазовыхУдержанийРаботниковОрганизаций.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.УдержаниеИПНиОПВНУ.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.РасчетУдержанийРаботниковОрганизаций.Attribute.СтруктурноеПодразделение</references>
+  </columns>
+  <forms uuid="0efa9daa-3067-408d-9817-5b214bcf9063">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

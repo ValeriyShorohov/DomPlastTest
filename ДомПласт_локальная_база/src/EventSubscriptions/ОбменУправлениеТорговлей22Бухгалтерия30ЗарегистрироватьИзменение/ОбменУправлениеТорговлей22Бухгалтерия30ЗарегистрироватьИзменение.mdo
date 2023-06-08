@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d810bc1-2514-49a9-9acf-d81703a089be">
+  <name>ОбменУправлениеТорговлей22Бухгалтерия30ЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен управление торговлей22 бухгалтерия30 зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.АдресныеСокращения</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.ВидыРеализации</types>
+    <types>CatalogObject.КонтактныеЛица</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.СтраныУчастникиТаможенногоСоюза</types>
+    <types>CatalogObject.ВидыПоступления</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.ДокументыУдостоверяющиеЛичность</types>
+    <types>CatalogObject.НоменклатурныеГруппы</types>
+    <types>CatalogObject.СтавкиНДС</types>
+    <types>CatalogObject.ТипыЦенНоменклатуры</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.ПодразделенияОрганизаций</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.ВидыОплатЭквайринга</types>
+    <types>CatalogObject.СтатьиЗатрат</types>
+    <types>CatalogObject.ОсновныеСредства</types>
+    <types>CatalogObject.ДолжностиОрганизаций</types>
+    <types>CatalogObject.НомераГТД</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>CatalogObject.СтавкиАкциза</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.Банки</types>
+    <types>CatalogObject.ВидыОперацийОблагаемыхАкцизом</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.ДоговорыЭквайринга</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>CatalogObject.ВидыПервичныхДокументов</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.КлассификаторСтранМира</types>
+    <types>CatalogObject.Субконто</types>
+    <types>CatalogObject.Кассы</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.ОбменУправлениеТорговлей22Бухгалтерия30ЗарегистрироватьИзменениеПередЗаписью</handler>
+</mdclass:EventSubscription>

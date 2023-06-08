@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3130427-6db1-457a-aa7b-938263fa0cd1">
+  <producedTypes>
+    <selectionType typeId="4dd5deb5-a5d0-47e0-bb4a-962b9c2985fb" valueTypeId="ee2988be-4839-43dd-9e78-d9dbaf572c03"/>
+    <listType typeId="12044424-5d73-42f7-8294-f8ef3311e36c" valueTypeId="b3b6f5a2-01cf-4d3e-aa1f-da169a600f5a"/>
+    <managerType typeId="7db8c70e-5346-4f6a-8493-e1922f91ab58" valueTypeId="ad3a8fc2-260e-44f8-bf5f-21a77c6dac27"/>
+    <recordSetType typeId="0692fb1d-e06b-460d-a2e1-0084b9549f90" valueTypeId="57362817-c2a0-4f69-bd65-d6f5ea469bc3"/>
+    <recordKeyType typeId="f25048f9-6ba4-4a81-97c4-9027c043700c" valueTypeId="e8e1b1d2-6f33-4f38-b1ca-888128196f5b"/>
+    <recordType typeId="8a00dab9-34b0-4d74-94d7-dd216172d15a" valueTypeId="c1d43fdc-46e2-4c52-bf15-70ff3b8f7b67"/>
+    <recordManagerType typeId="5de15cc2-e004-4323-87ae-5da822de48bb" valueTypeId="3d249b10-ecc8-4531-816e-725c9d84299a"/>
+  </producedTypes>
+  <name>УчетнаяПолитикаБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетная политика (бухгалтерский учет)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>BothWays</editType>
+  <defaultRecordForm>InformationRegister.УчетнаяПолитикаБухгалтерскийУчет.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УчетнаяПолитикаБухгалтерскийУчет.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="d92bb545-0600-47b1-ac7f-3d754125372b">
+    <name>СпособРасчетаСебестоимостиПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ расчета себестоимости производства</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыРасчетаСебестоимостиПродукции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СпособыРасчетаСебестоимостиПродукции.EnumValue.ПоПодразделениям</value>
+    </fillValue>
+  </resources>
+  <resources uuid="26091d12-7c97-4dd8-ac28-ab7000131b47">
+    <name>УчетВременныхРазницПоНалогуНаПрибыль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет временных разниц по налогу на прибыль</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="77bc2044-8008-4b45-ac11-1cfe59e6609f">
+    <name>ПодразделениеДляРеглОпераций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение для регламентных операций</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.УчетнаяПолитикаБухгалтерскийУчет.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e8e7d307-c5de-4313-bc8f-fda140bf0a2e">
+    <name>ОпределятьСтоимостьПриобретенияПоКурсуАванса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определять стоимость приобретения активов по курсу аванса</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="978a9e4c-1e80-473f-97d8-88722d81efd4">
+    <name>ПрименятьПараметрыНачисленияАмортизацииВМесяцеИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применять параметры начисления амортизации в месяце их изменения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="15ce2531-0500-448a-aae1-c6e1eb5976a3">
+    <name>ВедениеУчетаВременныхРазницБалансовымМетодом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведение учета временных разниц балансовым методом</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9425d5a8-d8fc-4ef9-b1b1-76ca1a26bd82">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5ebcce11-7f68-42ee-b7b9-82cb88eed23d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="259d716b-bb9b-4f58-a0ea-d5784ddcc2f8">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

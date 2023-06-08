@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f36b5cac-275f-428f-ab55-ecc384c9bb89">
+  <producedTypes>
+    <selectionType typeId="154f8de9-03d1-4e6c-bedd-ba6decbcee89" valueTypeId="385fcae7-d397-48e1-9650-da93242b4852"/>
+    <listType typeId="87a0233f-578a-41ea-8ace-e84aa2983d8b" valueTypeId="bcc71b33-70f1-4904-b3f8-2a907268c585"/>
+    <managerType typeId="ff59224e-f4e3-4b24-9f98-65ec40de3f8f" valueTypeId="7c43569a-c6d5-477c-802c-97699f684843"/>
+    <recordSetType typeId="f18da4ae-651b-4a85-9098-97cb7e0ffb1c" valueTypeId="9abe23ef-439e-4b28-9c43-f94e43fb6796"/>
+    <recordKeyType typeId="52b93002-0f7d-4299-9677-0b9f9a42c119" valueTypeId="aa50f883-5350-41ff-9934-22148ade6061"/>
+    <recordType typeId="91c4d1c4-2c6e-414a-b3d8-61fb7c026eeb" valueTypeId="cb63f6df-5b72-4c9a-8748-e9e8bfd01243"/>
+    <recordManagerType typeId="2916049a-d81e-4eef-ae4e-b0dc77ad4143" valueTypeId="322c851e-c42c-4daa-b66f-46af9736ad86"/>
+  </producedTypes>
+  <name>ОбъектыНалоговогоУчетаФА</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фиксированные активы организации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="190405e7-081d-4ea7-82c8-9fb54f4acc2b">
+    <name>ГруппаНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа налогового учета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыНалоговогоУчетаФА</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="77193919-a575-4216-8684-db1d4a1418a4">
+    <name>СостояниеФиксированногоАктива</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние фиксированного актива</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСостоянийФА</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="208c67f5-7126-4063-afb9-29e13fba72bd">
+    <name>ПорядокПогашенияСтоимостиНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок погашения стоимости в налоговом учете</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядокПогашенияСтоимостиФА</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="043c8bb8-965c-48f7-bbcc-2fef88fa84e6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="16f7e5f3-d1e2-4d50-992f-6c44c70230b9">
+    <name>ФиксированныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+      <types>String</types>
+      <types>CatalogRef.ОсновныеСредства</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

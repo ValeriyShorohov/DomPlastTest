@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5da1a58f-4d46-4586-9f71-63a8a18dbbf5">
+  <producedTypes>
+    <selectionType typeId="174d85c4-aea4-4c70-9ba1-56119edcc6c5" valueTypeId="f6a385a0-8aae-405f-a447-2b47c7e72a43"/>
+    <listType typeId="d73e80e5-284e-4e65-961b-739f51ba60e2" valueTypeId="ecb5ef2a-43db-47c5-9fba-be0d81f4bead"/>
+    <managerType typeId="0398650d-c339-4e69-b4a5-a1c2e9288034" valueTypeId="ab992d94-b56e-4dbd-acc2-6fb745bd592e"/>
+    <recordSetType typeId="0ad45c86-2c43-486d-aa4a-0403187ef893" valueTypeId="f67cd3ad-f242-4083-b078-43bb46553928"/>
+    <recordKeyType typeId="0d7c0395-6449-4dcc-9a0b-77e9b43cd6c1" valueTypeId="9bdc0cf5-ce49-4eb9-91e0-1c9e888ea0ae"/>
+    <recordType typeId="d7aa87dd-3e37-413d-8d3d-3c0caa00e879" valueTypeId="088524b2-1dac-4c97-9d8d-6079286c7776"/>
+    <recordManagerType typeId="a6099e06-16b4-4e3a-a5e1-cdb8330d9f7c" valueTypeId="119a1533-844b-45f3-920c-d0d173a0558d"/>
+  </producedTypes>
+  <name>УдалитьЗначенияСвойствОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Значения свойств объектов</value>
+  </synonym>
+  <defaultRecordForm>InformationRegister.УдалитьЗначенияСвойствОбъектов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УдалитьЗначенияСвойствОбъектов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>(Не использовать) Значение свойства объекта</value>
+  </recordPresentation>
+  <resources uuid="d26803fd-8b93-454e-bb5f-4c78e527fbe8">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.УдалитьСвойстваОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b3a8a3f2-99b2-4979-bd24-5c06a0842553">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+      <types>CatalogRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="64221581-e394-4414-b829-29c11ef422f2">
+    <name>Свойство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свойство</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.УдалитьСвойстваОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="44bd0e10-70ed-477f-94cc-6d49f53dfca6">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="accce2fd-42cc-42b1-857a-9d3e0125b10c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

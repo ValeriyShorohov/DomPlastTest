@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2897c82e-4a02-415f-b246-435527f3ec4c">
+  <producedTypes>
+    <objectType typeId="d4d61e83-61fb-45f2-af2d-413995e93766" valueTypeId="c2b87b07-b4b6-441e-8693-dd3b4383c903"/>
+    <managerType typeId="296be9c8-cb95-4d84-9c7e-7bcd4a2d99ee" valueTypeId="4b3867fb-ef8e-40d9-9e18-4f77fc084c59"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетСправкаОЗаработнойПлате</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справка о заработной плате</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетСправкаОЗаработнойПлате.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="4c73c94f-b5ac-41f4-9e41-4dd9ff913320">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c00810e7-6db7-47d8-b129-0f1763f5e044">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a02b9610-b948-4ca8-b8f4-42af006cd394">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="741c656c-d7f4-4ded-99ec-5f3f5c6e6825">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f6e65148-19d5-4af9-ab42-c9d87f85426c">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о заработной плате</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="04f8f1d2-3f39-4202-9a36-bae5d0c616f3">
+    <name>ФормаОтчета2006Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о доходах</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cb47fe7e-7dc9-4ba2-b77c-ef7c6117f4ce">
+    <name>ФормаОтчета2020Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка о доходах</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="41393fe1-ce89-418b-be45-119309a46f5d">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="bd8a5799-588a-4aa8-93da-a2e3b184e7bd">
+    <name>МакетФормаОтчета2006Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2006 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="728ba8b2-f4cd-4691-9bf4-c6304d988443">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+  <templates uuid="b18b3809-add0-487a-be1d-003517308e4b">
+    <name>ПередачаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача данных</value>
+    </synonym>
+  </templates>
+  <templates uuid="a38ed637-cf05-49d6-b3c7-6ea16d7a932c">
+    <name>МакетФормаОтчета2020Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2020 кв1</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

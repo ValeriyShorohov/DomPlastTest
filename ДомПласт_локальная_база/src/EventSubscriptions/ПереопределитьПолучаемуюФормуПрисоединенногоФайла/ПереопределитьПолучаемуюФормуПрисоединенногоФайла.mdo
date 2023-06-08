@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1700a47-06d2-4f4a-89f6-1ac8dca4085c">
+  <name>ПереопределитьПолучаемуюФормуПрисоединенногоФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переопределить получаемую форму присоединенного файла</value>
+  </synonym>
+  <source>
+    <types>CatalogManager.СчетНаОплатуПокупателюПрисоединенныеФайлы</types>
+    <types>CatalogManager.НематериальныеАктивыПрисоединенныеФайлы</types>
+    <types>CatalogManager.СотрудникиОрганизацийПрисоединенныеФайлы</types>
+    <types>CatalogManager.АктСверкиВзаиморасчетовПрисоединенныеФайлы</types>
+    <types>CatalogManager.ПодразделенияОрганизацийПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЗаявлениеНаПредоставлениеВычетовИПНПрисоединенныеФайлы</types>
+    <types>CatalogManager.АвансовыйОтчетПрисоединенныеФайлы</types>
+    <types>CatalogManager.ПлатежноеПоручениеИсходящееПрисоединенныеФайлы</types>
+    <types>CatalogManager.ПоступлениеТоваровУслугПрисоединенныеФайлы</types>
+    <types>CatalogManager.ОрганизацииПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЭСФПрисоединенныеФайлы</types>
+    <types>CatalogManager.ПлатежноеПоручениеВходящееПрисоединенныеФайлы</types>
+    <types>CatalogManager.НоменклатураПрисоединенныеФайлы</types>
+    <types>CatalogManager.КонтрагентыПрисоединенныеФайлы</types>
+    <types>CatalogManager.РеализацияТоваровУслугПрисоединенныеФайлы</types>
+    <types>CatalogManager.БанковскиеСчетаПрисоединенныеФайлы</types>
+    <types>CatalogManager.ФизическиеЛицаПрисоединенныеФайлы</types>
+    <types>CatalogManager.ДоговорыКонтрагентовПрисоединенныеФайлы</types>
+    <types>CatalogManager.ИсполнительныйЛистПрисоединенныеФайлы</types>
+    <types>CatalogManager.ОсновныеСредстваПрисоединенныеФайлы</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.РаботаСФайламиКлиентСервер.ОпределитьФормуПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>

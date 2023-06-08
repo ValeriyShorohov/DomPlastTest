@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8db250ad-4ef9-4e67-b116-471b5fbe118f">
+  <producedTypes>
+    <selectionType typeId="1776ba28-38e2-4d71-a0e6-7349d1310e8f" valueTypeId="6f100c2f-cbdc-4487-b2e9-9afccd56abe9"/>
+    <listType typeId="a866dd8d-5e94-4af2-8fd0-b7e552e096e4" valueTypeId="da2b6524-0b26-4ca4-b0b4-b9106779e421"/>
+    <managerType typeId="ccce2d91-18ab-4242-ab23-39022c2a640d" valueTypeId="5d144c2a-34d2-4d0b-a6f4-0a9467a48217"/>
+    <recordSetType typeId="4cea6c70-13b5-4d45-8a49-ad7cc9f9d9d3" valueTypeId="b7d4c6b6-52a4-492b-a518-3ace883d7a35"/>
+    <recordKeyType typeId="0889f448-de27-4f85-8073-adc81e3c7db2" valueTypeId="ddfb5449-50bd-474e-b744-43678efdafd8"/>
+    <recordType typeId="52d919a3-edcc-4903-a1b4-18643eaaca3f" valueTypeId="da4e66b6-bb88-490a-9ade-73fac80b7531"/>
+    <recordManagerType typeId="3ae4ff67-f0df-4d5b-ab67-31715827beaa" valueTypeId="da9d7aad-36d0-44b9-9d21-55d6697b2f83"/>
+  </producedTypes>
+  <name>СпособОценкиЗапасовБУ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способ оценки запасов (БУ)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СпособОценкиЗапасовБУ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СпособОценкиЗапасовБУ.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <listPresentation>
+    <key>ru</key>
+    <value>Способы оценки запасов (БУ)</value>
+  </listPresentation>
+  <resources uuid="52e1e12f-d5ed-4dce-9717-74266b22eb9f">
+    <name>СпособОценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ оценки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыОценки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d1024eca-2515-4c49-814d-a17a86c16483">
+    <name>СчетЗапасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет запасов</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="71eaab7e-ca9f-4f45-81c0-258a2da92c26">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d7d19220-9d63-4118-a795-8616eaa9584b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbc6d30e-38bb-4077-8c6c-e5b7f56e43ac">
+  <producedTypes>
+    <objectType typeId="74070e76-6e60-42bd-8543-9f3ec293e559" valueTypeId="fab55bb7-440a-4931-9d52-b67e4f55f827"/>
+    <managerType typeId="2d3ba629-2f8b-401e-9612-1d6c50ebf514" valueTypeId="cc879ce6-23b0-499e-8880-0c3d8686695f"/>
+  </producedTypes>
+  <name>ДосьеКонтрагента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Досье контрагента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДосьеКонтрагента.Form.Форма</defaultForm>
+  <forms uuid="6bfc12a1-fe91-4a86-b571-c7c0bb336027">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7957779e-a650-4d7d-96b0-be98c56e7cdf">
+    <name>ОбщиеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общие данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="f3188cf1-0fdf-4c2a-bb66-e5cd44d0d316">
+    <name>Благонадежность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Благонадежность</value>
+    </synonym>
+  </templates>
+  <templates uuid="ddd56f53-a92e-4e68-a767-d3c72b64632c">
+    <name>НалоговыеОтчисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговые отчисления</value>
+    </synonym>
+  </templates>
+  <templates uuid="32e4f9bb-90bf-45a0-9cc3-12c2f70931cd">
+    <name>Дополнительно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительно</value>
+    </synonym>
+  </templates>
+  <templates uuid="4a3c0c93-4d94-4d85-a163-0f892e61e708">
+    <name>МакетPDF</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет PDF</value>
+    </synonym>
+  </templates>
+  <commands uuid="37263d56-1215-4ffd-8bb8-484fe088d251">
+    <name>Досье</name>
+    <synonym>
+      <key>ru</key>
+      <value>Досье</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Контрагенты</types>
+    </commandParameterType>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Информация о контрагенте</value>
+    </toolTip>
+  </commands>
+</mdclass:Report>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f867c82-c30e-4562-ae71-3d1b0127fe2a">
+  <producedTypes>
+    <refType typeId="db9e46b1-15cc-4cda-9b0b-48fc864bb1d3" valueTypeId="c0efa59d-8500-4509-b931-8040b52d36f3"/>
+    <listType typeId="e24ad773-ba06-4ac4-b31d-1102c34a1760" valueTypeId="c10b95f3-fd8e-4305-aefd-b82c6d27c5c8"/>
+    <managerType typeId="bd6ed1fd-d141-40fe-af37-806dca7be2f0" valueTypeId="7ef465ad-c9a6-449a-a01d-8ae7aad5bb91"/>
+  </producedTypes>
+  <name>ПричиныВыпискиСФНаБумаге</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины выписки счета-фактуры на бумажном носителе</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="265b7cbd-8768-4866-bdc0-5a37f01f03d3">
+    <name>ПростойСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Техническая ошибка или плановые работы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c7e49133-086f-4af9-89b6-015622e58098">
+    <name>БлокированиеДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокировка налогоплательщика уполномоченным органом</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="91099ef1-c792-4514-833b-0d62753bdde3">
+    <name>ОтсутствиеТребованиеПоВыписке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсутствовало требование по выписке ЭСФ</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

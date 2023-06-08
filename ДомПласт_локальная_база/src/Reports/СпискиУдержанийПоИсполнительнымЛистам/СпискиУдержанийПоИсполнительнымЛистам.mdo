@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa601d18-c6a0-40f7-beff-0d70741858f5">
+  <producedTypes>
+    <objectType typeId="7f237d14-1f7d-4221-b56c-5ba0772d66ca" valueTypeId="26e64a2b-6906-4038-983d-74819325833e"/>
+    <managerType typeId="685b7327-0dda-4024-9c55-f888546bc1ca" valueTypeId="07bb5dd5-47be-4bb8-9ea2-334a23947ee7"/>
+  </producedTypes>
+  <name>СпискиУдержанийПоИсполнительнымЛистам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списки удержаний по исполнительным листам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СпискиУдержанийПоИсполнительнымЛистам.Form.ФормаОтчета</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="8236ed64-16fb-4d5c-b1db-fe6ced6f2c84">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="50aafae7-8273-4541-84c7-f599564cf9ff">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="0e0ba4b7-921d-409c-8a3f-effbca77d100">
+    <name>СписокОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a0b5dca2-9399-41c6-a9c4-c9269497e5a2">
+    <name>СписокВидовСбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид сбора</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.УдержанияОрганизаций</types>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e0b28c1a-257d-444b-ba94-118d5f40f7d9">
+    <name>СписокБанков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Банки</types>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8c25d0a3-66ed-41c2-a89a-55234e3992ac">
+    <name>СпособПеречисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ перечисления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыПеречисленияПоИсполнительномуЛисту</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="edd3e6a7-9f4a-4e2c-b387-abcb7208b1c1">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1329b021-d674-4acb-9dc5-17da6b1e2b06">
+    <name>ПочтовыйПеревод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почтовый перевод</value>
+    </synonym>
+  </templates>
+  <templates uuid="ce957829-080b-4fab-bb00-cbe9111d475e">
+    <name>ПлатежнаяВедомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежная ведомость</value>
+    </synonym>
+  </templates>
+  <templates uuid="42b3fb9b-0295-45d9-9e84-04926c7c8c48">
+    <name>ПеречислениеСписком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перечисление списком</value>
+    </synonym>
+  </templates>
+  <commands uuid="fb3d2cd7-9aa7-42ae-903a-f35c0f67eeb9">
+    <name>СпискиУдержанийПоИсполнительнымЛистам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки удержаний по исполнительным листам</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

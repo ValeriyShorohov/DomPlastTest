@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e347f3d5-9945-4423-bd7c-53c8e4e4ce74">
+  <producedTypes>
+    <objectType typeId="48c076d9-e86b-4b8f-90db-1da3910d1288" valueTypeId="96cfe95c-59ad-4258-a6cc-d5b1223f477b"/>
+    <refType typeId="2996310b-520e-4df7-9853-837e28f7a556" valueTypeId="cfd32914-de1f-4751-b2c6-6d1e07edddda"/>
+    <selectionType typeId="0e0ffd1d-7d84-4e25-8c9c-cd16f980bded" valueTypeId="ef0d5429-7a50-4dd9-b38d-90fc9d8711ab"/>
+    <listType typeId="d8a6abd1-23ff-445d-9203-a14f2b854414" valueTypeId="3721321c-cc9b-4a3f-9512-2a9ce939ce52"/>
+    <managerType typeId="4d207a7e-6368-47b4-a1db-2b33dbf11ad9" valueTypeId="9bddc1a7-711f-4c50-8793-b7daa998c413"/>
+  </producedTypes>
+  <name>ПричиныСписанияОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины списания ОС</value>
+  </synonym>
+  <comment>Причины списания ОС</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПричиныСписанияОС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПричиныСписанияОС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Причина списания ОС</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ПричиныСписанияОС.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ПричиныСписанияОС.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ПричиныСписанияОС.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="c63b8ac3-833f-4f83-ab1a-fda1303de7d2">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7082a533-2c73-40e0-baa7-7562c673aefd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b390526e-ed08-4b0e-9f85-474f2fee4f7e">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c613627-a53e-4ebe-afc4-1583832c7c83">
+  <producedTypes>
+    <selectionType typeId="74cd23bd-970f-41ff-8498-08b0521d9a9a" valueTypeId="5cce9aee-971d-4d59-81ca-1833e5ae7d3d"/>
+    <listType typeId="79f27b9d-14f8-489b-8b1e-4cd6b2bfcf65" valueTypeId="c1598ecf-d54f-4cb1-858a-d6aeef8a6794"/>
+    <managerType typeId="d3c0b638-f5ae-4883-a6c5-0179c7e7271e" valueTypeId="c58518f1-2933-40af-870a-91840b3bf70a"/>
+    <recordSetType typeId="06b0e972-5f67-4edd-bdd4-940560833a4d" valueTypeId="e371dfc1-3d7c-4015-9417-853887c2ce32"/>
+    <recordKeyType typeId="21fe78ab-69ed-46d5-9939-1582e01aeee1" valueTypeId="5193e6ab-316e-4bf3-bf84-ed569af650eb"/>
+    <recordType typeId="76edd4d1-a2fb-4744-b23a-55669f607fae" valueTypeId="ec4cf650-c4c4-4342-a246-fe5734c72238"/>
+    <recordManagerType typeId="5c67c1c7-9f97-4ab3-a1cb-6a7ecf5c0b0e" valueTypeId="1ece5a2d-d2a5-485b-8906-7e2b86095814"/>
+  </producedTypes>
+  <name>ШкалаСтавокУдержаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шкала ставок удержаний</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <resources uuid="0fcebf41-0027-4087-b076-5acbd9f639ae">
+    <name>НижнийПредел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нижний предел</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="34f5a247-b0f1-4e3a-89f9-063d20273c00">
+    <name>ВерхнийПредел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Верхний предел</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="840096ad-16d3-4fd0-b21a-410163522a22">
+    <name>Величина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="346825db-bf7c-4942-9efb-a6ce4ca77c56">
+    <name>МинСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мин сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a1a4a0c4-1573-43f9-a32e-d1960169f671">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.УдержанияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bc3f3e44-2f5f-4ce7-b2be-0121e95a10ec">
+    <name>НомерСтрокиШкалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер строки шкалы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

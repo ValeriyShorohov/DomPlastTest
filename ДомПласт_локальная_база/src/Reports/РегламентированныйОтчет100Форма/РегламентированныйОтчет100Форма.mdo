@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="435e0266-163c-44ad-925f-259f4044a43d">
+  <producedTypes>
+    <objectType typeId="d6da0588-b749-444f-be68-22209725c324" valueTypeId="6a8f47b6-3fd9-428b-bc0d-b8261522f887"/>
+    <managerType typeId="2d4fe43a-4e61-4665-a942-7390e99f6331" valueTypeId="5c6abcf5-7c81-49fe-8787-4fcc3f810c22"/>
+  </producedTypes>
+  <name>РегламентированныйОтчет100Форма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентированный отчет 100 форма</value>
+  </synonym>
+  <comment>РегламентированныйОтчет100Форма_БК3_v31_r116_001</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчет100Форма.Form.ОсновнаяФорма</defaultForm>
+  <mainDataCompositionSchema>Report.РегламентированныйОтчет100Форма.Template.МакетСКДФорма1002011Кв4</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="de07f164-e28b-4122-965b-2cfefb4147e2">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8e9b3402-3ec9-4dae-82cf-f98fc9d671bf">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="090fbf8c-cac8-4d51-930e-141da1b42b72">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2e1a68ca-dc45-42f5-9383-85a1d09d0079">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5d6252a0-4690-4770-90a2-bb5b9ca0c82b">
+    <name>НалоговыйКомитет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый комитет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2ff7f370-8d5e-4675-9321-88bdc6fac48d">
+    <name>РасширеннаяНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенная настройка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e749c146-403a-481f-8277-cb3553d954b8">
+    <name>ДанныеОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные отчета</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="43d8dfd5-1b73-4fe4-a9d3-639b4afe6668">
+    <name>НастройкиФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки формы</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0a1aaf4c-9972-4468-ac67-acf7f9f1739b">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="29903a15-9ebb-4f5d-82ae-7e2985a58be9">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="fcc6aea3-dae2-476c-876c-448b780df183">
+    <name>УдалитьФорма1002018Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) форма1002018 кв4</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6713fa3e-3e7a-45b7-a73d-b302c11d0af6">
+    <name>УдалитьФорма1002019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) форма1002019 кв1</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eb896db1-26d1-4cb0-b3e2-3539cd8b7ecc">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация по КПН, форма 100.00</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bd928b81-2615-4aa7-a80d-89a1608e4d00">
+    <name>Форма1002014Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002014 кв4</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a27deb1e-fe28-4747-8641-ddcd29427bf8">
+    <name>Форма1002015Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002015 кв4</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bf5d1994-8ff9-4f97-a151-f74ea1f5ecbd">
+    <name>Форма1002016Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002016 кв4</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="867850b3-a5cd-4cc7-8f9e-41974c8b5393">
+    <name>Форма1002017Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002017 кв4</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75e8a0bf-c097-4e95-833d-5192d2a6d7fe">
+    <name>Форма1002018Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002018 кв4</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="40c80477-1ed0-4da2-bd79-54b1c8b796b6">
+    <name>Форма1002019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002019 кв1</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="495536d5-811d-456f-b843-ad81c29a2d64">
+    <name>Форма1002019Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002019 кв4</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5995f3f0-9534-4984-98a2-b86ff47f62eb">
+    <name>Форма1002020Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002020 кв4</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2b378d9c-4a80-4dd1-83e9-f45cc09e05b6">
+    <name>Форма1002021Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002021 кв4</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fce0f486-b2e9-498b-9c5d-b4e537c8d59c">
+    <name>Форма1002022Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1002022 кв1</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b5fbca9e-27b0-4e20-b49c-800903603f46">
+    <name>ВыгрузкаВXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка ВXML</value>
+    </synonym>
+  </templates>
+  <templates uuid="2dc657f0-783c-49c8-b5ca-1bf85fd7a8fd">
+    <name>МакетПереченьТоваровСобственногоПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет перечень товаров собственного производства</value>
+    </synonym>
+  </templates>
+  <templates uuid="414f2992-99dd-485f-be21-0063abea15ed">
+    <name>МакетФорма1002006Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002006 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="a7609e93-d90d-455b-bec5-290d42d7c87a">
+    <name>МакетФорма1002007Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002007 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="bbd921de-9141-4ec2-a1dc-0a7ce8cf50b3">
+    <name>МакетФорма1002008Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002008 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="c2a784c4-480a-4ffd-871c-4cecb9e128f6">
+    <name>МакетФорма1002009Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002009 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="6b239508-7a52-45b6-89c6-6c7bfa60eddb">
+    <name>МакетФорма1002010Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002010 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="cbe34401-d7c4-4d5c-9454-1d9d2a9b285f">
+    <name>МакетФорма1002011Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002011 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="202d8565-1cae-433d-b354-a1bea6939e7b">
+    <name>МакетФорма1002012Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002012 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="f69657cb-a5cc-4972-8744-4254e088ea20">
+    <name>МакетФорма1002013Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002013 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="70869784-df55-4e9b-a794-01d9f929888b">
+    <name>МакетФорма1002014Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002014 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="e64dd0ef-c424-4cb3-9c61-69cdd6e4783c">
+    <name>МакетФорма1002015Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002015 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="4de8879e-f093-4f3d-b983-3da98aedf69a">
+    <name>МакетФорма1002016Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002016 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="5bcdbd44-7f9d-4e27-a983-819fa909d1e1">
+    <name>МакетФорма1002017Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002017 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="02844349-ac33-42c6-ba26-879b3fd14a36">
+    <name>МакетФорма1002018Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002018 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="935a9d3b-07fe-4ad3-a7dd-35d0207da50d">
+    <name>МакетФорма1002019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002019 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="b40f48ba-bc3c-4da6-bf79-b54e76689ae0">
+    <name>Модель2006Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель2006 кв4</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="f64ce775-25c7-47f1-985a-4b050bf724d9">
+    <name>Модель2007Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель2007 кв4</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="2ad610d0-5d95-44dd-8705-2d665e5cccad">
+    <name>Модель2008Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель2008 кв4</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4f09a46f-f68a-4a1a-9372-ea30c05d4dd7">
+    <name>ОтражениеВУчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение в учете</value>
+    </synonym>
+  </templates>
+  <templates uuid="352a5796-90f0-4ec7-8875-b3b774f4ebbc">
+    <name>ПередачаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача данных</value>
+    </synonym>
+  </templates>
+  <templates uuid="6688f3d2-b37c-4ce9-8fad-77ed1620dd7f">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+  <templates uuid="9884c4a8-1cfb-4045-a0a9-3abad0c916f2">
+    <name>РасшифровкаФормыНаСКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка формы на СКД</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="54a6e730-b28b-4371-9fc3-2d876901c941">
+    <name>Форматы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форматы</value>
+    </synonym>
+  </templates>
+  <templates uuid="3b74e657-490b-4059-8665-fcbd26024036">
+    <name>МакетСКДФорма1002011Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002011 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="f0b65553-b999-4fb3-a9f5-e78a41bf96f4">
+    <name>МакетСКДФорма1002012Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002012 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="0584fc1c-166b-45d9-8556-410673fb7fce">
+    <name>МакетСКДФорма1002013Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002013 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="a68621bf-536f-4691-816f-675c9c3186a2">
+    <name>МакетСКДФорма1002014Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002014 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="98e54862-5b9a-40cd-8089-e4d5c213db27">
+    <name>МакетСКДФорма1002015Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002015 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="ba0262a8-6da4-48bb-a92d-415ac81ce612">
+    <name>МакетСКДФорма1002016Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002016 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="0bf4adc4-9e2f-4a9b-a987-8f6c846397f6">
+    <name>МакетСКДФорма1002017Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002017 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="2bcf0c91-3080-4ddb-a7e8-aff381c6b440">
+    <name>МакетСКДФорма1002018Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002018 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="7e5ca56e-163f-4d28-9a04-18d574fc1d18">
+    <name>МакетСКДФорма1002019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002019 кв1</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d4c93591-5c46-498c-9fdd-08d35978bcc2">
+    <name>МакетФорма1002019Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002019 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="d9d170c0-945a-410a-a564-96a05cd92ac2">
+    <name>МакетСКДФорма1002019Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002019 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="592432c8-e59c-4645-ac51-b520af79f03e">
+    <name>МакетФорма1002020Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002020 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="9f3e8059-d448-4793-a7e2-2318973ea3c3">
+    <name>МакетСКДФорма1002020Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002020 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="de8c4fbf-bb6e-4106-8d11-bd4ea0ad5b01">
+    <name>МакетФорма1002021Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002021 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="ec6aead3-64c8-47bd-92d2-01d2aa1dcb8b">
+    <name>МакетСКДФорма1002021Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002021 кв4</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="0157fb36-0812-47db-9aa2-512f29cac0bb">
+    <name>КодыСтрокНалоговыхДеклараций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коды строк налоговых деклараций</value>
+    </synonym>
+  </templates>
+  <templates uuid="ab834a7d-f3af-4384-ad88-5f096ec1d865">
+    <name>МакетФорма1002022Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма1002022 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="6e310e34-de64-4bc8-804f-7af3141e199d">
+    <name>МакетСКДФорма1002022Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет СКДФорма1002022 кв1</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

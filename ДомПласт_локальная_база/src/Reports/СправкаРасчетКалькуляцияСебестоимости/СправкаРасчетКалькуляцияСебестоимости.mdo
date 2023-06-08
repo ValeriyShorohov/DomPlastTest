@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e6e2937-719e-406a-bce7-f635da3f9a6f">
+  <producedTypes>
+    <objectType typeId="0255e8ff-c200-44b7-bfe8-4b0a0db481ee" valueTypeId="1e43bbae-25eb-4ebc-a473-03dda48e2dd4"/>
+    <managerType typeId="ce7db2f1-2a26-4b8c-85dd-76e34c1bfcbb" valueTypeId="cdc50ceb-64b6-4d38-b5b3-ec630adc3f53"/>
+  </producedTypes>
+  <name>СправкаРасчетКалькуляцияСебестоимости</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справка-расчет &quot;Калькуляция себестоимости&quot;</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СправкаРасчетКалькуляцияСебестоимости.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СправкаРасчетКалькуляцияСебестоимости.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <attributes uuid="4ccc0d03-22fb-40ca-81c4-273bfd35154d">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="836a232e-0e3e-483d-9f53-a78bd711c726">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eda2d4d6-aa8f-4511-8145-4f9fc41e6f3b">
+    <name>ПредставлениеСпискаОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка организаций</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0d44025e-2d16-4733-8120-0e0f3a8e7055">
+    <name>ПредставлениеСпискаПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка подразделений</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ab2f1ad6-4fbf-471d-aa04-c88dc78ae89d">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e77b71e5-8404-44de-a9f3-0abde6660fc9">
+    <name>НаборПоказателейОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор показателей отчета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="fe9f0af5-7947-44a4-adba-a6bf268e7029">
+    <name>СНачалаГода</name>
+    <synonym>
+      <key>ru</key>
+      <value>С начала года</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e1f80a6e-e500-4fc3-b212-c97745bfa838">
+    <name>ГруппироватьОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировать отчет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0f8cb26c-2fe9-4b1a-a29a-cdf0019286c9">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4460fe56-de13-48e6-87c3-677757d8c235">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d5f7d10c-6fc0-482f-8200-20f88bd486a7">
+    <name>Отчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет</value>
+    </synonym>
+  </templates>
+  <commands uuid="c974a5ad-9142-4454-be7c-ed59a260b00b">
+    <name>СправкаРасчетКалькуляцияСебестоимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка-расчет &quot;Калькуляция себестоимости&quot;</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

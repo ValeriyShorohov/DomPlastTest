@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9644a3dc-77fb-491c-a843-8aba4495578f">
+  <producedTypes>
+    <selectionType typeId="621cfbc7-c88c-43aa-975f-c06645889d95" valueTypeId="30164eb5-6b2c-4139-bb3a-c4b0168e116f"/>
+    <listType typeId="5a9bd32a-6ba5-47f0-b979-5ab340417ee6" valueTypeId="bcd6cdb1-6503-496b-969f-40179850c65e"/>
+    <managerType typeId="ff03fc08-63ad-4016-a7b9-756e5eaa1e21" valueTypeId="dbd0c431-4ff6-442f-8169-fd7baf6023c7"/>
+    <recordSetType typeId="b5e185e9-c594-4166-a684-186499b2ea9c" valueTypeId="82008964-633a-4219-bf74-cbca17ba0b46"/>
+    <recordKeyType typeId="4aa10885-2665-42d1-829b-defec9266481" valueTypeId="ef50d4a5-d082-47dc-8784-1a79b47fb3ae"/>
+    <recordType typeId="88e75357-ae00-4e9c-b0da-9be9feb2f065" valueTypeId="f51d8068-f884-4c36-8d21-911f530c36fd"/>
+    <recordManagerType typeId="7c4c17ab-f66a-4f1b-afd3-d90065477179" valueTypeId="aca6b023-0dca-4184-960f-ebb4e71ff292"/>
+  </producedTypes>
+  <name>ПервоначальныеСведенияОСБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Первоначальные сведения ОС (бухгалтерский учет)</value>
+  </synonym>
+  <comment>Регистр, который показывает изменение инвентарного номера ОС при передаче его из одной организации в другую. Информация записывается только документами ПринятиеКУчету по бух. виду учета и ввод остатков</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.ПервоначальныеСведенияОСБухгалтерскийУчет.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Первоначальные сведения ОС (бух. учет)</value>
+  </extendedListPresentation>
+  <resources uuid="e84a8e2d-8343-4fd8-8164-cab40513d60a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="09deee77-499e-47a2-87cd-e3577e60c221">
+    <name>ИнвентарныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инвентарный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4a1489cc-7cea-4a35-9cab-d53eb79898b4">
+    <name>СпособПоступления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ поступления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыПоступленияАктивов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="51996b81-ba87-4e00-aeb7-796f85bc1dae">
+    <name>ПервоначальнаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первоначальная стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="55f91c41-f93d-41d9-820b-15c9091cce7f">
+    <name>СпособНачисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ начисления амортизации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыНачисленияАмортизацииОС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0dd70873-db3c-438e-b88a-203262b33799">
+    <name>ПараметрВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр выработки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПараметрыВыработкиОС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7f5e5b6e-9b3c-4190-aa8f-283c2948cd08">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="04ef893a-7420-409f-884b-d52b3e7133a1">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="595316a4-6fc9-4898-924b-f874ae1dfa86">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

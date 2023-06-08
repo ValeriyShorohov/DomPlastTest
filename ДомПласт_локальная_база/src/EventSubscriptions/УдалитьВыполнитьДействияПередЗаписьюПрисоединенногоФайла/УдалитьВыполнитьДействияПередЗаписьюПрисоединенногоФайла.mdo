@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8acaaa51-44ff-4b99-a283-16a16e4d7c8e">
+  <name>УдалитьВыполнитьДействияПередЗаписьюПрисоединенногоФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить выполнить действия перед записью присоединенного файла</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.БанковскиеСчетаПрисоединенныеФайлы</types>
+    <types>CatalogObject.КонтрагентыПрисоединенныеФайлы</types>
+    <types>CatalogObject.НематериальныеАктивыПрисоединенныеФайлы</types>
+    <types>CatalogObject.НоменклатураПрисоединенныеФайлы</types>
+    <types>CatalogObject.ИсполнительныйЛистПрисоединенныеФайлы</types>
+    <types>CatalogObject.АктСверкиВзаиморасчетовПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЭСФПрисоединенныеФайлы</types>
+    <types>CatalogObject.ОрганизацииПрисоединенныеФайлы</types>
+    <types>CatalogObject.ДоговорыКонтрагентовПрисоединенныеФайлы</types>
+    <types>CatalogObject.ФизическиеЛицаПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПодразделенияОрганизацийПрисоединенныеФайлы</types>
+    <types>CatalogObject.ОсновныеСредстваПрисоединенныеФайлы</types>
+    <types>CatalogObject.СотрудникиОрганизацийПрисоединенныеФайлы</types>
+    <types>CatalogObject.АвансовыйОтчетПрисоединенныеФайлы</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.РаботаСФайлами.ВыполнитьДействияПередЗаписьюПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>

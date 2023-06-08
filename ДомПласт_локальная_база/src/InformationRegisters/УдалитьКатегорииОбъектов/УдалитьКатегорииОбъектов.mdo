@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cacebd45-e45a-4309-8c22-8179d3d3c89d">
+  <producedTypes>
+    <selectionType typeId="8bf00d36-c2ae-4a07-9446-b53f064c76f0" valueTypeId="3305817b-5b3a-405f-a958-8c7e9a580c21"/>
+    <listType typeId="e2946b28-4ab8-45ef-ae53-af0645316faf" valueTypeId="ff371809-5d98-4a7c-8d25-42b9bf6dd465"/>
+    <managerType typeId="4edb3314-8e4e-431a-812a-0019b22996e3" valueTypeId="6326ee12-3ffb-49ee-9545-054e925c44ed"/>
+    <recordSetType typeId="d2c2f997-2fa0-4f58-97be-7e616df9f635" valueTypeId="f0d5ea3c-58ed-4974-96cf-9c8c1b6e5c58"/>
+    <recordKeyType typeId="22557594-3113-4a31-9260-517f95eb662e" valueTypeId="c2289e63-7df2-49a0-9686-33c9c076b1c5"/>
+    <recordType typeId="e595936d-f011-42d2-9c85-71972a843c2e" valueTypeId="27ef3064-eb08-461d-ac3c-ad6f31e781be"/>
+    <recordManagerType typeId="d9161209-e4e8-4580-ac34-f92e8c7bc36c" valueTypeId="0d806bd2-32f2-4025-a090-de4afd3f209f"/>
+  </producedTypes>
+  <name>УдалитьКатегорииОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Категории объектов</value>
+  </synonym>
+  <defaultRecordForm>InformationRegister.УдалитьКатегорииОбъектов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УдалитьКатегорииОбъектов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>(Не использовать) Категория объекта</value>
+  </recordPresentation>
+  <dimensions uuid="a71ab80f-cbde-412d-878c-b8f69dafc929">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+      <types>CatalogRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bc7c1376-a1d9-44ab-ae17-ac65c7760a61">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УдалитьКатегорииОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ca462f1b-f99d-49d7-b409-559038a5b6ef">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d8a5e782-15f7-4c60-80b2-335b343a00d8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

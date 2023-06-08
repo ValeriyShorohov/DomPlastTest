@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de28f10a-1bab-4a44-9d3b-84ea63341cdb">
+  <producedTypes>
+    <objectType typeId="ee12b493-4424-4241-bb12-8882b2ded180" valueTypeId="cbfd1d36-3810-4e88-b676-4a0ea86580ac"/>
+    <refType typeId="98793bdd-8366-4f7a-8b39-0978af6aeeb0" valueTypeId="911fbb40-1dd5-4b6c-86eb-aa60f1735e4f"/>
+    <selectionType typeId="d6c03f23-73a5-4e84-ba5d-0af669272679" valueTypeId="e4074618-e8a5-4126-8bd7-4add11296440"/>
+    <listType typeId="b198127b-39de-4a8c-b2b6-d522048852f0" valueTypeId="cbec8701-519d-44cc-a3c3-6aed46d46d43"/>
+    <managerType typeId="eeef4946-d062-4aaf-bc4c-5ffd451df8ef" valueTypeId="4b4c23da-8dc7-4c92-8a21-a86d5730efcb"/>
+  </producedTypes>
+  <name>КлассификаторСтранМира</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификатор стран мира</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КлассификаторСтранМира.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КлассификаторСтранМира.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>1</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>60</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="020bc62f-0830-4f9a-8eda-9d04910cfab0">
+      <name>Казахстан</name>
+      <description>Республика Казахстан</description>
+      <code xsi:type="core:StringValue">
+        <value>398</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КлассификаторСтранМира.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КлассификаторСтранМира.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.КлассификаторСтранМира.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="0a31f64b-0771-43c6-9d46-350eb446e207">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2b77732e-1243-4b0b-82b1-43251aab993e">
+    <name>КодАльфа2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код Альфа-2</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a0cb8f1c-a584-4973-b23a-38c589ccd3e6">
+    <name>КодАльфа3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код Альфа-3</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f634274b-233c-43a3-85a0-5c2877c4b60d">
+    <name>УчастникТаможенногоСоюза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник Таможенного союза</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтраныУчастникиТаможенногоСоюза</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c997284f-77fa-409f-b39a-13361c065bd4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dd43cb29-1e0c-41ce-9efd-7b299d6458d1">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fbb6b03e-f892-4811-a9d2-4a9286279a3f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="980b15c9-91f8-45e0-b433-a1dedd732b0c">
+    <name>ФормаПодбораИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор стран мира</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="84518f94-fd17-410b-9611-f826eebef56c">
+    <name>ПФ_MXL_КлассификаторСтранМира</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор стран мира</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

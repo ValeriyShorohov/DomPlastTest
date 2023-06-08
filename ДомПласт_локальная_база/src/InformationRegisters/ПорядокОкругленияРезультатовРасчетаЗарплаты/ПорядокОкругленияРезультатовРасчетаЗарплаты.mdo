@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c27608d-85e5-4813-bed7-ccfb5b79b1dc">
+  <producedTypes>
+    <selectionType typeId="f06b6bca-4a5f-455c-99ea-5c13889c4c47" valueTypeId="7c8b7a9a-4cab-4966-b362-738304c69475"/>
+    <listType typeId="d756a412-c8c5-4be2-8782-0110159bd399" valueTypeId="407345e9-612a-4671-956b-02642ecd0e02"/>
+    <managerType typeId="90ad9bfc-f323-4318-816e-2bda9a2ea8ef" valueTypeId="89077fe9-0c15-4b79-9496-59feed97eac4"/>
+    <recordSetType typeId="7d8a60c6-42f1-4e6b-ab41-9f545787edc5" valueTypeId="74e8e68e-703e-4186-9c28-f04434ef7bec"/>
+    <recordKeyType typeId="ac0fbac9-cec3-4394-a45e-0a92ad445e3e" valueTypeId="188ae2d0-db7f-4fb5-b7a9-0a2c04121336"/>
+    <recordType typeId="157aa716-b8d3-4165-979f-c6a4727639ed" valueTypeId="da1967bc-c792-4130-92b0-646b440ee853"/>
+    <recordManagerType typeId="669ad70b-8c53-484b-b555-0d7c97112e9e" valueTypeId="6fc787ac-f363-4504-a2d6-ecd47fb3ff1a"/>
+  </producedTypes>
+  <name>ПорядокОкругленияРезультатовРасчетаЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок округления результатов расчета зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ПорядокОкругленияРезультатовРасчетаЗарплаты.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПорядокОкругленияРезультатовРасчетаЗарплаты.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="d62dce02-9cef-46ee-bf66-478517bba60f">
+    <name>ПорядокОкругления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Округлять до</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e2a03164-900d-45e0-8cf2-597bb29fea15">
+    <name>МетодОкругления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод округления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.МетодыОкругления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="513f56ab-255b-4bf0-aad9-d1b8fd943804">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.ОсновныеНачисленияОрганизаций</types>
+      <types>ChartOfCalculationTypesRef.УдержанияОрганизаций</types>
+      <types>CatalogRef.НалогиСборыОтчисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b391c23e-450e-4797-bc9d-e31b1833e3b5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3f30cd75-c27f-4daa-bd8c-079ee5e54db3">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

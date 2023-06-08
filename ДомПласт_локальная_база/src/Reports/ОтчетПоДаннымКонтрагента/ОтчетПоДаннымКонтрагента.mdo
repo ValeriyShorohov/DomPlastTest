@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="082132e9-374f-4099-a202-61da9105f561">
+  <producedTypes>
+    <objectType typeId="531ac2c9-59ff-4da2-b343-9b8632b4f144" valueTypeId="6df69d44-55cd-47a6-963f-bd7adcc5b871"/>
+    <managerType typeId="4e0554cc-7593-4d41-8e1e-3732c23dc249" valueTypeId="e8b4d73e-c5f7-4bfb-97ec-b446af6a7b50"/>
+  </producedTypes>
+  <name>ОтчетПоДаннымКонтрагента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по данным контрагента</value>
+  </synonym>
+  <comment>Отчет по данным контрагента</comment>
+  <defaultForm>Report.ОтчетПоДаннымКонтрагента.Form.ФормаОтчета</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="7ee47d62-745d-4f2e-814f-986f175478b6">
+    <name>ДатаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3f45bbbe-6024-48e8-ab52-1dc5c17ab586">
+    <name>СписокНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список настроек</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f39fdfb1-5061-4fb2-8676-38bf962c92ca">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+  </attributes>
+  <attributes uuid="e7db5b6e-6cf4-4187-b896-e81397efc2a1">
+    <name>ВыводитьДопКонтИнф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить конт. инф. контактных лиц</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ec575fdd-df96-40d3-9683-795494383c86">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="27cd0f77-43c1-4d9b-affa-c2ac6e205c4c">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <commands uuid="6df509e0-2568-4bdf-a2ac-6d00574e60c6">
+    <name>ОтчетПоДаннымКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по данным контрагента</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="6464c0b2-6ab3-4801-9f46-0605373df13a">
+    <name>ОтчетПоДаннымВыбранногоКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по данным выбранного контрагента</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Контрагенты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="0820aecb-1ae5-4d31-a91a-e28008f29963">
+    <name>ОтчетПоДаннымВсехКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по данным всех контрагентов</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

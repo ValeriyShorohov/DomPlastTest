@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a20f4bb-5bb4-4046-beca-2c81ede832b1">
+  <producedTypes>
+    <selectionType typeId="055d8d3a-0f88-4046-9e66-bd9ff0847058" valueTypeId="79afaddc-9f9a-4345-bcbc-c2f351ee4218"/>
+    <listType typeId="648c895c-846f-441c-a0e7-8a26abc80e0b" valueTypeId="7857da8f-79f7-426f-af62-8877664c9adf"/>
+    <managerType typeId="56e5be68-8dbb-4dcd-bbf8-42ee04dc189d" valueTypeId="83439e28-0d17-4136-a99c-44c4af3d874d"/>
+    <recordSetType typeId="465cda79-f6ff-4850-a797-962a964e9da3" valueTypeId="b197fb64-dbfc-452a-ab7c-c8a021047132"/>
+    <recordKeyType typeId="a5fa73b9-60e0-4f93-92e9-3efb72e9ce2f" valueTypeId="1467dc41-e7f4-478e-96ed-a14fcc439cda"/>
+    <recordType typeId="25f3f25e-c98e-4b6d-b697-9636dd971f73" valueTypeId="8344a2cb-2743-46e5-88bb-20ab63e0eecc"/>
+    <recordManagerType typeId="8cd6cfca-7366-4e67-a86c-3fddec319ac7" valueTypeId="f9eec570-c8e5-4eb3-87aa-e053176f3384"/>
+  </producedTypes>
+  <name>ФиксированныеАктивыУчитываемыеОтдельно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фиксированные активы, учитываемые отдельно</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="dda4695a-d818-46e8-a899-7026c474fddf">
+    <name>Событие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СобытияФАУчитываемыхОтдельно</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f88b8b0-b851-4351-b282-e5c80f68318d">
+    <name>ВидЛьготыФА</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид льготы ФА</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыФАУчитываемыхОтдельно</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="aea09574-9ba9-4cf8-ab65-3bdeba0c3526">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c625a091-1d37-4cd1-8dc5-c774558e1a72">
+    <name>ФиксированныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e1455c1-8559-46da-957c-536f18f57d97">
+  <producedTypes>
+    <selectionType typeId="8d568392-f678-41d4-af55-f989350f06c4" valueTypeId="ce5df2ff-ca8c-44c0-82ba-c0dc0f03bde8"/>
+    <listType typeId="e33f9661-3a20-45d5-afdd-bb0c641e0e90" valueTypeId="8da13e3d-4ac1-4f32-9260-a8e78bf6975e"/>
+    <managerType typeId="740e244f-2023-4939-9041-2ab67e7624bb" valueTypeId="1f34e71b-52bb-4c77-a4ad-87d7fa0dc499"/>
+    <recordSetType typeId="1f9aa8d4-42bd-41b8-8fc5-7dd92d9d3adc" valueTypeId="3e8d519f-a09d-47ed-8674-d65085e7227f"/>
+    <recordKeyType typeId="6ba60462-7231-44bb-be17-57454aefde2a" valueTypeId="85f89ca5-a976-409e-b903-61c946e8914a"/>
+    <recordType typeId="5397b6e6-79e4-47d2-a35c-8d5dc172ee93" valueTypeId="0ea544ed-7715-4cc4-8ded-9c4f3fe5fcbc"/>
+    <recordManagerType typeId="e3997452-c0fb-47ae-980b-a3b6efa2e061" valueTypeId="d3dbf218-6126-4484-bb4c-cab8a808810d"/>
+  </producedTypes>
+  <name>СчетаСОсобымПорядкомПереоценкиБУ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета с особым порядком переоценки (бухгалтерский учет)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СчетаСОсобымПорядкомПереоценкиБУ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СчетаСОсобымПорядкомПереоценкиБУ.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Параметры переоценки счета (бухгалтерский учет)</value>
+  </recordPresentation>
+  <resources uuid="12838426-1855-48c0-a1fd-2ce8b85c29dc">
+    <name>СпособПризнанияКурсовойРазницы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ признания курсовой разницы</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыПризнанияКурсовойРазницы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="db8f4d05-0afc-4156-b2d4-23c047ec7802">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+    <comment>Счет бухгалтерского учета</comment>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Валютный</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="86bf98d9-ba5c-490f-be9b-f6f02f21983c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2f40e0d4-a04f-46c7-8824-573198bb7739">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

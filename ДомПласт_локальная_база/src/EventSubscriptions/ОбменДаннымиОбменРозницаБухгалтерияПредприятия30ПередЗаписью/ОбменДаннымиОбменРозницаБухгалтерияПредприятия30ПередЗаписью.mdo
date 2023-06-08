@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="502d3548-87e3-4d73-b536-9af859585a72">
+  <name>ОбменДаннымиОбменРозницаБухгалтерияПредприятия30ПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными обмен розница бухгалтерия предприятия30 перед записью</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.ДолжностиОрганизаций</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.Банки</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.ОбменДаннымиОбменРозницаБухгалтерияПредприятия30ПередЗаписью</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c5a7a87-7ac9-42f1-83f2-01d53587945f">
+  <name>ПриУстановкеНовогоНомераДокументаПрефиксСклады</name>
+  <synonym>
+    <key>ru</key>
+    <value>При установке нового номера документа префикс склады</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПеремещениеТоваров</types>
+    <types>DocumentObject.ТребованиеНакладная</types>
+    <types>DocumentObject.ПередачаТоваров</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.СписаниеТоваров</types>
+    <types>DocumentObject.ЧекККМ</types>
+    <types>DocumentObject.ВозвратТоваровПоставщику</types>
+    <types>DocumentObject.ОтчетПроизводстваЗаСмену</types>
+    <types>DocumentObject.ПоступлениеИзПереработки</types>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ОприходованиеТоваров</types>
+    <types>DocumentObject.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentObject.КомплектацияНоменклатуры</types>
+    <types>DocumentObject.РегистрацияНДСЗаНерезидента</types>
+  </source>
+  <event>OnSetNewNumber</event>
+  <handler>CommonModule.ПрефиксацияОбъектовБКСобытия.УстановитьПрефиксИнформационнойБазыОрганизацииИСклада</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>РасчетыСКонтрагентамиСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиВалюта</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиВалютнаяСумма</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиСуммаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиКратностьВзаиморасчетов</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиКурсВзаиморасчетов</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамСуммаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиСуммаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиВалюта</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиВалютнаяСумма</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиДокумент</field>
+			</item>
+			<item>
+				<field>БухСправкаСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоБУКт</field>
+			</item>
+			<item>
+				<field>БухСправкаВалюта</field>
+			</item>
+			<item>
+				<field>БухСправкаВалютнаяСумма</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаБУКт</field>
+			</item>
+			<item>
+				<use>false</use>
+				<field>ЗапасыСчетУчетаБУ</field>
+			</item>
+			<item>
+				<use>false</use>
+				<field>ЗапасыКоличествоБУ</field>
+			</item>
+			<item>
+				<use>false</use>
+				<field>ЗапасыСуммаБУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ПоказыватьДанныеБУ</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ОтражатьВБухгалтерскомУчете</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаСубконто1</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.БухСправка.Субконто1Доступность</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаСубконто2</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.БухСправка.Субконто2Доступность</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаСубконто3</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.БухСправка.Субконто3Доступность</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаКоличествоБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоБУКт</field>
+			</item>
+			<item>
+				<field>БухСправкаСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаВалюта</field>
+			</item>
+			<item>
+				<field>БухСправкаВалютнаяСумма</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаБУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ПоказыватьДанныеБУ</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ОтражатьВБухгалтерскомУчете</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаКоличествоБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоБУКт</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоНУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоНУКт</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаБУКт</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаНУКт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РазделУчета</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.РазделыУчетаДляВводаОстатков.ДенежныеСредства</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаСуммаБУКт</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаНУКт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РазделУчета</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.РазделыУчетаДляВводаОстатков.ДенежныеСредства</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаКоличествоБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоБУКт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.БухСправка.ПризнакКоличественногоУчетаБУ</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РасчетыСКонтрагентамиСчетУчетаНУ</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиСуммаНУ</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиСуммаНУКт</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиВидУчетаНУ</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамСчетУчетаНУ</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамСуммаНУ</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамВидУчетаНУ</field>
+			</item>
+			<item>
+				<field>БухСправкаСчетУчетаНУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоНУ</field>
+			</item>
+			<item>
+				<field>БухСправкаВидУчетаНУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоНУКт</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаНУ</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаНУКт</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамСуммаНУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиСчетУчетаНУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиВидУчетаНУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиСуммаНУ</field>
+			</item>
+			<item>
+				<field>ЗапасыСчетУчетаНУ</field>
+			</item>
+			<item>
+				<field>ЗапасыВидУчетаНУ</field>
+			</item>
+			<item>
+				<field>ЗапасыКоличествоНУ</field>
+			</item>
+			<item>
+				<field>ЗапасыСуммаНУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.УчитыватьКПН</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РасчетыСКонтрагентамиДокумент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РасчетыСКонтрагентами.ПризнакУчетаПоДокументамРасчетов</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаВалюта</field>
+			</item>
+			<item>
+				<field>БухСправкаВалютнаяСумма</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.БухСправка.ПризнакВалютногоУчета</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаКоличествоНУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоНУКт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.БухСправка.ПризнакКоличественногоУчетаНУ</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗапасыКонтрагент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Запасы.ПризнакУчетаДавальческогоСырья</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗапасыПартия</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Запасы.ПризнакПартионногоУчета</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗапасыСклад</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Запасы.ПризнакСкладскогоУчета</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗапасыНоменклатура</field>
+			</item>
+			<item>
+				<field>ЗапасыСклад</field>
+			</item>
+			<item>
+				<field>ЗапасыПартия</field>
+			</item>
+			<item>
+				<field>ЗапасыКонтрагент</field>
+			</item>
+			<item>
+				<field>ЗапасыСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>ЗапасыКоличествоБУ</field>
+			</item>
+			<item>
+				<field>ЗапасыСуммаБУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.УчитыватьКПН</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ПоказыватьДанныеБУ</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ОтражатьВБухгалтерскомУчете</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗапасыНоменклатураНУ</field>
+			</item>
+			<item>
+				<field>ЗапасыСкладНУ</field>
+			</item>
+			<item>
+				<field>ЗапасыКонтрагентНУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.УчитыватьКПН</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.ПоказыватьДанныеБУ</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ОтражатьВБухгалтерскомУчете</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗапасыНоменклатура</field>
+			</item>
+			<item>
+				<field>ЗапасыКонтрагент</field>
+			</item>
+			<item>
+				<field>ЗапасыСклад</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.УчитыватьКПН</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ПоказыватьДанныеБУ</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ОтражатьВБухгалтерскомУчете</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветКолонкиДляСчетовИСубконтоНУ</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РасчетыСКонтрагентамиВалюта</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиВалютнаяСумма</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиКурсВзаиморасчетов</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиКратностьВзаиморасчетов</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РасчетыСКонтрагентами.ПризнакВалютногоУчета</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>БухСправкаСубконто1</field>
+			</item>
+			<item>
+				<field>БухСправкаСубконто2</field>
+			</item>
+			<item>
+				<field>БухСправкаСубконто3</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиКонтрагент</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиДоговорКонтрагента</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамВидПлатежаВБюджет</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиРаботникОрганизации</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамВидНалога</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ОтражатьВБухгалтерскомУчете</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.УчитыватьКПН</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветКолонкиДляСчетовИСубконтоНУ</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РасчетыСКонтрагентамиСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиВалюта</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиВалютнаяСумма</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиСуммаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиКратностьВзаиморасчетов</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиКурсВзаиморасчетов</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыПоНалогамИСборамСуммаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиСуммаБУ</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиВалюта</field>
+			</item>
+			<item>
+				<field>РасчетыСПодотчетнымиЛицамиВалютнаяСумма</field>
+			</item>
+			<item>
+				<field>РасчетыСКонтрагентамиДокумент</field>
+			</item>
+			<item>
+				<field>БухСправкаСчетУчетаБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаКоличествоБУКт</field>
+			</item>
+			<item>
+				<field>БухСправкаВалюта</field>
+			</item>
+			<item>
+				<field>БухСправкаВалютнаяСумма</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаБУ</field>
+			</item>
+			<item>
+				<field>БухСправкаСуммаБУКт</field>
+			</item>
+			<item>
+				<use>false</use>
+				<field>ЗапасыСчетУчетаБУ</field>
+			</item>
+			<item>
+				<use>false</use>
+				<field>ЗапасыКоличествоБУ</field>
+			</item>
+			<item>
+				<use>false</use>
+				<field>ЗапасыСуммаБУ</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ОтражатьВБухгалтерскомУчете</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.ПоказыватьДанныеБУ</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

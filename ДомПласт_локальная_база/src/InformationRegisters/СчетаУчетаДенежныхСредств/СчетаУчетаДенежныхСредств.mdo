@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1140f1f-a1f2-43d5-808a-f63851a49085">
+  <producedTypes>
+    <selectionType typeId="8a7ba58a-8f7f-47d6-8cb1-1f8470e9ba44" valueTypeId="4cb0a8e5-59e5-4e07-ac60-86b4a7f7f1ed"/>
+    <listType typeId="ebd70af6-c156-41b0-bbd4-da2d804f306a" valueTypeId="27d2a5fb-67d8-484f-a1ae-91eac08978e6"/>
+    <managerType typeId="a9e27c0f-638e-4bab-ad26-8035e2aacbde" valueTypeId="239e6dbb-8f97-4207-aaca-8b04363fe1a3"/>
+    <recordSetType typeId="a2b89ebf-7c37-49b8-ac11-9da0808719b9" valueTypeId="f1fe5bfe-129b-4373-b4a9-2cb7a0372e1d"/>
+    <recordKeyType typeId="8473c0d2-1d5b-4c20-aacc-301f4de66eee" valueTypeId="3605aa73-948e-410a-ae61-cc23dd7b1de9"/>
+    <recordType typeId="146d8b69-5990-47c6-9f7b-d21a52a62a4f" valueTypeId="1fe3049d-3db6-4538-90ee-9cc8c3eb22be"/>
+    <recordManagerType typeId="b181fa91-d135-4bd1-b25f-5cd21dc0d994" valueTypeId="d392ea66-bfa9-4061-b1f0-1bdc1a263007"/>
+  </producedTypes>
+  <name>СчетаУчетаДенежныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета учета денежных средств</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.СчетаУчетаДенежныхСредств.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СчетаУчетаДенежныхСредств.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Счета учета денежного средства</value>
+  </recordPresentation>
+  <resources uuid="d0408f8e-ac77-4c16-9ec2-784928da7dab">
+    <name>СчетУчетаБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета (БУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fd60e183-6d8f-4b4a-8b81-77a5dbd5f68c">
+    <name>СчетУчетаНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета (НУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Налоговый</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="156aa822-c08c-425c-beb6-434e6ad39c20">
+    <name>ОбъектУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект учета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчета</types>
+      <types>CatalogRef.Кассы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="30b3f1d3-1dc6-4da4-9d3a-8b54f9cea9c9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4d1ebee7-cb71-428b-b3c6-b3ce4d311398">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

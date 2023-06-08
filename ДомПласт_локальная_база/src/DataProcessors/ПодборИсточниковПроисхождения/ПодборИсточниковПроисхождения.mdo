@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91cad7a4-f7f6-43ac-965f-76b9cb2fdedc">
+  <producedTypes>
+    <objectType typeId="9919b193-e103-4ecd-a622-10252f77ae28" valueTypeId="31b72498-f29c-4f62-9a4d-bc5790e4beca"/>
+    <managerType typeId="f2436afa-d965-43a0-93c3-05d6a7d1d775" valueTypeId="f040cad7-21c9-462d-9ddd-e25478c318c7"/>
+  </producedTypes>
+  <name>ПодборИсточниковПроисхождения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор источников происхождения</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПодборИсточниковПроисхождения.Form.ФормаПодбора</defaultForm>
+  <tabularSections uuid="baf41bd8-8e39-46e6-a115-2838be3b0fbc">
+    <producedTypes>
+      <objectType typeId="4c90145c-81ec-4ae9-b6ec-c612c50b4e4a" valueTypeId="1e4c2e2d-ab22-4991-80af-8d04dae6c8aa"/>
+      <rowType typeId="77fc5475-1f7d-43c2-b700-b03d0ac8633e" valueTypeId="bbb72dae-3c95-4d3d-94f5-0b969f91a31c"/>
+    </producedTypes>
+    <name>ПодобраннаяНоменклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подобранная номенклатура</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="603f47aa-73b5-4ad8-8ed5-b9e89170c337">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>DefinedType.НоменклатураЭСФ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4b5e6955-ca59-449d-9f44-57d332ae10d0">
+      <name>ИсточникПроисхождения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Источник происхождения</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ИсточникПроисхождения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1f0c4ce3-fe1e-4a42-967a-549d2ac5b4bd">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>18</precision>
+          <scale>6</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4635db14-3498-406f-80e5-1531142439bd">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>17</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Цена номенклатурной позиции. </value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2ce7f26a-7a32-40c5-9cdd-8fe5355c88db">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>17</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="54b117a3-1d62-41ca-bb2e-56f43c84f546">
+      <name>ЕдиницаИзмерения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ЕдиницаИзмеренияЭСФ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5310d8f2-0d46-4490-b5c4-b42def994a47">
+      <name>ПризнакУчетаНаВиртуальномСкладе</name>
+      <synonym>
+        <key>ru</key>
+        <value>Признак учета на виртуальном складе</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="bc028d7c-4c44-45cf-9c60-8b6b3c3abb02">
+    <name>ФормаПодбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bd7ff3a5-70bb-400c-a97c-7f7957984161">
+    <name>ВводПараметров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода цены и количества</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

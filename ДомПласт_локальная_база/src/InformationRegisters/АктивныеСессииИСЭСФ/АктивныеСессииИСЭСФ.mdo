@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6328417a-ccfe-4d9b-930a-fbf3055490c8">
+  <producedTypes>
+    <selectionType typeId="994319ac-c156-4ee9-aa97-2dce47146da9" valueTypeId="fdd223a7-69c9-4da5-9f47-041018a12d7c"/>
+    <listType typeId="f54d9797-640d-4fac-b586-a609a49317a2" valueTypeId="81b7e08f-c5bc-4036-a4d0-a759298b885b"/>
+    <managerType typeId="8c4c5049-cdf5-4d40-b972-23b2fa62e073" valueTypeId="922d12b4-213d-465b-897b-84f828a3ed9b"/>
+    <recordSetType typeId="c2539d05-3e4a-4abd-9b0b-34615fec9347" valueTypeId="12cb66ac-00e7-4427-bb91-e5b486793f39"/>
+    <recordKeyType typeId="314752de-9808-44a7-b63c-e5f32ae80e91" valueTypeId="5034be84-7585-4268-9ac4-de16ef8e4230"/>
+    <recordType typeId="55795852-bcee-4d06-93b7-94d2216c9cb6" valueTypeId="ac65da3c-8ae6-4f54-96c9-1005c1f4a5f4"/>
+    <recordManagerType typeId="a31fcda1-bd40-4c96-b805-6b010819babf" valueTypeId="a9d8867c-2355-4cbc-b201-36fb1851d9a5"/>
+  </producedTypes>
+  <name>АктивныеСессииИСЭСФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Активные сессии ИСЭСФ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АктивныеСессииИСЭСФ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.АктивныеСессииИСЭСФ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4b0a9175-7962-4fb0-901e-fe29d8ac8adc">
+    <name>IDСессии</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDСессии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="0d743369-134f-4da4-9a0e-672004f704f8">
+    <name>ПрофильИСЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль ИСЭСФ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПрофилиИСЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e1a48dbb-9cab-4ad5-a0d6-8c647a08a40a">
+    <name>ИмяМодуля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя модуля</value>
+    </synonym>
+    <comment>Информационная система (VS- Виртуальный cклад ИС ЭСФ, ESF - ИС ЭСФ, NDS - ИС НДС</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c46db72b-d824-4b47-83b5-b9d92c8829ab">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4d2863ff-e9db-457a-84b7-1b4ff54cbaa9">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

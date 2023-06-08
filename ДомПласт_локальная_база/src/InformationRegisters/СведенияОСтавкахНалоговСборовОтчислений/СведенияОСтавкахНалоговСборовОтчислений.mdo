@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e8b2f3b-1f6b-41f7-99a1-8acd51c23e54">
+  <producedTypes>
+    <selectionType typeId="0300883e-da45-4d6c-babe-fa9d154ad623" valueTypeId="a12e0031-caae-4b2d-aec5-86f9722a591c"/>
+    <listType typeId="31071c95-955d-4fe0-9597-2b988ed335ef" valueTypeId="436097ee-b4ec-4ac8-8814-e0e578099929"/>
+    <managerType typeId="c1bdabe2-64ee-42a7-b3f7-dbf0992f428f" valueTypeId="1c7109ad-6d3a-4f0b-b55b-5829eaa190d2"/>
+    <recordSetType typeId="de9a4996-745a-4e63-bc88-21b8d6b9ad8c" valueTypeId="c4a6505b-dedc-4b08-b2d0-0b2b2d0e8178"/>
+    <recordKeyType typeId="b483f119-624f-44ae-bb4a-6d05e9aa0489" valueTypeId="bd52ced1-9253-4632-982d-0992409c6a28"/>
+    <recordType typeId="7d48f533-8848-4318-bcd6-4f8d27297a32" valueTypeId="2f7d123e-629f-4be1-a7b1-e3bcfa63e05b"/>
+    <recordManagerType typeId="a2c6b27e-99d6-4e7c-812d-58fbed31547e" valueTypeId="ea6bc1bb-09a1-4865-ba8e-c8e5211f17ea"/>
+  </producedTypes>
+  <name>СведенияОСтавкахНалоговСборовОтчислений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о ставках налогов, сборов и отчислений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.СведенияОСтавкахНалоговСборовОтчислений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияОСтавкахНалоговСборовОтчислений.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="690ea439-8e9b-471c-8369-583521202ebd">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка (%)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f4a836bd-8934-4c9d-8298-603a5c353b19">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cee39345-58d0-46ec-8d7f-f71a6fccf6ab">
+    <name>ВидНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид налога</value>
+    </synonym>
+    <comment>Вид налога/сбора/отчисления</comment>
+    <type>
+      <types>CatalogRef.НалогиСборыОтчисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>ВыбиратьСписокЗапрещенныхНалогов</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.Акциз</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.ИндивидуальныйПодоходныйНалог</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.НалогНаДобавленнуюСтоимостьСИзмененнымСрокомУплаты</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.НалогНаИмущество</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.НалогНаПрибыль</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.НалогНаТранспорт</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.НалогНаДобавленнуюСтоимостьИмпортРБ</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.НалогНаДобавленнуюСтоимостьИмпортРФ</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.ОбязательныеПенсионныеВзносы</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.ОбязательныеПрофессиональныеПенсионныеВзносы</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.ОбязательныеСоциальныеОтчисления</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Catalog.НалогиСборыОтчисления.СоциальныйНалог</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1d28a3e0-ec57-4f1b-bf27-62bcca93f3eb">
+    <name>ВидДохода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид дохода</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЮрФизЛицо</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e2d07eea-4d40-4f86-a811-43a2c41cfd68">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dce70a43-ea39-4930-9620-d1856add4896">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

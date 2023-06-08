@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a59d929-0e40-4f83-8625-3f1919bef3eb">
+  <producedTypes>
+    <selectionType typeId="e83a4aeb-31b5-43fd-bc03-3d8ae9518ec1" valueTypeId="40b4746d-d0f3-478d-a932-298c04a3a3a0"/>
+    <listType typeId="c019ea33-7a30-498e-80af-2c3ceacbb873" valueTypeId="4bb3ac5a-1e38-43d1-9a2a-5293476a63b3"/>
+    <managerType typeId="1ef4b513-0f00-4c70-8a04-782d9227908c" valueTypeId="cf7101ff-4dbb-4961-b09b-c5df79f759e0"/>
+    <recordSetType typeId="3ced6924-4345-4a1b-b764-1dafda1fc189" valueTypeId="0c9b7a9e-fbe2-4787-9cc4-51e362d7dedb"/>
+    <recordKeyType typeId="93e7b5c3-9fa2-43d6-82d3-15d624a75d9a" valueTypeId="8f96b06a-0c4a-4150-902e-6d495ae5f836"/>
+    <recordType typeId="24a62bd4-e562-4a31-ba12-90c8bb339230" valueTypeId="b0687a16-4a25-448a-9f89-fe504d1aa339"/>
+    <recordManagerType typeId="f3d06748-4240-44d2-bdd0-bf779cc42002" valueTypeId="441b2f7f-1da5-470e-a3d4-1ff37e333bfb"/>
+  </producedTypes>
+  <name>СведенияОГруппахФиксированныхАктивов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о группах фиксированных активов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="6ce6fa7f-6db9-4308-91df-4740a774c762">
+    <name>ПредельнаяНормаАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предельная норма амортизации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f84887a7-e93c-4511-bc00-5747c442bffe">
+    <name>ПрименяемаяНормаАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применяемая норма амортизации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="84ff60aa-07f0-4888-8e22-6c43869105c7">
+    <name>ВычетНаРемонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вычет на ремонт</value>
+    </synonym>
+    <comment>Предельная норма отнесения на вычета расходов на ремонт</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1c3a7e02-65d2-4bf7-adf8-e799ccce8c98">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="760614f6-5cbe-48b1-af0c-67168e43a700">
+    <name>ГруппаФА</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа фиксированных активов</value>
+    </synonym>
+    <comment>Амортизационная группа фиксированных активов в налоговом учете</comment>
+    <type>
+      <types>CatalogRef.ГруппыНалоговогоУчетаФА</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7a8a06e4-b0d7-4efa-94bf-34e33f8eb262">
+    <name>ФиксированныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

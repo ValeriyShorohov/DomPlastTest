@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da015a3c-0366-4fb1-b897-a5131648f34f">
+  <producedTypes>
+    <selectionType typeId="8c11226f-af35-47c1-849c-71d4a0c482a3" valueTypeId="f1f26923-45f5-4e45-acac-4a9b4348fc93"/>
+    <listType typeId="44568535-ad58-40a2-93e3-3aeaf78230f4" valueTypeId="7bf48185-206b-4740-b955-dd6cc78231fd"/>
+    <managerType typeId="64745e0a-8bdd-4448-afc9-f1a616b99a67" valueTypeId="1f3dbd93-d388-409d-9dd2-5055a09134c6"/>
+    <recordSetType typeId="015514de-edd6-4689-99ee-f18b19008eec" valueTypeId="e0d0b241-7198-4d0c-ad0c-beb06c8137de"/>
+    <recordKeyType typeId="0767a42d-7d4e-4dbd-93da-2714b3492dbc" valueTypeId="fa8b6cb8-4140-4476-ab08-afeeead572e0"/>
+    <recordType typeId="599d2c23-8f33-4223-9bf5-601d852adb97" valueTypeId="97e32a4f-de30-4cc6-a5ec-d0d445928758"/>
+    <recordManagerType typeId="866968ff-3dd2-4a16-87da-140d558210f9" valueTypeId="e64ad017-81f5-468e-8a02-02cbabd818d4"/>
+  </producedTypes>
+  <name>ИспользоватьНесколькоБанковскихСчетовОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать несколько банковских счетов организации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ИспользоватьНесколькоБанковскихСчетовОрганизации.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ИспользоватьНесколькоБанковскихСчетовОрганизации.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="20c3ebe3-652b-4dfe-9fa5-84e1e96ef4a6">
+    <name>Используется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ffb18d49-7f97-4f1c-b691-c0d843a64247">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3bfb367d-852a-420f-870f-06ccaf7cf443">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="55ebf981-3422-4264-ba63-8a8dbc1415eb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb491fea-1f91-468a-8c9c-224c50d8e9fe">
+  <producedTypes>
+    <objectType typeId="1edf3650-739a-4268-bc0c-7c299eedeaf3" valueTypeId="155627fc-d549-4c75-ae52-2b1969dbdc87"/>
+    <managerType typeId="bf727e44-92df-4754-8665-3647c3024348" valueTypeId="58e704af-fbe7-45db-8ab7-6de50281e9d9"/>
+  </producedTypes>
+  <name>СводНачисленнойЗарплатыОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свод начислений и удержаний</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СводНачисленнойЗарплатыОрганизаций.Form.ФормаОтчета</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="97fedc7e-22c7-44f3-aeb5-3a7e90b83299">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="a55ac3f6-e44b-49be-af21-f707cd574852">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="607bd604-8663-4089-99d6-881b66ef50df">
+    <name>СписокОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список организаций</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="70dc21d8-9cd1-4f77-afb7-91a4459a4196">
+    <name>СписокПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список подразделений</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f9df1cff-c408-4136-af2f-ab5154a551d8">
+    <name>СписокСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список сотрудников</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+      <types>CatalogRef.СотрудникиОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="58d34869-6da3-43b8-8c61-c89a34aeaa38">
+    <name>СводныеДанныеПоОрганизациям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сводные данные по организациям</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="11433380-df4d-497b-a08e-ce8b9e97c7ab">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5715665b-5e7d-4a39-bef4-80b72f764d62">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <commands uuid="cbef4bf7-8986-4dfd-82be-26fe1a58b69a">
+    <name>СводНачисленнойЗарплатыОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свод начислений и удержаний</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

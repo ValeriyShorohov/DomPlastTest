@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ffdeda5-e69f-46be-a289-5e3b24689e3d">
+  <producedTypes>
+    <objectType typeId="1c0b7c1e-cbd8-4a37-9a70-4bd885a16bf1" valueTypeId="14b53162-e211-455d-a8db-281892d683b4"/>
+    <refType typeId="3842196d-c080-40df-ac8b-6f5196c43dbb" valueTypeId="c59c2afc-3d6e-45a4-a1a2-a1a59e37dcae"/>
+    <selectionType typeId="20259c7c-ef0a-4958-85bf-a106a1a918b3" valueTypeId="e795bff3-d181-4566-8893-f38f6bcb917a"/>
+    <listType typeId="51ea44ac-e392-4821-aa9f-0d763792e037" valueTypeId="1948a5ec-2ac6-4e93-8373-5b8dae4d6599"/>
+    <managerType typeId="b6aa8c03-0eee-48e1-82c0-4741596caf5b" valueTypeId="3883f3b9-09f0-439d-a64f-f75284ac0232"/>
+  </producedTypes>
+  <name>Валюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Валюты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Валюты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Валюты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Валюта</value>
+  </objectPresentation>
+  <levelCount>1</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>10</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Валюты.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Валюты.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Валюты.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="a38ab23e-a74e-4f92-8dd4-084962aaa15d">
+    <name>БуквенныйКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Буквенный код</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="674d2b64-91af-4447-988f-3ecf15d10eff">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3328f730-ef64-4838-aa66-b6db36978907">
+    <name>ПараметрыПрописиНаРусском</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры прописи на русском</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9f67d228-79aa-44e6-8dc7-fae4fbdfef2a">
+    <name>ЗагружатьКурсИзИнтернета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружать курс из Интернета</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="77b9da24-4666-4ce8-89bf-70db6395848f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="19286fcc-28bc-4b0f-873c-af813deb89f9">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6a425546-3c71-4603-ae8a-95d3230e1dd2">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7aa6aa9b-8366-4a84-b73c-852488fd35a2">
+    <name>ФормаПодбораИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора из классификатора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ebad935d-a070-4299-b931-174e54a30a69">
+    <name>ПФ_MXL_КлассификаторВалют</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор валют</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

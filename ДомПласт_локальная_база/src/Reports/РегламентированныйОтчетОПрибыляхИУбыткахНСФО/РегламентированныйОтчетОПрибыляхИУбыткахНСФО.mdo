@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e7869e4-7a1b-40df-8f60-a24785ad49ab">
+  <producedTypes>
+    <objectType typeId="851005b7-d5fa-4143-9293-ebcdeb48984b" valueTypeId="f84ab0b5-006f-4834-9402-b85bc7d32091"/>
+    <managerType typeId="95819123-63a0-4f9f-a2f4-7d658f89cd77" valueTypeId="9d29f1c3-d2e6-4c48-b807-ff771c121cd6"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетОПрибыляхИУбыткахНСФО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентированный отчет о прибылях и убытках (НСФО)</value>
+  </synonym>
+  <comment>Регламентированный отчет о прибылях и убытках (НСФО)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетОПрибыляхИУбыткахНСФО.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="e7f6523d-64e5-43d6-abdd-7c65dcccba6a">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="614d9c9d-7299-45b4-b2b2-95744854e9af">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c0473728-b52c-4276-bd76-f231bfc7221c">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3c394e54-ea20-44a8-aa82-639e94d188aa">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8443dfa8-5f95-422d-8767-9b302c4bcb73">
+    <name>ДанныеОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные отчета</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cb8ac2ef-fe3d-4e13-a975-d0e8edaeb992">
+    <name>НастройкиФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки формы</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a14bce24-5f04-4d2a-80cf-7e3a2f1f2217">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="58637157-08d5-4ea1-ad59-f4239aa5ef26">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="17cdab38-5c82-4b0d-be97-d53a7a5f4a00">
+    <name>ЯзыкФормирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Язык формирования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a7207f02-e54b-4186-bbff-b1d62c183977">
+    <name>НачалоСравнительногоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало сравнительного периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="1c366984-168e-48b1-af8e-a243a15fc999">
+    <name>КонецСравнительногоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец сравнительного периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="b783521a-f208-4c63-bce8-f0faf9bf3914">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о прибылях и убытках (НСФО)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dfe1f013-fc21-4f0a-af74-8718f0f955ff">
+    <name>ФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баланс (НСФО)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="154a8464-d88a-4eb1-9d21-434966a83259">
+    <name>ОтражениеВУчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение в учете</value>
+    </synonym>
+  </templates>
+  <templates uuid="23267d92-7a0a-4126-a308-9460071b97d4">
+    <name>ПередачаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача данных</value>
+    </synonym>
+  </templates>
+  <templates uuid="dd1aeaaf-a434-47fd-bf21-a1637e079477">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+  <templates uuid="1553b2cb-5ea5-4a61-b31f-e405d06fb639">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="6d81962d-9200-4f35-a170-9a4824ea9981">
+    <name>МакетФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2013 кв1</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

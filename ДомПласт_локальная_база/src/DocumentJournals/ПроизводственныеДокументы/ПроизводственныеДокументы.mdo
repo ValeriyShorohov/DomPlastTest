@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="526d6f07-a5d0-4ebe-bc3c-9d4be12c1791">
+  <producedTypes>
+    <selectionType typeId="a3603152-144f-480e-9f76-90aeade9f51c" valueTypeId="424fccba-a3e2-4ef1-8cff-ababed5b1204"/>
+    <listType typeId="05ffd6b7-1993-4b5b-9dba-b3d6f52a9241" valueTypeId="94b7f43a-26d4-4ef7-bc23-c335806663e0"/>
+    <managerType typeId="51060eb8-834d-4a0e-8a55-a64019c09ea8" valueTypeId="7a51ccf3-fb2f-470e-b80a-b91c7cf627f4"/>
+  </producedTypes>
+  <name>ПроизводственныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производственные документы</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ПроизводственныеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ТребованиеНакладная</registeredDocuments>
+  <registeredDocuments>Document.ОтчетПроизводстваЗаСмену</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеИзПереработки</registeredDocuments>
+  <registeredDocuments>Document.РеализацияУслугПоПереработке</registeredDocuments>
+  <registeredDocuments>Document.ПередачаТоваров</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияНЗП</registeredDocuments>
+  <columns uuid="84f6f594-025e-4df5-be10-6acf99d04dd7">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.Автор</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.Автор</references>
+    <references>Document.ТребованиеНакладная.Attribute.Автор</references>
+    <references>Document.ПередачаТоваров.Attribute.Автор</references>
+    <references>Document.ПоступлениеИзПереработки.Attribute.Автор</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.Автор</references>
+  </columns>
+  <columns uuid="aa391232-fcd5-48bf-afc4-962ca142ec78">
+    <name>ВалютаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ПоступлениеИзПереработки.Attribute.ВалютаДокумента</references>
+    <references>Document.ПередачаТоваров.Attribute.ВалютаДокумента</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="370d5ef4-0698-4bc9-b62e-2a019b7aa3cb">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <references>Document.ПоступлениеИзПереработки.Attribute.ДоговорКонтрагента</references>
+    <references>Document.ПередачаТоваров.Attribute.ДоговорКонтрагента</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.ДоговорКонтрагента</references>
+  </columns>
+  <columns uuid="b1b42a05-190b-4e37-a3d0-341be381246f">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ПоступлениеИзПереработки.Attribute.Комментарий</references>
+    <references>Document.ПередачаТоваров.Attribute.Комментарий</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.Комментарий</references>
+    <references>Document.ТребованиеНакладная.Attribute.Комментарий</references>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="92416625-48f8-4bde-8b75-71b763105567">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <indexing>Index</indexing>
+    <references>Document.ПоступлениеИзПереработки.Attribute.Контрагент</references>
+    <references>Document.ПередачаТоваров.Attribute.Контрагент</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.Контрагент</references>
+    <references>Document.ТребованиеНакладная.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="b8f4a9dc-afbb-43db-b202-e46559c3b4bd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ПоступлениеИзПереработки.Attribute.Организация</references>
+    <references>Document.ПередачаТоваров.Attribute.Организация</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.Организация</references>
+    <references>Document.ТребованиеНакладная.Attribute.Организация</references>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.Организация</references>
+  </columns>
+  <columns uuid="a6b7a55e-8055-44d1-88f7-e2645056c156">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ПоступлениеИзПереработки.Attribute.Ответственный</references>
+    <references>Document.ПередачаТоваров.Attribute.Ответственный</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.Ответственный</references>
+    <references>Document.ТребованиеНакладная.Attribute.Ответственный</references>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="b4100526-1a1c-4a58-be6b-dc5669e8e763">
+    <name>УчитыватьКПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>КПН</value>
+    </synonym>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.УчитыватьКПН</references>
+    <references>Document.ТребованиеНакладная.Attribute.УчитыватьКПН</references>
+    <references>Document.ПоступлениеИзПереработки.Attribute.УчитыватьКПН</references>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.УчитыватьКПН</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.УчитыватьКПН</references>
+    <references>Document.ПередачаТоваров.Attribute.УчитыватьКПН</references>
+  </columns>
+  <columns uuid="fd995bea-af02-4059-b7f1-c76bcd843876">
+    <name>ПодразделениеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <references>Document.ПоступлениеИзПереработки.Attribute.ПодразделениеОрганизации</references>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.ПодразделениеОрганизации</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.ПодразделениеОрганизации</references>
+  </columns>
+  <columns uuid="740fc978-59ad-4577-a4d4-1fcfedfe0bff">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.РучнаяКорректировка</references>
+    <references>Document.ТребованиеНакладная.Attribute.РучнаяКорректировка</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПередачаТоваров.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПоступлениеИзПереработки.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="87a8d714-d350-49e9-883c-9828eaed8be7">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <indexing>Index</indexing>
+    <references>Document.ПоступлениеИзПереработки.Attribute.Склад</references>
+    <references>Document.ПередачаТоваров.Attribute.Склад</references>
+    <references>Document.ТребованиеНакладная.Attribute.Склад</references>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.Склад</references>
+  </columns>
+  <columns uuid="5fb3f7c6-4b63-43e9-a4f4-22dce819f95d">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ПоступлениеИзПереработки.Attribute.СуммаДокумента</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="dab69c5a-f7be-4285-a848-aa363ba66af8">
+    <name>ВидУчетаНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид учета НУ</value>
+    </synonym>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.ВидУчетаНУ</references>
+    <references>Document.ТребованиеНакладная.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПоступлениеИзПереработки.Attribute.ВидУчетаНУ</references>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.ВидУчетаНУ</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПередачаТоваров.Attribute.ВидУчетаНУ</references>
+  </columns>
+  <columns uuid="e708310c-df0f-41d7-9f4f-64c583d237be">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <references>Document.ОтчетПроизводстваЗаСмену.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.РеализацияУслугПоПереработке.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ИнвентаризацияНЗП.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ТребованиеНакладная.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ПередачаТоваров.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ПоступлениеИзПереработки.Attribute.СтруктурноеПодразделение</references>
+  </columns>
+  <forms uuid="081f607d-9e19-4d48-9c74-0ab5cca26ace">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

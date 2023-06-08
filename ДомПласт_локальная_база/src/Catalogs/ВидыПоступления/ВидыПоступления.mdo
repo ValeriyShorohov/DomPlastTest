@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed94d4da-12e5-4e01-a626-de08aa932088">
+  <producedTypes>
+    <objectType typeId="16c75585-2fce-4943-8acf-1bf71ee66a76" valueTypeId="b18f0564-2382-47a7-84eb-ea3a75019dad"/>
+    <refType typeId="65b6311c-dbd2-4434-97e6-40fe3eb391ba" valueTypeId="eda4fb12-3a7b-4ba2-9b74-efc467c94002"/>
+    <selectionType typeId="f4387bbd-91b4-4520-acb3-d961a2847e91" valueTypeId="9791d0fa-5533-4d7e-bc8c-2de229d853e8"/>
+    <listType typeId="4d77e1a8-9759-400b-a84d-d09d279b567e" valueTypeId="ce09b8e2-57ff-406d-95d3-6146a039d5b2"/>
+    <managerType typeId="12d88f4d-48c8-4976-a6c2-d75d97e16899" valueTypeId="ba985b68-5cc1-4fdc-a8c3-48a64168e06f"/>
+  </producedTypes>
+  <name>ВидыПоступления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды поступления ТМЗ (работ, услуг)</value>
+  </synonym>
+  <comment>Для Декларации по НДС</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыПоступления.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыПоступления.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид поступления ТМЗ</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Виды поступления ТМЗ (работ, услуг)</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="0c50115e-ceb9-402c-8d78-da524f0c8e09">
+      <name>ВозвратТМЗ</name>
+      <description>Возврат ТМЗ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="32a729fb-f8ba-4f99-a5d1-84c4fd9497b0">
+      <name>ИмпортТМЗМетодомЗачета</name>
+      <description>Импорт товаров, по которым НДС уплачивается методом зачета</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="82d9598d-de50-4178-bc87-ff134f76989a">
+      <name>КомиссияБанка</name>
+      <description>Комиссия банка</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="4b697bb5-31ed-4f21-ab9a-7f788035f27f">
+      <name>НДСЗаНерезидента</name>
+      <description>НДС за нерезидента</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="815fbf3c-c8ff-4d08-903e-e262cf7760b8">
+      <name>СписаниеТМЗ</name>
+      <description>Порча, утрата товаров</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="e468ba00-cdfa-45ba-a5f5-73105c64fc01">
+      <name>ПриобретениеТМЗБезНДС</name>
+      <description>Товары, приобретенные без НДС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="26034782-40e5-4266-96e7-b586d599fe69">
+      <name>ПриобретениеТМЗ</name>
+      <description>Товары, приобретенные с НДС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыПоступления.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыПоступления.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыПоступления.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="4d2a12f5-445c-4519-9553-234b2f66459b">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5383b31-9af7-4574-87a5-6f2a5f7fcee9">
+    <name>ПризнакКорректировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректировка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8f1d1eeb-2fbc-44d8-b62f-3158af18f7ad">
+    <name>КодВидаОблагаемогоОборота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код вида облагаемого оборота</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a52e4e3f-5bd4-4a24-a00a-8f9191aeef24">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="16dc9e2b-a907-4e82-8ba2-1d6643bcb3dd">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dfcd00e6-0470-4c1a-b5ff-e5cc9c9dab69">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

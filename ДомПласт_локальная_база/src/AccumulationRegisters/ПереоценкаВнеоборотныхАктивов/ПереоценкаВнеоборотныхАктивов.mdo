@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a03e60aa-6f12-4a63-96be-82f58b9b801d">
+  <producedTypes>
+    <selectionType typeId="abf894a2-2947-42bd-9ab2-b8e31025d634" valueTypeId="b3c564d9-dfd8-4dc7-b178-b7af3cb7f950"/>
+    <listType typeId="21eb3688-a68a-44a8-abf7-fcc74ace6b1f" valueTypeId="179c74b5-192d-4a69-8765-48055a37989f"/>
+    <managerType typeId="dca92778-0639-4a21-855d-582b103fcc74" valueTypeId="dfcbb7c3-9a31-4c00-a158-cb0d3e1127b3"/>
+    <recordSetType typeId="1fec7d25-7040-40be-ad80-9cc6905d3383" valueTypeId="376e30bf-d3c1-4f95-a4d0-3a923dfd06d7"/>
+    <recordKeyType typeId="d605b7d0-0354-4f48-809c-5431e88fb6dc" valueTypeId="be4c7321-7686-413f-8a2d-1d039e34d7ec"/>
+    <recordType typeId="510300f0-dd04-43be-bc40-a40ea88bdf18" valueTypeId="95127d41-0259-44bb-a127-226ad811c7e3"/>
+  </producedTypes>
+  <name>ПереоценкаВнеоборотныхАктивов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переоценка внеоборотных активов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <resources uuid="64ba5d98-a718-4dc9-9100-e00582d8c5af">
+    <name>СуммаПереоценкиСтоимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма переоценки стоимости</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="9eb7b377-10cb-458c-a378-50a640c9c5c2">
+    <name>СуммаПереоценкиАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма переоценки амортизации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="2dec8997-13ba-46b1-a487-386cf2ea3823">
+    <name>СчетРасходовБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет расходов БУ</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4210967c-f0c1-4202-b43b-a880912530a4">
+    <name>СубконтоРасходовБУ1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто расходов 1(БУ)</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоТиповые</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f3d0c825-c923-43a2-a980-16d1fc41c63d">
+    <name>СубконтоРасходовБУ2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто расходов 2(БУ)</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоТиповые</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="9779993e-7985-4e37-959e-ad8ce3d07118">
+    <name>СубконтоРасходовБУ3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто расходов 3(БУ)</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоТиповые</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="25dcfade-8c2a-47db-980a-caaaa1540023">
+    <name>СчетДоходовБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет доходов БУ</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8007b39c-7a57-4bd6-ba6e-63a2a071adde">
+    <name>СубконтоДоходовБУ1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 1(БУ)</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоТиповые</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="eeb08dfb-dbf7-4aa8-8d00-2c092b70a633">
+    <name>СубконтоДоходовБУ2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 2(БУ)</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоТиповые</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="adc2e574-4768-4b6c-b426-a2d1dc5f024d">
+    <name>СубконтоДоходовБУ3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 3(БУ)</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоТиповые</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="fce1bb69-242d-4d8c-b027-a1f45fa65ef4">
+    <name>ВнеоборотныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внеоборотный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7ac3b4c1-0fb1-4bcb-9098-221c5298c8b0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b4c3eda6-ffe5-41a1-9fcc-62d9105701f0">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4e510172-a808-478d-a185-ca332d156aa5">
+    <name>ДокументПереоценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ переоценки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПереоценкаВнеоборотныхАктивов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

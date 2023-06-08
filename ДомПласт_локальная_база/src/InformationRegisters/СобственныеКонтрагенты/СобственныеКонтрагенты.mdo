@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9eaf315-031e-4c0b-8e71-c0947640cfc5">
+  <producedTypes>
+    <selectionType typeId="50b1b226-7c52-46e4-bdbc-581a4f223fdd" valueTypeId="9ed3c0ae-fe9a-4870-b50e-b997e9f85ece"/>
+    <listType typeId="6f025d9c-04e9-4544-8a26-75cf14901538" valueTypeId="2af69102-63c9-4f5d-98b3-5fed12d09032"/>
+    <managerType typeId="5aabc709-df91-43a8-a29b-a8ec57b9a930" valueTypeId="a488afc8-1c7b-42c0-86d5-bc808f512eaa"/>
+    <recordSetType typeId="d87c3879-509b-4bfa-bd6d-2024ff0a5f32" valueTypeId="141a9f9f-2489-4086-9e42-8a6078ff3f3d"/>
+    <recordKeyType typeId="f7f90121-0122-45aa-a258-79a0ee3d5360" valueTypeId="39dbb860-412c-457c-bd41-13d592b41b0c"/>
+    <recordType typeId="2bc7b17f-7cb2-4858-a5b4-585caaa7babc" valueTypeId="3773c104-41b6-44a7-a322-86cf13157638"/>
+    <recordManagerType typeId="e6bd58c3-071d-45f6-837d-96ba38df94de" valueTypeId="02dfe7e0-faf6-44bc-b612-035ce8c43e6a"/>
+  </producedTypes>
+  <name>СобственныеКонтрагенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Собственные контрагенты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.СобственныеКонтрагенты.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СобственныеКонтрагенты.Form.ФормаСписка</defaultListForm>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Собственный контрагент</value>
+  </recordPresentation>
+  <dimensions uuid="0502166e-9c9c-4bc5-8bbe-2dd0e19ed278">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c53d4f23-61d9-4032-8056-6ec5b222ed56">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <forms uuid="5af4490f-d0ff-4bb4-a2eb-9b88aed43f13">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="40b77db1-e451-4c37-b872-4ab8a547f915">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

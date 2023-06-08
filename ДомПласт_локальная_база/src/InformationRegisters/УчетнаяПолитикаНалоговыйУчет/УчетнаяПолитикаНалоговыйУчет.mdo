@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ceb2c83-9908-4427-9163-450afdef248c">
+  <producedTypes>
+    <selectionType typeId="56cdbd86-e860-409e-be83-3f866c501736" valueTypeId="fdc7cc2e-2f8c-4e52-af60-105fbc2b8e28"/>
+    <listType typeId="a3fe2150-7365-4728-89c1-9ba3734e980b" valueTypeId="a4a93270-aaa7-42e2-b0f5-1356bd0edea0"/>
+    <managerType typeId="1958e4c2-6131-454d-b960-30c825da04db" valueTypeId="c3d7081d-a2b9-41df-bea2-15f1cc6950ca"/>
+    <recordSetType typeId="e14154c3-8fe0-4e22-b69a-102d8430bb97" valueTypeId="5f13bbfd-2b74-4ca0-ad9e-71b53ef9ce26"/>
+    <recordKeyType typeId="28ce91be-7e3f-4f89-a9a8-3db1198c7b44" valueTypeId="ecdd483a-bf3e-4b7b-b987-b946a008cc34"/>
+    <recordType typeId="89128da4-ef5f-4b9b-bb82-d73ef6d11448" valueTypeId="c2bc23c6-572c-4b8d-83bf-0543ad46cb48"/>
+    <recordManagerType typeId="390eaead-5d70-4b93-b701-431dd4b4139b" valueTypeId="1b7d3d92-c16e-4eae-9d40-2f92d55d3bad"/>
+  </producedTypes>
+  <name>УчетнаяПолитикаНалоговыйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетная политика (налоговый учет)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.УчетнаяПолитикаНалоговыйУчет.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УчетнаяПолитикаНалоговыйУчет.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Учетная политика (налоговый учет)</value>
+  </recordPresentation>
+  <resources uuid="4fb8c0e2-1782-40f4-8d8c-f2df558b7421">
+    <name>НДСНалоговыйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый период по НДС</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.Периодичность.EnumValue.Месяц</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.Периодичность.EnumValue.Квартал</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.Периодичность.EnumValue.Квартал</value>
+    </fillValue>
+  </resources>
+  <resources uuid="1b5ac580-a478-48f3-a672-9455ee5aa1a9">
+    <name>НДСМетодОтнесенияВЗачет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод отнесения НДС в зачет</value>
+    </synonym>
+    <type>
+      <types>EnumRef.МетодыОтнесенияНДСВЗачет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.МетодыОтнесенияНДСВЗачет.EnumValue.Пропорциональный</value>
+    </fillValue>
+  </resources>
+  <resources uuid="43ef2019-1471-46af-96d6-f8a4cb31c9c7">
+    <name>ОрганизацияЯвляетсяПлательщикомНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик НДС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <resources uuid="c24864cc-61bc-4f81-aedf-d48a9078c6ef">
+    <name>ОрганизацияЯвляетсяПлательщикомКПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик КПН</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <resources uuid="87129852-6ab5-4680-a6ad-f6b7f0236027">
+    <name>ОрганизацияЯвляетсяПлательщикомАкциза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик акциза</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3beb0fb6-b2f7-4bbc-8b45-74df6aa15ce7">
+    <name>ОрганизацияЯвляетсяПлательщикомСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация является плательщиком социального налога</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <resources uuid="5a46e229-9264-43d8-9239-9e7115bfcede">
+    <name>УпрощенныйУчетИПНиОПВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>При начислении ИПН, ОПВ и ВОСМС принимать исчисленные суммы к учету как удержанные</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8f8b9857-1972-4714-9f35-1dec50d87ffd">
+    <name>ОтражениеПоПериодуРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение по периоду регистрации</value>
+    </synonym>
+    <comment>Используется для расчета ИПН, ОПВ, СН и СО</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a4217cc0-c655-4862-8d46-9b79a2724d54">
+    <name>ЗасчитыватьВВыплаченныеДоходыУдержанияПоИЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Засчитывать в выплаченные доходы удержания по исполнительным листам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5346aa68-d083-4e5b-9f88-5faaf204a334">
+    <name>КоэффициентМРПДляРасчетаСНЗаИндивидуальногоПредпринимателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент МРП для расчета СН за индивидуального предпринимателя</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ffd238fe-38d9-4035-81f0-84653c480653">
+    <name>КоэффициентМРПДляРасчетаСНЗаНаемногоРаботника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент МРП для расчета СН за наемного сотрудника</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="35024b64-3dd2-4eee-9ad3-1bb90a413410">
+    <name>ПрименятьОграничениеНаМинимальнуюБазуСоциальногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применять ограничение на минимальную базу социального налога</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7e97c345-4e98-44c6-bd29-907d0f298f13">
+    <name>ПорядокСписанияЗадолженностиПоЗарплате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок закрытия задолженности по зарплате</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядокСписанияЗадолженностиПоЗарплате</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ПорядокСписанияЗадолженностиПоЗарплате.EnumValue.ПоСпособуЗаполненияДокумента</value>
+    </fillValue>
+  </resources>
+  <resources uuid="07d5f135-ed66-4ad4-9b17-d1afd8370330">
+    <name>РаспределятьНалогиПоСтруктурнымЕдиницам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределять налоги, взносы и удержания по организациям и структурным единицам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2d1deeaf-8ee4-4dd4-b64e-0f50634976ee">
+    <name>РаспределятьНалогиПоПодразделениямОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределять налоги, взносы и удержания по подразделениям организаций</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f44d914-5ead-45e1-940e-8a20af336246">
+    <name>ОрганизацияЯвляетсяВкладчикомОППВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация является вкладчиком ОППВ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2ffbbca9-9a1d-48d2-843a-8e38ef4f47ef">
+    <name>ПрименятьОграничениеНаМинимальныйОбъектОСМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применять ограничение на минимальный объект отчислений ОСМС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b9d58ebd-e17d-4897-b906-46fd0561bbf6">
+    <name>ЕжемесячныйРасчетВзносовИОтчисленийЗаИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнять ежемесячный расчет взносов и отчислений за ИП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4e6cb564-b873-41f7-aaf6-5352b9172e16">
+    <name>ПорядокРасчетаДоходаОПВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок расчета дохода для ОПВ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядокРасчетаДоходовЗаИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bb8fa818-839e-478e-818d-5dd4eb1e1c50">
+    <name>РазмерДоходаОПВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер дохода для ОПВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3ce647f8-03bf-4da9-bc04-945659061d85">
+    <name>ПорядокРасчетаДоходаСО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок расчета дохода для СО</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядокРасчетаДоходовЗаИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="73bed2c2-e49e-4108-b10c-88ef49e38dff">
+    <name>РазмерДоходаСО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер дохода для СО</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ecbc7f3b-a819-48ea-8ab5-8d4af8b2d43b">
+    <name>ПредоставлятьВычетВМесяцеОтсутствияДохода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предоставлять разрешенный вычет в месяце отсутствия дохода</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c949b64c-f7cc-4142-b59f-d138049e9480">
+    <name>СпособОтраженияОПВИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения в регл.учете</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2b89854b-4fb2-440d-a9c8-24cf2a0d91e9">
+    <name>СпособОтраженияСОИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения в регл.учете</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ae1d70f-e538-4754-a21d-1a6f675d9cfd">
+    <name>РежимНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим налогообложения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РежимНалогообложения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eb1fb3e1-5c33-43db-8e44-199a184a2f70">
+    <name>СтавкаВОСМСДляИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка ВОСМС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bd4f9a1c-61d7-4b7d-93cf-57ebe9542a5c">
+    <name>СпособОтраженияВОСМСИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения в регл.учете</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="11389c2c-b82a-4aeb-b05b-ebf65d7fca6c">
+    <name>РазмерДоходаВОСМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер дохода для ВОСМС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="feb068f1-b967-4972-896a-3812d6be9d87">
+    <name>ПорядокРасчетаДоходаВОСМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок расчета дохода для ВОСМС</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядокРасчетаДоходовЗаИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3ce6a910-d243-4b77-be87-2a6074bce78a">
+    <name>НеПрименятьКорректировкуПрочихНалоговВзносовОтчислений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет СН, ООСМС, ВОСМС без применения 90% корректировки по ИПН</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4a3de1b8-1c20-4f8d-b0be-159b8107f846">
+    <name>ПрименятьВычетВОСМСДляФизическихЛицИГПХ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применять вычет ВОСМС для физических лиц (сотрудников) (действует в 2020 г.)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="21a1d402-63d0-409d-afb9-697fa86a9f77">
+    <name>СтавкаОПВдляИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка ОПВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f1082b41-edd1-46f5-8c50-653222436346">
+    <name>СтавкаСОДляИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка СО</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0d14219b-41ce-4d3f-8935-604c38f7009a">
+    <name>ПрименятьВычетОПВиВОСМСДляГПХ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применять вычеты ОПВ и ВОСМС для ГПХ (действует в 2020 г.)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e1e3d3b1-74db-4acb-b495-d89df969eba5">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5fa39bea-cc52-4296-816d-b325e9a4614d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d6b8d1cb-8382-4a70-ae79-7d8933c309cf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

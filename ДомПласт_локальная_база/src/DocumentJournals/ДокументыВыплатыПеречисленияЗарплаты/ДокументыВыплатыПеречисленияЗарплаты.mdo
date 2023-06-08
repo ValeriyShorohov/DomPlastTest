@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7eb463dc-d036-4551-9b49-63e0e88f4bf9">
+  <producedTypes>
+    <selectionType typeId="419d78b5-b823-4513-9698-42740933c02b" valueTypeId="d3ae61af-7495-4b5c-843a-b0ba0a85faa7"/>
+    <listType typeId="ba1ddfc4-3bfd-4952-b985-8663e8930704" valueTypeId="80714a8e-36ba-4362-aa6f-ea9fdf89e255"/>
+    <managerType typeId="2e4aeea8-fc7b-41bc-ac8b-c12774b8dd71" valueTypeId="7c41b3ef-cb9d-4a90-9781-86a2c075d5f3"/>
+  </producedTypes>
+  <name>ДокументыВыплатыПеречисленияЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплаты и перечисления зарплаты</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыВыплатыПеречисленияЗарплаты.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ЗарплатаКВыплатеОрганизаций</registeredDocuments>
+  <registeredDocuments>Document.ВозвратЗарплатыРаботниковОрганизаций</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Выплаты и перечисления зарплаты</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Выплаты и перечисления зарплаты организации</value>
+  </extendedListPresentation>
+  <columns uuid="ecc20986-c6bc-40e8-9e43-6fc73d94561f">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ВозвратЗарплатыРаботниковОрганизаций.Attribute.Автор</references>
+    <references>Document.ЗарплатаКВыплатеОрганизаций.Attribute.Автор</references>
+  </columns>
+  <columns uuid="415c228a-2ff8-41fd-b171-fceee050d6b2">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ВозвратЗарплатыРаботниковОрганизаций.Attribute.Комментарий</references>
+    <references>Document.ЗарплатаКВыплатеОрганизаций.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="38d6cf7d-91e4-4933-9cbf-1b5537e7eb16">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ВозвратЗарплатыРаботниковОрганизаций.Attribute.Организация</references>
+    <references>Document.ЗарплатаКВыплатеОрганизаций.Attribute.Организация</references>
+  </columns>
+  <columns uuid="d51470d4-8d31-4392-8ec4-d0d63781a1ec">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ВозвратЗарплатыРаботниковОрганизаций.Attribute.Ответственный</references>
+    <references>Document.ЗарплатаКВыплатеОрганизаций.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="e5dcb6d3-d287-456a-9735-04ecf9c1ff9c">
+    <name>Работники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работники</value>
+    </synonym>
+    <references>Document.ВозвратЗарплатыРаботниковОрганизаций.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ЗарплатаКВыплатеОрганизаций.Attribute.КраткийСоставДокумента</references>
+  </columns>
+  <columns uuid="2caa15aa-fcf9-4a43-9c21-2a0c9576aaeb">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <references>Document.ВозвратЗарплатыРаботниковОрганизаций.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ЗарплатаКВыплатеОрганизаций.Attribute.СтруктурноеПодразделение</references>
+  </columns>
+  <forms uuid="15b6ac59-9617-443a-9712-ec1105df699c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

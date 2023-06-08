@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55c81b2e-c754-4bde-8424-35272dcbcb6d">
+  <producedTypes>
+    <objectType typeId="37352396-4575-4681-be0d-aa2375db9b42" valueTypeId="fd9275ff-cf14-4772-a2aa-c7ecf9dd6545"/>
+    <refType typeId="0ed59ede-9f91-4d87-a7ae-b34817f47258" valueTypeId="c12d0f20-adc8-476c-a6d3-ef83b4e475c9"/>
+    <selectionType typeId="a21a6a97-41b6-4055-acd9-474869dce3eb" valueTypeId="e31e6990-a57b-4472-923d-516f0fdc5358"/>
+    <listType typeId="6cd2d297-8c2b-495f-944f-499e69cd4d23" valueTypeId="7efac6f7-3e2e-45fc-837c-5a64bca7e375"/>
+    <managerType typeId="7b302757-5049-4341-9fd1-da363c9dc63c" valueTypeId="c4f4ccca-50d3-4a1e-a2dd-3a7b8bd59194"/>
+  </producedTypes>
+  <name>СтавкиНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки НДС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтавкиНДС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтавкиНДС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ставка НДС</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ставки НДС</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СтавкиНДС.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СтавкиНДС.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СтавкиНДС.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="5ff4724d-e959-4b12-86e0-2c55720ca577">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС, % </value>
+    </synonym>
+    <comment>Ставка НДС, % </comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="948aaa00-145c-43c2-b367-728318c6d66c">
+    <name>ДляОсвобожденногоОборота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для освобожденного оборота</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ca222e52-c5a9-4307-8705-76eb677cb386">
+    <name>МестоРеализацииНеРК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Местом реализации не является РК</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="02ad67fe-57d8-4fea-b05b-67bf664cf989">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="414469c6-4521-46af-9b8b-12a0e5a359e8">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f6487e75-835f-41bb-b9b4-23dee2c2d93c">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

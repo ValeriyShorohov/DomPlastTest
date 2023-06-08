@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f7fea9e-9bfe-4b51-ab46-2fca5d386909">
+  <name>ОбновлениеНоменклатурыГСВС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка номенклатуры ГСВС по расписанию</value>
+  </synonym>
+  <methodName>CommonModule.ВССервер.ЗагрузкаНоменклатурыГСВСПоРасписанию</methodName>
+  <description>Загрузка номенклатуры ГСВС по расписанию</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>600</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

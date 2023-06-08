@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="702bccb6-fc85-4fdf-8cd5-ca65239cfefc">
+  <producedTypes>
+    <selectionType typeId="0581e37b-dde9-41a3-a694-f0a170b860bd" valueTypeId="1a8f4190-f342-4e01-a9fa-e1be04f512ae"/>
+    <listType typeId="3bfda8ac-a0ee-42b5-be7b-cacd580ca5b6" valueTypeId="df6b9897-fb01-4600-ad13-00efd914aae6"/>
+    <managerType typeId="df324327-c623-4ec5-a9f0-908828f491ca" valueTypeId="31eb14c1-0b23-496d-87cc-873a025c8c2c"/>
+    <recordSetType typeId="dca2762e-19cd-4c25-a0d5-d619d763f216" valueTypeId="c933b0d0-1b53-48ad-a8b7-7355e062ac99"/>
+    <recordKeyType typeId="cce46d55-98ad-47b9-9c2c-c984fd04b3af" valueTypeId="859f77b6-2c05-4585-a144-0124e1255b77"/>
+    <recordType typeId="a2c87585-bc44-4005-845e-5b3fe810b9e0" valueTypeId="ce379bd6-f0a6-451c-970b-0c46be1882c1"/>
+    <recordManagerType typeId="45ab58b4-21fc-4e5e-af5c-a0f0f68c5382" valueTypeId="7335a0d8-40e3-44c5-b8de-74b4f263f15b"/>
+  </producedTypes>
+  <name>ТоварыСПониженнойСтавкойПошлин</name>
+  <synonym>
+    <key>ru</key>
+    <value>Товары с пониженной ставкой пошлин (Перечень изъятий)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ТоварыСПониженнойСтавкойПошлин.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ТоварыСПониженнойСтавкойПошлин.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="5013af03-0a2e-465f-a114-afc9e200ca79">
+    <name>ВходитВПеречень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входит в перечень</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="661ff503-962e-40c8-9cd0-159762c1f8b7">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="4f702275-97ad-4597-a22a-def2e573e6ac">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cc4ab8b5-7fa7-42bc-a137-08e15cee1df1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c7e57d88-b484-4388-af77-841a864428a5">
+    <name>УдалитьПФ_MXL_ПереченьИзъятий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перечень изъятий</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>

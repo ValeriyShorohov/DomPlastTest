@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core">
+	<filter>
+		<item xsi:type="FilterItemGroup">
+			<groupType>OrGroup</groupType>
+			<item xsi:type="FilterItemComparison">
+				<use>false</use>
+				<left xsi:type="dcscor:Field">КодГСВС</left>
+				<comparisonType>Contains</comparisonType>
+				<right xsi:type="xs:string"/>
+				<userSettingID>0dab2199-5452-492d-a564-545c0fe59639</userSettingID>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<use>false</use>
+				<left xsi:type="dcscor:Field">Родитель.КодГСВС</left>
+				<comparisonType>Contains</comparisonType>
+				<right xsi:type="xs:string"/>
+				<userSettingID>2220312a-1260-4c79-baff-556299031024</userSettingID>
+				<userSettingPresentation xsi:type="xs:string">Код ГСВС родительского уровня</userSettingPresentation>
+			</item>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПризнакПеречняИзьятий</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">false</right>
+			<userSettingID>df41c6d4-bdcd-48ce-9eb9-d99e3f1c90bd</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПризнакУчетаНаВиртуальномСкладе</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">false</right>
+			<userSettingID>b1c02607-5938-4610-a2ba-6b45fde4d874</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">ПризнакАктивности</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<userSettingID>06144613-8be8-419a-a9d4-76e61bc86ae5</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">ПризнакВозможностиВыбора</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<userSettingID>dc7560fb-02b8-4c59-9be3-87e1efd8236e</userSettingID>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</userSettingID>
+	</filter>
+	<order>
+		<viewMode>Normal</viewMode>
+		<userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</userSettingID>
+	</order>
+	<conditionalAppearance>
+		<item>
+			<selection/>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ПризнакВозможностиВыбора</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ЦветФона</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">#FFFF99</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</userSettingID>
+	</conditionalAppearance>
+	<itemsViewMode>Normal</itemsViewMode>
+	<itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</itemsUserSettingID>
+</Settings>

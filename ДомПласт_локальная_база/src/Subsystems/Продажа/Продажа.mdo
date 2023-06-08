@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3bd4e323-b428-4221-b66d-b7f7ea416753">
+  <name>Продажа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажа</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Продажи</picture>
+  </picture>
+  <content>CommonPicture.ПодсистемаПокупкиИПродажи</content>
+  <content>Report.ЖурналУчетаСчетовФактур</content>
+  <content>Report.ОтчетОРеализацииТоваровУслуг</content>
+  <content>Report.ОтчетПоДаннымКонтрагента</content>
+  <content>CommonCommand.ДополнительныеОбработкиПродажа</content>
+  <content>CommonCommand.ДополнительныеОтчетыПродажа</content>
+  <content>CommonCommand.ПанельОтчетовПродажа</content>
+  <content>Report.ОтчетПоНаличиюСНТВыданныхПолученных</content>
+  <subsystems>Продажа</subsystems>
+  <subsystems>РасчетыСКонтрагентами</subsystems>
+  <subsystems>СправочникиИНастройки</subsystems>
+  <subsystems>РозничныеПродажи</subsystems>
+</mdclass:Subsystem>

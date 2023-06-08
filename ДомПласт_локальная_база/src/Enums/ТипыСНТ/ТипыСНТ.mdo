@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f60a86db-502d-425f-a29c-4d604259d8a2">
+  <producedTypes>
+    <refType typeId="cbd35c90-fa25-4f04-983f-2eb38b249967" valueTypeId="5e04b4ca-6c3f-4576-ada9-16cf766a4f04"/>
+    <listType typeId="37ab105f-ca53-4f21-b3d3-98fac4ea140c" valueTypeId="340e090e-d565-41e9-9341-24e0381ee9f4"/>
+    <managerType typeId="22580442-de5e-4d14-828d-a74cce6af57d" valueTypeId="ec45a92c-edfa-4480-bfff-42c485c56c78"/>
+  </producedTypes>
+  <name>ТипыСНТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы СНТ</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8594240e-e7ca-48ae-a5ec-4fb969335728">
+    <name>Первичная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первичная</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;PRIMARY_SNT&quot;.</comment>
+  </enumValues>
+  <enumValues uuid="681fc08e-ed11-4ecc-baa1-8224469e6c47">
+    <name>ВозвратТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>На возврат товаров</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;RETURNED_SNT&quot;.</comment>
+  </enumValues>
+  <enumValues uuid="9a69c6f2-895b-4e11-a372-dc752f856b77">
+    <name>Исправленная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправленная (аннулированная, отклоненная)</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;FIXED_SNT&quot;.</comment>
+  </enumValues>
+</mdclass:Enum>

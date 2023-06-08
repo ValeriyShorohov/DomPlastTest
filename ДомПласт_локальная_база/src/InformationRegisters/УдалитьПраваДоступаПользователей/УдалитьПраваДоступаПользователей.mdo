@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1e1ce69-c08e-402b-89d7-310d8fd8ddbb">
+  <producedTypes>
+    <selectionType typeId="8570058f-3118-4290-8f50-a1a70d579cd5" valueTypeId="b500eb36-b0ff-495c-905d-3f18d431eb40"/>
+    <listType typeId="1d0ff82d-6c0e-446c-a076-419c90af3a1b" valueTypeId="0ec0cad2-9ab9-47ef-8478-3384f3d45ea3"/>
+    <managerType typeId="62eee0f2-fd96-4641-b05b-fcb04e381db5" valueTypeId="893fe232-0074-4c26-b291-1b934396aaab"/>
+    <recordSetType typeId="24ab0d18-2de9-4847-8b3d-e32f46895994" valueTypeId="63c634a4-2ad8-45be-bcd8-3902c5b9b6c0"/>
+    <recordKeyType typeId="1d2f5ea1-ea86-4a6a-b63c-58ad2a39128c" valueTypeId="53f4a673-c313-44aa-a9d6-25cdb99bbf02"/>
+    <recordType typeId="fe874321-0871-4bb3-9c05-9182e3af3410" valueTypeId="d96265eb-5e35-4f1c-88e5-5b4ec3334e0f"/>
+    <recordManagerType typeId="2d925daa-9a55-4388-8b1a-db1538365126" valueTypeId="3f3dd841-79b8-4685-a1b1-8d23788b83c7"/>
+  </producedTypes>
+  <name>УдалитьПраваДоступаПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) права доступа пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.УдалитьПраваДоступаПользователей.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УдалитьПраваДоступаПользователей.Form.ФормаСписка</defaultListForm>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Право доступа пользователей</value>
+  </recordPresentation>
+  <resources uuid="a6e78278-5cd5-42eb-8fdc-f948c4bfe267">
+    <name>Запись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e98097a0-28db-448e-b05d-fe21bf2d11ea">
+    <name>НастройкаДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка доступа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="a19b0449-5647-47ac-b4b9-84c2beee3bc6">
+    <name>ВидНаследованияПравДоступаИерархическихСправочников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид наследования прав доступа иерархических справочников</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыНаследованияПравДоступаИерархическихСправочников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="86800574-fca7-46db-9f3a-5ec77705d0ea">
+    <name>ОбъектДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект доступа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.УдалитьВнешниеОбработки</types>
+      <types>CatalogRef.Кассы</types>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9eff0514-2517-4ee9-aef0-cb73c6eff3aa">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ГруппыПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9a04b9f2-9865-4226-83b2-07701ce689eb">
+    <name>ОбластьДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область данных</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОбластиДанныхОграниченияПравДоступа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="2b00f438-b999-45dd-b957-a6d56b5086f6">
+    <name>ВладелецПравДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец прав доступа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.УдалитьВнешниеОбработки</types>
+      <types>CatalogRef.Кассы</types>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="56814413-0047-44df-9263-b0ee3d0dc793">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1dda7d10-f2a0-41b8-b8d9-50c33118a795">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

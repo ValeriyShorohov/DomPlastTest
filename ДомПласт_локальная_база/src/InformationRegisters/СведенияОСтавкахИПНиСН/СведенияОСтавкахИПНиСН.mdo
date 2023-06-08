@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab222070-82bc-47a9-81e5-cc69338ba8d6">
+  <producedTypes>
+    <selectionType typeId="65aeac6b-2555-4234-9c0b-9a6c041797f2" valueTypeId="f8570337-c3f2-4f2e-b411-ad0b57047075"/>
+    <listType typeId="eb9e9d2b-eb96-4823-b1fb-756eba618846" valueTypeId="aeb9e831-0606-4a1a-a0df-969fc70eab98"/>
+    <managerType typeId="d9e81196-3436-4ad7-b7fb-f24f016ddefc" valueTypeId="6c1e3693-db8f-45c8-84a3-c2587730bd18"/>
+    <recordSetType typeId="7787e0b4-aa1a-4795-8b9a-48032a34a84f" valueTypeId="5cfe3919-1c56-4e0c-890b-35fc17153595"/>
+    <recordKeyType typeId="a95cf61d-409e-4a71-b2d7-21eb99bfe5be" valueTypeId="aafd3b22-8467-490e-9e5b-012328804598"/>
+    <recordType typeId="4c73b5ad-a4a7-4a0a-8b6d-383fe939c4b5" valueTypeId="c840f956-20db-45d7-a93c-edf365c58b70"/>
+    <recordManagerType typeId="62e679ab-7bb0-4c75-b7d5-48fb3c4af9df" valueTypeId="e7bcb594-15dc-4286-86ff-16897724a3d0"/>
+  </producedTypes>
+  <name>СведенияОСтавкахИПНиСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о ставках ИПН и СН</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.СведенияОСтавкахИПНиСН.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияОСтавкахИПНиСН.Form.ФормаНабораЗаписей</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <includeHelpInContents>true</includeHelpInContents>
+  <resources uuid="fcb711b7-1d10-4e38-b483-345e8fa71882">
+    <name>СуммаДоходаС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нач. сумма дохода</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="12384780-1c90-4166-b8bc-1d9f4d0fc18c">
+    <name>СуммаДоходаПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кон. сумма дохода</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d2e18573-e14c-4b5a-8781-585047a29a9e">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e3342e7e-8c9b-450a-ada1-7a151620de38">
+    <name>СуммаНалогаПредыдущегоПредела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма налога</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c49600b5-4502-4abb-97f3-2d0ce2827884">
+    <name>ВидСтавокИПНиСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ставок ИПН и СН</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСтавокИПНиСН</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="57651718-2faf-47b2-857a-2b43bab7761e">
+    <name>НомерСтрокиСтавок</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ стр. ставок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f57544ad-be52-44a0-9cd6-7abce25cb08f">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cde6b7f0-ff8c-45a0-af80-583884e6dc0a">
+    <name>ФормаНабораЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма набора записей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

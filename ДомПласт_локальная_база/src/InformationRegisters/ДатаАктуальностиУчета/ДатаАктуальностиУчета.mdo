@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45fd1d2a-f0a9-4943-bec7-0dce7c41c30e">
+  <producedTypes>
+    <selectionType typeId="19c4088c-8b39-493f-9630-945b00bb5f2c" valueTypeId="ccde8d1e-1c8e-49cd-8ad8-c125f7c44d83"/>
+    <listType typeId="71948f7e-29c5-4ef7-836e-68f6d32c3164" valueTypeId="4bc19c6f-ce47-4582-9264-c6601d549af5"/>
+    <managerType typeId="db975a47-3774-4f7b-9ecf-b7a4233f1280" valueTypeId="a0b7e4ae-5541-4dd4-9b1d-5e73732485e1"/>
+    <recordSetType typeId="1af1339c-e5d1-406d-8ed1-714643dd0135" valueTypeId="9555a89a-0962-4215-8226-ac2a90386140"/>
+    <recordKeyType typeId="f9c910f2-f684-4d84-b071-9510e110b7e7" valueTypeId="a76564e3-4d73-4e99-8c28-53d47e214cbc"/>
+    <recordType typeId="903cee85-b253-4ce5-9108-a569431d8d43" valueTypeId="21a6f1c4-ac2c-4a3e-a768-7b55b4bfc623"/>
+    <recordManagerType typeId="ebf08925-8b20-4103-9f7d-8c83080e7b13" valueTypeId="e7ee5874-2ff7-4cae-902f-08fef9564925"/>
+  </producedTypes>
+  <name>ДатаАктуальностиУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата актуальности учета</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <resources uuid="4e3acc1a-705e-4639-9755-5eaf741d4767">
+    <name>ОценкаТМЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка ТМЗ</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="93efa04e-39c7-4f0a-a11c-6a36175406fe">
+    <name>РасчетыСКонтрагентами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчеты с контрагентами</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a97e8fd1-f47e-4f3f-8573-c2838cd32010">
+    <name>НДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налог на добавленную стоимость</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9ee5bcaa-e768-464e-839f-f7d2c7f510dd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

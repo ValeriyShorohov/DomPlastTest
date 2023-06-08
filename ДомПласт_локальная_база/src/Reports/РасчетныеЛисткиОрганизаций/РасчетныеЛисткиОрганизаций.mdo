@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab404c66-38e2-464f-baf4-39233e8beb83">
+  <producedTypes>
+    <objectType typeId="10f991db-f8d2-4eb2-b22a-b64e49a7e8b2" valueTypeId="892e2099-c094-4678-950f-c3135da29e84"/>
+    <managerType typeId="8f6d1c16-c559-4877-9e23-eaf234cd2972" valueTypeId="1be6eaf2-cbdc-43c9-8c33-45a092f17842"/>
+  </producedTypes>
+  <name>РасчетныеЛисткиОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчетные листки организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РасчетныеЛисткиОрганизаций.Form.ФормаОтчета</defaultForm>
+  <defaultSettingsForm>CommonForm.ВспомогательнаяФормаНастроекОтчета</defaultSettingsForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="6090df0f-d70a-496d-8bac-078148d24a83">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="ebebde10-ad41-4f12-9415-5f1711fe8999">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="c5d822be-c57d-42a3-b26e-407c2e2bad57">
+    <name>СписокОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список организаций</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8d459de4-3f3d-438f-8439-479278dc5d60">
+    <name>СписокПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список подразделений</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cbade700-fcce-4301-ba4d-683416dc59dd">
+    <name>СписокСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список сотрудников</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+      <types>CatalogRef.СотрудникиОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9dfff421-4f61-4607-b077-08a6e78ffc87">
+    <name>Группировать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировать</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="87a6e1bf-7e95-4c4d-98d3-9d72b5107a00">
+    <name>ДетализацияВыплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Детализация выплаты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fd17d7b5-52f2-4fe7-8d30-55d50865216d">
+    <name>ВыводитьНалоги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить налоги</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0bd3b7e5-b3d8-4ee5-b6f3-8eb24563b7de">
+    <name>ВыводитьУровниПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить уровни подразделений</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a5979bf2-481b-4688-8580-e6b8ee241da1">
+    <name>ВыводитьПримененныйВычет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить примененные вычеты и корректировки ИПН</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d5bfa9c2-944b-4fb4-954e-7e226dd4727f">
+    <name>СписокФизическихЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список физ. лиц</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4b3ae33e-0897-4349-a9d7-317b62a7a7d1">
+    <name>ПериодОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период рассылки</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0e7d704c-fd15-43da-9068-c36f5bea5539">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fe9917fe-6d8b-4c07-821c-49307057d460">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <commands uuid="c0c01b47-e102-4401-8e4b-5516a35b7972">
+    <name>РасчетныеЛисткиОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчетные листки организаций</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

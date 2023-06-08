@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7011a5c7-3f6f-4b7d-98d2-5f7aef397296">
+  <producedTypes>
+    <selectionType typeId="4e61aa75-59c4-488e-9b89-a466ebd0d9ba" valueTypeId="d70a3d03-efb4-4e58-88ca-5753f771ba68"/>
+    <listType typeId="96d512d4-2b59-4697-8ad3-a9d0fb0861ab" valueTypeId="a5dc2e2c-52a8-4972-af41-ebe9ca4aa66a"/>
+    <managerType typeId="85cdb422-94a4-45d7-8bd8-1c13cdb8279b" valueTypeId="8e5a3075-eba7-49d9-bf6e-722a80455e1c"/>
+    <recordSetType typeId="2bfad425-a987-4e87-a79d-42e8927b575c" valueTypeId="5844d9f0-965b-4015-b129-ad089b65c56a"/>
+    <recordKeyType typeId="c360c55e-0c3c-4a02-957e-809655a8ba95" valueTypeId="f748d501-f98c-44d4-9d3e-03cd59bcbcbd"/>
+    <recordType typeId="7945c26c-a344-4f52-9738-bad64bb5602b" valueTypeId="0449ecc0-c577-43db-9030-87fa7f8f7e7a"/>
+    <recordManagerType typeId="19d92b72-6e76-4c92-8081-b9b9509a538b" valueTypeId="ae7b381e-a750-4cc0-810e-9d78314eb099"/>
+  </producedTypes>
+  <name>НомераЛистовКассовойКниги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номера листов кассовой книги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.НомераЛистовКассовойКниги.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НомераЛистовКассовойКниги.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Номер листа кассовой книги</value>
+  </extendedRecordPresentation>
+  <resources uuid="4ab360e0-3b47-450f-b510-e53945d953e7">
+    <name>НомерЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер листа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="93729ab9-a4bc-4a28-8b40-41b9f014fde5">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кассы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="326cbcec-8912-4a41-8a8c-da6e7b314d68">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d69a7152-40f7-44ae-9ebe-de1e41999f22">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

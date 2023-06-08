@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f797acfe-12ea-4cb2-b7dc-76d3e8eb39e3">
+  <producedTypes>
+    <objectType typeId="ad34f9f9-c830-448c-821b-98f6cc06386e" valueTypeId="f5945642-1a83-4446-8364-433ac6194072"/>
+    <refType typeId="0c97d590-6dbd-4023-8c95-26d5617a5ede" valueTypeId="aa346c54-d7c0-48b8-98f5-b6908782b7af"/>
+    <selectionType typeId="dce22935-0692-4d1d-badb-0066c1890e9f" valueTypeId="9fa7f41a-9c75-41ae-947d-341d78fd8896"/>
+    <listType typeId="e38bb7e8-88d6-4da9-9a29-981b7dc4d004" valueTypeId="d6acdabf-3e0e-4d4c-a006-d4547b2d3c99"/>
+    <managerType typeId="b36712ef-5585-42cb-8fe3-29a3cc727f39" valueTypeId="dbb4b484-b618-494d-9137-f8c7b1f605d4"/>
+  </producedTypes>
+  <name>КлассификаторЕдиницИзмерения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификатор единиц измерения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КлассификаторЕдиницИзмерения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КлассификаторЕдиницИзмерения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Единица измерения</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КлассификаторЕдиницИзмерения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КлассификаторЕдиницИзмерения.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.КлассификаторЕдиницИзмерения.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="f0845a36-5f61-4e2a-bc12-cbfb6d7546b9">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="551717f4-4c26-4113-9786-88fd361eb898">
+    <name>КодЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код по классификатору ИС ЭСФ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="24a39d55-c650-4937-ab48-2bb3d9f121db">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7a266c13-39f4-4e87-a9c7-4587608b74a7">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="89498495-237b-428c-a2c1-4e26a9f0eeb9">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ab60060a-397c-430e-b303-34d38727bfa7">
+    <name>ФормаПодбораИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор из классификатора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0eee2ab9-6965-44a6-beda-e87d17e02f72">
+    <name>ПФ_MXL_КлассификаторЕдиницИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор единиц измерения</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

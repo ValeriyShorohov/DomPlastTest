@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8ae1b80-da4c-4348-9211-33209b2812dc">
+  <name>ПроверитьНомерДокументаПоДатеОрганизацииИБанковскомуСчету</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить номер документа по дате организации и банковскому счету</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПрефиксацияОбъектовБКСобытия.ПроверитьНомерДокументаПоДатеОрганизацииИБанковскомуСчету</handler>
+</mdclass:EventSubscription>

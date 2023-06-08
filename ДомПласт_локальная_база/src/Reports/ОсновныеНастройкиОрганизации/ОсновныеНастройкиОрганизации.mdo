@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ef3d868-50f5-4232-bed3-1cbd7bbb7107">
+  <producedTypes>
+    <objectType typeId="725e0082-1c9e-4515-b312-066920975e4f" valueTypeId="40490b2b-ee05-4e00-9fa5-60050aeef8f5"/>
+    <managerType typeId="791c130b-fe96-40cf-9409-1891defb1700" valueTypeId="8f27c23b-f681-4a98-9d8d-b4561413e03a"/>
+  </producedTypes>
+  <name>ОсновныеНастройкиОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные настройки организации</value>
+  </synonym>
+  <comment>Основные настройки организации</comment>
+  <defaultForm>Report.ОсновныеНастройкиОрганизации.Form.ФормаОтчета</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="fcc4be5d-55e7-4924-a3eb-2e9485544d66">
+    <name>ВыводитьДопИнф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить дополнительную информацию к настройкам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d4368ad2-9340-4c5c-b516-dae5aece6095">
+    <name>СписокНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список настроек</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="51893e31-1bc8-4659-a032-0654cdc7eba3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="68c00bc7-e1e0-4b55-92af-07b1f243f7d8">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fe586127-6305-4d5d-9c35-de104b65a1aa">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <commands uuid="c3b64348-615e-40b6-b0bf-8bfac1b27890">
+    <name>ОсновныеНастройкиОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные настройки организации</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="8bea0363-9dff-424b-a083-222931b4499d">
+    <name>ОсновныеНастройкиВыбраннойОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки организации</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Организации</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ЗначокОтчет32</picture>
+    </picture>
+  </commands>
+</mdclass:Report>

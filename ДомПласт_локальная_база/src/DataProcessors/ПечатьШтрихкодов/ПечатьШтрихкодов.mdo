@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f186c583-0b38-4150-ae1b-4e5a16ac2d8b">
+  <producedTypes>
+    <objectType typeId="6ddf96e8-04b0-4a22-8b03-3db53d2c7958" valueTypeId="346c5a41-7308-4d24-a355-a2cf3c3510fc"/>
+    <managerType typeId="e720fcc2-abb2-4c07-951c-71645f400358" valueTypeId="583570c7-8b4d-4e74-b7f5-d54284c45749"/>
+  </producedTypes>
+  <name>ПечатьШтрихкодов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование и печать штрихкодов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПечатьШтрихкодов.Form.ФормаПечатиОС</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="6164b460-e977-4da2-8cd2-310cd389d6fc">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8605f899-32d2-434e-8539-1416201a9898">
+    <name>Шаблон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныШтрихкодов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="b6e48275-c4f3-4eb4-b372-5c2cb114559a">
+    <name>ДатаСведений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата сведений</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="6cb78d8f-c996-44f7-bf11-cd119d1b4b53">
+    <producedTypes>
+      <objectType typeId="1b95b124-be8c-4da0-893e-6e16af2f9732" valueTypeId="dd922ab1-5a51-479a-9494-1da952355c0d"/>
+      <rowType typeId="04486c59-95c8-4b90-ad1a-035ad7d562f3" valueTypeId="5b1318b9-a730-44b0-931d-9f6f1fc18a7d"/>
+    </producedTypes>
+    <name>ОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОС</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4da98887-14a3-4822-8f06-423a05d9c7e9">
+      <name>ИнвентарныйНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Инвентарный номер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="671e71ea-20b5-4ae4-a502-4591b6bf372f">
+      <name>ОсновноеСредство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Основное средство</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ОсновныеСредства</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a1e368ab-be09-4239-b220-b227bcbd4338">
+      <name>Штрихкод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Штрихкод</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>13</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value>             </value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="50e44767-3323-4ca3-97eb-8495e5ff39a4">
+      <name>Шаблон</name>
+      <synonym>
+        <key>ru</key>
+        <value>Шаблон</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ШаблоныШтрихкодов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ТипШаблона</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыШаблоновШтрихкодов.EnumValue.ОсновныеСредства</value>
+        </value>
+      </choiceParameters>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8912687a-ed29-4735-abad-6f34086b8d4d">
+    <producedTypes>
+      <objectType typeId="371e39e1-0016-4761-bbb2-541c2df65ef7" valueTypeId="ab6f8504-300a-44fb-888b-1bc7a2d3c5c2"/>
+      <rowType typeId="c659c1b5-fba2-475c-abb5-7eea61138e50" valueTypeId="48ddd437-32b8-4ad2-8a8f-eec5deffa184"/>
+    </producedTypes>
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="915c190e-bdc0-4355-a59b-8ac5bb302e91">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="0af9bc9d-0894-424b-8988-778e9aac67d3">
+    <name>ФормаПечатиОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9b31df22-a606-4d8a-8295-094a35abf210">
+    <name>ФормаПечатиНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3d194a63-1b27-4b5d-a988-33d451f7f1eb">
+    <name>ПоляШаблонаОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поля шаблона основные средства</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="da101ba6-d94d-41d7-b990-783734fa3875">
+    <name>Эталон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эталон</value>
+    </synonym>
+  </templates>
+  <templates uuid="4ea2b3fc-b68e-4dcf-95de-e03b3b6c6641">
+    <name>ЭталонРазмерыЯчеек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эталон размеры ячеек</value>
+    </synonym>
+  </templates>
+  <templates uuid="b3dd47c3-11f8-4057-b944-563b4fae227e">
+    <name>ПоляШаблонаНоменклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поля шаблона номенклатура</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="0a15dd6d-f2dd-4350-b972-f417b5e671fd">
+    <name>ПечатьШтрихкодовОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование и печать штрихкодов</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ПодключаемоеОборудованиеПринтерЧеков32</picture>
+    </picture>
+  </commands>
+</mdclass:DataProcessor>

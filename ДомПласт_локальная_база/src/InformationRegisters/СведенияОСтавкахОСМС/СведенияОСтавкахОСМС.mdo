@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32cdaeee-a77d-498e-bd9e-068e057d7c57">
+  <producedTypes>
+    <selectionType typeId="92e4091d-7cb5-4cf1-8121-8b67cf503566" valueTypeId="26d10943-52de-441c-81ac-438c930c88f0"/>
+    <listType typeId="78833638-e23e-4973-9d6b-602376fe7c96" valueTypeId="1a432ba3-29d3-4f1a-adf4-1d02e6ddd3d6"/>
+    <managerType typeId="44b1e317-4600-447e-bf47-4a2d9e319b22" valueTypeId="ae4a7038-8f84-4339-aba8-f3c6ee55a9b0"/>
+    <recordSetType typeId="e45a9928-1bb4-450d-aa2f-4cf4b1786175" valueTypeId="8e6da8ff-251f-4f9a-8bde-b037106e7fdb"/>
+    <recordKeyType typeId="7830994b-cb7c-46f1-a686-7426140aa0ca" valueTypeId="bb5640f1-bb02-43a0-82b9-adabc2c1e29a"/>
+    <recordType typeId="7004e30b-1d29-4be6-bc06-58a0a1494bc8" valueTypeId="13a378f5-de72-414a-8a3d-62efbe32ca1b"/>
+    <recordManagerType typeId="696efcf2-432a-4ec3-bb5b-561c2ad46fa5" valueTypeId="6e0ecdfe-4553-4f11-8dd0-683719add6db"/>
+  </producedTypes>
+  <name>СведенияОСтавкахОСМС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о ставках ОСМС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СведенияОСтавкахОСМС.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияОСтавкахОСМС.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Сведения о ставках обязательного социального медицинского страхования</value>
+  </extendedListPresentation>
+  <resources uuid="f99527f4-22d0-4695-bba1-951cb4138247">
+    <name>СтавкаВзносы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка взносы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1b985d95-6113-4c58-a3ae-ea78d08ce0a2">
+    <name>СтавкаОтчисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка отчисления</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a8f2e056-faae-464b-baef-fc664cedd16a">
+    <name>ВидДохода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид дохода</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЮрФизЛицо</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bbe500c5-bc51-473e-bf33-e0c104e47c49">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="271b6cce-8312-4158-9992-98330840f96d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b21d66e0-7d8f-4451-a035-ef9fa001acf5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

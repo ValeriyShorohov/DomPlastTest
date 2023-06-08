@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68126de7-56b0-42b8-8cd5-722407beeec0">
+  <name>ОбменДаннымиОбменУправлениеНебольшойФирмойБухгалтерия30ПередЗаписьюРегистра</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными обмен управление нашей фирмой бухгалтерия30 перед записью регистра</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.КонтактнаяИнформация</types>
+    <types>InformationRegisterRecordSet.ФИОФизЛиц</types>
+    <types>InformationRegisterRecordSet.КурсыВалют</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.ОбменДаннымиОбменУправлениеНебольшойФирмойБухгалтерия30ПередЗаписьюРегистра</handler>
+</mdclass:EventSubscription>

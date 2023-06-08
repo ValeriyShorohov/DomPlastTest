@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3c0ddad-cab7-4082-8723-0e9ab0623268">
+  <producedTypes>
+    <selectionType typeId="d211551a-6f55-40a3-83fa-8c7e552ce1ba" valueTypeId="12658b81-c1b0-4761-af80-1569f6ce0c21"/>
+    <listType typeId="84360a94-ca6f-42fb-88cf-0538e00ff5a0" valueTypeId="69c14aa3-f8ea-4663-8df8-1971c3d0e4fd"/>
+    <managerType typeId="c13c2dd7-7ca7-4273-9ed3-710026355e6b" valueTypeId="6aaba44f-0667-4416-afda-aa3c45dcbbce"/>
+    <recordSetType typeId="73491016-f01c-457a-8012-68d8c8e26149" valueTypeId="ad4118da-3b56-42cc-841a-7fbf66d232cd"/>
+    <recordKeyType typeId="559dc630-5783-42fa-b769-630037632dc3" valueTypeId="e2f0e418-8175-4aad-8861-9dc1ed41c429"/>
+    <recordType typeId="4be4c55b-7317-40fc-9edf-dc560fca6502" valueTypeId="1d143678-5a49-473f-9dc9-c3a1860abc32"/>
+    <recordManagerType typeId="e5cc23bc-70ba-488c-813e-020e13679c4f" valueTypeId="516d77d9-843b-486c-bbd6-ffd411981f0d"/>
+  </producedTypes>
+  <name>УдалитьСоответствиеОбъектовДляОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить соответствие объектов для обмена</value>
+  </synonym>
+  <defaultRecordForm>InformationRegister.УдалитьСоответствиеОбъектовДляОбмена.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УдалитьСоответствиеОбъектовДляОбмена.Form.ФормаСписка</defaultListForm>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Соответствие объекта для обмена</value>
+  </recordPresentation>
+  <resources uuid="3df3d7c2-00a3-481a-99a2-e42d3b3fd80b">
+    <name>ИмяТипаПриемника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя типа приемника</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="135280e6-9cd1-46c6-a0a9-3cb8b73c5626">
+    <name>УзелОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел обмена</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="52697467-b27a-49de-8a65-b19af4eb06f5">
+    <name>СобственнаяСсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Собственная ссылка</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bda047e2-0bff-4c89-9312-52c24d70407c">
+    <name>СсылкаВДругойИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка в другой ИБ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f286c592-291e-4b2e-8682-0942e4a0152a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4a5f688b-9db7-46dc-b467-49f1d60951c3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

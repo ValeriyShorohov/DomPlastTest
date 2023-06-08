@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d37b58b4-2978-47d9-9569-bca09bc9ed63">
+  <name>ОбменДаннымиОбменУправлениеНебольшойФирмойБухгалтерия30ПередУдалением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными обмен управление нашей фирмой бухгалтерия30 перед удалением</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.ДокументыУдостоверяющиеЛичность</types>
+    <types>CatalogObject.НоменклатурныеГруппы</types>
+    <types>CatalogObject.ТипыЦенНоменклатуры</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.ПодразделенияОрганизаций</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.СпецификацииНоменклатуры</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.ОбменДаннымиОбменУправлениеНебольшойФирмойБухгалтерия30ПередУдалением</handler>
+</mdclass:EventSubscription>

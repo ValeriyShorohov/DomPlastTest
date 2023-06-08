@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="daa30022-1f7f-40e7-acd4-314d199691c1">
+  <producedTypes>
+    <objectType typeId="82546550-6ce3-469b-8a26-b846f7903153" valueTypeId="f3c4eba9-539a-447d-ace5-f1b67bec97a2"/>
+    <refType typeId="722faa45-fa9a-4d5a-bfeb-22a9c4503bb1" valueTypeId="4e3b7d7d-da87-4be1-a57c-3bc152dd89d3"/>
+    <selectionType typeId="4dd05dd4-e9f4-4535-be00-ef50d1d5526a" valueTypeId="9f3bf2e9-414e-4b35-9e8c-08800801a400"/>
+    <listType typeId="fc5f85dc-1aa6-45f4-bcba-b65ee926a7a2" valueTypeId="a86659ac-6334-4221-8edb-b9b17a00ca9b"/>
+    <managerType typeId="b907855a-fc38-46eb-a710-d38310e48865" valueTypeId="f92c8575-1de5-4ce8-8dd8-e50ee70f4082"/>
+  </producedTypes>
+  <name>УдалитьНастройкиВыполненияОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить настройки выполнения обмена</value>
+  </synonym>
+  <inputByString>Catalog.УдалитьНастройкиВыполненияОбмена.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.УдалитьНастройкиВыполненияОбмена.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Catalog.УдалитьНастройкиОбменаДанными</basedOn>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>6</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="e3c11891-e0a4-4498-97b9-f7fa306f4b10">
+    <name>ВыполнятьДействияПодПолнымиПравами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнять действия под полными правами</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="df294fb3-b95b-481d-9b8e-6fb88a2a75ef">
+    <name>ИспользоватьРегламентныеЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать регламентные задания</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6009de37-728d-4678-a627-24f21fa5e6eb">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c581c6ce-4850-4549-a77e-65bfa423490a">
+    <name>ДинамическиИзменятьИнтервалМеждуОбменами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Динамически изменять интервал между обменами</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="40954602-fd19-4d06-8fa4-e83b83be1ed8">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="234f570c-8df1-48e1-bfb9-852fd9f5fafd">
+    <name>КаждыйЗапускПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каждый запуск программы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d75861bf-4b1f-4da7-91d0-e6b81a2cbeda">
+    <name>КаждоеЗавершениеРаботыСПрограммой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каждое завершение работы с программой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a3d0dfc2-0b8e-4a1d-b213-c481bf141790">
+    <name>КаталогПроверкиДоступности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог проверки доступности</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c832cbee-fddf-4f17-8b1b-99472f86e814">
+    <name>ВыполнятьОбменПриПоявленииФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнять обмен при появлении файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f26042a9-f72e-4fb9-a39f-edc126d2ceca">
+    <name>КоличествоЭлементовВТранзакцииНаВыгрузкуДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество элементов в транзакции на выгрузку данных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fda6a6db-bbd5-4fd8-8104-0c0864931607">
+    <name>КоличествоЭлементовВТранзакцииНаЗагрузкуДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество элементов в транзакции на загрузку данных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3744fe35-37a4-4e86-81bb-6563c8362cb9">
+    <name>УчетнаяЗаписьОтправкиСообщенияОбОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись отправки сообщения об ошибке</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c4ed5cdc-26a7-492c-8423-721c1e5382f9">
+    <name>АдресДляОтправкиСообщенийОбОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес для отправки сообщений об ошибке</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6aebef5a-c034-4bd5-8d46-6a19deb6500f">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="baae7a80-3b17-415e-a940-15e0923cf7ae">
+    <producedTypes>
+      <objectType typeId="28eae27d-2efb-4b11-8699-b1800fc23749" valueTypeId="8ea9ff06-915c-4512-8803-f1fdd25d1a79"/>
+      <rowType typeId="6631b9d1-2db0-4d6e-bbd6-aadb8f3e365f" valueTypeId="c9cd8ca7-ca90-4707-b377-ce6201f1e91f"/>
+    </producedTypes>
+    <name>НастройкиОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки обмена</value>
+    </synonym>
+    <attributes uuid="e3a96d01-99ca-4ab1-a380-98ee3f71fe3e">
+      <name>НастройкаОбмена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Настройка обмена</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УдалитьНастройкиОбменаДанными</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="94accdf6-dc24-4561-b2cf-fc9f1feb3640">
+      <name>ВыполняемоеДействие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выполняемое действие</value>
+      </synonym>
+      <type>
+        <types>EnumRef.УдалитьДействиеПриОбмене</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="e0b0a101-3664-4205-900f-e538f84bf67f">
+    <producedTypes>
+      <objectType typeId="eb4e94c4-28a5-4e0c-9b41-c8914719d436" valueTypeId="e7eebe11-ade4-4261-aafb-088fabf3338f"/>
+      <rowType typeId="b6aac713-5915-4e97-b996-ea3b3290fffb" valueTypeId="59129b00-8f52-47bb-a684-824d2207b3bc"/>
+    </producedTypes>
+    <name>СообщенияНеЯвляющиесяОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщения не являющиеся ошибками</value>
+    </synonym>
+    <attributes uuid="da31cb0d-b41b-475a-8391-00178e3dd55f">
+      <name>ТекстСообщения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст сообщения</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>512</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

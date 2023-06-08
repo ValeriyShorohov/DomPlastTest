@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d1fbc63-1abe-44ad-9032-1335a7e8613e">
+  <producedTypes>
+    <refType typeId="96c7d1c0-e22b-4019-847e-9e235b879e76" valueTypeId="ebb3eaf1-57a7-4686-b226-c89f6042b672"/>
+    <listType typeId="62571673-0152-4928-8dcc-10e2dce8ddc9" valueTypeId="3df97802-dc0f-44bf-ac63-65fabd38c4ba"/>
+    <managerType typeId="63472be0-5228-4f5b-a1e7-e960c5fc7a22" valueTypeId="40c45fd6-b224-471e-b70c-21ee9ad87973"/>
+  </producedTypes>
+  <name>СтатусыСопоставленийСНТиФНО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы сопоставлений СНТ и ФНО</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e295b313-af7a-45cf-9b2d-04daf462a3e1">
+    <name>Черновик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Черновик</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;DRAFT&quot;.</comment>
+  </enumValues>
+  <enumValues uuid="cdaa2c89-35e2-4964-a14e-5c5639b9a741">
+    <name>Созданный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправленный</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;CREATED&quot;.</comment>
+  </enumValues>
+  <enumValues uuid="71dd25ad-ac25-422d-b263-ffd0e83b00cb">
+    <name>Обработанный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработанный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6bdde781-7dc7-425d-a548-473547778885">
+    <name>Ошибочный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибочный</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;FAILED&quot;.</comment>
+  </enumValues>
+  <enumValues uuid="4b48e241-e464-4464-b7c2-54e13761fa1b">
+    <name>Отмененный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отмененный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6f0f23e5-73c8-4e6b-ab00-bfa896dbd880">
+    <name>Импортированный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Импортированный</value>
+    </synonym>
+    <comment>В API ИС ЭСФ имеет имя &quot;IMPORTED&quot;.</comment>
+  </enumValues>
+</mdclass:Enum>

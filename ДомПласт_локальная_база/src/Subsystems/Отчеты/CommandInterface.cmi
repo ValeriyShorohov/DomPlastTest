@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>ActionsPanelReports</group>
+      <commands>CommonCommand.ПанельОтчетовНалоговыйУчет</commands>
+      <commands>CommonCommand.ПанельОтчетовРуководителю</commands>
+      <commands>CommonCommand.ДополнительныеОтчетыОтчеты</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.Отчеты.Subsystem.СтандартныеОтчеты</subsystems>
+    <subsystems>Subsystem.Отчеты.Subsystem.РегламентированныеОтчеты</subsystems>
+    <subsystems>Subsystem.Отчеты.Subsystem.АнализУчета</subsystems>
+    <subsystems>Subsystem.Отчеты.Subsystem.УчетЗаработнойПлаты</subsystems>
+    <subsystems>Subsystem.Отчеты.Subsystem.КадровыйУчет</subsystems>
+    <subsystems>Subsystem.Отчеты.Subsystem.ОтчетыДляРуководителя</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

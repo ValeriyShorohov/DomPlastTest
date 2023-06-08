@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52b4de33-734e-4f45-92bb-4e2d32f682e2">
+  <producedTypes>
+    <selectionType typeId="1ae6c9f4-a8a1-4977-8a5b-e964df318923" valueTypeId="088ab4d0-fa66-47e4-b9fe-1c292c7d6d2e"/>
+    <listType typeId="b2705e2e-110d-4221-97f3-a0fe75778d88" valueTypeId="bd76f072-c42e-48b6-aafc-f9ba2573dd05"/>
+    <managerType typeId="27e424ac-6e48-4454-b405-87c4fd513335" valueTypeId="8b62c680-65a6-46b8-8661-660f0961420c"/>
+  </producedTypes>
+  <name>ДокументыВыплатыПеречисленияСоциальныхПлатежей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплаты и перечисления социальных платежей</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыВыплатыПеречисленияСоциальныхПлатежей.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ОПВВозвратВзносов</registeredDocuments>
+  <registeredDocuments>Document.ОПВПеречислениеВФонды</registeredDocuments>
+  <registeredDocuments>Document.СОВозвратОтчислений</registeredDocuments>
+  <registeredDocuments>Document.СОПеречислениеВФонды</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Выплаты и перечисления социальных платежей</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Выплаты и перечисления социальных платежей организации</value>
+  </extendedListPresentation>
+  <columns uuid="80ab5e2d-801d-4e99-a3e0-5690954a16f1">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.СОВозвратОтчислений.Attribute.Автор</references>
+    <references>Document.ОПВВозвратВзносов.Attribute.Автор</references>
+    <references>Document.ОПВПеречислениеВФонды.Attribute.Автор</references>
+    <references>Document.СОПеречислениеВФонды.Attribute.Автор</references>
+  </columns>
+  <columns uuid="4f07142e-d02c-4d45-bb9d-fee0a5782ab0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.СОВозвратОтчислений.Attribute.Комментарий</references>
+    <references>Document.ОПВПеречислениеВФонды.Attribute.Комментарий</references>
+    <references>Document.СОПеречислениеВФонды.Attribute.Комментарий</references>
+    <references>Document.ОПВВозвратВзносов.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="a027d867-2392-41cb-9ef0-ba1c95e7370d">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <references>Document.СОПеречислениеВФонды.Attribute.ПериодРегистрации</references>
+    <references>Document.ОПВВозвратВзносов.Attribute.ПериодРегистрации</references>
+    <references>Document.СОВозвратОтчислений.Attribute.ПериодРегистрации</references>
+    <references>Document.ОПВПеречислениеВФонды.Attribute.ПериодРегистрации</references>
+  </columns>
+  <columns uuid="2cad42c1-0d8d-4e86-b6e1-7327e8359396">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.СОПеречислениеВФонды.Attribute.Организация</references>
+    <references>Document.ОПВВозвратВзносов.Attribute.Организация</references>
+    <references>Document.СОВозвратОтчислений.Attribute.Организация</references>
+    <references>Document.ОПВПеречислениеВФонды.Attribute.Организация</references>
+  </columns>
+  <columns uuid="34e4fded-0fc4-4860-b60b-7e18bf9dd75f">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.СОПеречислениеВФонды.Attribute.Ответственный</references>
+    <references>Document.ОПВВозвратВзносов.Attribute.Ответственный</references>
+    <references>Document.СОВозвратОтчислений.Attribute.Ответственный</references>
+    <references>Document.ОПВПеречислениеВФонды.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="6d5bbe61-0f06-4b40-a334-3b05d536fba4">
+    <name>Работники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работники</value>
+    </synonym>
+    <references>Document.СОПеречислениеВФонды.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ОПВВозвратВзносов.Attribute.КраткийСоставДокумента</references>
+    <references>Document.СОВозвратОтчислений.Attribute.КраткийСоставДокумента</references>
+    <references>Document.ОПВПеречислениеВФонды.Attribute.КраткийСоставДокумента</references>
+  </columns>
+  <columns uuid="99a9837d-c743-4129-9da8-a18cd327fc58">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <references>Document.ОПВВозвратВзносов.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.СОВозвратОтчислений.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ОПВПеречислениеВФонды.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.СОПеречислениеВФонды.Attribute.СтруктурноеПодразделение</references>
+  </columns>
+  <forms uuid="724f329d-8534-4b62-8a47-fcc66eb30d3b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ИсчисленныеСООблагаемыйДоход</field>
+			</item>
+			<item>
+				<field>ИсчисленныеСООПВЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныеСООблагаемаяБазаЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныеСОРанееИсчисленныеСО</field>
+			</item>
+			<item>
+				<field>ИсчисленныеСОРанееИсчисленнаяОблагаемаяБаза</field>
+			</item>
+			<item>
+				<field>ИсчисленныеСОМинимальноеОграничение</field>
+			</item>
+			<item>
+				<field>ИсчисленныеСОМаксимальноеОграничение</field>
+			</item>
+			<item>
+				<field>ИсчисленныеСОДополнительныеСведения</field>
+			</item>
+			<item>
+				<field>ИсчисленныеСОСОЗаМесяц</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ОтображатьПодробностиРасчетаСО</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ИсчисленныйСНОблагаемыйДоход</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНСОЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНСНЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНОблагаемаяБазаЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНРанееИсчисленныйСН</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНРанееИсчисленнаяОблагаемаяБаза</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНКоэффициентМРП</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНСуммаНалогаДоВычетаСО</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНМинимальноеОграничение</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНДополнительныеСведения</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНОПВЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныйСНВОСМСЗаМесяц</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ОтображатьПодробностиРасчетаСН</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ИсчисленныйОППВОблагаемыйДоход</field>
+			</item>
+			<item>
+				<field>ИсчисленныйОППВОППВЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныйОППВОблагаемаяБазаЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныйОППВРанееИсчисленныйОППВ</field>
+			</item>
+			<item>
+				<field>ИсчисленныйОППВРанееИсчисленнаяОблагаемаяБаза</field>
+			</item>
+			<item>
+				<field>ИсчисленныйОППВДополнительныеСведения</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ОтображатьПодробностиРасчетаОППВ</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ИсчисленныеООСМСОблагаемыйДоход</field>
+			</item>
+			<item>
+				<field>ИсчисленныеООСМСООСМСЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныеООСМСОблагаемаяБазаЗаМесяц</field>
+			</item>
+			<item>
+				<field>ИсчисленныеООСМСРанееИсчисленныеООСМС</field>
+			</item>
+			<item>
+				<field>ИсчисленныеООСМСРанееИсчисленнаяОблагаемаяБаза</field>
+			</item>
+			<item>
+				<field>ИсчисленныеООСМСМинимальноеОграничение</field>
+			</item>
+			<item>
+				<field>ИсчисленныеООСМСМаксимальноеОграничение</field>
+			</item>
+			<item>
+				<field>ИсчисленныеООСМСДополнительныеСведения</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ОтображатьПодробностиРасчетаООСМС</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ИсчисленныйСНВОСМСЗаМесяц</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ПериодРегистрации</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>2020-01-01T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

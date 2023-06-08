@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53bbf06a-1680-4328-ba50-0bb41928bd63">
+  <producedTypes>
+    <selectionType typeId="cb08f1db-6e50-4b92-8b15-8853944953d9" valueTypeId="49bd6873-deb7-4558-977c-bc938507dc45"/>
+    <listType typeId="a65688b1-9e04-4140-9aec-6ba445f5e97d" valueTypeId="97987c8c-6203-4b23-8bd8-9f2746069fbc"/>
+    <managerType typeId="c335233a-ee3b-48da-890a-07bf742e5226" valueTypeId="ff3e1112-2026-4f39-bf03-4d6b8f4d378a"/>
+    <recordSetType typeId="73a51108-aef8-449e-9c62-ebee07e0a387" valueTypeId="505ec5bf-9364-4296-88fc-a9b43954e085"/>
+    <recordKeyType typeId="3776cb6e-fff4-4591-92b2-551b4926521e" valueTypeId="bb12a606-bfbe-44c2-9f4a-c0ea647a5c55"/>
+    <recordType typeId="6fd1a4eb-732d-4275-b8f4-b808e3f6d927" valueTypeId="82ee47c8-e374-491b-8ce5-db9a96d58ce8"/>
+    <recordManagerType typeId="1ee29327-c4f6-43f6-ae8a-4fb21f0b443f" valueTypeId="cf9f5ac7-7459-43c8-8a9c-35dafd977fe4"/>
+  </producedTypes>
+  <name>КодыСтрокДекларацииПоАкцизу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды строк декларации по Акцизу</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.КодыСтрокДекларацииПоАкцизу.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КодыСтрокДекларацииПоАкцизу.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Код строки декларации по Акцизу</value>
+  </recordPresentation>
+  <resources uuid="b5ae5049-7d3c-46da-8e30-76e15478ab0e">
+    <name>КодСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код строки</value>
+    </synonym>
+    <comment>Код строки Декларации по акцизу</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="14f73935-79bb-4efc-bc06-9f261336f904">
+    <name>ВидТМЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ТМЗ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПодакцизныхТМЗ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e876da4b-e90d-4e0d-9052-e66511039f76">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция движения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыОперацийОблагаемыхАкцизом</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6eeb7cf4-a43c-4e26-be44-51c4e2df41da">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="36a310e8-d1cc-461d-85b7-43f2f12b22c9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

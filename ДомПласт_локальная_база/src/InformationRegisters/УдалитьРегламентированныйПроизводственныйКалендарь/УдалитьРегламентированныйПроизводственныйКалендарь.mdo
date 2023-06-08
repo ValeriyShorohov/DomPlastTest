@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a69fc72-18f5-4e95-afad-bb5ad99c4331">
+  <producedTypes>
+    <selectionType typeId="b756eabb-2e00-4502-8444-bca7b35a3094" valueTypeId="69a1feec-73f8-4565-bff5-0d7d92f115c8"/>
+    <listType typeId="489a1f3d-a11b-4a5a-94f6-c87de8a73a31" valueTypeId="be9860d2-7835-4925-8919-24859df22022"/>
+    <managerType typeId="b4d66370-6044-47aa-b698-d4915de2c99f" valueTypeId="7e4211dc-546b-46d0-948e-fda7f72b5c71"/>
+    <recordSetType typeId="5b9b0d71-b32b-4ea6-ad68-184260f492f1" valueTypeId="09478a6c-3620-48ba-a2a8-67f0f439d33f"/>
+    <recordKeyType typeId="9506bb07-1cc8-4e7c-b2fc-39ecb6a19d41" valueTypeId="e0ab9b29-e99e-4343-baea-2e60c87239ef"/>
+    <recordType typeId="379a2cb2-dc14-42f2-831c-294d7173b75e" valueTypeId="f3b573f2-e255-4349-a4f0-c37ffbd509bd"/>
+    <recordManagerType typeId="1a37ea6a-4d14-4864-a6b6-4ef3a1224e0e" valueTypeId="62a3dbf7-3380-4914-820b-5ba6d364a9d0"/>
+  </producedTypes>
+  <name>УдалитьРегламентированныйПроизводственныйКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Регламентированный производственный календарь</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.УдалитьРегламентированныйПроизводственныйКалендарь.Form.Форма</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="53de9d12-9fa4-4c4e-81d6-284c4d6fd8ce">
+    <name>Пятидневка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пятидневка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6d3a1b9c-eab6-462d-b258-98ccaf4f338c">
+    <name>ВидДня</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид дня</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УдалитьВидыДнейПроизводственногоКалендаря</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="29d2a950-329e-4706-a4ea-aa8b06b858f8">
+    <name>ДатаКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата календаря</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="32dad033-b97f-4996-b439-ab6eadc38542">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3d11617a-a38c-4260-8e8e-2ce0f83f2eee">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cc152373-a04b-45a2-abda-b75d87a309d6">
+    <name>ПроизводственныйКалендарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПроизводственныйКалендарь</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>

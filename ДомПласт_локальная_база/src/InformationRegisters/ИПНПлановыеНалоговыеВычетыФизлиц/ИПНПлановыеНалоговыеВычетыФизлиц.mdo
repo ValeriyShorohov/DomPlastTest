@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="04d1a095-9bd9-47bb-a49a-53bafe38ebfe">
+  <producedTypes>
+    <selectionType typeId="97c5f52d-1b40-4d88-9142-c95cf501d9d9" valueTypeId="8fa4bf1d-1b2f-4360-8342-821a8ee669f2"/>
+    <listType typeId="5dce0448-4291-4d73-a161-b59c5cf0c754" valueTypeId="04644114-4930-4538-bef2-3133a9648175"/>
+    <managerType typeId="cc777fd2-3ec1-4d2f-bd7a-38ba81684025" valueTypeId="90b03b62-949b-4ebd-ad84-92b4c6cc0fb2"/>
+    <recordSetType typeId="20c96866-5589-402b-bb57-8e21c7f0ce03" valueTypeId="a87220a0-0dea-40f5-804b-a5679f572712"/>
+    <recordKeyType typeId="97e9d151-05c0-464c-8d70-d18af9de9384" valueTypeId="c19a2988-4a3a-46bc-ae3b-acc817e8e262"/>
+    <recordType typeId="8abc8ba2-4167-4b02-8692-06cbfadd7129" valueTypeId="36768eb1-8d0f-477c-8031-243e1eb4e51c"/>
+    <recordManagerType typeId="803064b4-a254-439c-afe5-1ad77de6a0af" valueTypeId="5d153c9b-7b52-4870-9dfd-847d76f74e1e"/>
+  </producedTypes>
+  <name>ИПНПлановыеНалоговыеВычетыФизлиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановые налоговые вычеты физических лиц по ИПН (до 2018 года)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.ИПНПлановыеНалоговыеВычетыФизлиц.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="7c09ca17-55f7-4af8-a228-dffc9199300d">
+    <name>СуммаВычета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма вычета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fb653995-1a01-4cbf-842a-e61561a0f49b">
+    <name>Физлицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a7fc4dfe-2245-4a05-8cdc-c8d5bd4ec144">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bb45566f-b1a1-4f04-9dd1-21bd84773c5c">
+    <name>МесяцНалоговогоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц налогового периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="64bf8e14-e80a-4bbe-96b5-8ef39cbdc38f">
+    <name>ВычетИПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вычет ИПН</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВычетыИПН</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2d867dc6-8a8d-4498-ae48-a61487083cb3">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ИПНЗаявлениеНаПредоставлениеВычета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f9778be7-e733-4f73-8b8f-d6f219db27cc">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

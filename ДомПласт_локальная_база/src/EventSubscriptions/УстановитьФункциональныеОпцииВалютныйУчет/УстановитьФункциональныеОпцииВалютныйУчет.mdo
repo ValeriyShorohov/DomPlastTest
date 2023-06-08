@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="255a0af2-7ed9-4f24-9570-c5bb288d5f7f">
+  <name>УстановитьФункциональныеОпцииВалютныйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить функциональные опции валютный учет</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Валюты</types>
+    <types>ConstantValueManager.ИспользоватьВалютныйУчет</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбщегоНазначенияБК.ПриИзмененииФункциональнойОпцииВалютныйУчет</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca570890-e97d-4431-b696-acefdb82b82d">
+  <producedTypes>
+    <objectType typeId="363bc8e9-f214-4cb8-bdf0-a8dcc5bf8121" valueTypeId="cc749986-775f-448b-9735-5c80155febcf"/>
+    <managerType typeId="72b2f0ec-4346-4383-826c-904a3df1fcef" valueTypeId="ed2f4fcc-7040-4203-a89b-e39444816dc2"/>
+  </producedTypes>
+  <name>ЗакрытиеМесяца</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие месяца</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗакрытиеМесяца.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="d1071cd7-62da-4935-9f63-fc94671fc7af">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <comment>Месяц, в котором необходимо выполнить закрытие месяца.</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="46a4f8e3-c6c4-4798-8fd1-853c8dca6153">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e27b9181-b2bc-4eb5-b188-837ce76a98bf">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="59e1e7c6-839e-4b7a-8286-dcb95807504e">
+    <producedTypes>
+      <objectType typeId="08c5a438-8513-4d47-bcfa-25a9e8d736ab" valueTypeId="08831e3f-39e0-4b9f-8709-5ea0efbbd11c"/>
+      <rowType typeId="424a44ec-b25d-4bd1-baf6-506e12efb015" valueTypeId="855d8771-767a-4ea7-a6a4-7fd6886bfa41"/>
+    </producedTypes>
+    <name>КурсыВалют</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курсы валют</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9b238684-45b8-4ffe-bde0-71ff3239db33">
+      <name>Валюта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0f917445-556d-451d-bf2a-fb197ae2e1ab">
+      <name>Курс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Курс</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>4</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7c3227cb-83a3-457a-b1ef-bf8b39462f94">
+      <name>Кратность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кратность</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:StringValue">
+        <value>1</value>
+      </minValue>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="bece366e-a648-4b1d-a7bf-02e85a33c9e2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="98e61f8b-6fc2-436c-86da-d31cedd50757">
+    <name>НастройкиСпискаОпераций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки списка операций</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b4927e3d-15be-4cc5-a571-563a50ee17c9">
+    <name>Настройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d94279fe-f7de-4e3d-ab26-afa5cbe576f9">
+    <name>ВыполненныеОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполненные операции</value>
+    </synonym>
+  </templates>
+  <templates uuid="e6f632eb-52d8-407f-9cb9-22b392737cc3">
+    <name>ОтчетОбОшибках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет об ошибках</value>
+    </synonym>
+  </templates>
+  <templates uuid="a250f2ee-30ac-466b-a3e9-a78c236d75a9">
+    <name>СписокРегламентныхОпераций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список регламентных операций</value>
+    </synonym>
+  </templates>
+  <commands uuid="74569cba-1e13-4815-9f6d-ffbeb5a6762c">
+    <name>ОткрытьПомощникЗакрытияМесяца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник &quot;Закрытие месяца&quot;</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

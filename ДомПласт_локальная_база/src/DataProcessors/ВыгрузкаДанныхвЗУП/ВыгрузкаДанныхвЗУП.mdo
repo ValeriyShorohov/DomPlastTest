@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1cba9990-54ad-4e4f-b9cc-91f33195fee3">
+  <producedTypes>
+    <objectType typeId="632a7d67-3edb-43f2-8b49-24a251d21e8f" valueTypeId="873c6191-6047-490d-9741-ac5916c45d40"/>
+    <managerType typeId="c859e240-2f3b-4e0e-aec0-dc694d7e0140" valueTypeId="e0f1fb5d-0966-4930-adaa-21a6b841aff8"/>
+  </producedTypes>
+  <name>ВыгрузкаДанныхвЗУП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка данных в конфигурацию &quot;Зарплата и Управление Персоналом для Казахстана&quot;</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыгрузкаДанныхвЗУП.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="960d56b0-f954-4da7-a516-8420eb830db7">
+    <name>ТаблицаПравилВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица правил выгрузки</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2cb4bd88-0071-4bf2-80e0-86eff8c12f29">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b52a3ec8-acc7-4a47-bc8b-d52c634002be">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="47368d28-9e42-41e8-a3db-928758b89986">
+    <name>СохраненныеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненные настройки</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1ccc03d2-5b5a-49cd-8ab0-8499571169ed">
+    <name>ИмяФайлаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="aec8f0c8-147b-4c37-b8be-dcceba2f2aa1">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7137c574-b72d-47ae-bae5-f096004d69d1">
+    <name>ТаблицаДетализацииСчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица детализации счетов</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="78ec5c39-87aa-4e0d-947f-36f55a980749">
+    <name>ПроводитьДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводить документы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="b6db1bb1-f3aa-4bdb-ae37-72abe3441e7c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="92b06873-5f78-4c8a-bebf-623f98295e48">
+    <name>ПравилаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПравилаОбмена</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

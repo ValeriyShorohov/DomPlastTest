@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6b637af-667f-43f2-a644-6ddfe9b35276">
+  <producedTypes>
+    <objectType typeId="dd464bff-c0b5-4ad8-851a-3c4d919e8cfb" valueTypeId="d10d3ec7-2850-45d8-a7eb-ceec1841af04"/>
+    <refType typeId="18ff3f42-e6a2-4bda-b966-7f6e9ff6858d" valueTypeId="6e655add-edd6-4565-84e4-6bf462eeb7c3"/>
+    <selectionType typeId="c2391466-97a3-4ef2-8a14-64904ce25574" valueTypeId="6ba5dddb-a538-4a19-8e07-1e7a3f3cc7db"/>
+    <listType typeId="b1bf08bc-e2fb-4175-9cea-23ebbdd4c075" valueTypeId="b8fd68b4-e064-4683-a922-89bc53a00cf0"/>
+    <managerType typeId="05671b7f-21f2-443a-978b-77ff19686ba8" valueTypeId="fad28725-f70f-4f94-a2f9-740f2ecfd31e"/>
+    <displacingCalculationTypesType typeId="637f8d12-c310-4b3a-a28f-2b0bfcba43d9" valueTypeId="0525e717-02fb-4827-9480-539e7eb36401"/>
+    <displacingCalculationTypesRowType typeId="d65e8144-b6fa-4763-bd90-21b972aae075" valueTypeId="25a9fe32-f6a3-43d8-af4b-dbee825f5c61"/>
+    <baseCalculationTypesType typeId="9788fd52-ac44-4067-b1eb-62b17977c08d" valueTypeId="74cbac30-ec2d-4ede-b4a5-a30461efdb46"/>
+    <baseCalculationTypesRowType typeId="f498a9eb-3de6-4ab1-b75f-7d44ebabe44f" valueTypeId="ec194a27-e942-47b9-8a4d-b93c28658412"/>
+    <leadingCalculationTypesType typeId="a47e08d8-4d46-424d-8442-aba6843578f3" valueTypeId="8ce1ebab-b381-4a45-967a-30305268e1dc"/>
+    <leadingCalculationTypesRowType typeId="7cbfe51a-5fc0-4eae-916c-aed567c8680f" valueTypeId="d63b888b-23b3-4e62-a345-d8ecfab26de5"/>
+  </producedTypes>
+  <name>ОсновныеНачисленияОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.ОсновныеНачисленияОрганизаций.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.ОсновныеНачисленияОрганизаций.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Начисление организаций</value>
+  </objectPresentation>
+  <codeLength>6</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCalculationTypes.ОсновныеНачисленияОрганизаций.Form.ФормаВидаРасчета</defaultObjectForm>
+  <defaultListForm>ChartOfCalculationTypes.ОсновныеНачисленияОрганизаций.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>ChartOfCalculationTypes.ОсновныеНачисленияОрганизаций.Form.ФормаВыбора</defaultChoiceForm>
+  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисленияОрганизаций</baseCalculationTypes>
+  <standardTabularSections>
+    <name>LeadingCalculationTypes</name>
+    <synonym>
+      <key></key>
+      <value>Ведущие виды расчета</value>
+    </synonym>
+  </standardTabularSections>
+  <standardTabularSections>
+    <name>DisplacingCalculationTypes</name>
+    <synonym>
+      <key></key>
+      <value>Вытесняющие виды расчета</value>
+    </synonym>
+  </standardTabularSections>
+  <standardTabularSections>
+    <name>BaseCalculationTypes</name>
+    <synonym>
+      <key></key>
+      <value>Базовые виды расчета</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+  </standardTabularSections>
+  <predefined>
+    <items id="93bbea2c-22ec-4481-b185-49329eabb557">
+      <name>ДоходыНеОблагаемыеУИсточникаВыплаты</name>
+      <description>Доходы, не облагаемые у источника выплаты</description>
+      <code xsi:type="core:StringValue">
+        <value>000004</value>
+      </code>
+    </items>
+    <items id="c2f6ab4f-1fb3-46ed-8e73-f7e703c7caf4">
+      <name>КомпенсационныеВыплатыПриСлужебныхКомандировках</name>
+      <description>Компенсационные выплаты при служебных командировках</description>
+      <code xsi:type="core:StringValue">
+        <value>000002</value>
+      </code>
+    </items>
+    <items id="c9487db9-4317-451d-9edc-4bf1ed5a6d45">
+      <name>КомпенсацияОтпускаБезУвольнения</name>
+      <description>Компенсация отпуска</description>
+      <code xsi:type="core:StringValue">
+        <value>000012</value>
+      </code>
+    </items>
+    <items id="5b68ecaf-ee6a-45bf-8599-71c4f5e94bfc">
+      <name>КомпенсацияОтпуска</name>
+      <description>Компенсация отпуска при увольнении</description>
+      <code xsi:type="core:StringValue">
+        <value>000013</value>
+      </code>
+    </items>
+    <items id="bdca5e41-80eb-4d62-9f0f-bc8a37de25e2">
+      <name>ОкладОтОбратного</name>
+      <description>Оклад от обратного</description>
+      <code xsi:type="core:StringValue">
+        <value>000008</value>
+      </code>
+    </items>
+    <items id="505ac9dc-c791-4500-bbd9-3b207783fdd0">
+      <name>ОкладОтОбратногоПоДням</name>
+      <description>Оклад от обратного по дням</description>
+      <code xsi:type="core:StringValue">
+        <value>000009</value>
+      </code>
+    </items>
+    <items id="f46e21cf-1be6-4140-9142-ef0f0754f1d2">
+      <name>ОкладОтОбратногоПоЧасам</name>
+      <description>Оклад от обратного по часам</description>
+      <code xsi:type="core:StringValue">
+        <value>000011</value>
+      </code>
+    </items>
+    <items id="c5a2cee2-cc3c-4480-a74f-7b7b3de102ca">
+      <name>ОкладПоДням</name>
+      <description>Оклад по дням</description>
+      <code xsi:type="core:StringValue">
+        <value>000001</value>
+      </code>
+    </items>
+    <items id="45777c4b-6e5e-407f-81fc-64a5ec6cbc1b">
+      <name>ОкладПоЧасам</name>
+      <description>Оклад по часам</description>
+      <code xsi:type="core:StringValue">
+        <value>000010</value>
+      </code>
+    </items>
+    <items id="adbbb086-8927-4078-b3d2-e653cbadd1e5">
+      <name>ОплатаПоСреднемуБЛ</name>
+      <description>Оплата больничных листов</description>
+      <code xsi:type="core:StringValue">
+        <value>000006</value>
+      </code>
+    </items>
+    <items id="8dfe3020-1f16-4e17-8481-b7319c3c6925">
+      <name>ОплатаПоСреднемуОтп</name>
+      <description>Оплата отпуска</description>
+      <code xsi:type="core:StringValue">
+        <value>000007</value>
+      </code>
+    </items>
+    <items id="9dfec9cb-d488-4d8d-ab20-a528d193ff85">
+      <name>ТарифЧасовой</name>
+      <description>Оплата по часовому тарифу</description>
+      <code xsi:type="core:StringValue">
+        <value>000005</value>
+      </code>
+    </items>
+    <items id="e604a2e9-2b15-4d70-a7c8-c05fd942229f">
+      <name>ПрочиеДоходыОблагаемыеУИсточника</name>
+      <description>Прочие доходы, облагаемые у источника</description>
+      <code xsi:type="core:StringValue">
+        <value>000003</value>
+      </code>
+    </items>
+  </predefined>
+  <attributes uuid="17afd063-290d-4cac-8975-cf2b6699a4c4">
+    <name>СпособРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ расчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыРасчетаОплатыТруда</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aa684eeb-5e0a-491d-a619-f2a5c192b49c">
+    <name>СпособОтраженияВБухучете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отражение в бухучете</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fabc7741-7541-4881-b599-49d7102c96de">
+    <name>ВидПремии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид премии</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПремии</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="694227c3-891f-4698-ad5f-6091eb2cfef9">
+    <name>ОблагаетсяИПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по ИПН</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыНалогообложенияДоходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="660c98a4-af1e-4018-8b39-b61bb7aefd06">
+    <name>ОблагаетсяОПВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по ОПВ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыНалогообложенияДоходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d80612cb-de7f-4fa1-8ab4-ff38b9aec9bd">
+    <name>ОблагаетсяСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по СН </value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыНалогообложенияДоходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f14e3e3d-63f0-470b-9d0d-4e0092bffcba">
+    <name>ОблагаетсяСО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по СО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыНалогообложенияДоходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6cfdcfbc-0c52-4938-9a70-ad9296d9d484">
+    <name>ЗачетОтработанногоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Засчитывается как отработанное время</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d2f03b7d-28fc-40a1-9eb0-32b7df12f84d">
+    <name>ФондВыплат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд выплат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФондыВыплатОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="76f9e768-a001-4f85-a05a-1a9fd9bd1296">
+    <name>ОбъединятьВРасчетномЛистке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объединять в расчетном листке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="34c66cb8-3e48-4624-a809-02622f72b90a">
+    <name>ЯвляетсяКомпенсациейЗаНеиспользованныйОтпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Является компенсацией за неиспользованный отпуск</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d9897971-6294-44ce-b3c9-7c689d128578">
+    <name>УчетЗаработкаПриРасчетеСреднего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индексация</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СоставныеЧастиЗаработкаДляРасчетаСреднего</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ab608121-cfda-49dc-b7d4-317d1f474a09">
+    <name>ОблагаетсяОППВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по ОППВ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыНалогообложенияДоходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6a6aaa2c-c11f-4af5-8a93-31f91efa7583">
+    <name>ОблагаетсяООСМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по ООСМС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыНалогообложенияДоходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Учет по отчислениям ОСМС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="411f4ff9-58d7-4e90-b6a1-d7b044f967a8">
+    <name>ОблагаетсяВОСМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по ВОСМС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыНалогообложенияДоходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Учет по взносам ОСМС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="22a4a5ed-35e1-4e28-9744-b3010af3025a">
+    <producedTypes>
+      <objectType typeId="1af95af0-c4ca-4ea1-afe1-0ee64cfe7016" valueTypeId="f85e7692-94b7-40e7-9443-63e589ea03a1"/>
+      <rowType typeId="1ce44f9f-ada3-4332-93a5-1d7079938fc6" valueTypeId="4086b0da-ff1b-4366-ba9a-1f2fc5827b23"/>
+    </producedTypes>
+    <name>ВключаемыеВРасчетОтОбратногоВидыНачислений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включаемые в расчет от обратного виды начислений</value>
+    </synonym>
+    <attributes uuid="8e899897-3bc8-4dcf-8113-6882268f3704">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.ОсновныеНачисленияОрганизаций</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>ВыбиратьВключаемыеНачисления</name>
+        <value xsi:type="core:BooleanValue">
+          <value>true</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8f04d46c-775a-4590-a0c0-2929c78a8307">
+    <producedTypes>
+      <objectType typeId="facdb6de-fac6-4558-b070-5cd8df977ccb" valueTypeId="6c5a5e6a-163c-4510-af47-416fb104d942"/>
+      <rowType typeId="bd74e8b8-0694-4d7f-bf05-f19e95544700" valueTypeId="e53bcac8-d233-4985-b074-e88ed862c522"/>
+    </producedTypes>
+    <name>КомпенсируемыеРасчетомОтОбратногоВидыУдержаний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компенсируемые расчетом от обратного виды удержаний</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="703fd63b-76e2-4efc-a164-d4df7c06687b">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.УдержанияОрганизаций</types>
+        <types>CatalogRef.НалогиСборыОтчисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>ВыбиратьКомпенсируемыеУдержания</name>
+        <value xsi:type="core:BooleanValue">
+          <value>true</value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>ВыбиратьНалогиСборыОтчисления</name>
+        <value xsi:type="core:BooleanValue">
+          <value>true</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="be004569-f689-49ad-b5fb-ba18f65ae106">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1bcfdec1-8c34-4ffe-9dd8-113cd7eb83f2">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9d0af514-e33b-4d2c-8de6-53970271bac0">
+    <name>ФормаВидаРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма вида расчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCalculationTypes>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="100ba737-76d2-42fd-88a2-234eea26788f">
+  <name>КадровыйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кадровый учет</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаКадровыйУчет</picture>
+  </picture>
+  <content>CommonCommand.ДополнительныеОбработкиКадровыйУчет</content>
+  <content>CommonCommand.ДополнительныеОтчетыКадровыйУчет</content>
+  <content>CommonCommand.ПанельОтчетовКадровыйУчет</content>
+  <subsystems>КадровыеДокументы</subsystems>
+  <subsystems>СправочникиНастройки</subsystems>
+  <subsystems>Отчеты</subsystems>
+</mdclass:Subsystem>

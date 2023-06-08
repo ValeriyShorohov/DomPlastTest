@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76288e76-bb2d-4670-933a-4b0aa2b590c7">
+  <producedTypes>
+    <selectionType typeId="84417b48-cce5-4585-8753-ff4ce446c762" valueTypeId="f924031f-1b31-4b09-9642-cd2d80b4e1bb"/>
+    <listType typeId="33380c55-0200-473e-b3a5-f4ab94a1eec1" valueTypeId="63b5476f-fa64-42ee-ab8d-5eebed62d71b"/>
+    <managerType typeId="747ed0c4-1870-401b-a2f9-11103e4b6acd" valueTypeId="fe3afd82-4d5a-49ae-a376-c7bed02abf1f"/>
+    <recordSetType typeId="bf0400e7-777f-4d72-bfb9-d715a772966f" valueTypeId="99c80400-9cfd-434c-a739-1982a9291c29"/>
+    <recordKeyType typeId="ac08a4fa-e6b0-4b48-a307-0f3971aeee89" valueTypeId="4c0641e2-1f01-489b-841e-297b3aef0e9e"/>
+    <recordType typeId="646289cc-8117-4832-b7e2-e8a3bd733fbd" valueTypeId="e30e8f0a-2ffc-4943-84c0-ba928624552b"/>
+    <recordManagerType typeId="30b8d85f-f484-454c-998f-638f03c8763c" valueTypeId="03fcdb9a-f4f8-4d09-a6fb-5bff5482881f"/>
+  </producedTypes>
+  <name>КорректныеКорреспонденцииСчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректные корреспонденции счетов бухгалтерского учета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.КорректныеКорреспонденцииСчетов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КорректныеКорреспонденцииСчетов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Корректная корреспонденция счетов бухгалтерского учета</value>
+  </recordPresentation>
+  <attributes uuid="1d93b600-f88e-4bd0-bd81-19dccc3c7789">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="4bcdfc17-81b6-40b5-afcb-e17be076073c">
+    <name>СчетДт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дебет</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2f6cb5a0-7614-4650-a4ad-5eec01734ab2">
+    <name>СчетКт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кредит</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="062a291b-43d5-4699-9e2e-449c216d174e">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="df0a1fad-89b1-4b43-a0da-d4cd0f189a8a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="08d41531-9e17-4c90-a9d6-6c6202c0fcc4">
+    <name>ФормаСпискаКорреспонденций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список корреспонденций</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

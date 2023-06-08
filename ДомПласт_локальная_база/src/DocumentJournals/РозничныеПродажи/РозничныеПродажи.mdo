@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1fafd12-db5c-4aff-b8b7-2397a00587fd">
+  <producedTypes>
+    <selectionType typeId="89ec7c16-c85e-4e4c-b0bd-f72213ffe718" valueTypeId="807a2dda-7350-45f0-984e-4e034c8af628"/>
+    <listType typeId="7a44b430-2056-4717-be90-8082d9ec8ce9" valueTypeId="ca007928-7eeb-4fc8-8f65-47c51cb3da95"/>
+    <managerType typeId="0981fef1-b0bc-4c5c-9c65-152117bb6891" valueTypeId="f1828c70-9ed3-4060-9434-216a5e7606ae"/>
+  </producedTypes>
+  <name>РозничныеПродажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Розничные продажи</value>
+  </synonym>
+  <defaultForm>DocumentJournal.РозничныеПродажи.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ЧекККМ</registeredDocuments>
+  <registeredDocuments>Document.ОтчетОРозничныхПродажах</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="b27106ea-3fac-404e-9bc1-784046079e27">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.СуммаДокумента</references>
+    <references>Document.ЧекККМ.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="77b7fc6f-77e4-4776-8410-89bb564155b3">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.Комментарий</references>
+    <references>Document.ЧекККМ.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="33c20747-0bbc-4997-be29-d31e4130b374">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="d4407eb4-9508-4d8a-a203-23920c3c5c08">
+    <name>РозничныеПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Розничные продажи</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

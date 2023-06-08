@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59d1f473-bd7d-4763-8e8c-386339a5163c">
+  <producedTypes>
+    <objectType typeId="da63fe3f-f95d-4bbe-9ac2-becbb0795707" valueTypeId="8a9fd05d-200d-4d66-b60a-6a35928ce7c8"/>
+    <refType typeId="1f7f35e7-2c2a-487c-a7c6-413f7b635d82" valueTypeId="2a9bc80e-a490-4e59-a506-7eef1764a21c"/>
+    <selectionType typeId="3db0da5f-ec09-4bda-9091-8ce3dc0aba75" valueTypeId="f019902a-714c-40e5-b00d-b536d7e86084"/>
+    <listType typeId="99cc81e7-226d-4ed9-876d-4995f04b968d" valueTypeId="85bbdb0a-32a3-4131-a97e-e23c3b22b297"/>
+    <managerType typeId="5dcb42a8-95a4-4e32-972f-2c2fd7831f23" valueTypeId="b22ef225-b411-4aab-b2a3-f1f70e7f2fe3"/>
+  </producedTypes>
+  <name>ПараметрыВыработкиОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры выработки ОС</value>
+  </synonym>
+  <comment>Параметры выработки ОС</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПараметрыВыработкиОС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПараметрыВыработкиОС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Параметр выработки ОС</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ПараметрыВыработкиОС.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ПараметрыВыработкиОС.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ПараметрыВыработкиОС.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="6fafa613-6992-4d21-a1f0-9cba07481182">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед. изм.</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="03efd6e5-1302-4621-96a4-358b74b654ad">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7e6f0ba6-ef73-4825-96da-f9c7678d5086">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aacdb616-7d00-47bb-8ccd-f4234253b1f3">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

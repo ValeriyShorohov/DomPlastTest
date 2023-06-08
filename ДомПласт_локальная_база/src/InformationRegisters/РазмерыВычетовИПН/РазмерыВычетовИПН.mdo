@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef890a02-86a8-4c9a-980e-1e6a77302230">
+  <producedTypes>
+    <selectionType typeId="f0495f18-3e80-44c6-9a1b-e45faa4faf57" valueTypeId="ba8c828e-4e01-4034-a8d2-8572a99f7d57"/>
+    <listType typeId="58f046f9-75c5-4198-88b6-b4974b582732" valueTypeId="d8bc2c9d-b2d0-451f-af0e-48544d274ac3"/>
+    <managerType typeId="759cb11a-7415-4a41-bed1-dd716aa1ed77" valueTypeId="730efcfb-47eb-4c4c-a543-3af686de96c8"/>
+    <recordSetType typeId="02c96b95-7f19-4e38-b4c1-3c17fcede079" valueTypeId="751e44b0-9b99-49a4-b7b1-2db1ba3ebfb3"/>
+    <recordKeyType typeId="6e903227-b632-42be-8d11-651c0129a6e5" valueTypeId="bdb87e5f-2011-4d8a-9276-7c0b4ca371d0"/>
+    <recordType typeId="8a42dbdb-3467-47b2-a07e-fdcabfed1ad0" valueTypeId="6af0320e-b902-4daa-8f86-40a9fa1c54d0"/>
+    <recordManagerType typeId="4e1c7949-3652-4623-8d2e-ba212efb3ac0" valueTypeId="b81924d5-54c0-4f07-9db0-06c4d9b6aebf"/>
+  </producedTypes>
+  <name>РазмерыВычетовИПН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размеры вычетов ИПН</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1805854c-7c1b-4648-b55e-8f6bd05de582">
+    <name>ВидПределаВычета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид предела вычета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПределовВычетовИКорректировокДоходов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыПределовВычетовИКорректировокДоходов.EnumValue.МРП</value>
+    </fillValue>
+  </resources>
+  <resources uuid="492bc021-70a7-43f2-8543-d21e4a942247">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f4e29e7e-696f-44fc-bb0e-7a883e7c4a50">
+    <name>ВидВычетаИПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид вычета ИПН</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВычетыИПН</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ПредоставлениеВычета</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыПредоставленияВычетов.EnumValue.Стандартный</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыПредоставленияВычетов.EnumValue.ПоПериодическимПлатежам</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62894bca-a356-46a5-9df8-3aee51b79430">
+  <producedTypes>
+    <managerType typeId="b677a5ac-4e35-4fd7-8fab-a4496cc9fb22" valueTypeId="df0c9e22-fe49-4527-a5aa-9b0e37a05a05"/>
+    <valueManagerType typeId="d19150ea-84dd-4bd8-9325-b03747183260" valueTypeId="625d2f80-bf32-4de4-b4ba-91ced6a54910"/>
+    <valueKeyType typeId="29254d1e-64e6-51dd-b075-b7e605fd313f" valueTypeId="e71ebb8c-54e0-580d-a781-286ac67eb180"/>
+  </producedTypes>
+  <name>СрокОплатыПокупателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Срок оплаты покупателей</value>
+  </synonym>
+  <comment>Срок в днях, после которого долг покупателей считается просроченным, если другой срок не установлен в договоре</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.НастройкаПараметровУчета</defaultForm>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

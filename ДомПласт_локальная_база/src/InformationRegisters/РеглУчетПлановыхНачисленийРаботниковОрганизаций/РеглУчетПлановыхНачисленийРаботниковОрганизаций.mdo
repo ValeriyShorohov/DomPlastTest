@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ceeb253f-ba2c-4e86-b1f0-c58453b69ac1">
+  <producedTypes>
+    <selectionType typeId="70a2b957-75db-4f0b-9d76-c3eaf4084200" valueTypeId="d8b9edd3-2868-48ce-b5b4-44e8791f156d"/>
+    <listType typeId="fd44546e-7ced-40f8-b2bd-d8d38b64d22a" valueTypeId="733222eb-338e-4de9-afc4-c7216ffc5e66"/>
+    <managerType typeId="de859cc3-37d9-48f0-8274-74e5dab20145" valueTypeId="e17b2b99-9706-4c74-a9ce-a15e3fd2d875"/>
+    <recordSetType typeId="ce02fa58-2df5-4b60-b1bf-db42e65f9db7" valueTypeId="7255eece-a354-4280-89a4-9e852705a46e"/>
+    <recordKeyType typeId="fb5ef9f1-be04-4af7-bbcf-737f9fc8f87c" valueTypeId="35769b11-3c7e-454f-a251-8c04757b8298"/>
+    <recordType typeId="f6d0c21b-940b-4b8d-9328-839d4527c21a" valueTypeId="eee54f1e-b312-42a5-bc6d-ac6669406805"/>
+    <recordManagerType typeId="0596a118-2d51-4216-9cd5-6d23e54eb683" valueTypeId="d36c7d2e-bc51-498b-8088-141ee1ea0b54"/>
+  </producedTypes>
+  <name>РеглУчетПлановыхНачисленийРаботниковОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отражение плановых начислений сотрудников организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.РеглУчетПлановыхНачисленийРаботниковОрганизаций.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="3bae41fc-f868-4aec-9a7d-e94c9631c79a">
+    <name>СпособОтраженияВБухучете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения в бухучете</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="2ce12cd1-77a3-41c3-b5fe-5ba07f3f4561">
+    <name>ОбособленноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обособленное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="a117a4db-7c12-4e00-be2d-aba40217397a">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СотрудникиОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0c170bf1-b53f-4677-ac92-a9b56e35ec3d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5ac4c4db-66ab-4c62-b9d2-e8756658fe64">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.ОсновныеНачисленияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c7ea6340-7965-4edb-9f8d-f7f87ecc0380">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

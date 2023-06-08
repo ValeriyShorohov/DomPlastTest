@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48bdd049-26e6-427d-a8fb-c762942bff46">
+  <producedTypes>
+    <selectionType typeId="319cbd3e-8806-459e-8495-92a9abf0703f" valueTypeId="9f07b7dc-b4c3-45af-a806-76a8088f3920"/>
+    <listType typeId="bfac402c-06b7-452d-b083-e45804df6738" valueTypeId="f2463d6f-b9e7-4def-99ca-0e182c8b2fc9"/>
+    <managerType typeId="7b739fcd-9536-4475-aa38-288b342fb268" valueTypeId="8273b980-f578-41ab-8f4c-cd111b689ebb"/>
+    <recordSetType typeId="899ba6d1-afd0-4cd8-93af-8ee5bb270b47" valueTypeId="004fc578-b6bd-4de8-928e-beb44e150ced"/>
+    <recordKeyType typeId="f2ade7dc-5eeb-4444-83d0-36367878fc25" valueTypeId="78d4563e-520f-4164-810c-6fa49fbc104e"/>
+    <recordType typeId="d54c8f69-260c-48a8-bcbb-9fdc3b863188" valueTypeId="cba8fb2c-85c7-4cb9-8dad-b56e7c6797e5"/>
+    <recordManagerType typeId="ba478587-2f19-47a8-b98a-1bdb67869bd1" valueTypeId="97ba6a55-cd35-4d20-abc9-481a505c42c0"/>
+  </producedTypes>
+  <name>ПервоначальныеСведенияНМАБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Первоначальные сведения о НМА</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.ПервоначальныеСведенияНМАБухгалтерскийУчет.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Первоначальные сведения о НМА (бух. учет)</value>
+  </extendedListPresentation>
+  <resources uuid="366d0aec-5818-489b-bd51-56104a2acee3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="661b1828-4f94-4a54-af28-9469269aa02c">
+    <name>ПервоначальнаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первоначальная стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9f43bf48-cbfb-430f-807d-1f823b5dcc16">
+    <name>СпособПоступления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ поступления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыПоступленияАктивов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="63dd0906-5039-4f7c-b3f8-da0594c847ce">
+    <name>НачислятьАмортизацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислять амортизацию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="77347567-4411-4451-8c17-f5b219694392">
+    <name>СпособНачисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ начисления амортизации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыНачисленияАмортизацииНМА</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2095de41-2883-4c75-822f-40cdc15ee487">
+    <name>СрокПолезногоИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок полезного использования, мес.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a73e5d1d-65d7-41ae-8549-8d59e8142dce">
+    <name>ОбъемПродукцииРаботДляВычисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем продукции (работ) для исчисления амортизации в натуральных ед.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6443a3bd-67fd-4b94-8049-68324ad1573d">
+    <name>СтоимостьДляВычисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость для вычисления амортизации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3be994a6-7742-4f82-9210-1af4bbffd7ef">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3b91680c-0d01-45a8-9b2d-73072d1804bf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

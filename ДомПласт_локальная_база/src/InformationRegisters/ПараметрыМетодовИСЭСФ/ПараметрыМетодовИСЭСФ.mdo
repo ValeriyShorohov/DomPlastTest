@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f942ef9-048a-4b57-815f-c9582422707f">
+  <producedTypes>
+    <selectionType typeId="d164bd93-e9eb-42a6-94c8-fab361ac34da" valueTypeId="1a460819-62a8-457c-bfd3-b81b4b76f24f"/>
+    <listType typeId="b3f94707-34f9-45a5-a33a-13a42d8ebd71" valueTypeId="9d5d35d7-f810-4997-86cd-18db5c03bda7"/>
+    <managerType typeId="835c6ffb-c554-4124-856d-3e39c6732b19" valueTypeId="8b0343be-458d-4cc6-b9e9-942a933b284e"/>
+    <recordSetType typeId="a3cb868e-7d11-479c-9928-b5e7f544d17e" valueTypeId="28dba546-3f8d-44bb-bcbc-6582621d0e9a"/>
+    <recordKeyType typeId="d01546c6-b834-4aad-8f7b-1c4bd28d2ce7" valueTypeId="3b4880a6-934a-42e6-b7f6-a97f4e1f9cc3"/>
+    <recordType typeId="8836bf08-8198-439c-a993-783d49dbc4f7" valueTypeId="79bbf5c5-cc31-4704-bb29-a4ec06bdbe13"/>
+    <recordManagerType typeId="760d9c4d-5112-4b39-9b2b-477777f4c20f" valueTypeId="eff389d8-acdc-40e7-8a73-5b752a5516e6"/>
+  </producedTypes>
+  <name>ПараметрыМетодовИСЭСФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры методов ИС ЭСФ</value>
+  </synonym>
+  <comment>Параметры, используемые при вызове методов API ИС ЭСФ.</comment>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПараметрыМетодовИСЭСФ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПараметрыМетодовИСЭСФ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Параметр метода ИС ЭСФ</value>
+  </recordPresentation>
+  <resources uuid="c6f6e35c-41c3-4783-9e85-8db08d988ee2">
+    <name>ЗначениеПараметра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение параметра</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>Date</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4e66e644-b5bb-43c8-ae5b-c32a40861eb3">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <comment>Структурная единица, от имени которой выполняется вызов методов API ИС ЭСФ.</comment>
+    <type>
+      <types>DefinedType.СтруктурнаяЕдиницаЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3d14ab19-2fcc-46c9-bd6e-2e21dfbda488">
+    <name>ИмяМетода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя метода</value>
+    </synonym>
+    <comment>Имя метода, для которого необходимо хранить значение параметра, например, queryInvoiceStatusUpdate.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d5aec0ad-3e20-4065-9413-7daa6e4a2d60">
+    <name>НаправлениеЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление ЭСФ</value>
+    </synonym>
+    <comment>Направление ЭСФ, для которого необходимо хранить значение параметр.</comment>
+    <type>
+      <types>EnumRef.НаправленияЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d8f960de-912a-4f6c-bd70-f63e9df39295">
+    <name>ИмяПараметра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя параметра</value>
+    </synonym>
+    <comment>Имя параметра, значение которого необходимо хранить.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b9cf180d-0148-4a5a-8b24-fe09d740b29f">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="afaf038a-74da-41f7-b3bc-2543baf1a1d6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

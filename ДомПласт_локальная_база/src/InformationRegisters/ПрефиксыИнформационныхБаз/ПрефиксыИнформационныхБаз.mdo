@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2978b309-d3c0-4faa-8119-d675259c404e">
+  <producedTypes>
+    <selectionType typeId="7878ae35-a5fd-40e5-b362-08a12ea89796" valueTypeId="e182489a-04ba-430a-ba15-46c3150a78be"/>
+    <listType typeId="b67c82c0-e32a-45c8-814e-bbc0bbde7973" valueTypeId="7538a100-e587-4e90-84ab-573b90d5f135"/>
+    <managerType typeId="1e8225a7-cc2e-403a-8992-ee43c747020b" valueTypeId="2a84a32e-3b3e-4bb7-91ea-2f0bd1941500"/>
+    <recordSetType typeId="c60eb75e-3520-4193-9cb1-20cb44e07281" valueTypeId="fc2bf375-095b-4caa-8629-ee5528cd6230"/>
+    <recordKeyType typeId="ac45dbfa-2529-4954-bf51-33970c4c247b" valueTypeId="2ee492e0-5653-448b-b9fb-cb6fb96e18ca"/>
+    <recordType typeId="4f2dc27f-0eed-421c-8ad9-af8dc9aeaee8" valueTypeId="17702e24-49b2-4f08-983e-2f58f7e98b80"/>
+    <recordManagerType typeId="f79c8b6c-d6f8-457e-9f32-60315804b34f" valueTypeId="a5e7e482-00ee-403b-bf63-256da9a626fc"/>
+  </producedTypes>
+  <name>ПрефиксыИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Префиксы информационных баз</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ПрефиксыИнформационныхБаз.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПрефиксыИнформационныхБаз.Form.ФормаСписка</defaultListForm>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Префикс информационной базы</value>
+  </recordPresentation>
+  <dimensions uuid="23c0d053-fc68-4458-9a4d-f67e8add0fbd">
+    <name>Префикс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Префикс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6b14879d-cbbc-4cdc-b2c1-8399b88d7e46">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c1d3a3c7-dd33-4e3d-88df-986a151d4c0d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

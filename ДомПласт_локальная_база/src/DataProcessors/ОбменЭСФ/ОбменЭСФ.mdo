@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4eeaf0c9-01cc-48e9-b235-6db29ab59bc0">
+  <producedTypes>
+    <objectType typeId="e2446dbf-a665-432e-9bd2-6a0db647f781" valueTypeId="bf88b86d-e557-483d-9f96-9924f35f1910"/>
+    <managerType typeId="820937b7-8dc8-4910-b4f3-80aba94e8df9" valueTypeId="9658e74d-561c-484b-9278-363e3b6d5f59"/>
+  </producedTypes>
+  <name>ОбменЭСФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен электронными счетами-фактурами</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОбменЭСФ.Form.Форма</defaultForm>
+  <forms uuid="cd73c7db-1142-4efc-8dde-2b2b8053a40f">
+    <name>ВводПароля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод пароля</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="360ecb60-2f38-4171-9be9-68516200f21d">
+    <name>ВыборИзСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор из списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d95ae79e-0bd7-43e1-af45-1d2407f286f8">
+    <name>ИзменениеСтатусовЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение статусов электронных счетов-фактур</value>
+    </synonym>
+    <comment>Форма для выполнения методов declineInvoiceById, revokeInvoiceById, unrevokeInvoiceById и т.д.</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dcddd0fd-8479-4069-b202-f7366d7808bb">
+    <name>ИмпортЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Импорт ЭСФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8600dd23-f8ae-44a5-a2f3-d17b4f91b0e0">
+    <name>НастройкиОбменаЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки обмена электронными счетами-фактурами</value>
+    </synonym>
+    <comment>Настройки подсистемы обмена ЭСФ</comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3b94ddc0-1b94-413a-b2e0-35dba938fc0c">
+    <name>ПараметрыПодключенияКСерверуИСЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры подключения к серверу ИС ЭСФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5e1ad5d8-9970-4a24-a2b7-31a35263cb12">
+    <name>СинхронизацияСИСЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизация с ИС ЭСФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b9dde06a-367f-408f-8d3c-5c86553d3202">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="caa41691-4919-4424-b120-8ed3f5353880">
+    <name>УстановкаКриптографии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установка криптографии</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d9b60bd7-45db-4b03-9620-136d3c9e95b6">
+    <name>ПользовательскоеСоглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользовательское соглашение</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="386b6551-3fd4-4f1b-90bd-f4d14279ef2a">
+    <name>КлиентУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контейнер клиентских методов (управляемая форма)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1cbe8eb7-a459-4694-b37d-c5ef352f00f9">
+    <name>КлиентОбычная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контейнер клиентских методов (обычная форма)</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="754fafec-50a3-4e57-94eb-af33a4497bc5">
+    <name>ОбновлениеКомпонентыКриптографии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление компоненты криптографии</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4500a877-16e6-4db0-a65b-e5d691e9da38">
+    <name>ВводДанныхИСЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод данных ИС ЭСФ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7685756d-15ca-4fa3-86b0-fe96944be878">
+    <name>ДлительнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительная операция</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="241778a0-2d15-4beb-a3d3-fe81f2ceb17f">
+    <name>ОчередьОтправкиЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очередь отправки ЭСФ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="62a55f53-f84d-4cf4-a9fa-f577ae84687c">
+    <name>ИзменениеСтатусовЭДВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение статусов электронных счетов-фактур</value>
+    </synonym>
+    <comment>Форма для выполнения методов declineInvoiceById, revokeInvoiceById, unrevokeInvoiceById и т.д.</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c262e665-2df9-4818-8d40-f93d1a6eaab0">
+    <name>СинхронизацияСВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизация с модулем ВС</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e09528e6-7bb4-4271-ad6b-f69feaa7be2e">
+    <name>КлиентУправляемаяВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контейнер клиентских методов ВС (управляемая форма)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="34fcac30-9dd5-4b12-8f13-5265da12d3f1">
+    <name>ПараметрыПодключенияКСерверуВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры подключения к серверу ВС</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="10b6f7c7-dafe-4245-92b5-4b2703d8ebe5">
+    <name>ПараметрыПроксиСервера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры прокси сервера</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d3a6395d-b2f1-4027-8b77-dd7b4da22391">
+    <name>СопоставлениеИдСкладов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник получения и сопоставления складов</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a39b5f2a-7fd4-447c-b019-0a0ec50ec9ee">
+    <name>ЗаполнениеПризнакаУчетаНаВиртуальномСкладе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнение реквизита &quot;Товар виртуального склада&quot;</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a537f914-95f6-4927-96f6-86464bd34047">
+    <name>КлиентУправляемаяАВР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент управляемая АВР</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2d03090c-f9a6-4756-854e-c72d7260ab4e">
+    <name>СинхронизацияАВР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизация АВР с ИС ЭСФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="98ab3d28-d456-410a-a949-680b22fcacf0">
+    <name>ИзменениеСтатусовАВР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение статусов электронных актов выполненных работ</value>
+    </synonym>
+    <comment>Форма для выполнения методов changeStatus</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="448dc60f-6e9a-403b-9519-66fe81eb29ba">
+    <name>СозданиеВСизОбычныхСкладов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание в сиз обычных складов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="41a0d593-441c-46ae-a0d1-6fe9db7c0075">
+    <name>ЗапросCloseSession_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросCloseSession</value>
+    </synonym>
+    <comment>Запрос на закрытие сессии с указанным идентификатором сессии.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="6a02a4df-aeeb-4c4d-9854-996a50bfd8b4">
+    <name>ЗапросConfirmInvoiceById</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросConfirmInvoiceById</value>
+    </synonym>
+    <comment>Запрос на уведомление отправителя о получении ЭСФ.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="43a1c037-4af7-4dfd-b2de-33a3b358768e">
+    <name>ЗапросCreateSession_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросCreateSession</value>
+    </synonym>
+    <comment>Запрос на открытие сессии и получение идентификатора сессии.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="3b88718a-b86e-44ff-8f75-b9e2b4ca87d7">
+    <name>ЗапросQueryInvoiceById</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросQueryInvoiceById</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="374bdcf4-ab29-4a44-ae52-9ce29b58bac1">
+    <name>ЗапросQueryInvoiceByKey</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросQueryInvoiceByKey</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="08b2e15e-2125-42ea-81bf-a2bf68a54e14">
+    <name>ЗапросQueryInvoiceSummaryById</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросQueryInvoiceSummaryById</value>
+    </synonym>
+    <comment>Запрос на получение статусов, входяших и исходящих ЭСФ, по их идентификатору.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="dd203158-2e44-41f2-860b-716f25b2de40">
+    <name>ЗапросRevokeInvoiceById</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросRevokeInvoiceById</value>
+    </synonym>
+    <comment>Запрос на отзыв или аннулирование ЭСФ с указанными идентификаторами.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b856d3f6-a69e-474b-8797-b4a168a627be">
+    <name>ЗапросQueryUpdates_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросQueryUpdates</value>
+    </synonym>
+    <comment>Запрос на получение новых входящих и исходящих ЭСФ, а также обновлений, которые произошли с существующими входящими и исходящими ЭСФ.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="be6c569a-87de-4e2f-b399-0276f82d8667">
+    <name>ЗапросSyncInvoice_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросSyncInvoice</value>
+    </synonym>
+    <comment>Запрос на отправку исходящих (выданных) ЭСФ.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="21d63253-ae87-4eb0-9670-d527562ba84b">
+    <name>ЗапросНаИзменениеСтатусовЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросНаИзменениеСтатусовЭСФ</value>
+    </synonym>
+    <comment>Запрос для методов declineInvoiceById, revokeInvoiceById, unrevokeInvoiceById.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="60d6ff56-944a-4e61-a5a7-457dc9b36ba0">
+    <name>ПредставленияОшибокИСЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПредставленияОшибокИСЭСФ</value>
+    </synonym>
+  </templates>
+  <templates uuid="b6e81fc6-1dbb-49ae-b941-d95d2831edd8">
+    <name>ПФ_MXL_ЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронный счет-фактура</value>
+    </synonym>
+  </templates>
+  <templates uuid="d3f25a56-b77e-47e9-a7dd-6387d7ef3e58">
+    <name>СхемаЭСФ_XML_API_ЭЦП_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СхемаЭСФ_XML_API_ЭЦП_Версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ae5f98f7-cc2c-4dcb-b767-730983504828">
+    <name>СхемаЭСФ_XML_API_ЭЦП_Версия2</name>
+    <synonym>
+      <key>ru</key>
+      <value>СхемаЭСФ_XML_API_ЭЦП_Версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="58d25c27-f239-4104-a85f-8b32c5c774b8">
+    <name>СхемаInvoiceInfo_Версия2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема invoice info версия2</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b58c7c9f-b4be-40dc-a478-ba75de218fa9">
+    <name>ОфертаКриптографии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оферта криптографии</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="de242500-196f-45c5-93e1-d6e95fb9dc21">
+    <name>СписокПоддерживаемыхВерсийБиблиотеки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список поддерживаемых версий библиотеки</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b8c24efe-dd28-4815-aa86-f56e173d6eda">
+    <name>ЗапросEsfLibRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон запроса Esf lib request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="d2ab7863-e6b4-4948-a592-17be72c11e2e">
+    <name>ЗапросEsfDnlAckRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон запроса esf dnl ack request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="76435764-7709-422c-bc2d-d0dcfb9dbc0c">
+    <name>РеквизитыДляПроверкиОсновногоИДополнительногоЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты для проверки основного и дополнительного ЭСФ</value>
+    </synonym>
+  </templates>
+  <templates uuid="a2230162-0d77-4bcc-9019-1efa9b5f7039">
+    <name>ПереченьИзъятий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перечень изъятий</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="94c0d66e-8d14-48c2-947c-f4e8b36ae641">
+    <name>ЗапросCloseSession_Версия2</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросCloseSession</value>
+    </synonym>
+    <comment>Запрос на закрытие сессии с указанным идентификатором сессии.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="7fb97acf-f7cf-425a-ab93-feac1b2ac51a">
+    <name>ЗапросSyncInvoice_Версия2</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросSyncInvoice</value>
+    </synonym>
+    <comment>Запрос на отправку исходящих (выданных) ЭСФ.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="abd58778-f48e-4896-b2f5-33db0bccaea7">
+    <name>ЗапросGetVersion</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросGetVersion</value>
+    </synonym>
+    <comment>Запрос на получение версии ИС ЭСФ.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="c2a97e9f-5728-4f5a-94d6-14dad44c06c2">
+    <name>ЗапросCreateSession_Версия2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос create session версия2</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b133a505-df6e-41b0-acce-b9911645c3f7">
+    <name>ЗапросQueryUpdates_Версия2</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросQueryUpdates</value>
+    </synonym>
+    <comment>Запрос на получение новых входящих и исходящих ЭСФ, а также обновлений, которые произошли с существующими входящими и исходящими ЭСФ.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4d6ed229-1b70-43f4-9efd-63042729fad0">
+    <name>ЗапросВСQueryUpdates_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросQueryUpdates</value>
+    </synonym>
+    <comment>Запрос на получение новых форм ВС, а также обновлений, которые произошли с существующими формами ВС</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="91440ad9-b971-44de-ac65-b9d3efa19fe4">
+    <name>ЗапросНаИзменениеСтатусовЭДВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросНаИзменениеСтатусовЭДВС</value>
+    </synonym>
+    <comment>Запрос для методов cancelUFormById</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b719480c-199a-45df-b6ca-268f8c27ed35">
+    <name>СхемаUFORM_XML_API_ЭЦП_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СхемаUFORM_XML_API_ЭЦП_Версия1</value>
+    </synonym>
+    <comment>2018-06-27</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="e6452b4e-ce53-47ef-987e-8461afe4b88b">
+    <name>ЗапросВСCreateSession_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос ВСCreate session версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="977a69f3-1e16-4be2-b393-19ee3eb24498">
+    <name>ЗапросВСCloseSession_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросВСCloseSession</value>
+    </synonym>
+    <comment>Запрос на закрытие сессии с указанным идентификатором сессии.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="151b6270-b7aa-4da1-abbb-462cc94d6e94">
+    <name>ЗапросВСuploadUFormRequest_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос в сupload u form request версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="2eeabbce-dcd8-4f81-a207-5718020fe1fb">
+    <name>ЗапросВСtaxpayerStoreListRequest_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос в сtaxpayer store list request версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="64985afc-6340-4ba5-a6c3-964c76058581">
+    <name>ЗапросВСqueryUFormById</name>
+    <synonym>
+      <key>ru</key>
+      <value>Query UForm by id request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ad8d86bb-b5e9-4abf-86ae-0efb957dbfd4">
+    <name>ЗапросВСqueryUFormStatusByIdRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Query UForm status by id request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="7bcbe290-f6d6-4f1b-8080-75bf847503de">
+    <name>ЗапросВСuFormErrorByIdRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Query UForm error by id request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4a97d9f8-3ffc-44df-8585-f2266b9d5c53">
+    <name>ПредставлениеПолейИРазделов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление полей и разделов</value>
+    </synonym>
+  </templates>
+  <templates uuid="724d92f4-24ce-4f64-9a2e-f125e40663d0">
+    <name>ЗапросВСGsvsUpdatesRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос ВС Gsvs updates requesе</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a56da331-5d47-4a95-8c93-d8f77a234a03">
+    <name>ЗапросВСCurrentSessionStatus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос ВС Current session status</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8ab0a9be-00f5-41e4-9750-654f45177c72">
+    <name>ЗапросInvoiceErrorById</name>
+    <synonym>
+      <key>ru</key>
+      <value>Query Invoice error by id</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ca9fc05a-eb22-4d35-b289-9c016d095b86">
+    <name>ЗапросВСqueryProductIdsRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>query Product Ids Request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5ce8152a-ea58-4810-9822-f6ddadeafdb4">
+    <name>ЗапросВСVstoreBalanceQueryUpdates_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос ВС Vstore balance query updates версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a594a7e9-da3a-4db3-9ef6-96ac27ca54f8">
+    <name>СхемаqueryBalanceUpdates_XML_API_ЭЦП_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схемаquery balance updates XML API ЭЦП версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ee209a62-a075-4214-816e-9528c27e2f02">
+    <name>ЗапросCurrentSessionStatus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос Current session status</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5ba00ba0-50d3-490f-a627-4d9a53e31ade">
+    <name>ЗапросCloseSessionByCredentialsRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос close session by credentials request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="12701c7a-60ef-444f-8a62-43e502d5f4d8">
+    <name>ЗапросВСquerytaxpayerStoreChangeStatusRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос в сquerytaxpayer store change status request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5d2d2695-e931-45f1-84e4-a75429088cd2">
+    <name>ЗапросUploadAwp_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос upload awp версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ac7b43e7-ba1c-4d88-b0a1-4d5d23b1a4f0">
+    <name>СхемаAwp_XML_API_ЭЦП_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема awp XML API ЭЦП версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="6287f8ee-bd60-44b4-9431-a3d71054c1ef">
+    <name>ЗапросQueryAwpById</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос query awp by id</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="3e9159aa-505a-497e-a486-8eecd3503f04">
+    <name>ЗапросAwpQueryUpdates_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросAwpQueryUpdates_Версия1</value>
+    </synonym>
+    <comment>Запрос на получение новых входящих и исходящих АВР, а также обновлений, которые произошли с существующими входящими и исходящими АВР.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ee4880e8-7d55-4cce-b3c0-7f121ad5fddc">
+    <name>ЗапросAwpQueryStatusById</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросAwpQueryStatusById</value>
+    </synonym>
+    <comment>Запрос на получение статусов, входяших и исходящих ЭСФ, по их идентификатору.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="0394b78a-b130-4383-8d4c-99d6597f8956">
+    <name>ЗапросQueryViewAwp</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос query view awp</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="1b011f16-9685-4266-94a6-bfd755a45ece">
+    <name>ЗапросAwpChangeStatus</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросНаИзменениеСтатусовАВР</value>
+    </synonym>
+    <comment>Запрос для метода changeStatus</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="34883b40-d4ce-4e6a-a0bb-f8978bca0d7f">
+    <name>СхемаAwpInfo_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема awp info версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="7038afd5-4383-4ad5-9136-9794e9ccae42">
+    <name>ЗапросВСtaxpayerStoreCreateRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос в сtaxpayer store create request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="041bbbfd-3e99-4d27-8cb0-04697af59560">
+    <name>ПФ_MXL_АВР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронный акт выполненных работ</value>
+    </synonym>
+  </templates>
+  <templates uuid="fe0bbf15-9295-4bfe-ae7b-6f275ed42fc2">
+    <name>ЗапросAwpQueryErrorByIdRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос awp query error by id request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a2cc9a77-5945-4bae-a3ed-757040d4e4a6">
+    <name>ЗапросВСqueryAllProductIdsRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>query All Product Ids Request</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="92672e9a-dd61-43c1-aa1b-0eb2c2570e44">
+    <name>СоздатьЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создать ЭСФ</value>
+    </synonym>
+    <group>CommandGroup.ЭСФ</group>
+    <commandParameterType>
+      <types>DefinedType.СчетФактураВыданнныйЭСФ</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.InputOnBasis</picture>
+    </picture>
+  </commands>
+  <commands uuid="63d7099f-8165-4a24-a131-52725af9d9d5">
+    <name>ПерезаполнитьЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перезаполнить ЭСФ</value>
+    </synonym>
+    <group>CommandGroup.ЭСФ</group>
+    <commandParameterType>
+      <types>DefinedType.СчетФактураВыданнныйЭСФ</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.InputOnBasis</picture>
+    </picture>
+  </commands>
+  <commands uuid="b1089a02-06a4-46eb-ae13-40ed553d22bf">
+    <name>ОткрытьЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыть ЭСФ</value>
+    </synonym>
+    <group>CommandGroup.ЭСФ</group>
+    <commandParameterType>
+      <types>DefinedType.СчетФактураЭСФ</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.InputFieldOpen</picture>
+    </picture>
+  </commands>
+  <commands uuid="ff25fa53-eea7-4717-8ea1-1d05d30453b3">
+    <name>ОтозватьЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отозвать ЭСФ</value>
+    </synonym>
+    <group>CommandGroup.ЭСФ</group>
+    <commandParameterType>
+      <types>DefinedType.СчетФактураВыданнныйЭСФ</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.UndoPosting</picture>
+    </picture>
+  </commands>
+  <commands uuid="5511ee46-54ba-48ca-a1d2-961fdd629ec1">
+    <name>СвязанныеЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связанные ЭСФ</value>
+    </synonym>
+    <group>CommandGroup.ЭСФ</group>
+    <commandParameterType>
+      <types>DefinedType.СчетФактураЭСФ</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.ListViewModeHierarchicalList</picture>
+    </picture>
+  </commands>
+  <commands uuid="188a9a4a-6ef6-44cb-a482-23e8ca6ac74c">
+    <name>СписокЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список ЭСФ</value>
+    </synonym>
+    <group>CommandGroup.ЭСФ</group>
+    <commandParameterType>
+      <types>DefinedType.СчетФактураЭСФ</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.ListViewModeList</picture>
+    </picture>
+  </commands>
+</mdclass:DataProcessor>

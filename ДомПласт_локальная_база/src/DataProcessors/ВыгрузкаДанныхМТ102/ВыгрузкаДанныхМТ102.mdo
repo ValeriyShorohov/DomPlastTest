@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6176d498-7da6-454b-b240-2fbe435dd442">
+  <producedTypes>
+    <objectType typeId="14b71ebb-8ecd-46ee-9102-9c11f3230f16" valueTypeId="c6178499-df2d-4d26-becd-872238619552"/>
+    <managerType typeId="40b6128d-6004-405a-b4a8-ad0e099a8298" valueTypeId="0a1f38b3-3958-4f00-8526-9c87c673b6ce"/>
+  </producedTypes>
+  <name>ВыгрузкаДанныхМТ102</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка данных в формате МТ-102</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыгрузкаДанныхМТ102.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="2194d314-a129-4717-92be-564a55132a48">
+    <name>КаталогВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог выгрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f140eae5-b7a7-4d11-9a89-b724fa1f7705">
+    <name>Кодировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кодировка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a830952f-7aa3-447d-ae07-11948bbec6a7">
+    <name>ФорматФайлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формат файлов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cebfb6d7-1fb3-44cb-92c0-b64b23bb4dda">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПлатежноеПоручениеИсходящее</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0d4dc0e4-844f-4c59-9dda-0a7c2d1328ab">
+    <name>ПредставлениеНомераДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </synonym>
+    <comment>Представление номера документа</comment>
+    <type>
+      <types>EnumRef.ВидыПредставленийНомеровДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7d7982f7-eec3-49f5-9094-32955d9c15ed">
+    <name>ПриоритетСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срочное сообщение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d216e894-edda-4cfc-8b84-0e6ead2bf633">
+    <name>РассчитыватьКомиссиюБанкаПоКаждомуРаботнику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитывать комиссию банка по каждому работнику</value>
+    </synonym>
+    <comment>0 - сводно общей суммой, 1 - отдельно по каждому работнику</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="933b834a-9974-4cfa-a2c5-edaaad2f0707">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="080957b8-be0c-4b0d-a614-0d749d78d219">
+    <name>СписокДляЗачисленияНБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список для зачисления НБ</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5a34aeba-e831-42b9-9172-a71e72091b09">
+    <name>TextWriter1048KZ</name>
+    <synonym>
+      <key>ru</key>
+      <value>TextWriter1048KZ_dll</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

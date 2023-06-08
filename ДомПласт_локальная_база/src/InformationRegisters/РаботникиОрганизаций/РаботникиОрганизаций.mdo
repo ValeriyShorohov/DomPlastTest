@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32e16696-2c85-43d6-b50c-4e82c6ea85d3">
+  <producedTypes>
+    <selectionType typeId="cd3c241f-d93c-40fc-95a3-10ab4fdd1dc8" valueTypeId="5062f565-d862-4b81-85fe-138f21f1f5d1"/>
+    <listType typeId="d0ad32cd-c071-485a-b588-69bad1bd14e4" valueTypeId="10358714-a879-4dec-9e05-39c36af030d6"/>
+    <managerType typeId="4efe73cc-12f8-465f-be2d-5b62f2b5dfce" valueTypeId="5391bffa-6fbf-4423-8270-24174324b260"/>
+    <recordSetType typeId="127ec26d-89e7-4757-96b3-ed11e0549b71" valueTypeId="0b648a3a-5db5-42a2-a0fa-b0f00c346756"/>
+    <recordKeyType typeId="5152e4e2-3500-417b-9e7b-e51b8bc70164" valueTypeId="d4c87a99-0bad-4d07-ae1e-a6c52a87ab41"/>
+    <recordType typeId="5bbab4b3-b931-45e6-97c1-e898641c6c35" valueTypeId="f1f8a46d-34ee-4f0a-a920-909c0f771a9d"/>
+    <recordManagerType typeId="bdeca0ea-6a53-45ab-8fec-1f8762ea23cb" valueTypeId="d5f50551-dd61-4db0-9dd3-d88ab59eecc7"/>
+  </producedTypes>
+  <name>РаботникиОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кадровая история сотрудников (по организациям)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.РаботникиОрганизаций.Form.ФормаСреза</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <resources uuid="3a5465f4-3f3a-4d85-88ae-99f86f04c5fc">
+    <name>ЗанимаемыхСтавок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Занимаемых ставок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="86861cfe-d505-4902-a016-277d73772f07">
+    <name>ПодразделениеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b0db4893-e8d9-41da-b7ba-a181dff07a57">
+    <name>ПричинаИзмененияСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина изменения состояния</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПричиныИзмененияСостояния</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5f741096-98fc-4ac0-96b1-a4c2c204208d">
+    <name>ОбособленноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обособленное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="ed39588b-5eb3-46c5-a6d4-cea8436b058d">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="df97a35b-792b-4a13-b278-3d7377a37f39">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДолжностиОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c8e08dfe-2b73-4042-a508-7820dc29c063">
+    <name>ИсчислятьОППВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Необходимость исчисления ОППВ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>БЛ='Не исчислять ОППВ'; БИ='Исчислять ОППВ'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ='Не исчислять ОППВ'; БИ='Исчислять ОППВ'</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="342869b0-4e55-49a3-ae9c-ebd1dd21ecda">
+    <name>СтатьяЗаконаОТрудеРК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья ТК РК</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОснованияУвольненияИзОрганизации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="367eec71-9a07-4ba9-a77b-a50f6f463e4c">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СотрудникиОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="274663be-4ac9-4c0b-84c3-ac68572a3b53">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="31b66092-75fb-4297-ab1d-8fe779f70e31">
+    <name>ФормаСреза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма среза</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

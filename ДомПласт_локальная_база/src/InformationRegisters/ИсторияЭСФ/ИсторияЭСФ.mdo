@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63512372-9180-4e35-9625-3e4b46077596">
+  <producedTypes>
+    <selectionType typeId="01ae7f6d-c45b-493c-a631-9beef57a6c82" valueTypeId="1616be05-5e5e-4d7a-9ce4-5b88be19b458"/>
+    <listType typeId="47e6621a-f832-4b00-933f-b0135002981e" valueTypeId="81fe0345-481a-42cd-8d11-e034bfb27d80"/>
+    <managerType typeId="c90a5db8-89fa-4de2-a32c-c7799587a0dc" valueTypeId="21842b35-958b-420a-a45f-41001ac16bc2"/>
+    <recordSetType typeId="3a9d5409-87ca-4a55-a59b-40f5068099c5" valueTypeId="a1afd4fc-e3af-4211-b16e-4ced4642d134"/>
+    <recordKeyType typeId="87397b88-5206-4051-ba3b-03aa2998d9d8" valueTypeId="ca86fb80-8f78-4067-969c-1978a5f9a810"/>
+    <recordType typeId="eb5dc8db-192a-470b-973a-65b242759fab" valueTypeId="f673b9b3-ae00-48e5-9ffc-a4ccff0d8b39"/>
+    <recordManagerType typeId="4898760d-1cff-453d-ab6e-fec8075ec0ee" valueTypeId="fa9eccf6-a304-4f43-9aa3-9f47f5fc42a9"/>
+  </producedTypes>
+  <name>ИсторияЭСФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>История электронных счетов-фактур</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ИсторияЭСФ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ИсторияЭСФ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Событие электронного счета-фактуры</value>
+  </recordPresentation>
+  <resources uuid="1c05bbf0-6dc3-4914-a455-d0cae96f2025">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата присвоения состояния</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2b5dc882-59dd-426f-8945-b73c5379a2b1">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние электронного счета-фактуры</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="48d9a83f-5626-4929-9974-283fca96b618">
+    <name>ЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронный счет-фактура</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="efd6294c-68f1-4110-8c8c-1d0775aada24">
+    <name>НомерЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер записи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Порядковый номер записи</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="18a06c1e-0f08-4075-acbc-5d26a592ff7b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6dfacd13-de74-4f6a-8f26-4cceabd09d71">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

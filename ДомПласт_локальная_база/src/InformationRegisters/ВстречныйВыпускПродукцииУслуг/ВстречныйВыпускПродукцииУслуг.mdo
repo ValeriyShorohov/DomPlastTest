@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e001b3b4-619f-4350-ba87-0a526f275a55">
+  <producedTypes>
+    <selectionType typeId="a396cf88-ea7b-4a97-9e37-e7dc74cb1666" valueTypeId="e68c1f27-ba52-427b-a5f4-dcc22d97ba32"/>
+    <listType typeId="c6877b37-9feb-421c-96e4-7d48755507bc" valueTypeId="978356ec-1f35-49d0-bf53-beb5d91386bf"/>
+    <managerType typeId="6b61aa72-9445-4aff-9024-a1bdbcf05764" valueTypeId="c2934696-ec3f-4205-96b0-04ff54ff158c"/>
+    <recordSetType typeId="bbe526c9-0728-41a4-82b0-6039a04a1a78" valueTypeId="913d1972-dee9-4ad2-a180-6ff36b9bcfaa"/>
+    <recordKeyType typeId="602a9f4b-9b6d-4065-b002-4cbd2f8b7c28" valueTypeId="e3088566-2024-4353-a595-bc839a70c658"/>
+    <recordType typeId="60dd81ea-8e20-4432-82f4-d7d1498a9f20" valueTypeId="0e4a642b-1954-46cb-a20d-2a9e6a672909"/>
+    <recordManagerType typeId="f4021946-a53d-4406-9fa3-f6b8141f1b02" valueTypeId="ca4a8543-69bd-436b-af55-782dae97a32d"/>
+  </producedTypes>
+  <name>ВстречныйВыпускПродукцииУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Встречный выпуск продукции услуг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ВстречныйВыпускПродукцииУслуг.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВстречныйВыпускПродукцииУслуг.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Встречный выпуск продукции (услуги)</value>
+  </extendedRecordPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Встречный выпуск продукции (услуг)</value>
+  </extendedListPresentation>
+  <dimensions uuid="b26e7c64-0848-4e47-8b23-b69d5e00225c">
+    <name>Продукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукция (услуга)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="39fb7e3f-18d3-49e7-8709-09affb56e6d4">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение выпускающее</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7b1c19f1-a264-4c55-a6e8-211f1f2125be">
+    <name>НоменклатурнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="95420e01-75bc-4379-8ee4-3153ea2d4f73">
+    <name>ПодразделениеПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение встречного выпуска</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d4a30b84-05cf-407e-948a-086277195ab8">
+    <name>НоменклатурнаяГруппаПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурная группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5b181c52-e3cd-4391-a9a5-64b4cc5ca8a1">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dd6d8132-c9bd-408d-aa76-9316a37a5440">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

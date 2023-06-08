@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14488e82-03cc-45c1-a100-16c510a9e9d9">
+  <producedTypes>
+    <selectionType typeId="eb464951-148a-4513-b5fe-e9b45b1cdc5b" valueTypeId="dd495a05-8898-4ff1-9791-945546c99034"/>
+    <listType typeId="684cde7d-eeb2-4939-b066-58687a849e43" valueTypeId="60ef3c62-a041-46a8-ba10-0bb6e154e2c0"/>
+    <managerType typeId="2292d2fa-03d7-4ee8-a26a-fd1c67c51aa4" valueTypeId="efe27755-12b6-4d31-a677-879dd7209683"/>
+    <recordSetType typeId="8d080d6a-784a-44ac-93b1-6c9de0de290d" valueTypeId="3ab41fa5-5850-444c-88e6-49bf79ff7d21"/>
+    <recordKeyType typeId="8e8623a5-e80b-4e81-bd02-ea3a083ac7e0" valueTypeId="19e31f05-566d-4777-a97e-584d19fdada8"/>
+    <recordType typeId="dd65c6de-0276-4030-8731-3425a2ce5852" valueTypeId="cc13e87b-3f04-4d20-a464-b8482819df72"/>
+    <recordManagerType typeId="40fa11c4-d7e8-4f1b-9f82-3cd11ed459c9" valueTypeId="4d9b33a7-6475-4e38-92fd-5ca530711308"/>
+  </producedTypes>
+  <name>УдалитьСтратегииРедактированияНомеровОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Удалить стратегии редактирования номеров объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <resources uuid="354b9600-f99f-4a76-846f-c45adf623f79">
+    <name>СтратегияРедактированияНомераОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стратегия редактирования номера объекта</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтратегияРедактированияНомеровОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2653ebf7-7908-4e71-8db4-0285e26bcbba">
+    <name>ТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f98a51a6-8a69-4fac-bff9-7cf31e6f31ab">
+    <name>ВидОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

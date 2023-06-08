@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dee833d-3fa5-45a8-bae2-6c59711572b9">
+  <producedTypes>
+    <selectionType typeId="4ca57ad1-c219-4738-8aa5-7af0e5fdb780" valueTypeId="26925448-09de-48c5-9c23-43eca6062ab1"/>
+    <listType typeId="98725174-8804-4ca6-8401-54ef61627e19" valueTypeId="61b654ec-1f55-4a9b-b099-19d57b00742f"/>
+    <managerType typeId="7bba3326-5b91-4fd8-9915-24e46785c492" valueTypeId="69bb7b1e-3c46-4a2e-ad10-f1f5b38a18c6"/>
+  </producedTypes>
+  <name>ДокументыПоставщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы поставщиков</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоставщиков.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ВозвратТоваровПоставщику</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеДопРасходов</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеТоваровУслуг</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураПолученный</registeredDocuments>
+  <registeredDocuments>Document.ПлатежноеПоручениеИсходящее</registeredDocuments>
+  <registeredDocuments>Document.ГТДИмпорт</registeredDocuments>
+  <registeredDocuments>Document.РасходныйКассовыйОрдер</registeredDocuments>
+  <registeredDocuments>Document.ПлатежныйОрдерСписаниеДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеНМА</registeredDocuments>
+  <registeredDocuments>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов</registeredDocuments>
+  <columns uuid="5b879272-9c4c-43c8-b36e-639a66a375e2">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.Автор</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.Автор</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Автор</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Автор</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Автор</references>
+    <references>Document.СчетФактураПолученный.Attribute.Автор</references>
+    <references>Document.ГТДИмпорт.Attribute.Автор</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Автор</references>
+    <references>Document.ПоступлениеНМА.Attribute.Автор</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.Автор</references>
+  </columns>
+  <columns uuid="bf9e2bc0-fa0f-44c1-9699-a316707a7a3d">
+    <name>ВалютаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ПоступлениеДопРасходов.Attribute.ВалютаДокумента</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.ВалютаДокумента</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.ВалютаДокумента</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.ВалютаДокумента</references>
+    <references>Document.ГТДИмпорт.Attribute.ВалютаДокумента</references>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.ВалютаДокумента</references>
+    <references>Document.СчетФактураПолученный.Attribute.ВалютаДокумента</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.ВалютаДокумента</references>
+    <references>Document.ПоступлениеНМА.Attribute.ВалютаДокумента</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="565ac8a0-f5f0-4398-b7ea-98675ba29fee">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <references>Document.ПоступлениеДопРасходов.Attribute.ДоговорКонтрагента</references>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.ДоговорКонтрагента</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.ДоговорКонтрагента</references>
+    <references>Document.СчетФактураПолученный.Attribute.ДоговорКонтрагента</references>
+    <references>Document.ПоступлениеНМА.Attribute.ДоговорКонтрагента</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.ДоговорКонтрагента</references>
+  </columns>
+  <columns uuid="85533486-51d8-471e-a3ea-dc70bc3ebaae">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.Комментарий</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Комментарий</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Комментарий</references>
+    <references>Document.СчетФактураПолученный.Attribute.Комментарий</references>
+    <references>Document.ГТДИмпорт.Attribute.Комментарий</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеНМА.Attribute.Комментарий</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="1eba6e1b-5a9b-4f01-b2d0-e5d79d85a2db">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.Контрагент</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.Контрагент</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Контрагент</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Контрагент</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Контрагент</references>
+    <references>Document.ГТДИмпорт.Attribute.Контрагент</references>
+    <references>Document.СчетФактураПолученный.Attribute.Контрагент</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Контрагент</references>
+    <references>Document.ПоступлениеНМА.Attribute.Контрагент</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="1528b1a2-060e-4516-839a-66bee9b74f3b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.Организация</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.Организация</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Организация</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Организация</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Организация</references>
+    <references>Document.СчетФактураПолученный.Attribute.Организация</references>
+    <references>Document.ГТДИмпорт.Attribute.Организация</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Организация</references>
+    <references>Document.ПоступлениеНМА.Attribute.Организация</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.Организация</references>
+  </columns>
+  <columns uuid="c857fedf-64d1-44e3-bd1f-70db5ae50eb1">
+    <name>Ответственый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.Ответственный</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.Ответственный</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Ответственный</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.Ответственный</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Ответственный</references>
+    <references>Document.ГТДИмпорт.Attribute.Ответственный</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Ответственный</references>
+    <references>Document.ПоступлениеНМА.Attribute.Ответственный</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="581bba47-0fa8-437e-aa56-2c22bce551f5">
+    <name>УчитыватьКПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать КПН</value>
+    </synonym>
+    <references>Document.ПоступлениеНМА.Attribute.УчитыватьКПН</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.УчитыватьКПН</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.УчитыватьКПН</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.УчитыватьКПН</references>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.УчитыватьКПН</references>
+    <references>Document.ГТДИмпорт.Attribute.УчитыватьКПН</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.УчитыватьКПН</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.УчитыватьКПН</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.УчитыватьКПН</references>
+  </columns>
+  <columns uuid="8d04429a-bc95-4509-ac88-3a67d4ead73c">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <references>Document.ПоступлениеДопРасходов.Attribute.РучнаяКорректировка</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.РучнаяКорректировка</references>
+    <references>Document.ГТДИмпорт.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.РучнаяКорректировка</references>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПоступлениеНМА.Attribute.РучнаяКорректировка</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.РучнаяКорректировка</references>
+    <references>Document.СчетФактураПолученный.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="934d5425-39b6-4ac4-8e02-ce9d690ac53e">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.СуммаДокумента</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.СуммаДокумента</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.СуммаДокумента</references>
+    <references>Document.СчетФактураПолученный.Attribute.СуммаДокумента</references>
+    <references>Document.ГТДИмпорт.Attribute.СуммаДокумента</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеНМА.Attribute.СуммаДокумента</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="6af5de9f-f3ea-4353-bd2b-3b46d64d321c">
+    <name>ВидУчетаНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид учета НУ</value>
+    </synonym>
+    <references>Document.ПоступлениеНМА.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.ВидУчетаНУ</references>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.ВидУчетаНУ</references>
+    <references>Document.ГТДИмпорт.Attribute.ВидУчетаНУ</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.ВидУчетаНУ</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.ВидУчетаНУ</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.ВидУчетаНУ</references>
+  </columns>
+  <columns uuid="9a68561b-0887-4e8f-a7cf-cdc8fa725bd0">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <references>Document.ПоступлениеНМА.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ПлатежноеПоручениеИсходящее.Attribute.СтруктурноеПодразделениеОтправитель</references>
+    <references>Document.СчетФактураПолученный.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.СтруктурноеПодразделениеОтправитель</references>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ГТДИмпорт.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.СтруктурноеПодразделениеОтправитель</references>
+    <references>Document.ПоступлениеДопРасходов.Attribute.СтруктурноеПодразделение</references>
+    <references>Document.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов.Attribute.СтруктурноеПодразделение</references>
+  </columns>
+  <columns uuid="76eda969-b43d-41be-ab45-96ebcf6a0150">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.ВозвратТоваровПоставщику.Attribute.Склад</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Склад</references>
+  </columns>
+  <columns uuid="b8948c95-c260-4e4b-9b79-63a905dfced7">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Касса</references>
+  </columns>
+  <forms uuid="ec20fc77-746a-4875-abe0-4b4e83a93a5e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61ac1b27-4501-4eb3-8db4-7fa5b20c9fd9">
+  <producedTypes>
+    <objectType typeId="f17db618-a51c-41c7-9918-d5c48dd1340d" valueTypeId="5e79613c-8593-43e9-a727-1346d1bfc9c4"/>
+    <refType typeId="9806cf58-feb1-48ea-8da6-14a3a18b5048" valueTypeId="f124154c-4456-4dff-bbee-a69446c74be0"/>
+    <selectionType typeId="6ed2eaef-49b9-4ce2-b705-04d748d279de" valueTypeId="2e57453b-bea9-4f8b-bbdf-2b58aa7ce8d6"/>
+    <listType typeId="4089e5a2-f5b8-410d-8ca9-144e3859b4ea" valueTypeId="868b33d7-b89c-4119-94be-8895624da759"/>
+    <managerType typeId="e8692805-2c3f-4a64-abdb-a15d718f2d3b" valueTypeId="105f2b90-1587-4576-b1d0-2a50a0958090"/>
+  </producedTypes>
+  <name>Резервы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Резервы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Резервы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Резервы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Резерв</value>
+  </extendedObjectPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Резервы</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Резервы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Резервы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Резервы.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="27e5b19d-1537-47b6-9f79-bdf9874736c9">
+    <name>ВидРезерва</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид резерва</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыРезервов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="38e4f8b8-cdf8-4484-87fa-86a6927f5e03">
+    <name>СтатьяЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья затрат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиЗатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3e2bf7b0-1ca3-4974-b442-ea4bf40f1783">
+    <name>ПринятиеКВычетуПоНалоговомуУчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принятие к вычету по налоговому учету</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="8a9e422e-935e-4aac-b222-78df54e2590e">
+    <producedTypes>
+      <objectType typeId="ae8679b8-4138-46c2-9cc5-a63153c30bf0" valueTypeId="169ecbeb-3d5f-4ce7-a087-833cdddef2e2"/>
+      <rowType typeId="070e2501-9d1c-4372-969d-578e125eaf32" valueTypeId="f060becb-f98d-4d58-8734-939713ae893b"/>
+    </producedTypes>
+    <name>БазовыеВидыРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовые виды расчетов</value>
+    </synonym>
+    <attributes uuid="41b6e202-87a1-405d-9675-78763c99620d">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.ОсновныеНачисленияОрганизаций</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="d584efca-2405-4e5f-8192-04008749e397">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="06a7d4ae-f67b-4219-a017-6348bf846bb2">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="19673ba8-b9d4-4291-85a5-cdc719481fc2">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

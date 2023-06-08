@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4501b222-4598-4fac-9d65-09bf465e17b3">
+  <producedTypes>
+    <objectType typeId="1328376a-09e4-493e-8317-849652a4937f" valueTypeId="b2e95b09-ad12-4b57-9256-7dafdeaec663"/>
+    <managerType typeId="b0079fab-b679-4698-a015-5f2e1c02b2dc" valueTypeId="c33c4290-b27c-4aa8-8975-83469774cee6"/>
+  </producedTypes>
+  <name>УдалитьКатегорииОбъекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Категории объекта</value>
+  </synonym>
+  <defaultForm>DataProcessor.УдалитьКатегорииОбъекта.Form.КатегорииОбъекта</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <attributes uuid="8abf8e20-8852-470a-b5e8-4e9face652b2">
+    <name>НазначениеКатегорий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение категорий</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+      <types>ChartOfCharacteristicTypesRef.УдалитьНазначенияСвойствКатегорийОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="89993794-53aa-4516-9944-0d5cd919c911">
+    <name>ОбъектОтбораКатегорий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект отбора категорий</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+      <types>CatalogRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="84efa4a7-3205-4882-87c4-c9f57b3e79f3">
+    <producedTypes>
+      <objectType typeId="39d32fa3-0c69-4829-9aa4-ac2752813d27" valueTypeId="ef027b6c-3cf3-415e-9dff-10ba1752a569"/>
+      <rowType typeId="18e9d860-27c0-4c93-aad7-51545c90efb0" valueTypeId="d2c820a3-abf5-452c-a385-fe79a7f5b2d3"/>
+    </producedTypes>
+    <name>КатегорииОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категории объекта</value>
+    </synonym>
+    <attributes uuid="7930c9b2-98fc-42d6-904a-5264982c1223">
+      <name>ИндексКартинки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Индекс картинки</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ca63f1c8-8beb-4c39-9317-968fae2d9836">
+      <name>Категория</name>
+      <synonym>
+        <key>ru</key>
+        <value>Категория</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УдалитьКатегорииОбъектов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5b985643-ce05-4e56-b48e-b60608f31460">
+      <name>Принадлежность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Принадлежность</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="64d5f223-54d5-4b7c-b765-2b1d4fe8f5b1">
+    <name>КатегорииОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категории объекта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

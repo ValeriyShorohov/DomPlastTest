@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22654495-b746-4e5f-9040-85efae597000">
+  <producedTypes>
+    <selectionType typeId="e9ad05ea-47a3-4692-9c98-a5ded089072e" valueTypeId="e168bdfb-b7ec-48fa-9b1a-3b2b4b751090"/>
+    <listType typeId="611ed698-501d-415e-8b23-21e437ce4511" valueTypeId="4254b9df-ee41-456e-81d6-ddc779b2de2a"/>
+    <managerType typeId="f5c987bf-3880-4bf8-8d00-e9b3a1ba39b6" valueTypeId="beca2cb9-64a9-4475-9611-c2c23797844a"/>
+    <recordSetType typeId="63feae40-cc1b-4916-9198-edc21b110833" valueTypeId="53a0a6c4-c751-4b4e-8ab2-a39b82e660f8"/>
+    <recordKeyType typeId="da5ea7d3-813b-4647-94ae-80216e1deb87" valueTypeId="c8e005ec-87a6-4d19-9796-7c86d7e5e6e2"/>
+    <recordType typeId="463dcd17-1e45-4cd2-a7c9-697665c0a55a" valueTypeId="4d4699db-d009-4a1e-8512-601756aa20a2"/>
+    <recordManagerType typeId="7cc8da6e-5fdb-413f-a735-0ce229a14bc4" valueTypeId="e8fb7913-a1f6-4163-9ab9-da34b1b0657a"/>
+  </producedTypes>
+  <name>УдалитьНазначениеВидовОбъектовДоступа</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не Использовать) Назначение видов объектов доступа</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dimensions uuid="9d1a5e0c-da50-4e19-910e-eb840d7ee74e">
+    <name>ГруппаПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа пользователей</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b9b0ca28-a8b0-464d-9ceb-147bc6a2cd89">
+    <name>ВидОбъектаДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид объекта доступа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УдалитьВидыОбъектовДоступа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

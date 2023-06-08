@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2945ccf-9876-402e-8440-3b977832b935">
+  <producedTypes>
+    <selectionType typeId="7fc14f60-c18c-4d75-bb81-5fb3c26bab7c" valueTypeId="c375a889-ebf7-462a-b6df-5fc7f26fc0cc"/>
+    <listType typeId="7f8804b9-0765-43ab-ba8a-fa02e731db83" valueTypeId="98f43e78-39e1-4ff6-8513-d30cb57decbb"/>
+    <managerType typeId="f7e8989e-7845-494e-b3ac-c8d1461d6476" valueTypeId="4417bdba-8ed0-4d68-b9b8-697646801414"/>
+    <recordSetType typeId="a6e39b27-0d0d-4ddb-9f78-8d0d004ad401" valueTypeId="ef9984bd-bd55-40ea-8494-9d4496451ad5"/>
+    <recordKeyType typeId="3d04929b-1226-4608-8c5c-09a4ac88424d" valueTypeId="8202498a-70a2-473f-8f0a-1c685d5589ae"/>
+    <recordType typeId="619ee84e-788d-4841-985f-2e7a4d159468" valueTypeId="ee9935db-7331-4198-b42b-564ca102bdde"/>
+    <recordManagerType typeId="cbb3e679-ca83-4327-b734-6a9c063bf20f" valueTypeId="8d8bbcc5-a58b-42bb-becc-a04156bb5b50"/>
+  </producedTypes>
+  <name>ПорядокЗакрытияПодразделенийОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок подразделений для закрытия счетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.ПорядокЗакрытияПодразделенийОрганизаций.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="04a5bd35-c1cd-4439-a563-5643f7e368b5">
+    <name>НомерПередела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер передела</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="91e5c7d2-e4b5-4d09-a907-b124fbd76102">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a015ab8f-0307-4610-815e-dc10a6100a5f">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="456b467c-e4d3-4f92-a11b-4ee95689c70f">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="dd2bf115-d87a-4c1d-82e2-1b2d169b2c87">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="099f744f-79d3-4f6a-ae6a-87592ac3acdc">
+  <producedTypes>
+    <objectType typeId="b7aa96aa-7a0e-44b4-8cb7-ea50dece4522" valueTypeId="ec420a29-dfe1-4b41-886c-3d4354875e69"/>
+    <managerType typeId="52f53443-f8cd-4d65-a0ba-c86750070ce7" valueTypeId="254e5572-1ba3-4547-a4b7-1475bbb7b1df"/>
+  </producedTypes>
+  <name>ЭкспрессПроверкаВеденияУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экспресс-проверка ведения учета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЭкспрессПроверкаВеденияУчета.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="9d87984c-a99e-46e3-a335-42737945423d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f9ceb46c-fd76-414a-a21e-4300288de041">
+    <name>ДатаНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период с</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4904a9d6-6d03-4029-b2a6-4301dd41db53">
+    <name>ДатаКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="33f41cdc-d8a0-4611-b17d-4c007d8fe1ab">
+    <name>ВходящиеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входящие данные</value>
+    </synonym>
+    <comment>Дополнительные данные для проверок (соответствие, ключ - организация, значение - структура данных)</comment>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b45fb87b-b0fd-4d72-bfb9-a3cadb06b7de">
+    <name>НаименованиеПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование проверки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="82771a49-5d9a-4a92-8135-1deaa215091a">
+    <name>ИсходящиеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходящие данные</value>
+    </synonym>
+    <comment>Результаты вычислений, которые делаются проверками (структура)</comment>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ad127022-7b23-4c97-ae2d-44d74601e2de">
+    <name>СохраненныеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненные настройки</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a576ce87-541d-4cbc-b848-c0d5c68c12df">
+    <name>ДеревоПроверок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дерево проверок</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9eacc7b3-0113-4889-b864-97bbe825f7a8">
+    <name>ПериодПроверкиСтрокой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период проверки строкой</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1bf152e7-4888-4a51-8725-2a61f670a8d5">
+    <name>СтруктурноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурное подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="fd794289-caaf-4109-983a-42a2eddc4bc9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экспресс-проверка ведения учета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1034e381-392e-4d37-9e94-89265a22d8df">
+    <name>МакетОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет отчета</value>
+    </synonym>
+  </templates>
+  <templates uuid="73c28f43-222a-4dd7-a387-910f51d04e8a">
+    <name>НаборПравилПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор правил проверки</value>
+    </synonym>
+  </templates>
+  <templates uuid="894933fe-b054-4c1b-98f7-a75aaf22000b">
+    <name>ПроверкаВыпискиСчетовФактур</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка выписки счетов фактур</value>
+    </synonym>
+  </templates>
+  <templates uuid="59fd2857-7634-40dc-a2ea-49832b16875c">
+    <name>СвоевременнаяВыпискаЭСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Своевременная выписка ЭСФ</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

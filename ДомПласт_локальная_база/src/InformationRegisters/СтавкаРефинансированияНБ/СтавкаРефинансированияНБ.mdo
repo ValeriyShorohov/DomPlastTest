@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1d2e658-100c-4673-bde9-9a577f2cca35">
+  <producedTypes>
+    <selectionType typeId="17318f32-d43f-4687-8bf6-5fb90f216a04" valueTypeId="b79d628f-2ed1-45df-944a-e26247b88bd6"/>
+    <listType typeId="581bbc20-e591-4eff-b3d0-6780772435b6" valueTypeId="04112a98-c325-4065-a11c-71b6e090ca56"/>
+    <managerType typeId="89370129-7410-419f-9952-b2affbe0a775" valueTypeId="0ca31470-39c6-4be8-bb26-0e0e3337112a"/>
+    <recordSetType typeId="3d5cd62e-846a-40ad-9c87-04f5c066e60c" valueTypeId="64b4403f-b561-49ca-838e-e7e45985ff69"/>
+    <recordKeyType typeId="0e6785d0-c3c8-4a5c-90c3-3dfd1b01256a" valueTypeId="f4d1fff6-3f29-4543-9c64-08ae3e00303f"/>
+    <recordType typeId="52f694f7-d5c3-4878-8172-8b8434e13a66" valueTypeId="60b1d702-71e8-4229-a609-f4aef8e9c4ec"/>
+    <recordManagerType typeId="6f93701c-dad4-4c61-9425-5d49c0439924" valueTypeId="1edb71a7-24c3-4c46-9b8d-642a3bc3fdf4"/>
+  </producedTypes>
+  <name>СтавкаРефинансированияНБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки рефинансирования НБ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.СтавкаРефинансированияНБ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СтавкаРефинансированияНБ.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Ставка рефинансирования НБ</value>
+  </recordPresentation>
+  <resources uuid="e8e627d5-9099-4adb-9bec-436d7c3c7942">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <forms uuid="d6ec80d6-5a52-4b50-8210-aef1782a3dcd">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9260d292-beb3-4194-8b3f-0dd9382ed226">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

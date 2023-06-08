@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="963e412e-a63f-48af-9417-25cd0efb6c6f">
+  <producedTypes>
+    <objectType typeId="2eb26dab-d625-48e6-85e8-3b7750032153" valueTypeId="e441f7d9-71c7-4b16-b5ba-34e265864b77"/>
+    <refType typeId="c6ba2f80-d2bd-4830-ad0b-9d8a3d1c4fac" valueTypeId="1702b97b-d640-4d1d-a612-4deeab28d4fc"/>
+    <selectionType typeId="643a6b5c-c11d-4cca-8563-4a1ca4f110fe" valueTypeId="744429a8-68f4-4262-919e-cae3bc461114"/>
+    <listType typeId="dc54fb22-c418-43f1-ace1-f37db820d069" valueTypeId="412edec6-0105-4703-953a-f115ceb4471d"/>
+    <managerType typeId="92a2994e-845f-48fb-9e6a-67ac00af02f2" valueTypeId="c242f561-999b-41d2-8979-f3bf23fa1db4"/>
+  </producedTypes>
+  <name>СпособыНалогообложенияДоходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы налогообложения доходов</value>
+  </synonym>
+  <comment>Способы налогообложения доходов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СпособыНалогообложенияДоходов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СпособыНалогообложенияДоходов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Способ налогообложения доходов</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="317f8734-535f-469e-8a8f-9f2c68bc8baf">
+      <name>НеОблагаетсяЦеликом</name>
+      <description>Не облагается целиком</description>
+      <code xsi:type="core:StringValue">
+        <value>000002   </value>
+      </code>
+    </items>
+    <items id="f5bc8a43-ec76-4064-9af5-1c998cccbb76">
+      <name>ОблагаетсяЦеликом</name>
+      <description>Облагается целиком</description>
+      <code xsi:type="core:StringValue">
+        <value>000001   </value>
+      </code>
+    </items>
+    <items id="1f76dca8-02c4-40e1-9ffc-3f578d281848">
+      <name>ОблагаетсяЧастичноПп9Ст156</name>
+      <description>Облагается частично согласно пп. 11 п. 1 ст. 341 НК РК (выигрыши по лотерее)</description>
+      <code xsi:type="core:StringValue">
+        <value>000005   </value>
+      </code>
+    </items>
+    <items id="d5e9ba1f-fa3b-4b31-89d1-1cb0c3255671">
+      <name>ОблагаетсяЧастичноПп8Ст144</name>
+      <description>Облагается частично согласно пп. 12 п. 1 ст. 341 НК РК (общественные работы, профессиональное обучение)</description>
+      <code xsi:type="core:StringValue">
+        <value>000003   </value>
+      </code>
+    </items>
+    <items id="e7d736d9-81fd-4531-a631-086604e3d5ea">
+      <name>ОблагаетсяЧастичноПп15Ст144</name>
+      <description>Облагается частично согласно пп. 18 п. 1 ст. 341 НК РК (медицинские услуги, при рождении ребенка, на погребение)</description>
+      <code xsi:type="core:StringValue">
+        <value>000004   </value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СпособыНалогообложенияДоходов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СпособыНалогообложенияДоходов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СпособыНалогообложенияДоходов.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="8c575f22-61dc-424a-a387-ac950bc7d521">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c3555e17-21eb-42f9-aa44-cebd749090de">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="883491e3-4736-48c8-bdd0-61fb8385ee41">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5f5e774-2192-4221-9f32-ec6c7a9713da">
+  <producedTypes>
+    <objectType typeId="06a2bb51-3c76-4278-80df-37ab90c26fff" valueTypeId="b050b8ca-9105-4e7a-8f41-84fc2dc7e636"/>
+    <managerType typeId="91387b64-3daa-48c8-ab86-cf5c9808a57f" valueTypeId="aec33af5-e5e8-41ed-9883-083260c5d214"/>
+  </producedTypes>
+  <name>УдалитьСообщенияВыполняемыхДействий</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Сообщения выполняемых действий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УдалитьСообщенияВыполняемыхДействий.Form.Форма</defaultForm>
+  <attributes uuid="86b56439-827b-48c2-9759-8138459afe32">
+    <name>Сообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщения</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0e52c10e-8525-42f7-855e-09a1a6329c5d">
+    <name>СвернутьПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свернуть по умолчанию</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="cceea492-2a47-46b2-a1a9-ff35d27cb2a5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

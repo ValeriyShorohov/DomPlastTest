@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f9ee610-8d94-4785-9c00-1d75e30c75e3">
+  <producedTypes>
+    <objectType typeId="44874952-7d3e-4e40-a8dd-80e6be2b8a7d" valueTypeId="b6859d63-a662-4d30-84b6-04fab5c71a33"/>
+    <managerType typeId="010e1eea-22ac-47a9-83cd-d063fc4367b1" valueTypeId="d318dc4f-8cea-4376-9325-41abda6be319"/>
+  </producedTypes>
+  <name>ДвиженияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения документа по регистрам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДвиженияДокумента.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДвиженияДокумента.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <includeHelpInContents>true</includeHelpInContents>
+  <attributes uuid="a5be6615-5c16-41a7-9c58-e35060700076">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ отчета</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="a99bb08c-a4a4-47ad-8712-28339874d89f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="85742a68-92da-4350-9080-0ecd1ad1ef86">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="a16d18fd-0fcc-4369-866d-aff5daa16d9b">
+    <name>ДвиженияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения документа по регистрам</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

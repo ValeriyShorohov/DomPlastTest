@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6b3c0d0-f65c-4757-97c5-76578adf2c0e">
+  <producedTypes>
+    <objectType typeId="fd193f04-f44d-4e37-879f-fb08b917a348" valueTypeId="1047d860-37f6-4d5e-bfbc-e762189cf948"/>
+    <refType typeId="9ea66975-1d26-4350-87c6-05598884b124" valueTypeId="c447dc97-6fa8-4016-a859-037e24cc860d"/>
+    <selectionType typeId="f2220b29-2132-4fc0-9b6c-4066b5ee5ea1" valueTypeId="26b7e8dc-4588-4b92-b2c3-af2e778a1894"/>
+    <listType typeId="052b706c-3c89-4136-8cb3-f9000000a829" valueTypeId="046db2ba-4183-461a-95db-88b7026ac718"/>
+    <managerType typeId="99bb4ece-e9b5-4684-ab5e-a1c62f054ba6" valueTypeId="da0bd1c5-3b68-45c0-8d2b-f4eeb1ba68ab"/>
+  </producedTypes>
+  <name>УдалитьХранилищеДополнительнойИнформации</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Хранилище дополнительной информации</value>
+  </synonym>
+  <comment>Хранилище дополнительной информации</comment>
+  <inputByString>Catalog.УдалитьХранилищеДополнительнойИнформации.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="bcedc845-06ed-41b5-b541-a26de5844562">
+    <name>ВидДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид данных</value>
+    </synonym>
+    <comment>Вид данных</comment>
+    <type>
+      <types>EnumRef.УдалитьВидыДополнительнойИнформацииОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="83a59e49-dc27-463f-bd77-07aa84266a8e">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <comment>Имя файла</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b22f0468-7375-4f4a-9416-37028f7f52db">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment>Объект</comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78719a8f-27d7-4554-a1a6-550fa9655aae">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <comment>Хранилище</comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb251878-ef5f-45a4-9a9f-ba0e448269b7">
+    <name>ПрисоединенныйФайл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Присоединенный файл</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОрганизацииПрисоединенныеФайлы</types>
+      <types>CatalogRef.КонтрагентыПрисоединенныеФайлы</types>
+      <types>CatalogRef.НоменклатураПрисоединенныеФайлы</types>
+      <types>CatalogRef.ФизическиеЛицаПрисоединенныеФайлы</types>
+      <types>CatalogRef.ДоговорыКонтрагентовПрисоединенныеФайлы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Присоединенный файл, к которому относятся данные. Необходим для перехода редакции 2.0 на редакцию 3.0</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

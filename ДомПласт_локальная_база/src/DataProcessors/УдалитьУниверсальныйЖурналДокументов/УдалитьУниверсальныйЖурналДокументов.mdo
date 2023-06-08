@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb7d3261-f825-40d0-88dc-3dd76a35806c">
+  <producedTypes>
+    <objectType typeId="9e38505d-43f2-455d-bfc1-680e0d1033e5" valueTypeId="36a8fbdb-6e94-4b58-8096-e60d533550be"/>
+    <managerType typeId="5ce2ca2e-2289-4e05-9c48-2bc20569ce55" valueTypeId="76ef0829-cc7b-4971-bfc1-1c72895f3b58"/>
+  </producedTypes>
+  <name>УдалитьУниверсальныйЖурналДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Универсальный журнал документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УдалитьУниверсальныйЖурналДокументов.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="2148d34c-cb55-461e-b87a-2f1caeb9b27f">
+    <name>НастройкаКолонокТабличногоПоля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка колонок табличного поля</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e973b915-4d43-42af-b910-e74f6131ee09">
+    <name>НастройкаПериодаЖурнала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка периода журнала</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c53046c4-60be-4e7a-8b62-35e94a19a352">
+    <name>СохраненноеЗначениеНастройкиПостроителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненное значение настройки построителя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="da0b6ab7-3cf2-450a-a41b-904963c96c5c">
+    <producedTypes>
+      <objectType typeId="53e28cc6-045f-4a92-8b1f-d5e82486a346" valueTypeId="ad6b9652-7dce-477d-b735-fc4330776f87"/>
+      <rowType typeId="6450d2dd-07ca-4079-b613-3f84bbd332d2" valueTypeId="a3f30405-386b-49fe-a073-8ac7f0f4b95d"/>
+    </producedTypes>
+    <name>ДоступныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступные документы</value>
+    </synonym>
+    <attributes uuid="ea40cc55-1524-4678-8494-14a31767fa56">
+      <name>ИмяДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя документа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="6235b39a-1442-4e51-8c8d-cf9599adcea6">
+    <producedTypes>
+      <objectType typeId="9f19eb8c-bfee-4536-8a1e-488c632598a4" valueTypeId="fc714c04-0e6a-4793-b445-82cb8fa79f31"/>
+      <rowType typeId="91a79a17-78a3-4dd4-aa94-af0aa0624f58" valueTypeId="5bc65be4-60ff-4561-85fd-a5967a18f95a"/>
+    </producedTypes>
+    <name>ВыводимыеГрафы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводимые графы</value>
+    </synonym>
+    <attributes uuid="51504ffa-6d1f-4359-8697-2409bf0f7442">
+      <name>ГрафаЖурнала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Графа журнала</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7f0f8278-7042-4e97-8d7d-30e0046dda35">
+      <name>СоставГрафы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состав графы</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="126e0b16-1124-49b2-a4df-e7e4d010278f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d853f9d4-97d4-473a-aa4c-805de5e64cb2">
+    <name>МакетСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>МакетСписка</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="acc426d2-e6c1-4404-b1dc-e489609350a7">
+  <producedTypes>
+    <objectType typeId="2fc20500-540e-4abe-b600-43bcf2f35d2c" valueTypeId="61dc12b8-1894-4d73-9ac5-bc82444bfdee"/>
+    <refType typeId="b4817fbd-4080-4313-9d40-f94ab734a845" valueTypeId="ab7f1442-2524-44bc-bbad-4923175b16c2"/>
+    <selectionType typeId="82e2eff2-70ea-4332-ba2d-094bdeb124ea" valueTypeId="7d4ba5a7-54b8-474a-8c55-1407ae2648f8"/>
+    <listType typeId="3ee74cd0-04eb-4d57-b072-ed5fff2b5762" valueTypeId="f95bbfcc-61cd-4ac9-b60c-8932c82e1f4d"/>
+    <managerType typeId="5f9cf50b-c357-496a-b200-f5fa8ac6d353" valueTypeId="0eafcd7f-141c-41de-86ec-b379c7102c50"/>
+  </producedTypes>
+  <name>ВидыНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыНоменклатуры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыНоменклатуры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид ТМЗ</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Виды ТМЗ</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f3cf39c9-61f8-40f8-86ec-c7e6c981fad0">
+      <name>ГотоваяПродукция</name>
+      <description>Готовая продукция</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="4e82a03f-be59-4459-83cf-8f58bced3226">
+      <name>Прочее</name>
+      <description>Прочее</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="613bbe29-70cd-4b9d-86e3-fde6547ffbab">
+      <name>ПрочиеТовары</name>
+      <description>Прочие товары</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="4103861c-7beb-44a9-b445-51e3b50145cb">
+      <name>СырьеИМатериалы</name>
+      <description>Сырье и материалы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="6004c28d-5e89-4043-900e-afccaf829f56">
+      <name>ТоварыПриобретенные</name>
+      <description>Товары приобретенные</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="bd6b652d-b6fc-4da6-9a56-55383027b7df">
+      <name>Топливо</name>
+      <description>Топливо</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+  </predefined>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыНоменклатуры.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыНоменклатуры.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="ec95ac7d-25d6-4a5a-a687-e29e789954cd">
+    <name>ГруппаТМЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа ТМЗ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ГруппыТМЗ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fd7e1432-d8ab-4290-af68-a7882cf1de42">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ca571030-9cf3-4cc6-af2d-ce72502bfd91">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f774b31b-2fb6-443d-a3a6-b35ea1edc285">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

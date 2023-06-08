@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c3cc169-24f6-4c7d-9415-6fa81206776d">
+  <producedTypes>
+    <selectionType typeId="cf6ac6aa-4763-4797-abda-9c1f29b1f719" valueTypeId="7350cc3b-bcf3-4cde-bf69-a8fe5a6cd020"/>
+    <listType typeId="768ee302-d5d4-40e1-8d95-3b85ba218fb9" valueTypeId="9ab02a77-c78a-4db3-a478-d53ba3b862a6"/>
+    <managerType typeId="3074ffd5-a143-4a50-bcac-352d53663070" valueTypeId="5fe6023a-65e5-4e25-a690-0de86723e13e"/>
+    <recordSetType typeId="b3d7ffc7-c6e7-474e-aa17-4be6b9a0f3a1" valueTypeId="5763a563-961e-4147-9c78-6ad98a718cd8"/>
+    <recordKeyType typeId="e11e3ef8-1d8f-4260-a96a-16484dc2de77" valueTypeId="3fdeb92c-cc4d-4368-9cb6-ca99bdc3201b"/>
+    <recordType typeId="b0fcabce-50aa-4203-8876-3ba57c1592ec" valueTypeId="84338f02-beff-4a4d-9525-7e74a2634ba4"/>
+    <recordManagerType typeId="02e06b5a-5981-46bb-ba8e-e26be2e7a076" valueTypeId="7456146d-f2c0-43e5-abca-4bb95822fe0b"/>
+  </producedTypes>
+  <name>КодыСтрокДекларацииПоСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды строк декларации по ИПН и СН</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.КодыСтрокДекларацииПоСН.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КодыСтрокДекларацииПоСН.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Quarter</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Код строки декларации по ИПН и СН</value>
+  </recordPresentation>
+  <resources uuid="d6e14ae3-fa08-4dbc-a794-af6ccd0560ea">
+    <name>КодСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код строки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="03eb8da1-1694-4de0-922e-281dc783b09e">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.ОсновныеНачисленияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a67996b1-04f2-475a-954f-2879039c77f3">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7658fd78-e50f-4225-a6f5-93271b6f08c6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="33d84ecc-2b8d-48cf-909e-647f8b9ec551">
+    <name>МакетСопоставленияКодовСтрокДекларации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет сопоставления кодов строк декларации</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>

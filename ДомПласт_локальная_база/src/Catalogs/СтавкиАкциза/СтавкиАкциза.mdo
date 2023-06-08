@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dc63fa3-2758-48ae-aada-f9567ed7e57f">
+  <producedTypes>
+    <objectType typeId="7fd11f2e-f75e-4fd5-b5bb-f893919c9a7e" valueTypeId="e3a17058-7557-42dc-9a39-277521bcf4df"/>
+    <refType typeId="be49f2d9-b73d-40d3-b65d-f3e3b42f10cb" valueTypeId="95dd3cf9-70d3-4fc7-9b2f-40e7f494b0fe"/>
+    <selectionType typeId="d11b4d75-f1d5-46ec-90a0-169690e1e4d3" valueTypeId="788762e2-305c-4f71-b8a8-af2b4ff750fe"/>
+    <listType typeId="e7935e8e-861d-437f-87c5-ee3883801bf6" valueTypeId="a2639999-df08-4399-a00a-db7f8ae62cfc"/>
+    <managerType typeId="f2e4f1ca-e475-4c2e-b42a-ddb06b03e77e" valueTypeId="de910c50-739a-4462-af3a-e47f871dc833"/>
+  </producedTypes>
+  <name>СтавкиАкциза</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки акциза</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтавкиАкциза.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтавкиАкциза.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ставка акциза</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ставки акциза</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СтавкиАкциза.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СтавкиАкциза.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СтавкиАкциза.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="a14cd54b-cc45-4383-b328-c87535c0b564">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ca5113db-6422-46f9-aaf6-3f3cf4c7bb9e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="af86c033-1664-4fd6-8bcc-e9a58a6a4941">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="614b52ef-19a8-499b-a0c2-61a8f4fe59d5">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

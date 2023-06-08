@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f001634a-ac68-4467-8866-5cb91387d2d6">
+  <producedTypes>
+    <objectType typeId="656c7032-9d76-4a5d-8322-26ae67f3c037" valueTypeId="0dca720b-294d-41ef-ac56-bbef5ad57946"/>
+    <refType typeId="136c63a7-4650-4229-8f58-75626751a191" valueTypeId="4f1153cd-c0f9-4f2d-86ab-0f48d99f4820"/>
+    <selectionType typeId="e03e51ac-b9ac-4715-8f82-37be89e0b130" valueTypeId="9ca121f6-9cc8-4035-80bb-d89f3fa1dd08"/>
+    <listType typeId="493b3838-ed4c-4145-aca2-1c008f20acf8" valueTypeId="10568715-b885-4a80-ade4-e0e2b0deb7f0"/>
+    <managerType typeId="691055aa-41f7-4623-a16e-ebe00e9bb410" valueTypeId="39623097-0da7-492b-b667-d525f5957b53"/>
+  </producedTypes>
+  <name>СтатьиЗатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статьи затрат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтатьиЗатрат.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтатьиЗатрат.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СтатьиЗатрат.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_СтатьиЗатрат</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>Catalog.СтатьиЗатрат.TabularSection.ДополнительныеРеквизиты</characteristicValues>
+    <objectField>Catalog.СтатьиЗатрат.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</objectField>
+    <typeField>Catalog.СтатьиЗатрат.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</typeField>
+    <valueField>Catalog.СтатьиЗатрат.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_СтатьиЗатрат</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Статья затрат</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Статьи затрат</value>
+  </listPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="656a3ba4-9d02-4e2e-95d8-e5d09584846f">
+      <name>АмортизацияФА</name>
+      <description>Амортизация ФА</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="68155ea4-04e0-4a1a-8a5a-f79324c3888e">
+      <name>КомиссияБанка</name>
+      <description>Комиссия банка</description>
+      <code xsi:type="core:StringValue">
+        <value>000000023</value>
+      </code>
+    </items>
+    <items id="179900cf-6769-4c31-bb79-edd405f8c353">
+      <name>КурсовыеРазницы</name>
+      <description>Курсовые разницы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="0c0cd861-c960-4778-85fe-752260f5e470">
+      <name>НДСНеПринятыйКЗачету</name>
+      <description>НДС не принятый к зачету</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="6401749e-812c-44bc-a1b5-5f390c9193b3">
+      <name>ОбязательныеПрофессиональныеПенсионныеВзносы</name>
+      <description>Обязательные профессиональные пенсионные взносы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000016</value>
+      </code>
+    </items>
+    <items id="63d915d3-0de6-47c9-8a32-c5bc0d651cdd">
+      <name>ОтчисленияОСМС</name>
+      <description>Отчисления ОСМС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000018</value>
+      </code>
+    </items>
+    <items id="b3fc61d5-8aa3-4784-b351-ecce29161496">
+      <name>ПеняПоВОСМС</name>
+      <description>Пеня по взносам ОСМС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000019</value>
+      </code>
+    </items>
+    <items id="786e44c6-61f3-48c6-ad4b-4f979e7ced06">
+      <name>ПеняПоОПВ</name>
+      <description>Пеня по ОПВ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="a9119819-49dd-4669-9d91-8fd64d292f7a">
+      <name>ПеняПоОППВ</name>
+      <description>Пеня по ОППВ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000017</value>
+      </code>
+    </items>
+    <items id="558e89ac-7318-4bdc-8915-7709815c6f05">
+      <name>ПеняПоООСМС</name>
+      <description>Пеня по отчислениям ОСМС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000020</value>
+      </code>
+    </items>
+    <items id="03234733-3133-4871-99a0-4eee770b6f8d">
+      <name>ПеняПоСО</name>
+      <description>Пеня по СО</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="46e09d62-7fcf-4172-bb0e-801860b516d5">
+      <name>ПрочиеРасходы</name>
+      <description>Прочие расходы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000021</value>
+      </code>
+    </items>
+    <items id="0c38b402-b3c2-4490-b629-5794c11354bd">
+      <name>РасходыПоНалогуНаПрибыль</name>
+      <description>Расход по налогу на прибыль</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="449f5f82-dbba-4ce5-bfe2-3ba131fcdd56">
+      <name>РасходыПоПереоценкеВнеоборотныхАктивов</name>
+      <description>Расходы по переоценке внеоборотных активов</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="e742fba8-fdbb-4f83-a6d2-35faee3efee4">
+      <name>РасходыПриОбменеВалюты</name>
+      <description>Расходы при обмене валюты</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="bd8c13f0-5a85-4d68-9edf-6e0b155d186a">
+      <name>СоциальныеОтчисления</name>
+      <description>Социальные отчисления</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="7bbd37da-b200-431a-98d1-49c9c331f7ca">
+      <name>СоциальныйНалог</name>
+      <description>Социальный налог</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="db6aae32-c7ef-4148-8e96-0ec12356fa10">
+      <name>СписаниеМатериалов</name>
+      <description>Списание материалов</description>
+      <code xsi:type="core:StringValue">
+        <value>000000022</value>
+      </code>
+    </items>
+    <items id="e1ecde95-eaec-4027-849e-9ccbcfef694e">
+      <name>СписаниеПриВыбытииВсехФАГруппы</name>
+      <description>Списание при выбытии всех фиксированных активов группы НУ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="981b0e18-3207-4160-9d30-1b05bee2a275">
+      <name>СписаниеСтоимостиОбъектаПреференций</name>
+      <description>Списание стоимости объекта преференций</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="42d96247-ba02-4af8-85ee-e51e26a56e3f">
+      <name>СписаниеСтоимостногоБалансаГруппыМенееМинимума</name>
+      <description>Списание стоимостного баланса группы менее минимума</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="e6a58266-c0b8-48be-8a7e-9857d674359e">
+      <name>УменьшениеВычетаПоПР</name>
+      <description>Уменьшение вычета по ПР</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+    <items id="e5471f02-4730-40ef-aa58-8f8091861b3d">
+      <name>УсловныеРасходыПоНалогуНаПрибыль</name>
+      <description>Условные расходы от признания отложенных налоговых обязательств</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СтатьиЗатрат.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.СтатьиЗатрат.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.СтатьиЗатрат.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СтатьиЗатрат.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultFolderChoiceForm>Catalog.СтатьиЗатрат.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
+  <attributes uuid="854f5adb-d0f5-4e62-82dd-89e2c5685c62">
+    <name>ПринятиеКНалоговомуУчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принимается к налоговому учету</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26d4fb63-6be9-4c3a-8e5c-3e21dd953dda">
+    <name>КатегорияЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория затрат</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КатегорииЗатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6fd3b83c-c6d9-4a0a-83bc-f2736b981418">
+    <name>ВидРасходовНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расходов в налоговом учете</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРасходовНУ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="3fd0477d-e8f9-4988-bfdc-714ce6c7e877">
+    <producedTypes>
+      <objectType typeId="fcd3ccff-72c0-42db-9ae0-2a414d26348d" valueTypeId="8a3cdf23-189e-4fdb-9ac5-f6c473130ea2"/>
+      <rowType typeId="0a38142d-3c44-455d-8a41-8da11c02cb95" valueTypeId="791ee4b9-343d-431d-aa08-4f21b9494751"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b5f41070-3000-4b8d-a58d-975c51707e9a">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e74521cf-d51b-4992-82f6-a99f64cea0cb">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.СтатьиЗатрат.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a9a029ce-c6a7-4516-a3ba-d8b602669ba7">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="bd71dae8-5f72-474e-b98c-0882cd082086">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="04ef2952-d938-4e7f-8917-fe441f47cc57">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7c7c8645-ffe4-4ab8-8b55-5339c925cdb5">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fb6cb763-0c3f-4ba9-834f-2b6e391ed825">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="588f3858-5463-48e4-8952-159e9d42373e">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ff1b4dae-9b48-4f6a-bd69-1227dde9a1ad">
+    <name>ФормаЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6dc8065f-74f4-401e-bb10-4d0293824cc0">
+    <name>КлассификаторЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор затрат</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

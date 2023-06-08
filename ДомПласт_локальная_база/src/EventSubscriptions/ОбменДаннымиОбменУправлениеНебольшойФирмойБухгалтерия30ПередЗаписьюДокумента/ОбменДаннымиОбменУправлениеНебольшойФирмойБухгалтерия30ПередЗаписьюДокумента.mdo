@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d2f12eb-c7fe-4009-a6e0-71c9e08d6907">
+  <name>ОбменДаннымиОбменУправлениеНебольшойФирмойБухгалтерия30ПередЗаписьюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными обмен управление нашей фирмой бухгалтерия30 перед записью документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.ОбменДаннымиОбменУправлениеНебольшойФирмойБухгалтерия30ПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

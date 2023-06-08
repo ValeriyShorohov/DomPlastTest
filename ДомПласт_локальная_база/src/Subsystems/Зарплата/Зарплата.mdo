@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26058ca9-876b-43cf-b8cf-c1c65170f071">
+  <name>Зарплата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарплата</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаЗарплата</picture>
+  </picture>
+  <content>CommonCommand.ДополнительныеОбработкиЗарплата</content>
+  <content>CommonCommand.ДополнительныеОтчетыЗарплата</content>
+  <content>CommonCommand.ПанельОтчетовЗарплата</content>
+  <subsystems>Зарплата</subsystems>
+  <subsystems>УчетВзносовИОтчислений</subsystems>
+  <subsystems>Налогообложение</subsystems>
+  <subsystems>УчетИсполнительныхЛистов</subsystems>
+  <subsystems>БухгалтерскийУчетЗарплаты</subsystems>
+  <subsystems>ОбменЗарплата3Бухгалтерия3</subsystems>
+  <subsystems>СправочникиНастройки</subsystems>
+  <subsystems>РезервыПоВознаграждениямСотрудников</subsystems>
+  <subsystems>Отчеты</subsystems>
+</mdclass:Subsystem>

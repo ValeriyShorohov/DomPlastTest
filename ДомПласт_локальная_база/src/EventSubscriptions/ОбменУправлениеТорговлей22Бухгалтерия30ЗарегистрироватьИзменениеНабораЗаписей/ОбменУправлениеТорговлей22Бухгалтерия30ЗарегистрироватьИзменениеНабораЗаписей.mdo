@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac4649a3-bee7-4400-9eb4-6ae5eb96620a">
+  <name>ОбменУправлениеТорговлей22Бухгалтерия30ЗарегистрироватьИзменениеНабораЗаписей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен управление торговлей22 бухгалтерия30 зарегистрировать изменение набора записей</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.КурсыВалют</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.ОбменУправлениеТорговлей22Бухгалтерия30ЗарегистрироватьИзменениеНабораЗаписейПередЗаписью</handler>
+</mdclass:EventSubscription>

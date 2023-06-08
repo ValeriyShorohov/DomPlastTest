@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="705f2584-1529-4cee-af7a-b453dfff29c2">
+  <producedTypes>
+    <objectType typeId="00da6a29-05ef-4f5b-b685-6d6b7cc54e6d" valueTypeId="6648f44a-53c1-4afc-b2cf-df034396aa4b"/>
+    <refType typeId="d90de7fe-59bc-441e-bad2-79a6c3433d56" valueTypeId="64ab779c-e612-450d-a329-2e304a248650"/>
+    <selectionType typeId="9e3307f9-1aaa-4690-9c82-c9ad56adb8dd" valueTypeId="c510645b-c5a3-4d9e-a00d-c31853ce61e5"/>
+    <listType typeId="07407124-a980-4007-aa3d-df17434fd9a0" valueTypeId="9050a89d-2ed5-40f1-bdf0-c2cc1b7fc6c8"/>
+    <managerType typeId="1891ce1d-eede-4c41-8217-8ad723b2789c" valueTypeId="fb94199a-5ece-4ed6-b869-c312c7f4cfab"/>
+  </producedTypes>
+  <name>АдресныеСокращения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адресные сокращения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.АдресныеСокращения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.АдресныеСокращения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Адресное сокращение</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.АдресныеСокращения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.АдресныеСокращения.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.АдресныеСокращения.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="410db249-ec9a-480e-8b3b-0250aa3aa68a">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="761a3ce5-2427-47d6-939c-6006b7be3144">
+    <name>Сокращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сокращение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c6298c08-fca3-428c-a027-cb73347ca996">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="32d97dd8-9797-4d66-b901-922f39d6d36b">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5931f290-4ff2-4ee7-8ad1-6696e23b2423">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

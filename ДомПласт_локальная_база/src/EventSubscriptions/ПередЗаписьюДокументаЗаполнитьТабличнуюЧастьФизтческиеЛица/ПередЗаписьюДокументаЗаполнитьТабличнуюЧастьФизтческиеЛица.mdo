@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="539aa693-c65c-4d47-8aa9-60183123f831">
+  <name>ПередЗаписьюДокументаЗаполнитьТабличнуюЧастьФизтческиеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед записью документа заполнить табличную часть физтческие лица</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ВводНачальныхОстатковПоЗарплате</types>
+    <types>DocumentObject.УдержаниеИПНиОПВНУ</types>
+    <types>DocumentObject.РасчетСНиСО</types>
+    <types>DocumentObject.РасчетУдержанийРаботниковОрганизаций</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПроцедурыУправленияПерсоналомСервер.ПередЗаписьюДокументаЗаполнитьТабличнуюЧастьФизтческиеЛицаПередЗаписью</handler>
+</mdclass:EventSubscription>

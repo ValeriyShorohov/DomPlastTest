@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b991595-08d5-4703-ac04-d6d9228a6b5a">
+  <producedTypes>
+    <selectionType typeId="eaa6d10b-8f27-439d-96ed-a75ca365dda2" valueTypeId="d867db7e-eaa3-4762-8d80-12fafc6d19da"/>
+    <listType typeId="84d3d291-257c-441f-9eb1-77d13703bf67" valueTypeId="f68ed38a-6dc4-4604-80bc-08f26482117a"/>
+    <managerType typeId="30d94ca9-a22a-4964-a0bc-68d2e79a87fc" valueTypeId="ae84ec2e-02d9-4763-9e20-003f163e916d"/>
+    <recordSetType typeId="f9956c65-810f-4c30-8244-70c7d245b29f" valueTypeId="6f513748-0309-4c23-9882-10bb3b50d3d4"/>
+    <recordKeyType typeId="691a4d73-1fbc-44e9-ac76-ec0be4a2533e" valueTypeId="b9a1eff3-781a-4193-a509-18ab7e3d0cc7"/>
+    <recordType typeId="b1281241-c7bf-473b-9c56-ff017457b4a6" valueTypeId="a56d0162-ab00-47e3-8797-bd043d090051"/>
+    <recordManagerType typeId="566d8d62-ab7d-468d-8288-f59849ca9c80" valueTypeId="5fa5e385-3ca4-452a-b7cd-448324cbf59d"/>
+  </producedTypes>
+  <name>СоответствиеСкладовИВиртуальныхСкладов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие складов и виртуальных складов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СоответствиеСкладовИВиртуальныхСкладов.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="79561990-f788-4b5d-9821-a64754788983">
+    <name>ВиртуальныйСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виртуальный склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВиртуальныеСклады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a569f260-d123-4d18-91d9-6f773898cd35">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СкладВС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="39a83130-4524-4722-8c7c-7afe99fc3420">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.СтруктурнаяЕдиницаЭСФ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="743661aa-d99c-4955-bc59-11438cfcd421">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdd833a8-3282-4e93-b2d3-6db701363916">
+  <producedTypes>
+    <objectType typeId="fc38001e-47d6-4b2a-acaa-f69a3c24b27e" valueTypeId="e402b716-7e09-48eb-8b1c-4db1a66b4b9b"/>
+    <refType typeId="4ffacb58-22a3-4963-af4a-341ac890f43d" valueTypeId="f6bb4530-a41c-44cf-9ad8-3320c7546ba0"/>
+    <selectionType typeId="63e44424-489d-4070-b27b-ad1948c18314" valueTypeId="72174eae-18d5-43cd-b223-2ec2128a0e5a"/>
+    <listType typeId="07b7c1ad-6b9a-400b-87b9-a3075fdc2ba6" valueTypeId="2ca17c06-8133-4333-8434-f322276c0ce9"/>
+    <managerType typeId="7b825f46-5ae2-4aa4-ba05-e9276607816a" valueTypeId="0815749d-c4be-4d35-b740-bdf3ef33780d"/>
+  </producedTypes>
+  <name>КатегорииЗемель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории земель</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииЗемель.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КатегорииЗемель.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Категория земли</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КатегорииЗемель.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КатегорииЗемель.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.КатегорииЗемель.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="8fb4c968-e7ae-4040-a819-7fffdc77f5fd">
+    <name>КодПоКлассификатору</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код по классификатору</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd1d4ed0-a87f-4b7c-b41e-c6241b8438a7">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ad844aba-a3b9-4992-b7ee-ccf1b496c38d">
+    <name>ВидЗемельногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид земельного налога</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НалогиСборыОтчисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f89b402e-34b7-40fa-aa15-0a6136907b54">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5580a4ea-77f4-4893-a9e4-839e41aa0aa3">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5b66e01b-3a55-4aba-856d-699859cd1fad">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

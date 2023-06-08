@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c18570ec-3706-4610-8e57-53565723b826">
+  <producedTypes>
+    <objectType typeId="354cea72-9a4e-4785-b0b5-c9ea0f4b7ad9" valueTypeId="70469c75-fa86-49a6-be7f-cbec0abdb8af"/>
+    <managerType typeId="e4a62a25-d413-4cc9-8de2-4998cb1f69c6" valueTypeId="f7659ad9-da28-4ac2-9edd-307b26aa317d"/>
+  </producedTypes>
+  <name>РегистрНалоговогоУчетаПоСчетамФактурам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистр налогового учета по счетам-фактурам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаБК</defaultForm>
+  <mainDataCompositionSchema>Report.РегистрНалоговогоУчетаПоСчетамФактурам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <attributes uuid="c90b237a-c2f6-4aab-9c4c-cb0dd3ae8c93">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="e38402cb-c806-4140-a30b-c1058ff82785">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="01296e46-1ee3-46b4-8f0b-5bfb3b7bdefd">
+    <name>ПредставлениеСпискаОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка организаций</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5981d241-b471-4b96-a17b-94aede079eb2">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="dc115796-09fa-4780-aefc-af08ca86fd80">
+    <name>ПредставлениеНомераДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление номера документа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПредставленийНомеровДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b2e74dd2-79b4-4a51-b2d9-5a26afbaa1bb">
+    <name>ВидСчетаФактуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид счета фактуры</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="324a65a8-2fc8-49a3-84ed-cdfde9842aa3">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f89ede07-9047-480d-ae9c-d532c58f103e">
+    <name>ФормированиеПоДатеВыписки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование по дате выписки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="719522ba-4f02-4915-9596-998e9e023de3">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="76b5bb96-a178-4154-a9d7-231cdc0358bc">
+    <name>СчетФактураВыданный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет фактура выданный</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="97c6943b-c307-4849-8cb5-15ce2a9b31da">
+    <name>СчетФактураПолученный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет фактура полученный</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="25c08683-6002-4d9c-b9ad-af13eb780d52">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="466b0a71-2063-45ea-8980-32e3d8400ba7">
+    <name>РегистрНалоговогоУчетаПоСчетамФактурам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр налогового учета по счетам-фактурам</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

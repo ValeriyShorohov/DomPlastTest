@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="288eaf9b-b53e-4d2c-a142-1f5918b14ff6">
+  <producedTypes>
+    <objectType typeId="e4b5c28b-18bc-4931-8e07-db0c37a70607" valueTypeId="a1ded69d-c2d8-40f4-84a5-66ad29c177e0"/>
+    <managerType typeId="69c6e683-b67f-446e-948a-df1b8524cc0a" valueTypeId="45d9389b-bf6d-4726-9da8-f48d1646d6db"/>
+  </producedTypes>
+  <name>ОбменСНТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен СНТ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбменСНТ.Form.Форма</defaultForm>
+  <forms uuid="54825a87-4285-425a-8128-88e65ce01e29">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1e67ffe3-8c88-4c98-814c-e7adb845e423">
+    <name>КлиентУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e78e865c-9f60-4217-a047-494a97d45a49">
+    <name>СинхронизацияСВС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизация с модулем ВС</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="555c5067-7b10-43b3-9411-6851a23dcfb1">
+    <name>ИзменениеСтатусовСНТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение статусов сопроводительных накладных на товары</value>
+    </synonym>
+    <comment>Форма для выполнения методов changeStatus</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2231c7fa-4da5-45f1-87d7-9d367068f23d">
+    <name>НастройкаСНТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка СНТ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="216e231b-b5cb-43ab-9ccf-1b63f3000a25">
+    <name>СписокЭСФИСФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список созданных Счетов - фактур и ЭСФ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a3153dee-0705-42b4-a082-747f84a15637">
+    <name>ПомощникПолученияВСКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник получения виртуальных складов контрагентов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="97c8cd81-1886-41fe-82d0-a86ed2fc0a25">
+    <name>ИмпортСНТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Импорт СНТ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d4e4cdd9-db17-4538-bd81-c8dbffe9395b">
+    <name>СхемаСНТ_XML_API_ЭЦП_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема СНТ XML API ЭЦП версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="861b432f-472b-4869-a661-f11165eea36f">
+    <name>ЗапросsntUploadRequest_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запросsnt upload request версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="fc2f6973-3bb7-4bba-ac62-233262121574">
+    <name>ЗапросQuerySntUpdates_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросQueryUpdates</value>
+    </synonym>
+    <comment>Запрос на получение новых входящих и исходящих ЭСФ, а также обновлений, которые произошли с существующими входящими и исходящими ЭСФ.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="af0540f3-4a8b-4a99-ad56-c2ecd2b9aba1">
+    <name>ЗапросCloseSession_Версия2</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросCloseSession</value>
+    </synonym>
+    <comment>Запрос на закрытие сессии с указанным идентификатором сессии.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="10f18175-47aa-4432-8ede-1a1bdaa31229">
+    <name>ЗапросCreateSession_Версия2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос create session версия2</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="3ebd9156-c85a-42f4-a1fa-b18c32f3f91a">
+    <name>ЗапросCurrentSessionStatus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос Current session status</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="552b81e0-edfe-484d-b983-60aec6796f6d">
+    <name>ЗапросQuerySntStatusById</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗапросQueryInvoiceSummaryById</value>
+    </synonym>
+    <comment>Запрос на получение статусов, входяших и исходящих ЭСФ, по их идентификатору.</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="18cd2474-a713-474f-a290-924fc0423171">
+    <name>ПФ_MXL_СНТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сопроводительная накладная на товары</value>
+    </synonym>
+  </templates>
+  <templates uuid="e84c5e2b-efc4-4333-b753-bd9c46549a1f">
+    <name>ЗапросSntChangeStatus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос snt change status</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b9c419e6-b44d-4156-8dda-b392daf6ed37">
+    <name>СхемаSntInfo_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема snt info версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a800958f-511e-450d-b0e3-d15b044da537">
+    <name>ЗапросQuerySntById</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос query snt by id</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5e9388f7-eb08-4664-b7ae-51059465dcf3">
+    <name>ЗапросQueryViewSnt</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос query view snt</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="531d742a-c917-459f-8bde-014ae09f4da5">
+    <name>ЗапросSntErrorByID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос snt error by ID</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="73b21604-77a8-4353-aadc-ff053b58ba96">
+    <name>ПредставлениеПолейИРазделов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление полей и разделов</value>
+    </synonym>
+  </templates>
+  <templates uuid="f73ee31f-59d9-40dd-b14c-ad5c229919b4">
+    <name>ЗапросВСtaxpayerStoreListByTinRequest_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос в сtaxpayer store list by tin request версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="913ad794-85e3-4ead-b37e-3592b0d033b7">
+    <name>ПФ_MXL_ПланируемыйПунктПропуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планируемый пункт пропуска</value>
+    </synonym>
+  </templates>
+  <templates uuid="340985c6-d251-4b12-99f7-8d7a0f51a688">
+    <name>СхемаСопоставлениеСНТ_XML_API_ЭЦП_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема сопоставление СНТ XML API ЭЦП версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="0499844c-6713-4d8c-9e94-da7c7d70f82f">
+    <name>ЗапросfnoMatchingUploadRequest_Версия1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос fno matching upload request версия1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="4e51091e-97b9-4bf5-9f57-c52d429e4526">
+    <name>РеквизитыДляПроверкиЭСФиСНТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты для проверки ЭСФ и СНТ</value>
+    </synonym>
+  </templates>
+  <templates uuid="4739c102-3a9d-4158-8d04-26e56cb3a776">
+    <name>ЗапросfnoMatchingQueryById</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запросfno matching query by id</value>
+    </synonym>
+    <comment>Получить список Форм сопоставления СНТ и ФНО 328 по идентификаторам</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5189f95b-a1ea-49b2-a035-1c4a48f3ddcb">
+    <name>ЗапросfnoMatchingErrorById</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запросfno matching error by id</value>
+    </synonym>
+    <comment>Получить список ошибок Форм сопоставления СНТ и ФНО 328 по рег. номерам</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="c9dc5559-faf0-4151-9280-baa905edd562">
+    <name>ГОДляОтключенияПодтвержденияСНТ</name>
+  </templates>
+</mdclass:DataProcessor>

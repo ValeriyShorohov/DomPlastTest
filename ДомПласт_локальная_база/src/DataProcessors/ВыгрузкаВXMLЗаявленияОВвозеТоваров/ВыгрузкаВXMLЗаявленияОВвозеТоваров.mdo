@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76679f44-2f4c-4c93-9331-68376f51445d">
+  <producedTypes>
+    <objectType typeId="a73fc73e-5a95-4ee6-a33d-d77030d0e454" valueTypeId="525e9e01-bdee-4605-881d-25e7214b6dd0"/>
+    <managerType typeId="110618fd-75ed-49c5-bf96-ecca1a8eda3c" valueTypeId="1d57ab45-39e5-4552-9237-9f1ee5926c6d"/>
+  </producedTypes>
+  <name>ВыгрузкаВXMLЗаявленияОВвозеТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка в XML заявления о ввозе товаров</value>
+  </synonym>
+  <defaultForm>DataProcessor.ВыгрузкаВXMLЗаявленияОВвозеТоваров.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <attributes uuid="ceadb1d5-f9eb-4f27-9f6e-f2105f378b7d">
+    <name>ДокументДляВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ для выгрузки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9bbd6a72-b98c-487d-b90b-274d0dd0f0ad">
+    <name>ФайлВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл выгрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a185df31-ad97-46bd-9001-9a327cddefd0">
+    <name>РевизияВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ревизия выгрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e0fd7224-67fa-49e2-b6d1-97a6a7793013">
+    <name>ОкруглятьИтоговыеСуммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Округлять итоговые суммы НДС и акциза до целых чисел</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3212299c-6fb7-4454-9041-40a5197467b9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="abe1ae69-2874-4d96-a852-4c368caf27ca">
+    <name>ВыгрузкаВXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка ВXML</value>
+    </synonym>
+  </templates>
+  <templates uuid="d232480b-07f8-48fe-a71e-2065df0268d1">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+  <commands uuid="007af2ae-3189-4f6b-8beb-2925fbfd220a">
+    <name>ВыгрузитьВXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузить в XML</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ЗаявлениеОВвозеТоваровИУплатеКосвенныхНалогов</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

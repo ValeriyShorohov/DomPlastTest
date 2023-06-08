@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Report.ЖурналРегистрацииПриходныхИРасходныхКассовыхДокументов.Command.ЖурналРегистрацииПриходныхИРасходныхКассовыхДокументов</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.КассоваяКнига.Command.КассоваяКнига</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ОстаткиДенежныхСредств.Command.ОстаткиДенежныхСредств</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ПоступлениеДенежныхСредств.Command.ПоступлениеДенежныхСредств</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.РасходДенежныхСредств.Command.РасходДенежныхСредств</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <subsystemsOrder>
+    <subsystems>Subsystem.БанкИКасса.Subsystem.Банк</subsystems>
+    <subsystems>Subsystem.БанкИКасса.Subsystem.Касса</subsystems>
+    <subsystems>Subsystem.БанкИКасса.Subsystem.СправочникиИНастройки</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

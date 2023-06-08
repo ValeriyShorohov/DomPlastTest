@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ae8b7c6-7f7d-4012-977b-95808aad6ddb">
+  <producedTypes>
+    <selectionType typeId="da934d6c-2a11-4eec-9a5c-d34d973d9ddc" valueTypeId="d47beac6-fed4-470a-a895-01cc7b981c83"/>
+    <listType typeId="7f437374-ae80-421f-b4fe-654d0a7d78ae" valueTypeId="c5d212dd-b518-4e56-af34-36f24963fdc6"/>
+    <managerType typeId="b69bb6c3-a977-4cdb-befd-c0d7f916350c" valueTypeId="2e7b2b6a-eeca-4954-b064-a19c7285c00b"/>
+    <recordSetType typeId="29ebdbf1-e65c-4d27-8f07-5af21e560194" valueTypeId="459d658d-805c-486e-83b9-d45f4cc1f852"/>
+    <recordKeyType typeId="b82eec9e-af43-4340-9154-a8f8bd4694d9" valueTypeId="34b4c620-8d26-467a-a8b8-c38b0c4d0baf"/>
+    <recordType typeId="5ded3baa-60d2-4f8f-a1b8-4e9ab20f500e" valueTypeId="e90cb7ee-ab5d-4051-af59-b809254fdf73"/>
+    <recordManagerType typeId="3efc19b5-420d-4c35-b45b-62af9930e888" valueTypeId="520d1d89-d6ec-4ee8-948e-7a55b77c1569"/>
+  </producedTypes>
+  <name>УдалитьСохраненныеНастройки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить сохраненные настройки</value>
+  </synonym>
+  <defaultListForm>InformationRegister.УдалитьСохраненныеНастройки.Form.ФормаСписка</defaultListForm>
+  <resources uuid="9231a1cc-c393-40ae-81a7-b06e50de92b3">
+    <name>СохраненнаяНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненная настройка</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="943bd38a-a034-46c2-9867-5a2539d6d3fb">
+    <name>ИспользоватьПриОткрытии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать при открытии</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0c7f16a8-8521-42aa-88dd-e6ebf7d21fc9">
+    <name>СохранятьАвтоматически</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохранять автоматически</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="42a75fc8-d692-417c-a0a8-d50fb565c63c">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ГруппыПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="26696be6-212c-4b49-bd32-8190a11a3c32">
+    <name>ИмяОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dbd4e300-0f5b-4d58-8436-300d8d519f88">
+    <name>НаименованиеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование настройки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="f45a4f86-d45b-4e55-aa85-cb8663e0187b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

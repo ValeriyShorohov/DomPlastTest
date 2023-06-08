@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7746fdff-289d-487e-a625-9a8f3e03aa95">
+  <name>ПриУстановкеНовогоНомераДокументаПрефиксБанковскиеСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>При установке нового номера документа префикс банковские счета</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+  </source>
+  <event>OnSetNewNumber</event>
+  <handler>CommonModule.ПрефиксацияОбъектовБКСобытия.УстановитьПрефиксИнформационнойБазыОрганизацииИБанковскогоСчета</handler>
+</mdclass:EventSubscription>

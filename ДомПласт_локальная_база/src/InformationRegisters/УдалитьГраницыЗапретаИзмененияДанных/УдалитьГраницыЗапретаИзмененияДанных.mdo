@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d89823e-e9ce-41e6-8a65-3510620e7c64">
+  <producedTypes>
+    <selectionType typeId="ae181e3c-ef48-4c48-bfec-9389c7704a6f" valueTypeId="d158d6e1-df6d-4466-94b3-25df9f8316c5"/>
+    <listType typeId="54a1ed54-d52c-461d-a40f-55164a5fa1eb" valueTypeId="d92b82fc-140a-41c8-9afb-101222e1ada3"/>
+    <managerType typeId="9aee3ab1-e9d2-4eea-9d2e-3183f3f1ed4e" valueTypeId="d2cb10eb-3843-4024-b5ed-583d01ff53bc"/>
+    <recordSetType typeId="c3c91cb6-ab66-4076-8cfa-261edd0ae116" valueTypeId="a6a2908e-0d26-47e0-94ec-0983f472878b"/>
+    <recordKeyType typeId="31ae8337-cc5e-4973-a722-23c1bab71066" valueTypeId="ff05871e-0c53-4fe4-9e05-8a0e425c2d79"/>
+    <recordType typeId="e74765df-9150-4e94-8c0b-c775a7ef2c37" valueTypeId="4e69e265-87ef-4177-ae54-5f301e995ec3"/>
+    <recordManagerType typeId="1ad2f37d-ada2-44ef-908a-49245a0dbabb" valueTypeId="cdd315da-cb30-43b3-8593-907ead1cfdbb"/>
+  </producedTypes>
+  <name>УдалитьГраницыЗапретаИзмененияДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Границы запрета изменения данных</value>
+  </synonym>
+  <defaultRecordForm>InformationRegister.УдалитьГраницыЗапретаИзмененияДанных.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УдалитьГраницыЗапретаИзмененияДанных.Form.ФормаСписка</defaultListForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Граница запрета изменения данных</value>
+  </recordPresentation>
+  <resources uuid="3033a69f-80e5-47c3-a239-1ae71d23e0f5">
+    <name>ГраницаЗапретаИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Граница запрета изменений</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="58302351-7e06-45b3-bdf0-7885606311e7">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3933ed64-760e-4d5b-a05d-59d891d6f184">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ГруппыПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="00bf40f8-bd57-4daf-b091-766f9f83da49">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1b615ae7-8052-4cdf-a38c-978aacf8de67">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

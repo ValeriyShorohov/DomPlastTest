@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="976cf220-f876-409f-afd9-38842e5359db">
+  <producedTypes>
+    <selectionType typeId="fb9eacce-c8df-4172-925f-4cdbe713a9c1" valueTypeId="acec9ac5-9608-4fa5-addc-2764008c19b0"/>
+    <listType typeId="55dc60df-e59d-4068-a032-0b49824b2b35" valueTypeId="128f13db-3143-4e7a-8a01-832dc6306423"/>
+    <managerType typeId="57b5dd90-18fd-48a9-8e0f-add15966f9a6" valueTypeId="ab3eb662-838b-405d-822e-e4e610d05f5e"/>
+    <recordSetType typeId="32ea095a-057d-46af-a3df-83affa26f510" valueTypeId="e1272fa1-fdb5-4887-85a7-8614f8360677"/>
+    <recordKeyType typeId="76155b6a-0303-4c80-bb2f-1a2fa2136a97" valueTypeId="f877f365-cd35-472c-adb7-b3d1736542d0"/>
+    <recordType typeId="4fc18893-d003-4d25-acb3-e921aed95e3c" valueTypeId="5fd91c5e-88d4-4eda-ac45-bc920b087325"/>
+    <recordManagerType typeId="a50f791c-a8ba-4eb0-aa2c-8a37e2aa2afb" valueTypeId="8b252950-e70c-4973-a569-7db041e22f64"/>
+  </producedTypes>
+  <name>СоответствиеСчетовПроизводстваСчетамНезавершенногоПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствия счетов производства счетам незавершенного производства</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.СоответствиеСчетовПроизводстваСчетамНезавершенногоПроизводства.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СоответствиеСчетовПроизводстваСчетамНезавершенногоПроизводства.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="361c7468-b387-4f3b-8106-9cc3fb8129dc">
+    <name>СчетНЗПБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет незавершенного производства (БУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Типовой.НезавершенноеПроизводство_ОсновноеПроизводство</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Типовой.НезавершенноеПроизводство_ПолуфабрикатыСобственногоПроизводства</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Типовой.НезавершенноеПроизводство_ВспомогательныеПроизводства</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4195cac6-1756-4f6c-8430-915e9591f32e">
+    <name>СчетНЗПНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет незавершенного производства (НУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Налоговый</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Налоговый.НезавершенноеПроизводство_ОсновноеПроизводство</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Налоговый.НезавершенноеПроизводство_ПолуфабрикатыСобственногоПроизводства</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Налоговый.НезавершенноеПроизводство_ВспомогательныеПроизводства</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b1f9e4b2-a3ce-413d-bb16-c3412dca7309">
+    <name>СчетЗатратБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат (БУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Типовой.ОсновноеПроизводство</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Типовой.ПолуфабрикатыСобственногоПроизводства</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Типовой.ВспомогательныеПроизводства</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="14b79b76-19c3-4a5c-8b52-2ee4b49fd677">
+    <name>СчетЗатратНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат (НУ)</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Налоговый</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Налоговый.ОсновноеПроизводство</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Налоговый.ПолуфабрикатыСобственногоПроизводства</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>ChartOfAccounts.Налоговый.ВспомогательныеПроизводства</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bcc152df-02fc-411d-a4be-a200bbdef74f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="12b420a0-d3b3-44a4-861e-961a5a6a0a1a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

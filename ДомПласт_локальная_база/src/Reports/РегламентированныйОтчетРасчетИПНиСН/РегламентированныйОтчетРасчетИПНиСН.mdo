@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9f7ff33-c104-4542-bf89-29726a4fa697">
+  <producedTypes>
+    <objectType typeId="f113fa42-18f5-400b-969b-6966d3695b51" valueTypeId="f851e4a6-9cbd-408e-a736-277188cc442d"/>
+    <managerType typeId="4428c43a-352a-4bf4-96b9-6ab2c25dcd8c" valueTypeId="98aa1a02-eab7-4ff0-af48-a282c6a2b48b"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетРасчетИПНиСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет по исчислению и удержанию ИПН и исчислению СН</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетРасчетИПНиСН.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="ce34bb8a-ac23-4ef7-8cdc-636b52244f35">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="83b665c1-53ff-4b30-b76f-6f2d6e5e78fc">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4a4effea-4ec2-4567-a51c-57add9e29afc">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5e8e082e-3c21-47e9-9395-50ac63e9f745">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="028a1cf1-7cf5-400a-93d3-4f3f0f4659d6">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет по исчислению и удержанию ИПН и исчислению СН</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8505f9e5-4ac0-49fd-bb49-dd73adf8cace">
+    <name>ФормаОтчета2009Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет по исчислению и удержанию ИПН и исчислению СН</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2da26936-8983-4295-90d5-f37721c2ae80">
+    <name>ФормаОтчета2019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет по исчислению и удержанию ИПН и исчислению СН</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="770ee4c2-4b10-462d-954d-689b2536e464">
+    <name>СоставПоказателей2005Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2005 кв4</value>
+    </synonym>
+  </templates>
+  <templates uuid="a51161ef-8143-4860-88d1-1a3dceb93a49">
+    <name>СоставПоказателей2007Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2007 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="d1f3a084-7a2f-434f-999c-3e954e571083">
+    <name>СоставПоказателей2009Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2009 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="caacb40a-2700-4d8b-a294-f9e3ddf164ab">
+    <name>СоставПоказателей2019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2019 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="b638ff53-feea-4d3e-9714-a4ce8d77ca96">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+  <templates uuid="b6e33765-b146-4f39-96a1-a3c56669f51b">
+    <name>ПередачаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача данных</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

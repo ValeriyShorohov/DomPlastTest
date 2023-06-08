@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6e50c17-d014-416b-b15f-207c375b8dae">
+  <name>СинхронизацияДанныхЧерезУниверсальныйФорматЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация данных через универсальный формат зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.ТипыЦенНоменклатуры</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.ПодразделенияОрганизаций</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.Банки</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.Кассы</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.СинхронизацияДанныхЧерезУниверсальныйФорматПередЗаписью</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8eb56c0-5c50-4def-a16c-6e3c9328eb03">
+  <producedTypes>
+    <objectType typeId="365cc6b6-65b4-4358-82b2-6ec337ec779b" valueTypeId="db1005c2-3c3a-4e17-9714-b42c699f23d5"/>
+    <managerType typeId="8d21d547-aafe-4569-b2e8-5c4e32534bc4" valueTypeId="4d6d4c71-7661-4a4b-9b7d-68408db040a4"/>
+  </producedTypes>
+  <name>КопированиеТабличныхЧастейДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Копирование табличных частей документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КопированиеТабличныхЧастейДокументов.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="a66d4728-b454-4c7b-b8bf-0d143cc6a48a">
+    <name>ДокументОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ объект</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="602a46c6-9b33-437c-ab8b-2af818b06a8c">
+    <name>СтруктураРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура реквизитов</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="90de70cd-8807-4099-b8e3-316505417cc4">
+    <name>ИмяТабличнойЧасти</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя табличной части</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="59916ed4-4de9-4711-990e-717a98f4d249">
+    <name>ИсходныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходный документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="db60ea9e-8c7f-47f3-95e7-917ce34e59ba">
+    <name>СтруктураИсходныхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура исходных документов</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cc05382e-c644-455c-a623-c9ac098ed27c">
+    <name>СохраненныеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненные настройки</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="13f20cfc-4543-46d8-93d8-71074e1da26c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

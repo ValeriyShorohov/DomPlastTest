@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30e1526e-1432-4b02-bdb6-497753d4fe02">
+  <producedTypes>
+    <objectType typeId="e5d6e26e-74bb-44d9-b498-be9b6b2c9e9a" valueTypeId="23b6a336-fc2d-45a9-887a-325bfd212f91"/>
+    <managerType typeId="bb1f5838-38b1-484a-b1b8-0ec69800e165" valueTypeId="4171c8c5-fb56-4fd2-ae13-db10a3a0d9cd"/>
+  </producedTypes>
+  <name>ЛичнаяКарточкаФормаТ2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Личная карточка (форма Т-2)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЛичнаяКарточкаФормаТ2.Form.ФормаОтчета</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="b1e3e9e9-fba2-44ba-9bc6-1568b0d68b0b">
+    <name>ДатаАктуальности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата актуальности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b6e516f6-24a1-4c6a-9e7a-640699db9444">
+    <name>Физлицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="ebc022c2-4e74-404d-8873-95321d22ed80">
+    <name>ПредставлениеСпискаОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка организаций</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="e6efef2e-9078-4944-b19c-10f01af0033c">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4e8ee0e8-7dad-4571-b049-d540dbbd0dfe">
+    <name>Т2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Т2</value>
+    </synonym>
+  </templates>
+  <commands uuid="8a88046e-fba8-4e7d-9170-c6e86e47028d">
+    <name>ЛичнаяКарточкаФормаТ2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Личная карточка (форма Т-2)</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

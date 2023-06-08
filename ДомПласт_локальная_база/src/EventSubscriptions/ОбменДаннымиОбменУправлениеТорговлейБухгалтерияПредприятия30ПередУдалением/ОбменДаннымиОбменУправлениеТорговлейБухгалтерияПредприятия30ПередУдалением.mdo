@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7380f064-9b67-4858-ac00-98193970528b">
+  <name>ОбменДаннымиОбменУправлениеТорговлейБухгалтерияПредприятия30ПередУдалением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными обмен управление торговлей бухгалтерия предприятия30 перед удалением</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.Валюты</types>
+    <types>DocumentObject.ОплатаОтПокупателяПлатежнойКартой</types>
+    <types>CatalogObject.ВидыНоменклатуры</types>
+    <types>CatalogObject.СтавкиНДС</types>
+    <types>CatalogObject.ТипыЦенНоменклатуры</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>DocumentObject.ПлатежноеПоручениеВходящее</types>
+    <types>CatalogObject.ВидыОплатЭквайринга</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.ПлатежноеПоручениеИсходящее</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.Банки</types>
+    <types>DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.ДоговорыЭквайринга</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.Субконто</types>
+    <types>CatalogObject.Кассы</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБК.ОбменДаннымиОбменУправлениеТорговлейБухгалтерияПредприятия30ПередУдалением</handler>
+</mdclass:EventSubscription>

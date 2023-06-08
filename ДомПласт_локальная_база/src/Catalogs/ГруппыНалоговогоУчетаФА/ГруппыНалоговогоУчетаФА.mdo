@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b94416e-0b5d-467f-845c-bcec6f79bd4f">
+  <producedTypes>
+    <objectType typeId="9cd2cd1a-e1d8-46ce-b8e4-e06d181439e0" valueTypeId="45ceaede-2e23-4af1-8868-8142a9b9804f"/>
+    <refType typeId="124df952-6c4c-41b3-9c52-61a5adce5c01" valueTypeId="ee0aa549-f1d3-4bfe-ab11-d8d4bc556f77"/>
+    <selectionType typeId="b41eab03-d163-4880-a3b8-afa2885053d4" valueTypeId="be1ca44c-7e67-4b94-b60a-b88e38d138c7"/>
+    <listType typeId="a5617a3b-04b9-4602-88b8-b9c44d8b49d1" valueTypeId="fbf0bd82-2fdd-4773-b2a2-8f5e05c6066e"/>
+    <managerType typeId="09724d3d-569f-4e71-a0d1-3746feb32aa9" valueTypeId="7d7eb001-4869-4fe8-a19b-255a4e0c1f44"/>
+  </producedTypes>
+  <name>ГруппыНалоговогоУчетаФА</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы налогового учета ФА </value>
+  </synonym>
+  <comment>Группы налогового учета фиксированных активов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГруппыНалоговогоУчетаФА.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ГруппыНалоговогоУчетаФА.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Группа налогового учета ФА</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ГруппыНалоговогоУчетаФА.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ГруппыНалоговогоУчетаФА.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ГруппыНалоговогоУчетаФА.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="3c24a004-769e-4f33-8717-255c2553efc2">
+    <name>ВидУчетаВГруппеФА</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид учета в группе ФА</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыНалоговогоУчетаВГруппахФА</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c9253bf2-05e4-42d9-9051-859606c07416">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>160</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="45de4eb6-c20f-44a0-b5ff-44988a05a9b1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="02d77f53-ac7b-4dd6-9105-ba03c4edaed1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="98f9ca95-2fc8-4a78-81ae-e778ee678765">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

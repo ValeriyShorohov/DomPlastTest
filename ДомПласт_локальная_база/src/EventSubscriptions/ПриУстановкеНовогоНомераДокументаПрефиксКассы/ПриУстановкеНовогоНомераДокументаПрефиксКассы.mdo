@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e17df9ee-63ad-423b-b0d8-5cd42ba6f18e">
+  <name>ПриУстановкеНовогоНомераДокументаПрефиксКассы</name>
+  <synonym>
+    <key>ru</key>
+    <value>При установке нового номера документа префикс кассы</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+  </source>
+  <event>OnSetNewNumber</event>
+  <handler>CommonModule.ПрефиксацияОбъектовБКСобытия.УстановитьПрефиксИнформационнойБазыОрганизацииИКассы</handler>
+</mdclass:EventSubscription>

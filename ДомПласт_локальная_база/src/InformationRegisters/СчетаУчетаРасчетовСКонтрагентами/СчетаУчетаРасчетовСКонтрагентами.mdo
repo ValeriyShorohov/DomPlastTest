@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f9d64ca-f945-4fc4-b9e8-e002b958951f">
+  <producedTypes>
+    <selectionType typeId="a1aa8e31-dcee-42c4-b5dd-a0cd218c5fa5" valueTypeId="9a472aea-5319-4bc2-83ec-64da36f749ad"/>
+    <listType typeId="b0b936e2-510b-4f70-beb5-1219389bf367" valueTypeId="905e0e7b-0cf7-4380-992d-9e90e7564237"/>
+    <managerType typeId="cdbb3018-38c6-462c-9008-998c6a75b71b" valueTypeId="ee7d315a-1fa7-4842-89a1-576159a5d5d8"/>
+    <recordSetType typeId="0721ae55-1f66-4241-b1a7-24e3b6a97705" valueTypeId="e78e72d3-7517-49d7-abd9-ece09965fc4e"/>
+    <recordKeyType typeId="02f01209-b5ac-4aff-9163-dbe093a52aef" valueTypeId="b941ca60-c785-4e47-b55e-97944fe822d4"/>
+    <recordType typeId="7790dc48-22a4-492c-b9c3-852f523996e6" valueTypeId="6803a209-5396-44a3-bfd1-83a07de424c6"/>
+    <recordManagerType typeId="a0187fec-3504-437a-bff4-74e9ad8d500d" valueTypeId="8edcf274-7d04-4eb3-910e-db34e88f9e54"/>
+  </producedTypes>
+  <name>СчетаУчетаРасчетовСКонтрагентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета учета расчетов с контрагентами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СчетаУчетаРасчетовСКонтрагентами.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СчетаУчетаРасчетовСКонтрагентами.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="be1b590d-daee-44d2-b73d-c57c84ccc80b">
+    <name>СчетУчетаРасчетовСПоставщиком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета расчетов с поставщиком</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Вид</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:NumberValue">
+          <value>1</value>
+        </values>
+        <values xsi:type="core:NumberValue">
+          <value>2</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="553f7057-887e-4af7-beba-1e86aa8ba017">
+    <name>СчетУчетаАвансовВыданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета авансов выданных</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Вид</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:NumberValue">
+          <value>0</value>
+        </values>
+        <values xsi:type="core:NumberValue">
+          <value>2</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="371b8b15-9769-43c1-ab33-883ea55f0594">
+    <name>СчетУчетаРасчетовСПокупателем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета расчетов с покупателем</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Вид</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:NumberValue">
+          <value>0</value>
+        </values>
+        <values xsi:type="core:NumberValue">
+          <value>2</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b94a1c73-bc6e-4cad-a162-5192469399b0">
+    <name>СчетУчетаАвансовПолученных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета авансов полученных</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Вид</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:NumberValue">
+          <value>1</value>
+        </values>
+        <values xsi:type="core:NumberValue">
+          <value>2</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6bc01a3b-9669-4461-a4f2-1e651b45c14b">
+    <name>СчетУчетаРасчетовСПоставщикомПоВозвратам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета расчетов с поставщиком по возвратам</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Вид</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:NumberValue">
+          <value>0</value>
+        </values>
+        <values xsi:type="core:NumberValue">
+          <value>2</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ce2d7b65-bc99-46a5-82af-78db8a86b21a">
+    <name>СчетРасчетовСПокупателемПоВозвратам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет расчетов с покупателем по возвратам</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Типовой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Вид</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:NumberValue">
+          <value>1</value>
+        </values>
+        <values xsi:type="core:NumberValue">
+          <value>2</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c4808319-1472-423d-9b58-ca5c77e5bd3d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1e86843d-f421-4973-af79-b321e66d794d">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c9ef8487-9ab1-4173-a861-dd1bba5db819">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.СчетаУчетаРасчетовСКонтрагентами.Dimension.Контрагент</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9c39deed-4f40-437d-b385-d391969025fc">
+    <name>ВидРасчетовПоДоговору</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчетов по договору</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыРасчетовПоДоговорам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8f1f4096-dbca-444e-8929-3fd078b1072e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="31230607-217e-4c58-a54f-9bd7f742301b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

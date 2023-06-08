@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0705eb2-a5d7-4db0-bd27-8c06d1c1282a">
+  <producedTypes>
+    <objectType typeId="6cf28c59-2b21-41e9-ba4d-134c71866cff" valueTypeId="b8b42c20-2cad-41ad-bacf-4c2b8228b74b"/>
+    <managerType typeId="7bf14806-eb8f-4301-9738-fe4502f1e5df" valueTypeId="c993d3e1-27fd-4571-a498-830fddd0c9f9"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетФорма4ИНВ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентированный отчет форма № Инв-4</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РегламентированныйОтчетФорма4ИНВ.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="273f1b41-d823-4d27-a227-657660eded8a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="34abdaa0-65d8-4a0c-b965-89852074e427">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9439959e-2019-4b49-9aa3-e94bde7046bc">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bf5e849e-b104-406d-81db-4699fb1c7d5a">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b9af125a-ef9e-4466-9f05-644483ff0585">
+    <name>ПредставлениеСпискаСтруктурныхЕдиниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление списка структурных единиц</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f8a2303e-520e-41b6-b106-246e290502d3">
+    <name>ЯзыкФормирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Язык формирования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="4021af8f-b41d-425a-85d0-89a0c245e397">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма Инв-4 Акт инвентаризации деб. и кред. задолженности</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="821cb219-fefd-4c43-b5ba-3ea355336835">
+    <name>ФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма Инв-4</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e93f3792-895c-4bab-a27a-2a5e75576f79">
+    <name>МакетФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет форма отчета2013 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="6b2f5cc8-f06a-4829-88df-319b181f2fe3">
+    <name>СоставПоказателей2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2013 кв1</value>
+    </synonym>
+  </templates>
+  <templates uuid="927781ad-88e3-4eb8-b65c-598041dcd8d5">
+    <name>ПередачаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передача данных</value>
+    </synonym>
+  </templates>
+  <templates uuid="1cfc23af-9e6c-4020-bb28-28c595062e21">
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

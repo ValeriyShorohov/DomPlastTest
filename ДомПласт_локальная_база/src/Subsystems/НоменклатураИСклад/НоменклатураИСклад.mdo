@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92efeb13-3d51-4677-93b7-9e5cd1654a02">
+  <name>НоменклатураИСклад</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура и склад</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаНоменклатураИСклад</picture>
+  </picture>
+  <content>CommonCommand.ДополнительныеОбработкиНоменклатураИСклад</content>
+  <content>CommonCommand.ДополнительныеОтчетыНоменклатураИСклад</content>
+  <content>Report.МатериальнаяВедомость</content>
+  <content>Report.КонтрольОтрицательныхОстатков</content>
+  <content>Report.СверкаДанныхТоваровОрганизацийИБУ</content>
+  <content>Report.СверкаДанныхТоваровВСИБУ</content>
+  <subsystems>Склад</subsystems>
+  <subsystems>Инвентаризация</subsystems>
+  <subsystems>Цены</subsystems>
+  <subsystems>СправочникиИНастройки</subsystems>
+  <subsystems>ВиртуальныйСклад</subsystems>
+</mdclass:Subsystem>

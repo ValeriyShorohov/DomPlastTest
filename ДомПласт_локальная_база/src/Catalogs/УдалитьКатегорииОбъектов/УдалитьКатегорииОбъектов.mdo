@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b657a15c-43af-4f80-8a0e-e57973971cfc">
+  <producedTypes>
+    <objectType typeId="09d2a74c-2162-4731-98d1-5dac71c6f759" valueTypeId="8c6fcfbc-6d01-4c50-8531-461bb2be18a4"/>
+    <refType typeId="90e322bf-c414-4eb3-9fcc-f3e3e9c221d0" valueTypeId="fc16d267-dbe0-4f53-bc84-b9da74d8f46c"/>
+    <selectionType typeId="05eda601-8b78-4cb3-addc-516c5f35fc31" valueTypeId="118ccdc6-e75f-43b5-b8e1-d01aea2bc305"/>
+    <listType typeId="4824145d-c9c9-436f-8645-9417089b04e1" valueTypeId="7d528e3f-d91b-4bc0-85cd-3045d1637916"/>
+    <managerType typeId="0618387e-7534-451a-9584-dae5d644f85b" valueTypeId="c1f9f0ce-7f4b-4de6-a83e-d4f6ce6a25af"/>
+  </producedTypes>
+  <name>УдалитьКатегорииОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не использовать) Категории объектов</value>
+  </synonym>
+  <inputByString>Catalog.УдалитьКатегорииОбъектов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.УдалитьКатегорииОбъектов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>(Не использовать) Категория объектов</value>
+  </objectPresentation>
+  <levelCount>1</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.УдалитьКатегорииОбъектов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.УдалитьКатегорииОбъектов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.УдалитьКатегорииОбъектов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="a7caa81f-d842-4cf7-ad5d-65f480c55e66">
+    <name>НазначениеКатегории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.УдалитьНазначенияСвойствКатегорийОбъектов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Назначение категории</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="798b53ad-46dd-46a1-85b9-7f4c7b2f4494">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b9207f18-963b-4d64-a7b7-2aaea15e1c78">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1b883e05-e446-4b0e-aae7-7c46f72be886">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

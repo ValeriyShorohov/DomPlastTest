@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b836e16-eb74-4774-8793-c6becb0f1fb7">
+  <name>Предприятие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предприятие</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаПредприятие</picture>
+  </picture>
+  <content>Catalog.Организации</content>
+  <content>CommonForm.ФормаВыбораСтруктурногоПодразделения</content>
+  <content>Catalog.ПодразделенияОрганизаций</content>
+  <content>CommonCommand.ДополнительныеОбработкиПредприятие</content>
+  <content>CommonCommand.ДополнительныеОтчетыПредприятие</content>
+  <content>CommonForm.НастройкаПараметровУчета</content>
+  <content>Report.ОсновныеНастройкиОрганизации</content>
+  <content>DataProcessor.НачалоРаботы</content>
+  <subsystems>Предприятие</subsystems>
+  <subsystems>УчетнаяПолитика</subsystems>
+  <subsystems>ПланыCчетов</subsystems>
+  <subsystems>ВводНачальныхОстатков</subsystems>
+  <subsystems>ТоварыМатериалыПродукцияУслуги</subsystems>
+  <subsystems>Налоги</subsystems>
+  <subsystems>СправочникиНастройки</subsystems>
+  <subsystems>Органайзер</subsystems>
+</mdclass:Subsystem>

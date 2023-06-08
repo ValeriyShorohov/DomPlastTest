@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6be1d70d-7cc0-4c91-9aba-33dba9960b8d">
+  <producedTypes>
+    <selectionType typeId="1cc8606b-22fc-421c-9873-3d68abd73322" valueTypeId="e7c036d1-93c7-4701-b7e5-a089485faf85"/>
+    <listType typeId="cf6df1c9-8e40-4f31-a6d6-b105a8df1656" valueTypeId="d3670d06-704c-4d60-9214-d99810e32f87"/>
+    <managerType typeId="116affa7-cf41-456d-953c-f159c02cf859" valueTypeId="a7e9839c-dad8-4ad6-b85e-fb6a0cd521f7"/>
+    <recordSetType typeId="0fe81847-0c61-45a1-a52b-11666345aa45" valueTypeId="dbcdfc91-cf87-4c41-a214-4ff236e493d4"/>
+    <recordKeyType typeId="024a0fde-743f-4833-bf2c-57e27a12406e" valueTypeId="01c7d6f8-8cb8-491d-99f5-c78a34bff7a1"/>
+    <recordType typeId="0ad9f16e-864b-4bd2-8988-c030758df69e" valueTypeId="acb707bf-e965-4b30-a3c7-5e20e60fde62"/>
+    <recordManagerType typeId="0557b5aa-fb80-4951-b6ed-4422f6c0f565" valueTypeId="f192b0d3-55d4-4a6e-a305-f0803f06f9fa"/>
+  </producedTypes>
+  <name>СостоянияНМАОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния НМА организаций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.СостоянияНМАОрганизаций.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="da2215b3-a75e-44c8-98e8-01c4929add38">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСостоянийНМА</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d10f3b69-1977-4ed4-84f0-b26981e117e0">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="198868fd-1860-41f4-a717-c27e49bd953d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8dc85766-7e88-4048-9e37-00329e1eaee0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

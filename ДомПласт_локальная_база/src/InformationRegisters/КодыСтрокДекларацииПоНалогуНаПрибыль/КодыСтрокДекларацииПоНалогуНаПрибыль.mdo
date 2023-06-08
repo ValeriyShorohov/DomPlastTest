@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="feff2511-ad8c-4fdf-ae6a-3e220dc009ce">
+  <producedTypes>
+    <selectionType typeId="09a86956-b084-43dc-bddb-87057a34cf86" valueTypeId="38a0a197-b13c-4329-b879-ab9df57e0e3a"/>
+    <listType typeId="7b08df07-c4fa-446e-86f7-426a3fe15b38" valueTypeId="f25c66ea-25d1-41a2-8e57-4f1ebb26d357"/>
+    <managerType typeId="794f5ded-53b9-4f32-a589-e81d818da590" valueTypeId="36522956-9859-4c13-8346-9c2b35cfbbbf"/>
+    <recordSetType typeId="13d002f0-3224-4b02-9069-6082448815a9" valueTypeId="a39c4db8-b0d6-4d71-879f-601399a84f67"/>
+    <recordKeyType typeId="49f98cfd-ea59-41db-bd1a-301bfdda22cd" valueTypeId="361bd1cd-c2f2-454e-91fd-f5db6f5cb58b"/>
+    <recordType typeId="be0485af-6e37-4a35-8518-78b7f963b50f" valueTypeId="ee4cbade-132e-41c8-a56c-6ed18ef7a3d8"/>
+    <recordManagerType typeId="8d63cb31-84ff-44da-a7b8-774a68ab6a1b" valueTypeId="a9bff17e-1d74-4719-b7cc-2bf5ecc38edb"/>
+  </producedTypes>
+  <name>КодыСтрокДекларацииПоНалогуНаПрибыль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды строк декларации по Налогу на прибыль</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.КодыСтрокДекларацииПоНалогуНаПрибыль.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КодыСтрокДекларацииПоНалогуНаПрибыль.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Код строки декларации по Налогу на прибыль</value>
+  </recordPresentation>
+  <resources uuid="13ae27bb-8ad5-494a-b117-39d513c9de0f">
+    <name>КодСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код строки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="372dd59b-e523-4ab1-8828-ac62a71eaece">
+    <name>ВидДоходаРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид дохода/затрат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиЗатрат</types>
+      <types>CatalogRef.Доходы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6e5c0b25-e8f5-492a-a640-a5952b8dc1f6">
+    <name>Налогоплательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fdd0a22d-2b4f-440d-9090-19d077a687fc">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d8548ca6-1517-43f8-8ad9-355e4c585dfc">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0a3aea10-4aa5-4cd9-82fe-2f22e7f30bb4">
+    <name>ФормаВыбораИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор из классификатора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f801c578-53ac-41f0-8500-a3ffe7698333">
+    <name>МакетСопоставленияКодовСтрокДекларации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет сопоставления кодов строк декларации</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>
